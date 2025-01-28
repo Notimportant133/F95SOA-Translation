@@ -1,0 +1,57 @@
+# Transport
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu">'
+	
+	        '<div class="action">'
+				'<a class="photo" data-title="南部地区 " href="exec:minutes+=20 & gt ''southarea''"><img class="img_stretch" src="pic/place/City/valleyt_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+			if $gg['能源'] >= 100:
+			'<div class="action">'
+				'<a class="photo" data-title="海岸 " href="exec:minutes+=20 & gt ''Coast''"><img class="img_stretch" src="images\V70版本\增量包_20241111\place\Water_Park\coast_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+			end
+			
+	        '<div class="action">'
+				'<a class="photo" data-title="城市" href="exec:minutes+=20 & gt ''City''"><img class="img_stretch" src="pic/place/City/cityt_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+			
+		
+		
+			'</div>'
+	'</div>'
+	'</div>'
+	
+	
+		'<div class ="show_menu"><img src="pic/place/City/transport_<<$times_of_day>>.jpg"></div>'
+		
+		
+			
+	
+		
+		
+		'</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes += 5 & gt''City''">出去</a></div>'
+			
+		'</div>'
+		'<div class="dialog_menu">'
+			'我不得不乘公共交通工具，因为我没有车'
+	'</div>'
+	
+	
+
+
+
+
+--- Transport ---------------------------------
+

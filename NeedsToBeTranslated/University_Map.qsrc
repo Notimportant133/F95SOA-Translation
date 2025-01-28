@@ -1,0 +1,112 @@
+# University_Map
+
+
+
+		'<div class="actions_menu">'
+		
+				'<div class="action">'
+					if  10<=hour and hour<17 and week_day <6:
+					'<a class="photo" data-title="Principals_Office" href="exec:minutes+=5 & gt ''Principals_Office''"><img class="img_stretch" src="images\place\校长室.jpg"></a>'
+					else
+					'<a class="photo" data-title="Principals_Office"><img class="img_stretch" src="images\place\校长室2.jpg"></a>'
+					end
+				'</div>'
+				
+				'<div class="action">'
+					if  (8<=hour and hour<15 and week_day <6) or  (hour = 17 and week_day <6):
+					'<a class="photo" data-title="Vice_Principal_Office" href="exec:minutes+=5 & gt ''Vice_Principal_Office''"><img class="img_stretch" src="images\place\副校长室.jpg"></a>'
+					else
+					'<a class="photo" data-title="Vice_Principal_Office"><img class="img_stretch" src="images\place\副校长室2.jpg"></a>'
+					end
+				'</div>'
+				
+				'<div class="action">'
+					if   (10<=hour and hour<13 and week_day <6) or (15<=hour and hour<17 and week_day <6):
+					'<a class="photo" data-title="Spanish_Office" href="exec:minutes+=5 & gt ''Spanish_Office''"><img class="img_stretch" src="images\place\西语办公室.jpg"></a>'
+					else
+					'<a class="photo" data-title="Spanish_Office"><img class="img_stretch" src="images\place\西语办公室2.jpg"></a>'
+					end
+					'</div>'
+					
+				'<div class="action">'
+					if   (8<=hour and hour<10 and week_day <6) or (13<=hour and hour<17 and week_day <6):
+					'<a class="photo" data-title="Biology_Office" href="exec:minutes+=5 & gt ''Biology_Office''"><img class="img_stretch" src="images\place\生物办公室.jpg"></a>'
+					else
+					'<a class="photo" data-title="Biology_Office"><img class="img_stretch" src="images\place\生物办公室2.jpg"></a>'
+					end
+				'</div>'
+				'<div class="action">'
+					if   (8<=hour and hour<18) :
+					'<a class="photo" data-title="Student_Council" href="exec:minutes+=5 & gt ''Student_Council''"><img class="img_stretch" src="images\place\学生会.jpg"></a>'
+					else
+					'<a class="photo" data-title="Student_Council"><img class="img_stretch" src="images\place\学生会2.jpg"></a>'
+					end
+				'</div>'
+				
+				'<div class="action">'
+					if $MQMM_Event_store>=1 and  14<=hour and hour=<21 and week_day <6:
+					'<a class="photo" data-title="Math_Office" href="exec:minutes+=5 & gt ''Math_Office''"><img class="img_stretch" src="images\V70版本\增量包_20241111\place\母亲姨妈\图片\数学办公室.jpg"></a>'
+					else
+					'<a class="photo" data-title="Math_Office"><img class="img_stretch" src="images\V70版本\增量包_20241111\place\母亲姨妈\图片\数学办公室2.jpg"></a>'
+					end
+				'</div>'
+				
+				if 旁听证=1:
+				'<div class="action">'
+					if  8<=hour and hour<18 and week_day <6:
+					'<a class="photo" data-title="普通教室" href="exec:minutes+=5 & gt ''Classroom''"><img class="img_stretch" src="images\place\教室.jpg"></a>'
+					else
+					'<a class="photo" data-title="普通教室" ><img class="img_stretch" src="images\place\教室2.jpg"></a>'
+					End
+				'</div>'
+				End
+				
+				if 旁听证=0:
+				'<div class="action"><a class="photo" data-title="无听课权限" ><img class="img_stretch" src="images\place\教室2.jpg"></a></div>'
+				End
+				
+	
+				
+				if  17>=hour and hour>=7 :
+				'<div class="action"><a class="photo" data-title="School_Corridor" href="exec:minutes+=5 & gt ''School_Corridor''"><img class="img_stretch" src="images\place\学校走廊.jpg"></a></div>'
+				else
+					 if hour=0 :
+					 '<div class="action"><a class="photo" data-title="Midnight_Corridor" href="exec:minutes+=5 & gt ''Midnight_Corridor''"><img class="img_stretch" src="images\place\午夜走廊.jpg"></a></div>'
+					 end
+					 if hour!0 :
+					 '<div class="action"><a class="photo" data-title="School_Corridor" ><img class="img_stretch" src="images\place\学校走廊2.jpg"></a></div>'
+					 end
+				End
+				
+				if 旁听证=1:
+				'<div class="action">'
+					if  8<=hour and hour<18 and week_day <6:
+					'<a class="photo" data-title="Class_3_2" href="exec:minutes+=5 & gt ''Class_3_2''"><img class="img_stretch" src="images\place\三年二班.jpg"></a>'
+					else
+					'<a class="photo" data-title="Class_3_2" ><img class="img_stretch" src="images\place\三年二班2.jpg"></a>'
+					End
+				'</div>'
+				End
+				
+				if 旁听证=0:
+				'<div class="action"><a class="photo" data-title="无听课权限-我应该去找校长" ><img class="img_stretch" src="images\place\三年二班2.jpg"></a></div>'
+				End
+				
+	
+				'<div class="action">'
+					'<a class="photo" data-title="地下交通" href="exec:minutes+=15 & gt ''Subway''"><img class="img_stretch" src="images\place\地铁.jpg"></a>'
+				'</div>'
+				'<div class="action">'
+					'<a class="photo" data-title="大学正门" href="exec:minutes+=15 & gt ''University''"><img class="img_stretch" src="images\place\大学_<<$times_of_day>>.jpg"></a>'
+				'</div>'
+				
+		'</div>'
+		
+		
+
+
+
+
+
+--- University_Map ---------------------------------
+

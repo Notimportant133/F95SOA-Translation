@@ -1,0 +1,1502 @@
+# Singer_Event
+
+
+
+	cls
+	$metka = $ARGS[0] 
+	$loc = $CURLOC
+	gs'Yya'
+	my.精力+=3
+	minutes+=5
+	
+	'<div id="right-column">'
+		gs"Energy_Check"
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Hidden'
+		gs "BUG_Escape"
+	'</div>'
+	
+
+
+
+
+
+
+	
+	if $args[0]="初识":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\视频\Festival<<rand(0,11)>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+			if a=0:'<div class="button"><a href="exec:gt ''Singer_Event'',''初识''">回帐篷休息</a></div>'
+			if a=1:'<div class="button"><a href="exec:gt ''Singer_Event'',''初识''">搭讪</a></div>'
+			if a=2:'<div class="button"><a href="exec:gt ''Singer_Event'',''初识''">挥手道别</a></div>'
+			if a=3:'<div class="button"><a href="exec:gt ''Park''">走出音乐节区域</a></div>'
+		'</div>'
+	
+		if a=0:
+			'<div class="dialog_menu">'
+				'<p>音乐节快结束了。</p>'
+				'<p>喊累了，也跳累了，站都站不住了。</p>'
+			'</div>'
+		end
+		
+		if a=1:
+			'<div class="dialog_menu">'
+				'<p>在帐篷旁看到一个同样精疲力尽的女孩。</p>'
+			'</div>'
+		end
+		
+		if a=2:
+			'<div class="dialog_menu">'
+				'<p>你：你好，我觉得今天的音乐节氛围真的太棒了！你看起来也很享受这里的气氛呢。</p>'
+				'<p>???：是啊，我很喜欢这种自由的感觉，音乐也很棒。</p>'
+				'<p>你：我也是，尤其喜欢刚才那支乐队的表演，他们的音乐真的很有感染力。</p>'
+				'<p>???：没错，我也很喜欢他们。你更喜欢哪种类型的音乐呢？</p>'
+				'<p>你：我喜欢各种风格的音乐，但最近对民谣比较感兴趣。你呢？</p>'
+				'<p>???：我其实更喜欢流行音乐，不过也会尝试一些新的风格。</p>'
+				'<p>你：看来我们都很有音乐品味嘛！<<$主角姓名>>。</p>'
+				'<p>???：<<$GS.name>>！</p>'
+			'</div>'
+		end
+		
+		if a=3:
+			'<div class="dialog_menu">'
+				'<p>你：再有音乐节你还来吗？</p>'
+				'<p><<$GS.name>>：当然，我的梦想就是做一名像他们一样优秀的歌手。</p>'
+				'<p>你：今天太累了，回去休息吧，明天还要工作。</p>'
+				'<p><<$GS.name>>：我在餐厅找了份工作，打工攒钱买乐器学声乐。</p>'
+				'<p>你：再见。</p>'
+				'<p><<$GS.name>>：再见。</p>'
+				$GS.available=1
+				$GS_Event=1
+			'</div>'
+		end
+		'</div>'
+		a+=1
+	End
+	
+	if $args[0]="转场":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\视频\Festival<<rand(0,11)>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+			if $GS_Event=5:'<div class="button"><a href="exec:gt ''Singer_Event'',''转场''"><<$GS.name>>和几个大叔交谈</a></div>'
+			if $GS_Event=6:'<div class="button"><a href="exec:gt ''Singer_Event'',''转场''">确认行程</a></div>'
+			if $GS_Event=9:'<div class="button"><a href="exec:gt ''Singer_Event'',''转场''"><<$GS.name>>失踪了</a></div>'
+			if $GS_Event=10:'<div class="button"><a href="exec:gt ''Singer_Event'',''转场''">搜寻踪迹</a></div>'
+			'<div class="button"><a href="exec:gt ''Park''">走出音乐节区域</a></div>'
+		'</div>'
+	
+		if $GS_Event=5:
+			'<div class="dialog_menu">'
+				'<p>大叔们：小姑娘你的嗓音条件不错嘛，有没有唱歌出道的想法啊？</p>'
+				'<p><<$GS.name>>：有啊，我的梦想就是当个歌唱家。</p>'
+				if $GS_Event=5:$GS_Event=6
+			'</div>'
+		end
+		
+		if $GS_Event=6:
+			'<div class="dialog_menu">'
+				'<p>大叔们：我们这有首歌，小姑娘你周三晚上23点来夜色CLUB风俗区的VIP包间，哥几个给你培训培训。</p>'
+				'<p><<$GS.name>>：好啊。</p>'
+			'</div>'
+		end
+	
+		if $GS_Event=9:
+			'<div class="dialog_menu">'
+				'<p>NC粉(兴奋)：<<$GS.name>>我好喜欢你，我们合个照吧！</p>'
+				'<p><<$GS.name>>：谢谢你支持，来，一起合个心。</p>'
+				'<p>NC粉(狂热)：我爱你，我们结婚吧！</p>'
+				'<p><<$GS.name>>发现有些失控，有点慌张。</p>'
+				'<p>NC粉环顾四周无人，冲上来打晕扛走了<<$GS.name>>。</p>'
+				if $GS_Event=9:$GS_Event=10
+			'</div>'
+		end
+		
+		if $GS_Event=10:
+			'<div class="dialog_menu">'
+				'<p>你发现<<$GS.name>>失踪了。</p>'
+				'<p>从现场遗留的物品看像是深巷的常见品。</p>'
+				$GS丝巾=1
+			'</div>'
+		end
+		'</div>'
+		a+=1
+	End
+	
+	if $args[0]="餐厅_应聘A":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\餐厅1-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+			if a=0:'<div class="button"><a href="exec:gt ''Singer_Event'',''餐厅_应聘A''">旁观</a></div>'
+			if a=1:'<div class="button"><a href="exec:gt ''Singer_Event'',''餐厅_应聘A''">打招呼</a></div>'
+			if a=2:'<div class="button"><a href="exec:gt ''Restaurant''">道别</a></div>'
+		'</div>'
+	
+		if a=0:
+			'<div class="dialog_menu">'
+				'<p><<$GS.name>>：您好，这是我的简历。</p>'
+				'<p>老板：我看看。</p>'
+	 			'<p>接下来老板口头考核了一些专业技能。</p>'
+			'</div>'
+		end
+		
+		if a=1:
+			'<div class="dialog_menu">'
+				'<p>老板：我们这正好缺个店员，你来试试吧。</p>'
+				'<p><<$GS.name>>：谢谢老板。</p>'
+				'<p>老板：<<$JB.name>>过来带带她。</p>'
+				'<p><<$JB.name>>：好的老板，跟我来吧。</p>'
+			'</div>'
+		end
+		
+		if a=2:
+			'<div class="dialog_menu">'
+				'<p>你：嗨，你在这工作吗？</p>'
+				'<p><<$GS.name>>：是啊，刚应聘进来，听说这里客人能给不少小费。</p>'
+				'<p>你：我家就在附近，有时间找你聊天啊。</p>'
+				'<p>~<<$JB.name>>：<<$GS.name>>在哪了？~</p>'
+				'<p><<$GS.name>>：没问题，<<$JB.name>>叫我了，我要去熟悉工作了，回头见。</p>'
+				'<p>你：bye~</p>'
+				if $GS_Event=1:$GS_Event=2
+			'</div>'
+		end
+		'</div>'
+		a+=1
+	End
+	
+	if $args[0]="餐厅_应聘B":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\餐厅1-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+			if a=0:'<div class="button"><a href="exec:gt ''Singer_Event'',''餐厅_应聘B''">试用</a></div>'
+			if a=1:'<div class="button"><a href="exec:gt ''Singer_Event'',''餐厅_应聘B''">安排</a></div>'
+			if a=2:'<div class="button"><a href="exec:gt ''Restaurant''">道别</a></div>'
+		'</div>'
+	
+		if a=0:
+			'<div class="dialog_menu">'
+				'<p><<$GS.name>>：是你呀！真没想到你是这家店的老板。</p>'
+				'<p>你：我不是老板，只是个顾问。</p>'
+			'</div>'
+		end
+		
+		if a=1:
+			'<div class="dialog_menu">'
+	 			'<p>你口头考核了一些专业技能。</p>'
+				'<p>你：我们这正好缺个店员，你来试试吧。</p>'
+				'<p><<$GS.name>>：太感谢了。</p>'
+				'<p>你：<<$JB.name>>过来带带她。</p>'
+				'<p><<$JB.name>>：好的专员，跟我来吧。</p>'
+			'</div>'
+		end
+		
+		if a=2:
+			'<div class="dialog_menu">'
+				'<p>你：<<$JB.name>>，这是我朋友，多带带她。</p>'
+				'<p><<$JB.name>>：专员放心，包在我身上。</p>'
+				'<p>你：那你们忙着，我走了。</p>'
+				'<p><<$JB.name>>和<<$GS.name>>：再见。</p>'
+				if $GS_Event=1:$GS_Event=2
+			'</div>'
+		end
+		'</div>'
+		a+=1
+	End
+	
+	if $args[0]="餐厅_打工":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\餐厅2-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if a<9:
+			'<div class="button_menu">'
+				if a=0:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''餐厅_打工''">再看看</a></div>'
+				end
+				if a!2 and 1<=q and q<=4:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''餐厅_打工''">摸屁股</a></div>'
+				end
+				if a!3 and 2<=q and q<=5:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Singer_Event'',''餐厅_打工''">抠泄她</a></div>'
+				end
+				if a!4 and 3<=q and q<=6:
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Singer_Event'',''餐厅_打工''">口她</a></div>'
+				end
+				if a!5 and 4<=q and q<=7:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Singer_Event'',''餐厅_打工''">继续抠</a></div>'
+				end
+				if a!6 and 5<=q and q<=7:
+				'<div class="buttonS4"><a href="exec:a=6 & gt ''Singer_Event'',''餐厅_打工''">又泄了</a></div>'
+				end
+				if a=6:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Singer_Event'',''餐厅_打工''">袭胸</a></div>'
+				end
+				if a=7:
+				'<div class="buttonS4"><a href="exec:a=8 & gt ''Singer_Event'',''餐厅_打工''">有人结账了</a></div>'
+				end
+				if a=8:
+				'<div class="buttonS4"><a href="exec:a=9 & gt ''Singer_Event'',''餐厅_打工''">放开她</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+						'<div class="button"><a href="exec:gt ''Restaurant''">离开</a></div>'
+				'</div>'
+		end
+	
+		if 8>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p><<$GS.name>>: 我去换工作服。</p>'
+			if a=1:'<p>我：好你去吧…</p>'
+			if a>=2:'<p><<$GS.name>>:<<$娇喘声2>></p>'
+			if a>=5:'<p>我：憋住别出声。</p>'
+			if a>=5:'<p><<$GS.name>>:小声嗯<<$话3>></p>'
+			if a>=8:'<p><<$GS.name>>:来人了，快停下。</p>'
+			'</div>'
+		end
+	
+		if a=9:
+			$GS.love+=my.魅力
+			$GS.bad+=10
+			'<div class="dialog_menu">'
+				'<p>我:真扫兴啊。</p>'
+				if $GS_Event=2:$GS_Event=3
+			'</div>'
+		end
+	q+=1
+	End
+	
+	if $args[0]="餐厅_打工1":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\餐厅3-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if a<9:
+			'<div class="button_menu">'
+				if a=0:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''餐厅_打工1''">偷袭</a></div>'
+				end
+				if a=1:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''餐厅_打工1''">抠泄她</a></div>'
+				end
+				if a=2:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Singer_Event'',''餐厅_打工1''">脱下内裤</a></div>'
+				end
+				if a!4 and 3<=q and q<=6:
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Singer_Event'',''餐厅_打工1''">玩转盘</a></div>'
+				end
+				if a!5 and 4<=q and q<=7:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Singer_Event'',''餐厅_打工1''">再转</a></div>'
+				end
+				if a!6 and 5<=q and q<=7:
+				'<div class="buttonS4"><a href="exec:a=6 & gt ''Singer_Event'',''餐厅_打工1''">口我</a></div>'
+				end
+				if a!7 and 5<=q and q<=8:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Singer_Event'',''餐厅_打工1''">激烈战斗</a></div>'
+				end
+				if a=7:
+				'<div class="buttonS4"><a href="exec:a=8 & gt ''Singer_Event'',''餐厅_打工1''">颜射</a></div>'
+				end
+				if a=8:
+				'<div class="buttonS4"><a href="exec:a=9 & gt ''Singer_Event'',''餐厅_打工1''">清理</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+						'<div class="button"><a href="exec:gt ''Restaurant''">离开</a></div>'
+				'</div>'
+		end
+	
+		if 8>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p><<$GS.name>>: 客人您今天吃点什么？</p>'
+			if a=1:'<p><<$GS.name>>: 啊，你怎么在这？</p>'
+			if a>=2:'<p><<$GS.name>>:<<$娇喘声2>></p>'
+			if a>=5:'<p>我：嘘…小点声。</p>'
+			if a>=5:'<p><<$GS.name>>:小声嗯<<$话3>></p>'
+			if a>=6:'<p><<$GS.name>>:小声<<$话2>></p>'
+			if a>=8:'<p><<$GS.name>>:啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=9:
+			$GS.love+=my.魅力
+			$GS.bad+=my.魅力
+			'<div class="dialog_menu">'
+				'<p>我:给我清理一下。</p>'
+				'<p><<$GS.name>>:今天让我歇歇吧，周六日我在便利店打工，到时候来找我吧。</p>'
+				if $GS_Event=3:$GS_Event=4
+			'</div>'
+		end
+	q+=1
+	End
+	
+	if $args[0]="便利店_打工":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\Convenience_Store-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if a<9:
+			'<div class="button_menu">'
+				if a=0:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''便利店_打工''">藏起来口</a></div>'
+				end
+				if a>=1 and a<=4:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''便利店_打工''">口出来</a></div>'
+				end
+				if a>=2 and a<=4:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Singer_Event'',''便利店_打工''">揉奶</a></div>'
+				end
+				if a>=3 and a<=4:
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Singer_Event'',''便利店_打工''">胸射</a></div>'
+				end
+				if a=4:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Singer_Event'',''便利店_打工''">拉到厕所</a></div>'
+				end
+				if a>=5 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=6 & gt ''Singer_Event'',''便利店_打工''">后入</a></div>'
+				end
+				if a>=6 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Singer_Event'',''便利店_打工''">翻过来</a></div>'
+				end
+				if a>=7 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=8 & gt ''Singer_Event'',''便利店_打工''">忍不住了</a></div>'
+				end
+				if a=8:
+				'<div class="buttonS4"><a href="exec:a=9 & gt ''Singer_Event'',''便利店_打工''">异常</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+						'<div class="button"><a href="exec:gt ''Convenience_Store''">离开</a></div>'
+				'</div>'
+		end
+	
+		if 8>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p><<$GS.name>>: 你来找我吗？</p>'
+			if a=1:'<p>你: 来这边，别人看不见。</p>'
+			if a>=2:'<p><<$GS.name>>:<<$娇喘声2>></p>'
+			if a>=5:'<p><<$GS.name>>:小声嗯<<$话3>></p>'
+			if a>=7:'<p><<$GS.name>>:小声<<$话2>></p>'
+			if a>=8:'<p><<$GS.name>>:啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=9:
+			$GS.love+=my.魅力
+			$GS.bad+=my.魅力
+			'<div class="dialog_menu">'
+				'<p><<$GS.name>>:没中，看来不是这个的问题。</p>'
+				'<p><<$GS.name>>:也好，我还有梦想没实现。</p>'
+				'<p><<$GS.name>>:周六还要去参加音乐节。</p>'
+				if $GS_Event=4:$GS_Event=5
+			'</div>'
+		end
+	End
+	
+	if $args[0]="风俗店_培训1":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\风俗店1-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if a<9:
+			'<div class="button_menu">'
+				if a=0:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''风俗店_培训1''">顶上去</a></div>'
+				end
+				if a>=1 and a<=4:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''风俗店_培训1''">揉搓</a></div>'
+				end
+				if a>=2 and a<=4:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Singer_Event'',''风俗店_培训1''">袭胸</a></div>'
+				end
+				if a>=3 and a<=4:
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Singer_Event'',''风俗店_培训1''">抠喷她</a></div>'
+				end
+				if a=4:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Singer_Event'',''风俗店_培训1''">抱起腿抽插</a></div>'
+				end
+				if a>=5 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=6 & gt ''Singer_Event'',''风俗店_培训1''">后入</a></div>'
+				end
+				if a>=6 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Singer_Event'',''风俗店_培训1''">翻过来</a></div>'
+				end
+				if a>=7 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=8 & gt ''Singer_Event'',''风俗店_培训1''">猛烈抽动</a></div>'
+				end
+				if a=8:
+				'<div class="buttonS4"><a href="exec:a=9 & gt ''Singer_Event'',''风俗店_培训1''">射了一身</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+						'<div class="button"><a href="exec:gt ''Night_Nest''">离开</a></div>'
+				'</div>'
+		end
+	
+		if 8>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p>作词人: 站起来，转过去手拉住扶手。</p>'
+			if a=1:'<p><<$GS.name>>: 怎么了？啊，住手！</p>'
+			if a=2:'<p><<$GS.name>>: 不要！</p>'
+			if a=1:'<p>作词人: 还想不想出道了！</p>'
+			if a>=2:'<p><<$GS.name>>:<<$娇喘声2>></p>'
+			if a>=5:'<p><<$GS.name>>:小声嗯<<$话3>></p>'
+			if a>=7:'<p><<$GS.name>>:小声<<$话2>></p>'
+			if a>=8:'<p><<$GS.name>>:啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=9:
+			$GS.bad+=10
+			'<div class="dialog_menu">'
+				'<p><<$GS.name>>:你骗我…</p>'
+				'<p>作词人:不骗你，咱是懂规矩的。</p>'
+				'<p>作词人:先给你歌词，下次作曲人来给你曲谱。</p>'
+				if $GS_Event=6:$GS_Event=7
+				if hour<=24:minutes+=60
+			'</div>'
+		end
+	End
+	
+	if $args[0]="风俗店_培训2":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\风俗店2-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if a<10:
+			'<div class="button_menu">'
+				if a=0:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''风俗店_培训2''">落泪</a></div>'
+				end
+				if a>=1 and a<=4:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''风俗店_培训2''">鞭打</a></div>'
+				end
+				if a>=2 and a<=4:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Singer_Event'',''风俗店_培训2''">上跳蛋</a></div>'
+				end
+				if a>=3 and a<=4:
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Singer_Event'',''风俗店_培训2''">换法穿棒</a></div>'
+				end
+				if a=4:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Singer_Event'',''风俗店_培训2''">换个姿势</a></div>'
+				end
+				if a>=5 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=6 & gt ''Singer_Event'',''风俗店_培训2''">插入</a></div>'
+				end
+				if a>=6 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Singer_Event'',''风俗店_培训2''">猛插</a></div>'
+				end
+				if a=7:
+				'<div class="buttonS4"><a href="exec:a=8 & gt ''Singer_Event'',''风俗店_培训2''">再换姿势</a></div>'
+				end
+				if a>=8 and a<=9:
+				'<div class="buttonS4"><a href="exec:a=9 & gt ''Singer_Event'',''风俗店_培训2''">更加猛烈</a></div>'
+				end
+				if a>=9:
+				'<div class="buttonS4"><a href="exec:a=10 & gt ''Singer_Event'',''风俗店_培训2''">满足了</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+						'<div class="button"><a href="exec:gt ''Night_Nest''">离开</a></div>'
+				'</div>'
+		end
+	
+		if 9>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p>作曲人: 这么快就醒了，看来你体质比一般人都好啊。</p>'
+			if a=1:'<p><<$GS.name>>: 怎么了？啊，住手！</p>'
+			if a=1:'<p><<$GS.name>>: 不要！</p>'
+			if a=1:'<p>作曲人: 还想不想出道了！</p>'
+			if a>=2:'<p><<$GS.name>>:<<$娇喘声2>></p>'
+			if a>=5:'<p><<$GS.name>>:嗯<<$话3>></p>'
+			if a>=8:'<p><<$GS.name>>:<<$话2>></p>'
+			if a>=9:'<p><<$GS.name>>:啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=10:
+			$GS.bad+=20
+			'<div class="dialog_menu">'
+				'<p><<$GS.name>>:…我…</p>'
+				'<p>作曲人:怎么样，我厉害吧。</p>'
+				'<p>作曲人:给你曲谱,下次找人给你做造型。</p>'
+				if $GS_Event=7:$GS_Event=8
+				if hour<=24:minutes+=60
+			'</div>'
+		end
+	End
+	
+	if $args[0]="风俗店_培训3":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\风俗店3-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if a<9:
+			'<div class="button_menu">'
+				if a=0:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''风俗店_培训3''">与众人嬉戏</a></div>'
+				end
+				if a>=1 and a<=3:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''风俗店_培训3''">气氛开始淫靡</a></div>'
+				end
+				if a>=2 and a<=3:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Singer_Event'',''风俗店_培训3''">上下齐攻</a></div>'
+				end
+				if a=3:
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Singer_Event'',''风俗店_培训3''">排队口</a></div>'
+				end
+				if a>=4 and a<=7:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Singer_Event'',''风俗店_培训3''">1 口 4</a></div>'
+				end
+				if a>=5 and a<=7:
+				'<div class="buttonS4"><a href="exec:a=6 & gt ''Singer_Event'',''风俗店_培训3''">1 VS 3</a></div>'
+				end
+				if a>=6 and a<=7:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Singer_Event'',''风俗店_培训3''">坐下来</a></div>'
+				end
+				if a=7:
+				'<div class="buttonS4"><a href="exec:a=8 & gt ''Singer_Event'',''风俗店_培训3''">上床玩</a></div>'
+				end
+				if a=8:
+				'<div class="buttonS4"><a href="exec:a=9 & gt ''Singer_Event'',''风俗店_培训3''">尽兴了</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+						'<div class="button"><a href="exec:gt ''Night_Nest''">离开</a></div>'
+				'</div>'
+		end
+	
+		if 8>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p>众人: 怎么样，这才有歌手范，和刚见面时完全不一样了。</p>'
+			if a=0:'<p><<$GS.name>>: 多谢各位老师。</p>'
+			if a=0:'<p><<$GS.name>>: 今天大家喝个痛快！</p>'
+			if a=1:'<p>众人: 来，干杯！今天大家高兴高兴。</p>'
+			if a>=2:'<p><<$GS.name>>:<<$娇喘声2>></p>'
+			if a>=5:'<p><<$GS.name>>:嗯<<$话3>></p>'
+			if a>=7:'<p><<$GS.name>>:<<$话2>></p>'
+			if a>=8:'<p><<$GS.name>>:啊啊啊，好爽！</p>'
+			'</div>'
+		end
+	
+		if a=9:
+			$GS.bad+=30
+			'<div class="dialog_menu">'
+				'<p>众人和<<$GS.name>>:耶，出道大火。</p>'
+				'<p><<$GS.name>>:周六音乐节见。</p>'
+				if $GS_Event=8:$GS_Event=9
+				if hour<=24:minutes+=60
+			'</div>'
+		end
+	End
+	
+	if $args[0]="NC粉_绑架1":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\粉丝绑架1-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if a<10:
+			'<div class="button_menu">'
+				if a=0:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''NC粉_绑架1''">继续下药</a></div>'
+				end
+				if a=1:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''NC粉_绑架1''">发作</a></div>'
+				end
+				if a>=2 and a<=5:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Singer_Event'',''NC粉_绑架1''">刺激胸部</a></div>'
+				end
+				if a>=3 and a<=5:
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Singer_Event'',''NC粉_绑架1''">抱起来</a></div>'
+				end
+				if a>=4 and a<=5:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Singer_Event'',''NC粉_绑架1''">狂插猛送</a></div>'
+				end
+				if a=5:
+				'<div class="buttonS4"><a href="exec:a=6 & gt ''Singer_Event'',''NC粉_绑架1''">中出</a></div>'
+				end
+				if a>=6 and a<=9:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Singer_Event'',''NC粉_绑架1''">翻身后入</a></div>'
+				end
+				if a>=7 and a<=9:
+				'<div class="buttonS4"><a href="exec:a=8 & gt ''Singer_Event'',''NC粉_绑架1''">更加猛烈</a></div>'
+				end
+				if a>=8 and a<=9:
+				'<div class="buttonS4"><a href="exec:a=9 & gt ''Singer_Event'',''NC粉_绑架1''">窒息抽射</a></div>'
+				end
+				if a=9:
+				'<div class="buttonS4"><a href="exec:a=10 & gt ''Singer_Event'',''NC粉_绑架1''">脱下内裤收藏</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+						'<div class="buttonR4"><a href="exec:a=0 & gt ''Singer_Event'',''NC粉_绑架2''">继续看下去</a></div>'
+						'<div class="button"><a href="exec:$GS丝巾=0 & gt ''Humble_Abode'',''NC粉_家''">冲进去打晕他(跳过1段剧情)</a></div>'
+				'</div>'
+		end
+	
+		if 9>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p>NC粉: 还没发作么，看来你的体质特殊啊。</p>'
+			if a=1:'<p>NC粉: 再给你换一种听话水。</p>'
+			if a=1:'<p><<$GS.name>>: 不…不要…</p>'
+			if a=1:'<p><<$GS.name>>: …………好。</p>'
+			if a=1:'<p>NC粉: 终于生效了！</p>'
+			if a>=3:'<p><<$GS.name>>:<<$娇喘声2>></p>'
+			if a>=5:'<p><<$GS.name>>:嗯<<$话3>></p>'
+			if a>=8:'<p><<$GS.name>>:<<$话2>></p>'
+			if a>=9:'<p><<$GS.name>>:啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=10:
+			$GS.bad+=30
+			'<div class="dialog_menu">'
+				'<p><<$GS.name>>:…我…呼…呼…</p>'
+				'<p>NC粉:收藏品+1！</p>'
+				'<p>NC粉:累死我了，等我吃了药再战！！</p>'
+			'</div>'
+		end
+	End
+	
+	if $args[0]="录像带·GS1":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\粉丝绑架1-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+			'<div class="button_menu">'
+				if a<10:'<div class="buttonS1"><a href="exec:a+=1 & gt ''Singer_Event'',''录像带·GS1''">快进</a></div>'
+				if a>0:'<div class="buttonR3"><a href="exec:a-=1 & gt ''Singer_Event'',''录像带·GS1''">后退</a></div>'
+				'<div class="button"><a href="exec:minutes+=15 & gt ''Home_Computer''">关闭</a></div>'
+			'</div>'
+	
+		if 9>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p>NC粉: 还没发作么，看来你的体质特殊啊。</p>'
+			if a=1:'<p>NC粉: 再给你换一种听话水。</p>'
+			if a=1:'<p><<$GS.name>>: 不…不要…</p>'
+			if a=1:'<p><<$GS.name>>: …………好。</p>'
+			if a=1:'<p>NC粉: 终于生效了！</p>'
+			if a>=3:'<p><<$GS.name>>:<<$娇喘声2>></p>'
+			if a>=5:'<p><<$GS.name>>:嗯<<$话3>></p>'
+			if a>=8:'<p><<$GS.name>>:<<$话2>></p>'
+			if a>=9:'<p><<$GS.name>>:啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=10:
+			'<div class="dialog_menu">'
+				'<p><<$GS.name>>:…我…呼…呼…</p>'
+				'<p>NC粉:收藏品+1！</p>'
+				'<p>NC粉:累死我了，等我吃了药再战！！</p>'
+			'</div>'
+		end
+	End
+	
+	if $args[0]="NC粉_绑架2":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\粉丝绑架2-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if a<11:
+			'<div class="button_menu">'
+				if a>=0 and a<=3:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''NC粉_绑架2''">刺激乳房</a></div>'
+				end
+				if a>=1 and a<=3:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''NC粉_绑架2''">刺激下体</a></div>'
+				end
+				if a>=2 and a<=3:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Singer_Event'',''NC粉_绑架2''">固定住</a></div>'
+				end
+				if a=3:
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Singer_Event'',''NC粉_绑架2''">口硬</a></div>'
+				end
+				if a>=4 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Singer_Event'',''NC粉_绑架2''">缓慢插入</a></div>'
+				end
+				if a>=5 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=6 & gt ''Singer_Event'',''NC粉_绑架2''">上下齐攻</a></div>'
+				end
+				if a>=6 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Singer_Event'',''NC粉_绑架2''">侧身抽插</a></div>'
+				end
+				if a>=7 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=8 & gt ''Singer_Event'',''NC粉_绑架2''">射了</a></div>'
+				end
+				if a=8:
+				'<div class="buttonS4"><a href="exec:a=9 & gt ''Singer_Event'',''NC粉_绑架2''">爱不释口</a></div>'
+				end
+				if a=9:
+				'<div class="buttonS4"><a href="exec:a=10 & gt ''Singer_Event'',''NC粉_绑架2''">拴上狗链</a></div>'
+				end
+				if a=10:
+				'<div class="buttonS4"><a href="exec:a=11 & gt ''Singer_Event'',''NC粉_绑架2''">牵出卧室</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+						'<div class="button"><a href="exec:$GS丝巾=0 & gt ''Humble_Abode'',''NC粉_家''">冲进去打晕他</a></div>'
+				'</div>'
+		end
+	
+		if 10>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p>NC粉: 真好，永远玩不腻。</p>'
+			if a=1:'<p>NC粉: 给你上点刺激。</p>'
+			if a=1:'<p><<$GS.name>>: 啊…不要…</p>'
+			if a=2:'<p><<$GS.name>>: 不要…不要停…</p>'
+			if a=2:'<p>NC粉: 哈，我来了！</p>'
+			if a>=3 and a<=9:'<p><<$GS.name>>: <<$娇喘声2>></p>'
+			if a>=5 and a<=9:'<p><<$GS.name>>: 嗯<<$话3>></p>'
+			if a>=8 and a<=9:'<p><<$GS.name>>: <<$话2>></p>'
+			if a>=8 and a<=9:'<p><<$GS.name>>: 啊啊啊，要来了。</p>'
+			if a>9:'<p>NC粉: 来，拴上链子。</p>'
+			if a>10:'<p>NC粉: 你永远属于我。</p>'
+			'</div>'
+		end
+	
+		if a=11:
+			$GS.bad+=30
+			'<div class="dialog_menu">'
+				'<p>NC粉: 过来，带你“标记”一下领地。</p>'
+			'</div>'
+		end
+	End
+	
+	if $args[0]="录像带·GS2":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\粉丝绑架2-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+			'<div class="button_menu">'
+				if a<11:'<div class="buttonS1"><a href="exec:a+=1 & gt ''Singer_Event'',''录像带·GS2''">快进</a></div>'
+				if a>0:'<div class="buttonR3"><a href="exec:a-=1 & gt ''Singer_Event'',''录像带·GS2''">后退</a></div>'
+				'<div class="button"><a href="exec:minutes+=15 & gt ''Home_Computer''">关闭</a></div>'
+			'</div>'
+	
+		if 10>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p>NC粉: 真好，永远玩不腻。</p>'
+			if a=1:'<p>NC粉: 给你上点刺激。</p>'
+			if a=1:'<p><<$GS.name>>: 啊…不要…</p>'
+			if a=2:'<p><<$GS.name>>: 不要…不要停…</p>'
+			if a=2:'<p>NC粉: 哈，我来了！</p>'
+			if a>=3 and a<=9:'<p><<$GS.name>>: <<$娇喘声2>></p>'
+			if a>=5 and a<=9:'<p><<$GS.name>>: 嗯<<$话3>></p>'
+			if a>=8 and a<=9:'<p><<$GS.name>>: <<$话2>></p>'
+			if a>=8 and a<=9:'<p><<$GS.name>>: 啊啊啊，要来了。</p>'
+			if a>9:'<p>NC粉: 来，拴上链子。</p>'
+			if a>10:'<p>NC粉: 你永远属于我。</p>'
+			'</div>'
+		end
+	
+		if a=11:
+			'<div class="dialog_menu">'
+				'<p>NC粉: 过来，带你“标记”一下领地。</p>'
+			'</div>'
+		end
+	End
+	
+	if $args[0]="歌手_客房":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\歌手客房-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if a<11:
+			'<div class="button_menu">'
+				if a=0:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''歌手_客房''">逛累了回家吧</a></div>'
+				end
+				if a>=1 and a<=5:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''歌手_客房''">还没准备好</a></div>'
+				end
+				if a>=2 and a<=5:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Singer_Event'',''歌手_客房''">帮我准备</a></div>'
+				end
+				if a>=3 and a<=5:
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Singer_Event'',''歌手_客房''">口爆</a></div>'
+				end
+				if a>=4 and a<=5:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Singer_Event'',''歌手_客房''">后入</a></div>'
+				end
+				if a=5:
+				'<div class="buttonS4"><a href="exec:a=6 & gt ''Singer_Event'',''歌手_客房''">再一发</a></div>'
+				end
+				if a>=6 and a<=10:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Singer_Event'',''歌手_客房''">跪在地上</a></div>'
+				end
+				if a>=7 and a<=10:
+				'<div class="buttonS4"><a href="exec:a=8 & gt ''Singer_Event'',''歌手_客房''">趴下</a></div>'
+				end
+				if a>=8 and a<=10:
+				'<div class="buttonS4"><a href="exec:a=9 & gt ''Singer_Event'',''歌手_客房''">做着进屋</a></div>'
+				end
+				if a>=9 and a<=10:
+				'<div class="buttonS4"><a href="exec:a=10 & gt ''Singer_Event'',''歌手_客房''">冲刺</a></div>'
+				end
+				if a=10:
+				'<div class="buttonS4"><a href="exec:a=11 & gt ''Singer_Event'',''歌手_客房''">射了</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					if $GS_Event>=13:'<div class="button"><a href="exec:$GS放松+=1 & gt ''Grand_Villa'',''歌手房间''">休息</a></div>'else'<div class="button"><a href="exec:$GS放松+=1 & gt ''Home_Guest_Room'',''客房_歌手''">休息</a></div>'
+				'</div>'
+		end
+	
+		if 10>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p>你: 逛了这么久，喝杯饮料歇会儿。</p>'
+			if a=0:'<p><<$GS.name>>: 有你在身边真好。</p>'
+			if a=1:'<p>你: 终于到家了。</p>'
+			if a=2:'<p><<$GS.name>>: 我要！就在这！</p>'
+			if a=2:'<p>你: 别别别…我还没缓过来呢。</p>'
+			if a=3:'<p>你: 要不你来帮我呗~</p>'
+			if a>=3 and a<=10:'<p><<$GS.name>>: <<$娇喘声2>></p>'
+			if a>=5 and a<=10:'<p><<$GS.name>>: 嗯<<$话3>></p>'
+			if a>=9 and a<=10:'<p><<$GS.name>>: <<$话2>></p>'
+			if a>=9 and a<=10:'<p><<$GS.name>>: 啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=11:
+			$GS.love+=my.魅力
+			$GS.bad+=my.魅力
+			'<div class="dialog_menu">'
+				'<p>你: 好好休息吧，忘掉其他的不快。</p>'
+			'</div>'
+		end
+	End
+	
+	if $args[0]="歌手_洗澡":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\歌手洗澡-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if a<10:
+			'<div class="button_menu">'
+				if a=0:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''歌手_洗澡''">还没准备好</a></div>'
+				end
+				if a>=1 and a<=5:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''歌手_洗澡''">帮我准备</a></div>'
+				end
+				if a>=2 and a<=5:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Singer_Event'',''歌手_洗澡''">后入</a></div>'
+				end
+				if a>=3 and a<=5:
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Singer_Event'',''歌手_洗澡''">发射</a></div>'
+				end
+				if a>=4 and a<=5:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Singer_Event'',''歌手_洗澡''">镜前做</a></div>'
+				end
+				if a=5:
+				'<div class="buttonS4"><a href="exec:a=6 & gt ''Singer_Event'',''歌手_洗澡''">激烈一发</a></div>'
+				end
+				if a>=6 and a<=9:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Singer_Event'',''歌手_洗澡''">翻上洗手台</a></div>'
+				end
+				if a>=7 and a<=9:
+				'<div class="buttonS4"><a href="exec:a=8 & gt ''Singer_Event'',''歌手_洗澡''">再次发射</a></div>'
+				end
+				if a>=8 and a<=9:
+				'<div class="buttonS4"><a href="exec:a=9 & gt ''Singer_Event'',''歌手_洗澡''">做个清理</a></div>'
+				end
+				if a=9:
+				'<div class="buttonS4"><a href="exec:a=10 & gt ''Singer_Event'',''歌手_洗澡''">回床上道别</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+						if $GS_Event>=13:'<div class="button"><a href="exec:$GS放松+=1 & gt ''Grand_Villa'',''歌手房间''">休息</a></div>'else'<div class="button"><a href="exec:$GS放松+=1 & gt ''Home_Guest_Room'',''客房_歌手''">休息</a></div>'
+				'</div>'
+		end
+	
+		if 9>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p><<$GS.name>>: 快来，一起洗吧。</p>'
+			if a=0:'<p>你: 我来啦~~</p>'
+			if a=1:'<p>你: 我还没准备好呢。</p>'
+			if a=2:'<p><<$GS.name>>: 我帮你！</p>'
+			if a=3:'<p>你: 你要对他负责~</p>'
+			if a>=3 and a<=9:'<p><<$GS.name>>: <<$娇喘声2>></p>'
+			if a>=4 and a<=9:'<p><<$GS.name>>: 嗯<<$话3>></p>'
+			if a>=8 and a<=9:'<p><<$GS.name>>: <<$话2>></p>'
+			if a>=8 and a<=9:'<p><<$GS.name>>: 啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=10:
+			$GS.love+=my.魅力
+			$GS.bad+=my.魅力
+			'<div class="dialog_menu">'
+				'<p>你: 好好休息吧，忘掉其他的不快。</p>'
+			'</div>'
+		end
+	End
+	
+	if $args[0]="歌手_温泉":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\歌手温泉-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if a<10:
+			'<div class="button_menu">'
+				if a=0:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''歌手_温泉''">玩点刺激的</a></div>'
+				end
+				if a>=1 and a<=5:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''歌手_温泉''">在走道玩</a></div>'
+				end
+				if a>=2 and a<=5:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Singer_Event'',''歌手_温泉''">捏奶头</a></div>'
+				end
+				if a>=3 and a<=5:
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Singer_Event'',''歌手_温泉''">道具刺激</a></div>'
+				end
+				if a>=4 and a<=5:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Singer_Event'',''歌手_温泉''">搓奶头</a></div>'
+				end
+				if a=5:
+				'<div class="buttonS4"><a href="exec:a=6 & gt ''Singer_Event'',''歌手_温泉''">上下一起洗</a></div>'
+				end
+				if a>=6 and a<=9:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Singer_Event'',''歌手_温泉''">口一发</a></div>'
+				end
+				if a>=7 and a<=9:
+				'<div class="buttonS4"><a href="exec:a=8 & gt ''Singer_Event'',''歌手_温泉''">激烈背靠式</a></div>'
+				end
+				if a>=8 and a<=9:
+				'<div class="buttonS4"><a href="exec:a=9 & gt ''Singer_Event'',''歌手_温泉''">老汉推车</a></div>'
+				end
+				if a=9:
+				'<div class="buttonS4"><a href="exec:a=10 & gt ''Singer_Event'',''歌手_温泉''">尽兴了</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+						if $GS_Event>=13:'<div class="button"><a href="exec:$GS放松+=1 & gt ''Grand_Villa'',''歌手房间''">休息</a></div>'else'<div class="button"><a href="exec:$GS放松+=1 & gt ''Home_Guest_Room'',''客房_歌手''">休息</a></div>'
+				'</div>'
+		end
+	
+		if 9>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p><<$GS.name>>: 今天要好好放松一下。</p>'
+			if a=1:'<p>你: 先把这个放进去。</p>'
+			if a=2:'<p><<$GS.name>>: (小声)啊……</p>'
+			if a=3:'<p><<$GS.name>>: 有人来了，回屋吧。</p>'
+			if a=4:'<p>你: 爽了吧，我们先去洗洗。</p>'
+			if a=7:'<p><<$GS.name>>呛到了。</p>'
+			if a>=3 and a<=9:'<p><<$GS.name>>: <<$娇喘声2>></p>'
+			if a>=5 and a<=9:'<p><<$GS.name>>: 嗯<<$话3>></p>'
+			if a>=8 and a<=9:'<p><<$GS.name>>: <<$话2>></p>'
+			if a>=8 and a<=9:'<p><<$GS.name>>: 啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=10:
+			$GS.love+=my.魅力
+			$GS.bad+=my.魅力
+			'<div class="dialog_menu">'
+				'<p>你: 好好休息吧，忘掉其他的不快。</p>'
+			'</div>'
+		end
+	End
+	
+	if $args[0]="歌手_引荐":
+			
+		'<div class ="show_menu"><img src="images\V70版本\增量包_20241111\place\雌小鬼\图片\天使立绘.jpg" width="854"></div>'
+			
+			'<div class="button_menu">'
+				if a=0:'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''歌手_引荐''">介绍<<$GS.name>></a></div>'
+				if a=1:'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''歌手_引荐''">询问签约</a></div>'
+				if a=2:'<div class="buttonS3"><a href="exec:a=3 & q=1 & $泛用位置=''公测1'' & fxnum=8 & 
+				$泛选1=''独处时间'' & $泛选2=''亲吻'' & $泛选3=''手活'' & $泛选4=''吮吸蛋蛋'' &
+				$泛选5=''整根含住'' & $泛选6=''享受口交'' & $泛选7=''射她嘴里'' & $泛选8=''舔干净'' &
+				$泛对话1=''啊哈！工作完来一杯啤酒最爽了！'' & $泛对话2=''干杯！你们也来！''& $泛对话3=''真是的❤你就非要录取她吗？''&
+				$泛对话4=''你真是太讨厌了喔❤真拿你没办法，就录用她吧❤''& $泛对话5=''你最好了❤''&
+				$泛离开=''Empire_Entertainment'' & gt ''Angel_Event'',''TS_Fuck_泛用''">私下沟通</a></div>'
+			'</div>'
+	
+			'<div class="dialog_menu">'
+			if a=0:'<p>你: 想我了没，mua~</p>'
+			if a=0:'<p><<$TS.name>>: 少来，先工作。</p>'
+			if a=1:'<p>你: 最近我又发掘了一个女生，歌唱的很好。</p>'
+			if a=1:'<p>你: 这是她的外形和歌声，你给看看。</p>'
+			if a=2:'<p><<$TS.name>>: 看着有点眼熟啊，是不是已经出道了。</p>'
+			if a=2:'<p>你: 对的，不过后来发生了一些事，她还是想找个公司签约。</p>'
+			if a=2:'<p><<$TS.name>>: 这样的话，签约条件可不会很好。</p>'
+			if $GS_Event=11:$GS_Event=12
+			'</div>'
+	End
+	
+	if $args[0]="公司变装":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\<<$m地址>>-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+			'<div class="button_menu">'
+				if a>=0 and a<=6:
+				if $m地址='CS':'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''公司变装''">强行脱下</a></div>'
+				if $m地址='JC':'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''公司变装''">搜身</a></div>'
+				if $m地址='HK':'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''公司变装''">提要求</a></div>'
+				if $m地址='MT':'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''公司变装''">上道具</a></div>'
+				end
+				if a>=1 and a<=6:
+				if $m地址='CS':'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''公司变装''">手搓出货</a></div>'
+				if $m地址='JC':'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''公司变装''">口我</a></div>'
+				if $m地址='HK':'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''公司变装''">坐上来</a></div>'
+				if $m地址='MT':'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''公司变装''">口我</a></div>'
+				end
+				if a>=2 and a<=6:
+				if $m地址='CS':'<div class="buttonS3"><a href="exec:a=3 & gt ''Singer_Event'',''公司变装''">亲吻</a></div>'
+				if $m地址='JC':'<div class="buttonS3"><a href="exec:a=3 & gt ''Singer_Event'',''公司变装''">从后面口我</a></div>'
+				if $m地址='HK':'<div class="buttonS3"><a href="exec:a=3 & gt ''Singer_Event'',''公司变装''">来揉胸</a></div>'
+				if $m地址='MT':'<div class="buttonS3"><a href="exec:a=3 & gt ''Singer_Event'',''公司变装''">翻身扶着插</a></div>'
+				end
+				if a>=3 and a<=6:
+				if $m地址='CS':'<div class="buttonS4"><a href="exec:a=4 & gt ''Singer_Event'',''公司变装''">再出货</a></div>'
+				if $m地址='JC':'<div class="buttonS4"><a href="exec:a=4 & gt ''Singer_Event'',''公司变装''">玉足搓弄</a></div>'
+				if $m地址='HK':'<div class="buttonS4"><a href="exec:a=4 & gt ''Singer_Event'',''公司变装''">激烈抽插</a></div>'
+				if $m地址='MT':'<div class="buttonS4"><a href="exec:a=4 & gt ''Singer_Event'',''公司变装''">上床女上位</a></div>'
+				end
+				if a>=4 and a<=6:
+				if $m地址='CS':'<div class="buttonS5"><a href="exec:a=5 & gt ''Singer_Event'',''公司变装''">加点料</a></div>'
+				if $m地址='JC':'<div class="buttonS5"><a href="exec:a=5 & gt ''Singer_Event'',''公司变装''">直接上手</a></div>'
+				if $m地址='HK':'<div class="buttonS5"><a href="exec:a=5 & gt ''Singer_Event'',''公司变装''">翻过来猛攻</a></div>'
+				if $m地址='MT':'<div class="buttonS5"><a href="exec:a=5 & gt ''Singer_Event'',''公司变装''">放倒猛攻</a></div>'
+				end
+				if a>=5 and a<=6:
+				if $m地址='CS':'<div class="buttonR4"><a href="exec:a=6 & gt ''Singer_Event'',''公司变装''">一滴不剩了</a></div>'
+				if $m地址='JC':'<div class="buttonR4"><a href="exec:a=6 & gt ''Singer_Event'',''公司变装''">口出来</a></div>'
+				if $m地址='HK':'<div class="buttonR4"><a href="exec:a=6 & gt ''Singer_Event'',''公司变装''">射到身上</a></div>'
+				if $m地址='MT':'<div class="buttonR4"><a href="exec:a=6 & gt ''Singer_Event'',''公司变装''">清理干净</a></div>'
+				end
+				if a=6:
+				if $m地址='CS':'<div class="button"><a href="exec:$GS放松+=1 & gt ''Empire_Entertainment'',''歌手摄影室''">结束</a></div>'
+				if $m地址='JC':'<div class="button"><a href="exec:$GS放松+=1 & gt ''Empire_Entertainment'',''歌手摄影室''">结束</a></div>'
+				if $m地址='HK':'<div class="button"><a href="exec:$GS放松+=1 & gt ''Empire_Entertainment'',''歌手摄影室''">结束</a></div>'
+				if $m地址='MT':'<div class="button"><a href="exec:$GS放松+=1 & gt ''Empire_Entertainment'',''歌手摄影室''">结束</a></div>'
+				end
+			'</div>'
+	
+		if 5>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0 and $m地址='CS':'<p><<$GS.name>>: 我来演厨师。</p>'
+			if a=0 and $m地址='JC':'<p><<$GS.name>>: 我来演警察。</p>'
+			if a=0 and $m地址='HK':'<p><<$GS.name>>: 我来演花魁。</p>'
+			if a=0 and $m地址='MT':'<p><<$GS.name>>: 我来演模特。</p>'
+			if a>=1 and a<=5:'<p><<$GS.name>>: <<$娇喘声2>></p>'
+			if a>=2 and a<=5:'<p><<$GS.name>>: 嗯<<$话3>></p>'
+			if a>=3 and a<=5:'<p><<$GS.name>>: <<$话2>></p>'
+			if a>=4 and a<=5:'<p><<$GS.name>>: 啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=6:
+			$GS.love+=my.魅力
+			$GS.bad+=my.魅力
+			'<div class="dialog_menu">'
+				'<p>你: 片场时间要到了，赶快收拾干净。</p>'
+				'<p><<$GS.name>>：好爽啊！下次继续！</p>'
+			'</div>'
+		end
+	End
+	
+	if $args[0]="歌手_楼梯":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\<<$m地址>>-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+			'<div class="button_menu">'
+				if a>=0 and a<=5:
+				if $m地址='LT1':'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''歌手_楼梯''">隔靴搔痒</a></div>'
+				if $m地址='LT2':'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''歌手_楼梯''">热吻</a></div>'
+				end
+				if a>=1 and a<=5:
+				if $m地址='LT1':'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''歌手_楼梯''">温柔抚弄</a></div>'
+				if $m地址='LT2':'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''歌手_楼梯''">隔靴搔痒</a></div>'
+				end
+				if a>=2 and a<=5:
+				if $m地址='LT1':'<div class="buttonS3"><a href="exec:a=3 & gt ''Singer_Event'',''歌手_楼梯''">舔蛋蛋</a></div>'
+				if $m地址='LT2':'<div class="buttonS3"><a href="exec:a=3 & gt ''Singer_Event'',''歌手_楼梯''">坐下口</a></div>'
+				end
+				if a>=3 and a<=5:
+				if $m地址='LT1':'<div class="buttonS4"><a href="exec:a=4 & gt ''Singer_Event'',''歌手_楼梯''">激烈口交</a></div>'
+				if $m地址='LT2':'<div class="buttonS4"><a href="exec:a=4 & gt ''Singer_Event'',''歌手_楼梯''">坐不住了</a></div>'
+				end
+				if a>=4 and a<=5:
+				if $m地址='LT1':'<div class="buttonS5"><a href="exec:a=5 & gt ''Singer_Event'',''歌手_楼梯''">颜射</a></div>'
+				if $m地址='LT2':'<div class="buttonS5"><a href="exec:a=5 & gt ''Singer_Event'',''歌手_楼梯''">口爆</a></div>'
+				end
+				if a=5:
+				'<div class="button"><a href="exec:$GS放松+=1 & gt ''Grand_Villa'',''歌手房间''">结束</a></div>'
+				end
+			'</div>'
+	
+		if 4>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0 and $m地址='LT1':'<p><<$GS.name>>: 来来来，上楼来，小点声别让别人发现。</p>'
+			if a=0 and $m地址='LT2':'<p><<$GS.name>>: 来来来，来楼下，嘘~</p>'
+			if a>=1 and a<=5:'<p><<$GS.name>>: <<$娇喘声2>></p>'
+			if a>=2 and a<=5:'<p><<$GS.name>>: <<$话2>></p>'
+			if a>=3 and a<=5:'<p><<$GS.name>>: 嗯<<$话3>></p>'
+			if a>=4 and a<=5:'<p><<$GS.name>>: 啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=5:
+			$GS.love+=my.魅力
+			$GS.bad+=my.魅力
+			'<div class="dialog_menu">'
+				'<p>？？？: 楼梯那有人吗？</p>'
+				'<p>你: 快走！</p>'
+				'<p>？？？: 我听错了？刚才没人吗？</p>'
+			'</div>'
+		end
+	End
+	
+	if $args[0]="歌手_夜袭":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\<<$m地址>>-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+			'<div class="button_menu">'
+				if a>=0 and a<=5:
+				if $m地址='YX1':'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''歌手_夜袭''">把我弄醒</a></div>'
+				if $m地址='YX2':'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''歌手_夜袭''">翻丘越谷</a></div>'
+				end
+				if a>=1 and a<=5:
+				if $m地址='YX1':'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''歌手_夜袭''">温柔抚弄</a></div>'
+				if $m地址='YX2':'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''歌手_夜袭''">直溯源头</a></div>'
+				end
+				if a>=2 and a<=5:
+				if $m地址='YX1':'<div class="buttonS3"><a href="exec:a=3 & gt ''Singer_Event'',''歌手_夜袭''">用手抚弄</a></div>'
+				if $m地址='YX2':'<div class="buttonS3"><a href="exec:a=3 & gt ''Singer_Event'',''歌手_夜袭''">抠一发</a></div>'
+				end
+				if a>=3 and a<=5:
+				if $m地址='YX1':'<div class="buttonS4"><a href="exec:a=4 & gt ''Singer_Event'',''歌手_夜袭''">蹭蹭不进去</a></div>'
+				if $m地址='YX2':'<div class="buttonS4"><a href="exec:a=4 & gt ''Singer_Event'',''歌手_夜袭''">攻守易型</a></div>'
+				end
+				if a>=4 and a<=5:
+				if $m地址='YX1':'<div class="buttonS5"><a href="exec:a=5 & gt ''Singer_Event'',''歌手_夜袭''">进去了</a></div>'
+				if $m地址='YX2':'<div class="buttonS5"><a href="exec:a=5 & gt ''Singer_Event'',''歌手_夜袭''">主动进攻</a></div>'
+				end
+				if a=5:
+				'<div class="buttonS5"><a href="exec:a=6 & gt ''Singer_Event'',''歌手_夜袭''">内射一发</a></div>'
+				end
+				if a>=6 and a<=10:
+				if $m地址='YX1':'<div class="buttonS5"><a href="exec:a=7 & gt ''Singer_Event'',''歌手_夜袭''">给我吃奶</a></div>'
+				if $m地址='YX2':'<div class="buttonS5"><a href="exec:a=7 & gt ''Singer_Event'',''歌手_夜袭''">蝉附式</a></div>'
+				end
+				if a>=7 and a<=10:
+				if $m地址='YX1':'<div class="buttonS5"><a href="exec:a=8 & gt ''Singer_Event'',''歌手_夜袭''">舔她的腋</a></div>'
+				if $m地址='YX2':'<div class="buttonS5"><a href="exec:a=8 & gt ''Singer_Event'',''歌手_夜袭''">又来一发</a></div>'
+				end
+				if a>=8 and a<=10:
+				if $m地址='YX1':'<div class="buttonS5"><a href="exec:a=9 & gt ''Singer_Event'',''歌手_夜袭''">再次插入</a></div>'
+				if $m地址='YX2':'<div class="buttonS5"><a href="exec:a=9 & gt ''Singer_Event'',''歌手_夜袭''">欲求不满</a></div>'
+				end
+				if a>=9 and a<=10:
+				if $m地址='YX1':'<div class="buttonS5"><a href="exec:a=10 & gt ''Singer_Event'',''歌手_夜袭''">激烈抽插</a></div>'
+				if $m地址='YX2':'<div class="buttonS5"><a href="exec:a=10 & gt ''Singer_Event'',''歌手_夜袭''">侧入式</a></div>'
+				end
+				if a=10:
+				'<div class="buttonS5"><a href="exec:a=11 & gt ''Singer_Event'',''歌手_夜袭''">最后一发</a></div>'
+				end
+				if a>=11 and a<=12:
+				'<div class="buttonS5"><a href="exec:a=12 & gt ''Singer_Event'',''歌手_夜袭''">大战后的温存</a></div>'
+				end
+				if a=12:
+				if $m地址='YX1':'<div class="button"><a href="exec:$GS放松+=1 & gt ''Grand_Villa'',''主卧''">结束</a></div>'
+				if $m地址='YX2':'<div class="button"><a href="exec:$GS放松+=1 & gt ''Grand_Villa'',''歌手房间''">结束</a></div>'
+				end
+			'</div>'
+	
+		if 11>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0 and $m地址='YX1':'<p><<$GS.name>>: <<$主角姓名>>~<<$主角姓名>>~，睡的真沉啊。</p>'
+			if a=0 and $m地址='YX1':'<p>你: ZZZzz……</p>'
+			if a=0 and $m地址='YX2':'<p>你: mua~就知道你在等我。</p>'
+			if a=0 and $m地址='YX2':'<p><<$GS.name>>: 这回分个高下。</p>'
+			if a>=1 and a<=11:'<p><<$GS.name>>: <<$娇喘声2>></p>'
+			if a>=2 and a<=11:'<p><<$GS.name>>: 嗯<<$话3>></p>'
+			if a=6 or a=11:'<p><<$GS.name>>: 啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=12:
+			$GS.love+=my.魅力
+			$GS.bad+=my.魅力
+			'<div class="dialog_menu">'
+			if $m地址='YX1':'<p><<$GS.name>>: 下次你来找我。</p>'
+			if $m地址='YX1':'<p>你: 下次？下次让你叫不敢！</p>'
+			if $m地址='YX2':'<p><<$GS.name>>: 下次我来找你。</p>'
+			if $m地址='YX2':'<p>你: 你饶了我吧……</p>'
+			'</div>'
+		end
+	End
+	
+	if $args[0]="歌手_催眠":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\<<$m地址>>-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+			'<div class="button_menu">'
+				if a>=0 and a<=5:
+				if $m地址='CM1':'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''歌手_催眠''">舔舐舌头</a></div>'
+				if $m地址='CM2':'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''歌手_催眠''">脱掉内裤</a></div>'
+				if $m地址='CM3':'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''歌手_催眠''">逗弄</a></div>'
+				end
+				if a>=1 and a<=5:
+				if $m地址='CM1':'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''歌手_催眠''">脱掉衣服</a></div>'
+				if $m地址='CM2':'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''歌手_催眠''">上下齐攻</a></div>'
+				if $m地址='CM3':'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''歌手_催眠''">口手并用</a></div>'
+				end
+				if a>=2 and a<=5:
+				if $m地址='CM1':'<div class="buttonS3"><a href="exec:a=3 & gt ''Singer_Event'',''歌手_催眠''">疯狂口她</a></div>'
+				if $m地址='CM2':'<div class="buttonS3"><a href="exec:a=3 & gt ''Singer_Event'',''歌手_催眠''">揉屁股</a></div>'
+				if $m地址='CM3':'<div class="buttonS3"><a href="exec:a=3 & gt ''Singer_Event'',''歌手_催眠''">先抠一发</a></div>'
+				end
+				if a>=3 and a<=5:
+				if $m地址='CM1':'<div class="buttonS4"><a href="exec:a=4 & gt ''Singer_Event'',''歌手_催眠''">换她口我</a></div>'
+				if $m地址='CM2':'<div class="buttonS4"><a href="exec:a=4 & gt ''Singer_Event'',''歌手_催眠''">抠爆她</a></div>'
+				if $m地址='CM3':'<div class="buttonS4"><a href="exec:a=4 & gt ''Singer_Event'',''歌手_催眠''">69互口</a></div>'
+				end
+				if a>=4 and a<=5:
+				if $m地址='CM1':'<div class="buttonS5"><a href="exec:a=5 & gt ''Singer_Event'',''歌手_催眠''">颜射</a></div>'
+				if $m地址='CM2':'<div class="buttonS5"><a href="exec:a=5 & gt ''Singer_Event'',''歌手_催眠''">放椅子上玩弄</a></div>'
+				if $m地址='CM3':'<div class="buttonS5"><a href="exec:a=5 & gt ''Singer_Event'',''歌手_催眠''">女上插入</a></div>'
+				end
+				if a=5:
+				if $m地址='CM1':'<div class="buttonS5"><a href="exec:a=6 & gt ''Singer_Event'',''歌手_催眠''">加深效果</a></div>'
+				if $m地址='CM2':'<div class="buttonR1"><a href="exec:a=6 & gt ''Singer_Event'',''歌手_催眠''">进一步加深效果</a></div>'
+				if $m地址='CM3':'<div class="buttonS5"><a href="exec:a=6 & gt ''Singer_Event'',''歌手_催眠''">对着镜子继续</a></div>'
+				end
+				if a>=6 and a<=10:
+				if $m地址='CM1':'<div class="buttonR3"><a href="exec:a=0 & $m=''GS'' & $ma=$GS.name & $m地址=''CM2'' & Telove=$GS.love & $Tename=''满足'' & Tebad=$GS.bad & gt ''Singer_Event'',''歌手_催眠''">结束</a></div>'
+				if $m地址='CM2':'<div class="buttonR5"><a href="exec:a=0 & $m=''GS'' & $ma=$GS.name & $m地址=''CM3'' & Telove=$GS.love & $Tename=''满足'' & Tebad=$GS.bad & gt ''Singer_Event'',''歌手_催眠''">结束</a></div>'
+				if $m地址='CM3':'<div class="buttonS5"><a href="exec:a=7 & gt ''Singer_Event'',''歌手_催眠''">趴在地上猛攻</a></div>'
+				end
+				if a>=7 and a<=10:
+				if $m地址='CM3':'<div class="buttonS5"><a href="exec:a=8 & gt ''Singer_Event'',''歌手_催眠''">侧入猛插</a></div>'
+				end
+				if a>=8 and a<=10:
+				if $m地址='CM3':'<div class="buttonS5"><a href="exec:a=9 & gt ''Singer_Event'',''歌手_催眠''">放平插射</a></div>'
+				end
+				if a>=9 and a<=10:
+				if $m地址='CM3':'<div class="buttonPu2"><a href="exec:a=10 & gt ''Singer_Event'',''歌手_催眠''">效果爆炸</a></div>'
+				end
+				if a=10:
+				if $m地址='CM3':'<div class="button"><a href="exec:$GS催眠=1 & gt ''Grand_Villa'',''歌手房间''">结束</a></div>'
+				end
+			'</div>'
+	
+		if 9>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p>你: 咦？刚才怎么回事？我怎么恍惚了？</p>'
+			if a=0 and $m地址='CM1':'<p>你: 不管了，催眠成功了。</p>'
+			if a=0 and $m地址='CM2':'<p>你: 不管了，催眠成功了。</p>'
+			if a=0 and $m地址='CM2':'<p>你: 有种似曾相似的感觉。</p>'
+			if a=0 and $m地址='CM3':'<p>你: 不管了，催眠又成功了。</p>'
+			if a=0 and $m地址='CM3':'<p>你: 不对，我为什么要说“又”？</p>'
+			if a=1 and $m地址='CM1':'<p>你: 把嘴张开，把舌头伸出来。</p>'
+			if a=1 and $m地址='CM2':'<p>你: 站直了别动，我帮你凉快凉快。</p>'
+			if a=1 and $m地址='CM3':'<p>你: 啊，立起来了。</p>'
+			if a=2 and $m地址='CM1':'<p>你: 把衣服脱掉，从上往下慢慢脱。</p>'
+			if a=2 and $m地址='CM2':'<p>你: 唔…舒服吗？</p>'
+			if a=2 and $m地址='CM3':'<p>你: 不管了，我也玩玩你的。</p>'
+			if a=3 and $m地址='CM1':'<p>你: 唔……啧啧啧，好淫荡啊。</p>'
+			if a=3 and $m地址='CM2':'<p>你: 啊…好色情的屁股。</p>'
+			if a=3 and $m地址='CM3':'<p>你: 接我一指禅。</p>'
+			if a=4 and $m地址='CM1':'<p>你: 对，慢慢的，整个都吞进去。</p>'
+			if a=4 and $m地址='CM2':'<p>你: 看我的黄金一指。</p>'
+			if a=4 and $m地址='CM3':'<p>你: 我们互相来吧。</p>'
+			if a=5 and $m地址='CM1':'<p>你: 过来，接好。</p>'
+			if a=5 and $m地址='CM2':'<p>你: 舒服吗？记住这个手速。</p>'
+			if a=5 and $m地址='CM3':'<p>你: 啊……啊…，都放进去了。</p>'
+			if a=6 and $m地址='CM1':'<p>你: 仔细闻闻，记住这味道。</p>'
+			if a=6 and $m地址='CM1':'<p><<$GS.name>>: 吸…呼…</p>'
+			if a=6 and $m地址='CM2':'<p>你: 怎么感觉要玩坏了…</p>'
+			if a=6 and $m地址='CM2':'<p><<$GS.name>>: 哈…呼…斯…呼…</p>'
+			if a=6 and $m地址='CM3':'<p>你: 过来，扶着台子撅好。</p>'
+			if a=7:'<p>你: 噢，趴在床单上。</p>'
+			if a=8:'<p>你: 把腿打开，抬起来。</p>'
+			if a=9:'<p>你: 都…都给你了。</p>'
+			if a>=1 and a<=9:'<p><<$GS.name>>: <<$娇喘声2>></p>'
+			if a>=2 and a<=9:'<p><<$GS.name>>: 嗯<<$话3>></p>'
+			if a=5 or a=9:'<p><<$GS.name>>: 啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=10:
+			'<div class="dialog_menu">'
+			if $m地址='CM3':'<p><<$GS.name>>: 我还要…别走。</p>'
+			if $m地址='CM3':'<p>你: 呼…呼…不对！这感觉太怪了！</p>'
+			if $m地址='CM3':'<p>你: 是不是哪里出问题了？</p>'
+			'</div>'
+		end
+	End
+	
+	if $args[0]="歌手_魅魔":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\歌手魅魔1-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if a<11:
+			'<div class="button_menu">'
+				if a>=0 and a<=4:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''歌手_魅魔''">梦魇骑脸</a></div>'
+				end
+				if a>=1 and a<=4:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''歌手_魅魔''">如获至宝</a></div>'
+				end
+				if a>=2 and a<=4:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Singer_Event'',''歌手_魅魔''">缓缓坐下</a></div>'
+				end
+				if a>=3 and a<=4:
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Singer_Event'',''歌手_魅魔''">激烈索取</a></div>'
+				end
+				if a>=4 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Singer_Event'',''歌手_魅魔''">旋转榨取</a></div>'
+				end
+				if a>=5 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=6 & gt ''Singer_Event'',''歌手_魅魔''">乳房诱惑</a></div>'
+				end
+				if a>=6 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Singer_Event'',''歌手_魅魔''">反守为攻</a></div>'
+				end
+				if a>=7 and a<=8:
+				'<div class="buttonS4"><a href="exec:a=8 & gt ''Singer_Event'',''歌手_魅魔''">巨龙撞击！</a></div>'
+				end
+				if a>=8 and a<=10:
+				'<div class="buttonS4"><a href="exec:a=9 & gt ''Singer_Event'',''歌手_魅魔''">意犹未尽</a></div>'
+				end
+				if a>=9 and a<=10:
+				'<div class="buttonS4"><a href="exec:a=10 & gt ''Singer_Event'',''歌手_魅魔''">中嘲讽了</a></div>'
+				end
+				if a=10:
+				'<div class="buttonS4"><a href="exec:a=11 & gt ''Singer_Event'',''歌手_魅魔''">精疲力尽</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+						'<div class="button"><a href="exec:a=3 & gt ''Singer_Event'',''梦魇苏醒''">休息</a></div>'
+				'</div>'
+		end
+	
+		if 10>=a and a>=0:
+			'<div class="dialog_menu">'
+			if a=0:'<p><<$GS.name>>: 要不是你对我用魔技我还醒不了。</p>'
+			if a=0:'<p><<$GS.name>>: 今天要好好“感谢”你。</p>'
+			if a=1:'<p><<$GS.name>>: 来，给我好好舔！</p>'
+			if a=1:'<p><<$GS.name>>: 啊~❤</p>'
+			if a=2:'<p><<$GS.name>>: 啧❤你这武器不错啊。</p>'
+			if a=3:'<p><<$GS.name>>: 嘶~进来了。</p>'
+			if a=4:'<p><<$GS.name>>: 啊！爽❤！几百年没这种感觉了！</p>'
+			if a=5:'<p><<$GS.name>>: 不要停！顶到头！不要控制！</p>'
+			if a=6:'<p><<$GS.name>>: 吃奶奶喽❤~</p>'
+			if a=7:'<p><<$GS.name>>: 来呀❤~快活呀❤~</p>'
+			if a=7:'<p>你: 终于获得主动权了。</p>'
+			if a=8:'<p>你: 我插！我死命插！</p>'
+			if a=8:'<p>你: 感到我的能量了吗？</p>'
+			if a=8:'<p><<$GS.name>>: (偷笑)</p>'
+			if a=9:'<p><<$GS.name>>: 啊~你好厉害~</p>'
+			if a=9:'<p><<$GS.name>>: 呵呵呵，骗你的。</p>'
+			if a=9:'<p><<$GS.name>>: 不够！再来~</p>'
+			if a=10:'<p>你: 我今天干死你！</p>'
+			if a=10:'<p><<$GS.name>>: 好人~快干死我~啊❤</p>'
+			if a>=3 and a<=10:'<p><<$GS.name>>: <<$娇喘声2>></p>'
+			if a>=5 and a<=10:'<p><<$GS.name>>: 嗯<<$话3>></p>'
+			if a>=8 and a<=10:'<p><<$GS.name>>: <<$话2>></p>'
+			if a=5 or a=10:'<p><<$GS.name>>: 啊啊啊，要来了。</p>'
+			'</div>'
+		end
+	
+		if a=11:
+			$GS.love+=my.魅力
+			$GS.bad+=my.魅力
+			'<div class="dialog_menu">'
+			'<p><<$GS.name>>: 满了❤</p>'
+			'<p><<$GS.name>>: 小伙子活还不错❤。</p>'
+			'<p><<$GS.name>>: 欸，小伙子？小伙子？晕了？</p>'
+			'</div>'
+		end
+	End
+	
+	if $args[0]="梦魇苏醒":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\GS\vids\歌手魅魔0-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+			if a=0:'<div class="buttonS1"><a href="exec:a=1 & gt ''Singer_Event'',''梦魇苏醒''">发生甚么事了</a></div>'
+			if a=1:'<div class="buttonS2"><a href="exec:a=2 & gt ''Singer_Event'',''梦魇苏醒''">大吃一惊</a></div>'
+			if a=2:'<div class="buttonS2"><a href="exec:a=0 & gt ''Singer_Event'',''歌手_魅魔''">被强吻</a></div>'
+			if a=3:'<div class="buttonS2"><a href="exec:my.精力=0 & gt ''Forced_Rest''">昏睡过去</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			if a=0:'<p>你: 啊！卧槽！救命啊！</p>'
+			if a=1:'<p>你: 你…你是谁？！</p>'
+			if a=1:'<p><<$GS.name>>: 刚才你在梦里不是把我翻过来弄过去换着法的干吗？</p>'
+			if a=1:'<p><<$GS.name>>: 这就忘了？</p>'
+			if a=1:'<p>你: 梦里？刚才是梦？</p>'
+			if a=2:'<p><<$GS.name>>: 好久没降临这个世界了。</p>'
+			if a=2:'<p><<$GS.name>>：这回的躯壳素质还不错。</p>'
+			if a=2:'<p><<$GS.name>>: …还是有点虚弱，少年来补个魔吧。</p>'
+			if a=2:'<p>你: 补魔？</p>'
+			if a=2:'<p><<$GS.name>>: 呵呵呵，就是你想的那种哦❤</p>'
+			if a=3:'<p><<$GS.name>>: 呼…补满了。</p>'
+			if a=3:'<p>你: ……呼……</p>'
+			if a=3:'<p><<$GS.name>>: 少年体格不错嘛，也难怪，“击败”过不少魔界生物的吧。</p>'
+			if a=3:'<p><<$GS.name>>: 都有点不想离开你了，可惜这个躯壳无法长时间支撑我降临。</p>'
+		'</div>'
+	End
+	
+	
+	
+	
+	
+	
+
+--- Singer_Event ---------------------------------
+

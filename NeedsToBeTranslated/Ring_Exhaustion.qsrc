@@ -1,0 +1,49 @@
+# Ring_Exhaustion
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	
+	
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Hidden'
+		gs'Menu_Option_Hidden'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				gs "Ring_Enemy_Stats"
+			'</div>'
+			
+			'<div class="action">'
+				if a=26:'<a class="photo" data-title="Ring_Exhaustion" href="exec:a=27 & $擂台敌子宫+=5 & gt ''Ring_Exhaustion''"><img class="img_stretch" src="images\videos\fighter\pics\MSK10.jpg"></a>'
+				if a=27:'<a class="photo" data-title="Ring_Exhaustion" href="exec:a=28 & $擂台敌子宫+=5 & gt ''Ring_Exhaustion''"><img class="img_stretch" src="images\videos\fighter\pics\MSK11.jpg"></a>'
+				if a=28:'<a class="photo" data-title="Ring_Exhaustion" href="exec:a=24 & gt ''Ring_Progress'',''再起''"><img class="img_stretch" src="images\videos\fighter\pics\MSK16.jpg"></a>'
+			'</div>'
+			
+	
+			
+		'</div>'
+	'</div>'
+	
+	
+	
+	
+	if $args[0] ='':
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\videos\fighter\<<擂台num>>\<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+			
+		'<div class="button_menu">'
+
+		'</div>'
+			
+		'<div class="dialog_menu">'
+			gs 'Ring_My_Stats'
+		'</div>'
+	End
+
+--- Ring_Exhaustion ---------------------------------
+

@@ -1,0 +1,93 @@
+# Ring_Judge
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	
+	
+	if $我投掷点数<$敌投掷点数:
+		$擂台我护盾-=1
+		if $擂台我护盾<=0:
+			$擂台我生命-=1
+			if $擂台我生命<=0:gt'Ring_Failure'
+			$擂台我护盾=$擂台我护盾上限
+		end
+	end
+	
+	
+	
+	
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Hidden'
+		gs'Menu_Option_Hidden'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				gs "Ring_Enemy_Stats"
+			'</div>'
+			
+			'<div class="action">
+				<a class="photo"><img class="img_stretch" src="images\videos\fighter\pics\女人1.jpg"></a>
+				<a class="photo"><img class="img_stretch" src="images\videos\fighter\pics\N<<$敌投掷点数>>.jpg"></a>
+			</div>'
+			
+			
+			'<div class="action">
+				<a class="photo"><img class="img_stretch" src="images\videos\fighter\pics\男人1.jpg"></a>
+				<a class="photo"><img class="img_stretch" src="images\videos\fighter\pics\N<<$我投掷点数>>.jpg"></a>
+			</div>'
+			
+			'<div class="action">'
+				if $擂台我生命<=5:'<a class="photo" data-title="体力""><img class="img_stretch" src="images\videos\fighter\pics\生命体征<<$擂台我生命>>.jpg"></a>'
+				if $擂台我生命>=6:'<a class="photo" data-title="体力""><img class="img_stretch" src="images\videos\fighter\pics\生命体征6.jpg"></a>'
+				if $擂台我护盾<=5:'<a class="photo" data-title="防御""><img class="img_stretch" src="images\videos\fighter\pics\C<<$擂台我护盾>>.jpg"></a>'
+				if $擂台我护盾>=6:'<a class="photo" data-title="防御""><img class="img_stretch" src="images\videos\fighter\pics\C6.jpg"></a>'
+				'<a class="photo" data-title="投掷拼点" href="exec:a=2 & gt ''Ring_Dice_Roll''"><img class="img_stretch" src="images\videos\fighter\pics\投掷.jpg"></a>
+			</div>'
+			
+		'</div>'
+	'</div>'
+	
+	
+	
+	if $args[0] ='失败':
+		if $擂台我护盾=0:
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\videos\fighter\<<擂台num>>\4.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		else
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\videos\fighter\<<擂台num>>\3.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		end
+		'<div class="button_menu">'
+
+		'</div>'
+			
+		'<div class="dialog_menu">'
+			gs 'Ring_My_Stats'
+		'</div>'
+	End
+	
+	
+	if $args[0] ='平局':
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\videos\fighter\<<擂台num>>\6.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+
+		'</div>'
+			
+		'<div class="dialog_menu">'
+			'<p>…</p>'
+		'</div>'
+	End
+
+--- Ring_Judge ---------------------------------
+

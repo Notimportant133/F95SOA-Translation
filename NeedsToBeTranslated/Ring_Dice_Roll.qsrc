@@ -1,0 +1,70 @@
+# Ring_Dice_Roll
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	
+	
+	
+	
+	gs'Dice_Roll_Details'
+	
+	
+	
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Hidden'
+		gs'Menu_Option_Hidden'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				gs "Ring_Enemy_Stats"
+			'</div>'
+			
+			'<div class="action">
+				<a class="photo"><img class="img_stretch" src="images\videos\fighter\pics\女人1.jpg"></a>
+				<a class="photo"><img class="img_stretch" src="images\videos\fighter\pics\N<<$敌投掷点数>>.jpg"></a>'
+				if 擂台闪避率>=rand(1,99) and $敌投掷点数>$我投掷点数:'<a class="photo" data-title="完美闪避" href="exec:a=2 & gt ''Ring_Dice_Roll''"><img class="img_stretch" src="images\videos\fighter\pics\闪避.jpg"></a>'
+			'</div>'
+			
+			
+			'<div class="action">
+				<a class="photo"><img class="img_stretch" src="images\videos\fighter\pics\男人1.jpg"></a>
+				<a class="photo"><img class="img_stretch" src="images\videos\fighter\pics\<<$骰子颜色>><<$我投掷点数>>.jpg"></a>'
+				if $灌铅骰子>0:'<a class="photo" data-title="灌铅骰子x<<$灌铅骰子>>" href="exec:$灌铅骰子-=1 & 灌铅骰子激活=1 & gt ''Ring_Dice_Roll''"><img class="img_stretch" src="images\videos\fighter\pics\N8.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				if $擂台我生命<=5:'<a class="photo" data-title="体力""><img class="img_stretch" src="images\videos\fighter\pics\生命体征<<$擂台我生命>>.jpg"></a>'
+				if $擂台我生命>=6:'<a class="photo" data-title="体力""><img class="img_stretch" src="images\videos\fighter\pics\生命体征6.jpg"></a>'
+				if $擂台我护盾<=5:'<a class="photo" data-title="防御""><img class="img_stretch" src="images\videos\fighter\pics\C<<$擂台我护盾>>.jpg"></a>'
+				if $擂台我护盾>=6:'<a class="photo" data-title="防御""><img class="img_stretch" src="images\videos\fighter\pics\C6.jpg"></a>'
+				if $敌投掷点数>$我投掷点数:'<a class="photo" data-title="失败破防" href="exec:gt ''Ring_Judge'',''失败''"><img class="img_stretch" src="images\videos\fighter\pics\下一步S.jpg"></a>'
+				if $敌投掷点数=$我投掷点数:'<a class="photo" data-title="互为平局" href="exec:gt ''Ring_Judge'',''平局''"><img class="img_stretch" src="images\videos\fighter\pics\下一步.jpg"></a>'
+				if $敌投掷点数<$我投掷点数:'<a class="photo" data-title="破防追击" href="exec:gt ''Ring_Pursuit''"><img class="img_stretch" src="images\videos\fighter\pics\下一步Y.jpg"></a>'
+			'</div>'
+			
+		'</div>'
+	'</div>'
+	
+	
+	
+	
+	if $args[0] ='':
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\videos\fighter\<<擂台num>>\<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+			
+		'<div class="button_menu">'
+
+		'</div>'
+			
+		'<div class="dialog_menu">'
+			gs 'Ring_My_Stats'
+		'</div>'
+	End
+
+--- Ring_Dice_Roll ---------------------------------
+

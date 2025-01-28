@@ -1,0 +1,56 @@
+# Subway_Map
+
+
+
+	
+	
+	my.办公室梅丽莎忍耐度=3
+	
+
+
+
+
+
+
+
+
+
+
+		
+	'<div class="actions_menu">'
+			'<div class="action">
+				<a class="photo" data-title="回家" href="exec:minutes+=25 & gt ''Home''"><img class="img_stretch" src="images\place\回家_小图.jpg"></a>
+			</div>'
+			
+			'<div class="action">
+				<a class="photo" data-title="Residential_Area" href="exec:minutes+=15 & gt ''Residential_Area''"><img class="img_stretch" src="images\place\居民区_<<$times_of_day>>.jpg"></a>
+			</div>'
+			
+			'<div class="action">
+				<a class="photo" data-title="University" href="exec:minutes+=15  & gt ''University''"><img class="img_stretch" src="images\place\大学_<<$times_of_day>>.jpg"></a>
+			</div>'
+			
+			'<div class="action">
+				<a class="photo" data-title="Empire_Group" href="exec:minutes+=15 & gt ''Empire_Group''"><img class="img_stretch" src="images\place\帝国集团.jpg"></a>
+			</div>'
+			
+			'<div class="action">
+				<a class="photo" data-title="Mugou_Pharma" href="exec:minutes+=15 & gt ''Mugou_Pharma''"><img class="img_stretch" src="images\place\姆苟制药.jpg"></a>
+			</div>'
+			'<div class="action">
+				<a class="photo" data-title="我的公司" href="exec:minutes+=15 & gt ''Company''"><img class="img_stretch" src="images\place\我的公司.jpg"></a>
+			</div>'
+			'<div class="action">'
+				'<a class="photo" data-title="City_Hall" href="exec:minutes+=15 & gt ''City_Hall''"><img class="img_stretch" src="images\place\市政厅.jpg"></a>'
+			'</div>'
+	
+			'<div class="action">
+				<a class="photo" data-title="Outskirts" href="exec:minutes+=30 & gt ''Outskirts''"><img class="img_stretch" src="images\place\郊外_<<$times_of_day>>.jpg"></a>
+			</div>'
+			'<div class="action">
+				<a class="photo" data-title="Star_of_Glory" href="exec:minutes+=5 & gs ''Yazy''"><img class="img_stretch" src="images\NPC\glory_star.jpg"></a>
+			</div>'
+		'</div>'
+
+--- Subway_Map ---------------------------------
+

@@ -1,0 +1,36 @@
+# Ring_Event
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	
+	if $销售_Event_买车=1 and $销售电话1=0:gt'Sales_Event','电话1'
+	if  3>=XM录像带 and XM录像带>=2 and $XM录像未看天数>=14:gt'Assassin_Event','电话1'
+	
+	'<div id="right-column">'
+		gs"Energy_Check"
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu">'
+			'<div class="action">
+				<a class="photo" data-title="去大厅" href="exec:minutes+=5 & gt ''Home''"><img class="img_stretch" src="images\place\家.jpg"></a>
+			</div>'
+			'<div class="action">
+				<a class="photo" data-title="电脑" href="exec:minutes+=5 & gt ''Home_Computer''"><img class="img_stretch" src="images\place\电脑.jpg"></a>
+			</div>'
+			
+			if 电视机>=1:
+				'<div class="action">
+					<a class="photo" data-title="等离子电视机" href="exec:minutes+=5 & gt ''Home_TV''"><img class="img_stretch" src="images\place\电视.jpg"></a>
+				</div>'
+			end
+	
+		'</div>'
+	'</div>'
+
+--- Ring_Event ---------------------------------
+

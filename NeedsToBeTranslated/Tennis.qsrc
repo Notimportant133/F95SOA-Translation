@@ -1,0 +1,724 @@
+# Tennis
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu"></div>
+	</div>'
+	
+	
+		'<div class ="show_menu"><img src="pic/place/City/Tennis/enter.jpg"></div>'
+		
+	
+		'</div>'
+		
+		'<div class="button_menu">'
+			
+			
+			
+				if arrpos('$week_label','any_invite_to_tennis') ! -1 and week_day = 7 and arrpos('$day_label','any_invite_to_tennis') = -1:
+				if hour >= 15 and hour < 17:'<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_any''">和安雅打网球</a></div>'
+			end
+	         
+				if money >= 1000:'<div class="button"><a href="exec:$gg[''能源''] -=50 & money -= 1000 & minutes += 60 & gt ''Tennis'',''play''">1小时</a></div>'
+				'<div class="button"><a href="exec:minutes+=10 & gt ''City''">市中心</a></div>'
+	
+		
+		
+		'</div>'
+			'<div class="dialog_menu">'
+			'<p> 打网球的费用是每小时1000。</p>'
+	'</div>'
+	
+	if $args[0] = 'play':
+		cls
+			'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+	
+		'<div class="actions_menu"></div>
+	</div>'
+		
+		$gg['网球'] += 1
+		
+			'<div class ="show_menu"><img src="pic/place/City/Tennis/play.jpg"></div>'
+			
+			
+			'</div>'
+			
+			'<div class="button_menu">'
+				
+				'<div class="button"><a href="exec:gt ''Tennis''">出去</a></div>'
+			'</div>'
+			'<div class="dialog_menu">'
+				'我以前打过网球。我的技能提高了一点。'
+		'</div>'	
+	end
+	
+	if $args[0] = 'tennis_any':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+		KILLVAR '$week_label', ARRPOS('$week_label','any_invite_to_tennis')
+		$day_label[]='any_invite_to_tennis'
+		$character_Аня['关系']+=70
+		
+		
+		
+			'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/any/Tennis.webm" type=''video/webm;''></video></div>'
+			
+			
+			'</div>'
+			
+			'<div class="button_menu">'
+				
+				'<div class="button"><a href="exec:minutes+=5& gt ''Tennis'',''tennis_any_2''">....</a></div>'	
+			'</div>'
+			'<div class="dialog_menu">'
+				'安雅刚到，她穿着黑色的短裙和白色的上衣。</p>
+	- 你好，你觉得我的衣服怎么样？</p>
+	- 你好，一如既往的时尚和诱人。</p>
+	- 我也希望如此，安雅笑着说。</p>'
+		'</div>'	
+	end
+	
+	
+	if $args[0] = 'tennis_any_2':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+		minutes += 60
+		
+		
+		
+			'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/any/tennis_2.webm" type=''video/webm;''></video></div>'
+			
+		
+			'</div>'
+			
+			'<div class="button_menu">'
+				
+				'<div class="button"><a href="exec:minutes+=5& gt ''Tennis'',''tennis_any_3''">....</a></div>'	
+			'</div>'
+				'<div class="dialog_menu">'
+				'- 准备好了吗？-安雅问，我们开始了。 '
+		'</div>'	
+	end
+	if $args[0] = 'tennis_any_3':
+		cls
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+		
+		
+		
+		
+			'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/any/tennis_3.webm" type=''video/webm;''></video></div>'
+			
+		
+			'</div>'
+			
+			'<div class="button_menu">'
+				
+				'<div class="button"><a href="exec:minutes+=5& gt ''Tennis'',''tennis_any_4''">.....</a></div>'	
+			'</div>'
+				'<div class="dialog_menu">'
+	'两盘之后，我们决定休息一下。 </p>
+	- 今天好像很热，我们得喝点水，安雅问。 </p>'
+		'</div>'	
+	end
+	if $args[0] = 'tennis_any_4':
+		cls
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+		$data['事件_安雅_证书'] = 1
+		
+		
+		
+			'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/any/tennis_4.webm" type=''video/webm;''></video></div>'
+			
+	
+			'</div>'
+			
+			'<div class="button_menu">'
+				
+				'<div class="button"><a href="exec:minutes+=5& gt ''Tennis''">出去</a></div>'	
+			'</div>'
+					'<div class="dialog_menu">'
+	'- 我们玩得很开心。可以再来一次。好吧，再见！
+	- 再见，安雅！</p> '
+		'</div>'	
+	end
+	if $args[0] = 'tennis_masha':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+	
+	$gg['网球'] += 1
+		
+	$data['玛莎_网球'] = 1	
+		
+			'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_masha.webm" type=''video/webm;''></video></div>'
+			
+			
+			'</div>'
+			
+			'<div class="button_menu">'
+				
+				'<div class="button"><a href="exec:minutes+=10 & gt ''Tennis'',''tennis_masha_1''">发球</a></div>'	
+			'</div>'
+			'<div class="dialog_menu">'
+				'米娅作为一个勤奋的学生，在赛前勤奋地热身'
+		'</div>'	
+	end
+	
+	
+	if $args[0] = 'tennis_masha_1':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+		minutes += 20
+		
+		
+		
+			'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_masha_1.webm" type=''video/webm;''></video></div>'
+			
+		
+			'</div>'
+			
+			'<div class="button_menu">'
+				
+				'<div class="button"><a href="exec:minutes+=10 & gt ''Tennis'',''tennis_masha_2''">打球</a></div>'	
+			'</div>'
+				'<div class="dialog_menu">'
+			'我们开始玩了。我发球不太用力，但米娅还是一次又一次地把球送出去。 '
+		'</div>'	
+	end
+	if $args[0] = 'tennis_masha_2':
+		cls
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+		
+		
+		
+		
+			'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_masha_2.webm" type=''video/webm;''></video></div>'
+			
+		
+			'</div>'
+			
+			'<div class="button_menu">'
+				
+				'<div class="button"><a href="exec:minutes+=10 & gt ''Tennis'',''tennis_masha_3''">输球</a></div>'	
+			'</div>'
+				'<div class="dialog_menu">'
+	' 米娅学会了发球，我们继续打球</p>'
+		'</div>'	
+	end
+	if $args[0] = 'tennis_masha_3':
+		cls
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+		
+		
+		
+		
+			'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_masha_3.webm" type=''video/webm;''></video></div>'
+			
+	
+			'</div>'
+			
+			'<div class="button_menu">'
+				
+				if $data['玛莎_瓦'] < 3:'<div class="button"><a href="exec:minutes+=10 & gt ''Tennis'',''tennis_masha_4''">....</a></div>'	
+				if $data['玛莎_瓦'] = 3:'<div class="button"><a href="exec:minutes+=10 & gt ''Tennis'',''tennis_masha_5''">吻</a></div>'
+			'</div>'
+					'<div class="dialog_menu">'
+				'我决定防水，输几次。</p>
+	- 我赢了！我赢了！-她说道，跳起了舞.</p>'
+		'</div>'	
+	end
+	if $args[0] = 'tennis_masha_4':
+		cls
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+		
+		$character_Маша['关系'] += 10
+		
+		
+			'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_masha_4.webm" type=''video/webm;''></video></div>'
+			
+	
+			'</div>'
+			
+			'<div class="button_menu">'
+				
+				'<div class="button"><a href="exec:minutes+=5& gt ''Tennis''">出去</a></div>'	
+			'</div>'
+					'<div class="dialog_menu">'
+		'- 我玩得很开心！-她说.</p>
+	- 好吧，回头见！-我跟她说再见.</p>
+	- 再见!</p> '
+		'</div>'	
+	end
+	if $args[0] = 'tennis_masha_5':
+		cls
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+		
+		'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_masha_5.webm" type=''video/webm;''></video></div>'
+			
+			'</div>'
+			
+			'<div class="button_menu">'
+			if $data['маша_секс_кол_во'] >=15:'<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex''">......</a></div>'
+				'<div class="button"><a href="exec:minutes+=5& gt ''Tennis''">出去</a></div>'	
+			'</div>'
+					'<div class="dialog_menu">'
+	
+	'- 很有趣！-她说.</p>
+	- 跟我吻别!"</p>
+	我走向米娅，搂着她。她柔软的嘴唇碰了碰我的嘴唇，我们热吻了很久。</p> '
+		'</div>'	
+	end
+	if $args[0] = 'tennis_sex':
+		cls
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu"></div>
+	</div>'
+	$gg['舔阴'] += 1	
+	$data['секс__день'] += 1	
+		$data['gg_sex_fuse']= -1 - $data['кол-секс_дейсь']
+		
+	'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_sex.webm" type=''video/webm;''></video></div>'
+	  	'</div>'
+							
+	'<div class="button_menu">'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_stand''">站姿</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standhand''">站姿（女孩在空中）</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standcow''">站姿（女上位）</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standdoggy''">站姿后入</a></div>'
+	   
+	  
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_cow''">女上位</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_kuni''">口爱</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_minet''">口交</a></div>'
+	 
+	'</div>'
+		'<div class="dialog_menu">'
+	  '突然米娅跪下来，拉下我的短裤，拿出我的鸡巴。这一切发生得太快了，我没时间想清楚发生了什么。</p>
+	- 米娅，你在干什么？他们可能会看到我们...</p>
+	- 我不在乎。我想要你...</p>
+	看到一个害羞的女孩，就在网球场上，努力地用嘴唇舔我的阴茎，真是太神奇了。</p>'
+	
+	
+		'</div>'	
+	'</div>'
+	
+	end
+	if $args[0] = 'tennis_sex_stand':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+			$data['gg_sex_fuse']+=1
+	
+		
+		
+		'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_sex_stand.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+			if $data['gg_sex_fuse'] < 3:
+	  
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standhand''">站姿（女孩在空中）</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standcow''">站姿（女上位）</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standdoggy''">站姿后入</a></div>'
+	   
+	  
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_cow''">女上位</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_kuni''">口爱</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_minet''">口交</a></div>'
+	
+	        end
+				 '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_end''">射精</a></div>'
+				
+			'</div>'
+					'<div class="dialog_menu">'
+	'我抬起米娅的一条腿让自己好站起来进入她。我从后面插进她的身体，她的阴道又热又湿，她的乳头随着我的动作摆动.'
+	'</div>'
+	
+	end
+	if $args[0] = 'tennis_sex_standhand':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+			$data['gg_sex_fuse']+=1
+	
+		
+		
+		'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_sex_standhand.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+			if $data['gg_sex_fuse'] < 3:
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_stand''">站姿</a></div>'
+	
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standcow''">站姿（女上位）</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standdoggy''">站姿后入</a></div>'
+	   
+	  
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_cow''">女上位</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_kuni''">口爱</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_minet''">口交</a></div>'
+	
+	        end
+				 '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_end''">射精</a></div>'
+				
+			'</div>'
+					'<div class="dialog_menu">'
+	'米娅用腿钩住我的脖子，我把她脆弱的身体举在空中，我开始慢慢地做爱。她紧紧抓住我的脖子，享受发生的一切.</p>
+	- 是的，就是这样，宝贝!</p>'
+	'</div>'
+	
+	end
+	if $args[0] = 'tennis_sex_standcow':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+			$data['gg_sex_fuse']+=1
+	
+		
+		
+		'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_sex_standcow.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+			if $data['gg_sex_fuse'] < 3:
+		    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_stand''">站姿</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standhand''">站姿（女孩在空中）</a></div>'
+	
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standdoggy''">站姿后入</a></div>'
+	   
+	  
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_cow''">女上位</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_kuni''">口爱</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_minet''">口交</a></div>'
+	
+	        end
+				 '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_end''">射精</a></div>'
+				
+			'</div>'
+					'<div class="dialog_menu">'
+			'我靠在篱笆上，米娅跳到我身上，用胳膊搂住我的脖子，开始在我的鸡巴上跳动。'
+	'</div>'
+	
+	end
+	if $args[0] = 'tennis_sex_standdoggy':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+			$data['gg_sex_fuse']+=1
+	  $data['маша_секс_кол_во'] += 1
+		
+		
+		'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_sex_standdoggy.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+			if $data['gg_sex_fuse'] < 3:
+			 '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standdoggyy1''">第一幕</a></div>'
+	        '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_stand''">站姿</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standhand''">站姿（女孩在空中）</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standcow''">站姿（女上位）</a></div>'
+	
+	   
+	  
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_cow''">女上位</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_kuni''">口爱</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_minet''">口交</a></div>'
+	
+	        end
+				 '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_end''">射精</a></div>'
+				
+			'</div>'
+					'<div class="dialog_menu">'
+			'米娅把手靠在篱笆上，拱起背来。我用尽全力再次进入她体内，并开始在她炎热的小穴内快速移动。'
+	'</div>'
+	
+	end
+	if $args[0] = 'tennis_sex_standdoggyy1':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+		
+	
+		
+		
+		'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_sex_standdoggy1.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+			if $data['gg_sex_fuse'] < 3:
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_stand''">站姿</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standhand''">站姿（女孩在空中）</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standcow''">站姿（女上位）</a></div>'
+	
+	   
+	  
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_cow''">女上位</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_kuni''">口爱</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_minet''">口交</a></div>'
+	
+	        end
+				 '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_end''">射精</a></div>'
+				
+			'</div>'
+					'<div class="dialog_menu">'
+		'米娅把手靠在篱笆上，拱起背来。我用尽全力再次进入她体内，并开始在她炎热的小穴内快速移动。'
+	'</div>'
+	
+	end
+	if $args[0] = 'tennis_sex_cow':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+			$data['gg_sex_fuse']+=1
+	
+		
+		
+		'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_sex_cow.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+			if $data['gg_sex_fuse'] < 3:
+			 '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_cow1''">第一幕</a></div>'
+	        '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_stand''">站姿</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standhand''">站姿（女孩在空中）</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standcow''">站姿（女上位）</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standdoggy''">站姿后入</a></div>'
+	   
+	  
+	  
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_kuni''">口爱</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_minet''">口交</a></div>'
+	
+	        end
+				 '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_end''">射精</a></div>'
+				
+			'</div>'
+					'<div class="dialog_menu">'
+	'米娅坐在我身上，我从后面顶她的屁股，狠狠地操她的小穴。她大声呻吟着'
+	'</div>'
+	
+	end
+	
+	if $args[0] = 'tennis_sex_cow1':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+			
+	
+		
+		
+		'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_sex_cow1.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+			if $data['gg_sex_fuse'] < 3:
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_stand''">站姿</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standhand''">站姿（女孩在空中）</a></div>'
+	
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standdoggy''">站姿后入</a></div>'
+	   
+	  
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_cow''">女上位</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_kuni''">口爱</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_minet''">口交</a></div>'
+	
+	        end
+				 '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_end''">射精</a></div>'
+				
+			'</div>'
+					'<div class="dialog_menu">'
+	'米娅坐在我身上，我从后面顶她的屁股，狠狠地操她的小穴。她大声呻吟着'
+	'</div>'
+	
+	end
+	if $args[0] = 'tennis_sex_minet':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+			$data['gg_sex_fuse']+=1
+	$gg['统治力'] += 1
+		
+		
+		'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_sex_minet.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+			if $data['gg_sex_fuse'] < 3:
+		    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_stand''">站姿</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standhand''">站姿（女孩在空中）</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standcow''">站姿（女上位）</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standdoggy''">站姿后入</a></div>'
+	   
+	  
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_cow''">女上位</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_kuni''">口爱</a></div>'
+	   
+	        end
+				 '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_end''">射精</a></div>'
+				
+			'</div>'
+					'<div class="dialog_menu">'
+	'米娅几乎把我的鸡巴吞到底部，然后主动地吮吸。'
+	'</div>'
+	
+	end
+	if $args[0] = 'tennis_sex_kuni':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+			$data['gg_sex_fuse']+=1
+	$gg['舔阴'] += 1	
+		
+		
+		'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_sex_kuni.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+			if $data['gg_sex_fuse'] < 3:
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_stand''">站姿</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standhand''">站姿（女孩在空中）</a></div>'
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standcow''">站姿（女上位）</a></div>'
+	    '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_standdoggy''">站姿后入</a></div>'
+	   
+	  
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_cow''">女上位</a></div>'
+	 
+	     '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_minet''">口交</a></div>'
+	
+	        end
+				 '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis'',''tennis_sex_end''">射精</a></div>'
+				
+			'</div>'
+					'<div class="dialog_menu">'
+			'米娅用一条腿搭在我的肩膀上，我开始操她。之后一分钟后，她开始喘着粗气，浑身扭动。'
+	'</div>'
+	
+	end
+	if $args[0] = 'tennis_sex_end':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+	$gg['激励']=0
+				$gg['做爱'] += 1
+	       $gg['统治力'] += 1
+	    $data['маша_секс_кол_во'] += 1
+		
+			'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/tennis_sex_end.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+		
+				 '<div class="button"><a href="exec:minutes+=5 & gt ''Tennis''">出去</a></div>'
+	
+				
+			'</div>'
+				'<div class="dialog_menu">'
+				'我受不了很长时间的操弄，开始一管又一管地往她嘴里射精。精液射进了她的嘴里，她试图吞咽，但大部分精液都流到了下巴上。</p>
+	- 你感觉好吗？–她问道，用她美丽的眼睛看着我.</p>
+	- 是的，亲爱的！-我点了点头，平息了一口气。'
+	'</div>'	
+	end
+
+--- Tennis ---------------------------------
+
