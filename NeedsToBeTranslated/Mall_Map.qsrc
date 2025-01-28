@@ -1,0 +1,44 @@
+# Mall_Map
+
+
+
+		'<div class="actions_menu">'
+			'<div class="action">
+				<a class="photo" data-title="Department_Store" href="exec:minutes+=5 & gt ''Department_Store''"><img class="img_stretch" src="images\place\百货商店.jpg"></a>
+			</div>'
+			'<div class="action">
+				<a class="photo" data-title="Fitness_Center" href="exec:minutes+=5 & gt ''Fitness_Center''"><img class="img_stretch" src="images\place\健身房.jpg"></a>
+			</div>'
+			'<div class="action">
+				<a class="photo" data-title="Restaurant" href="exec:minutes+=5 & gt ''Restaurant''"><img class="img_stretch" src="images\place\餐厅.jpg"></a>
+			</div>'
+			'<div class="action">
+				<a class="photo" data-title="4S_Shop" href="exec:minutes+=5 & gt ''4S_Shop''"><img class="img_stretch" src="images\place\4S店.jpg"></a>
+			</div>'
+	
+			
+			
+			
+			'<div class="action">
+				<a class="photo" data-title="Mall" href="exec:minutes+=5 & gt ''Mall''"><img class="img_stretch" src="images\place\商场.jpg"></a>
+			</div>'
+			
+			'<div class="action">
+				<a class="photo" data-title="Hair_Salon" href="exec:minutes+=5 & gt ''Hair_Salon''"><img class="img_stretch" src="images\place\美发店.jpg"></a>
+			</div>'
+			
+			'<div class="action">
+				<a class="photo" data-title="丝袜专卖店" href="exec:minutes+=5 & gt ''Hosiery_Shop''"><img class="img_stretch" src="images\place\丝袜店0.jpg"></a>
+			</div>'
+			'<div class="action">
+				<a class="photo" data-title="美妆专卖店" href="exec:minutes+=5 & gt ''Makeup_Store''"><img class="img_stretch" src="images\place\美妆店.jpg"></a>
+			</div>'
+		'</div>'
+		
+		
+
+
+
+
+--- Mall_Map ---------------------------------
+

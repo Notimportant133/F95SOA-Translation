@@ -1,0 +1,58 @@
+# Loop_Ending
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	
+	
+	
+	'<div id="right-column">'
+		gs"Energy_Check"
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Hidden'
+		'<div class="actions_menu">'
+			'<div class="action">
+				<a class="photo" data-title="去大厅" href="exec:minutes+=5 & gt ''Shoot'',''开始''"><img class="img_stretch" src="images\place\家.jpg"></a>
+			</div>'
+			'<div class="action">
+				<a class="photo" data-title="电脑" href="exec:minutes+=5 & gt ''Shoot'',''开始''"><img class="img_stretch" src="images\place\电脑.jpg"></a>
+			</div>'
+			
+			if 电视机>=1:
+				'<div class="action">
+					<a class="photo" data-title="等离子电视机" href="exec:minutes+=5 & gt ''Shoot'',''开始''"><img class="img_stretch" src="images\place\电视.jpg"></a>
+				</div>'
+			end
+	
+		'</div>'
+	'</div>'
+	
+	if $args[0]="":
+		逃跑CS+=1
+		'<div class="show_menu">'
+				'<img src="images\place\房间_<<$times_of_day>>.jpg" width="854">'
+		'</div>'
+	
+	
+		'<div class="button_menu">
+			<div class="buttonR"><a href="exec:gt ''Shoot'',''开始''">有人敲门</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>我的卧室真好看，灯光温暖而柔和，让整个房间充满温馨和舒适的氛围。每当我走进我的卧室，都会感到无比的放松和愉悦，这里是我最喜欢的地方之一。</p>'
+		'</div>'
+	end
+	
+	
+	
+	
+	
+	
+	 
+
+--- Loop_Ending ---------------------------------
+

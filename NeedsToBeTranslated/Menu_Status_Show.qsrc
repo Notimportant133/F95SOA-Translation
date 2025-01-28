@@ -1,0 +1,44 @@
+# Menu_Status_Show
+
+
+
+	'<div class="status_menu">'
+	
+	if Cmoney>=999:Cmoney=999
+		
+
+
+
+	gs 'Generic_Mods','精力' 
+	
+	if $魅魔契约=1:	
+		gs 'Generic_Mods','魅魔能量'
+		if 开启金手指=1:
+			'     <font color="#FF00FF">♈</font><font color="#FF00FF" face="黑体">无 限</font>'
+		else
+			if $魅魔能量=0:'     <font color="#FF00FF">♈</font><font color="#FFCCCC">❤❤❤</font>'
+			if $魅魔能量=1:'     <font color="#FF00FF">♈❤</font><font color="#FFCCCC">❤❤</font>'
+			if $魅魔能量=2:'     <font color="#FF00FF">♈❤❤</font><font color="#FFCCCC">❤</font>'
+			if $魅魔能量=3:'     <font color="#FF00FF">♈❤❤❤</font><font color="#FFCCCC"></font>'
+		end
+	end
+	
+		
+		
+		'<a href="exec:close all & gt''Driving''"><span class =''green''> ✈车</span></a>'
+		'<a style="margin-left:30px"><img src="images/extracted_media/image_-7146693778396432199.png" width="200" height="16"></a>'
+		'<span style="margin-left:30px"><img src="images/extracted_media/image_-1767335137457868818.png" width="200" height="20"></span>'
+		
+		
+
+		gs 'Generic_Mods','现金_修改'
+		'₵公司盈亏:<span class =''red''><<Cmoney+1>>万</span>'
+		'♘版本:<span class =''red''>V70如诗如画版</span>'
+		'</p>'
+	
+	'</div>'
+	
+	
+
+--- Menu_Status_Show ---------------------------------
+

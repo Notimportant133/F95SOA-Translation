@@ -1,0 +1,26 @@
+# Menu_Option_Show
+
+
+
+	
+	'<div class="option_menu">
+		<a href="exec:gt ''Menu_Character_GG'',''<<my.魅力>>''"><div class="option_gg"></div></a>
+		<a href="exec:gt ''Menu_Character_NPCs'',''0''"><div class="option_nps"></div></a>
+		<a href="exec:gt ''Menu_Items''"><div class="option_items"></div></a>
+		<a href="exec:gt ''Menu_Settings''"><div class="option_settings"></div></a>
+	
+			<a href="exec:minutes+=60  & gt $loc,$metka"><div class="option_1h"></div></a>
+			<a href="exec:minutes+=180  & gt $loc,$metka"><div class="option_3h"></div></a>
+			<a href="exec:minutes+=360  & gt $loc,$metka"><div class="option_6h"></div></a>
+			<a href="exec:minutes-=60  & gt $loc,$metka"><div class="option__1h"></div></a>
+			<a href="exec:minutes-=180  & gt $loc,$metka"><div class="option__3h"></div></a>
+			<a href="exec:minutes-=360  & gt $loc,$metka"><div class="option__6h"></div></a>
+			<a href="exec:gt ''Game_Guide_Update''"><div class="option_gl" data-title="游戏攻略"></div></a>'
+	
+	'</div>'
+	
+	
+	
+
+--- Menu_Option_Show ---------------------------------
+

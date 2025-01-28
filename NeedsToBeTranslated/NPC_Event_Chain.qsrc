@@ -1,0 +1,237 @@
+# NPC_Event_Chain
+
+
+
+
+	
+	$摄像头_仓库=0
+	$JM_Event_grandpa=0
+
+	$JM_Event_new=0
+
+	$JM_Event_store=0
+
+	$JM_Event_mgf=0
+	$JM_Event_mgfs=0
+
+	$JM_Event_date=0
+	$JM_Event_3p=0
+	
+	$MM_Event_idol=0
+
+	mm_fans
+	
+	$HS_Event_trouble=0
+
+	$SF_Event_gold=0
+
+	$XZ_Event_3t=0
+	$XZ_Event_3tf=0
+
+	$纠察队任务=0
+
+	$XZ_Event_ghost=0
+
+	$XZ_Event_ZL=0
+
+	$ZL_Event_face=0
+
+	$LJ_Event_Steal=0
+
+	 
+	 $XZ_Event_ghost.completed=0
+
+	 $FXZ_Event_辅导=0
+
+	$FXZ_Event_女儿=0
+
+	 $FXZ_Event_SW=0
+	 
+	 $XY_Event_bag=0
+
+	 
+	$SW_Event_迷=0
+
+	 $HZ_Event_coser=0
+
+	 
+	$LY_Event_入境前置=0
+
+	$LY_Event_燃气阀=0
+	
+	 $RION_面试=0
+
+	 
+	 $JZ_Event_rape=0
+
+	 $JZ_Event_gun=0
+
+	 $SS_Event_燃气阀=0
+	 
+	$YDM_Event_free=0
+
+	$EDM_Event_friend=0
+
+	$YDM_Event_XZ=0
+
+	$NY_Event_监禁=0
+
+	$学校_Event_希望=0
+
+	
+	$销售_Event_买车=0
+
+	$前台_Event_喉咙=0
+
+	
+	$QB签约链=0
+
+	
+	$选秀事件链=0
+
+	
+	$悠亚事件链=0
+
+	
+	$冠军事件链=0
+
+
+	
+	$花姐事件链=0
+
+	$QB事件链=0
+
+	$天使事件链=0
+
+	
+	$失乡事件链=0
+
+	
+	$督察事件链=0
+
+	
+	$局长x舅舅=0
+
+	$局长x家=0
+
+	
+	$寻枪事件链=0
+
+	
+	$CH事件链=0
+
+	$ZX事件链=0
+
+	$凯撒事件链=0
+
+	
+	$老板事件链=0
+
+	
+	$LEI录像事件链=0
+
+	
+	$丝袜事件链=0
+
+	
+	$银行事件链=0
+
+	$银行事件链A=0
+
+	$银行事件链B=0
+
+	
+	$松本事件链=0
+
+	
+	$校花事件链=0
+
+	
+	$ыjкnq="M"
+	
+	$电车事件链=0
+
+	
+	$班长事件链=0
+
+	
+	$班长事件链B=0
+
+
+	$美妆事件链=0
+
+	
+	$MPJ事件链=0
+
+	
+	$HME事件链=0
+
+	
+	$SYYY事件链=0
+
+	
+	$TMW事件链=0
+
+	
+	$CBJ事件链=0
+	
+	$HSW事件链=0
+
+	
+	$BTH事件链=0
+
+	
+	
+	$JYB事件链=0
+
+	
+	$AW事件链=0
+
+	$FK事件链=0
+
+	
+	$SZ事件链=0
+
+	
+	$YXH事件链=0
+
+	
+	$MQ_Event_store=0
+
+
+	相机=0
+	茅台=0
+	精油=0
+	
+	灯泡=0
+	摄像头=0
+	检测报告=0
+	
+	$JJ.event_委托=0
+	$JJ.event_购物=0 
+
+	
+	金坷垃=0
+	plant=0
+	MGF=0
+	plant_num=0
+	plant_研究数=0
+	
+	mm_fans=0
+	
+	$DZ.event_见面=0
+
+	$DZ.event_餐厅约会=0
+	
+	$DZ.event_设备=0
+	
+	$RION.available=0
+	
+	$CXG_Event=0
+
+	
+	$中级负能量=0
+
+
+--- NPC_Event_Chain ---------------------------------
+

@@ -1,0 +1,31 @@
+# Mothers_Villa_Guest_Room
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	a=0 & q=0
+	'<div id="right-column">'
+		gs"Energy_Check"
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		gs "Mothers_Villa_Map"
+	'</div>'
+	if $ARGS[0] ="":
+		'<div class ="show_menu"><img src="images\V70版本\增量包_20241111\place\母亲姨妈\图片\母亲的别墅_客房.jpg" width="854"></div>'
+	'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=30 & gt ''Mothers_Villa''">离开</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>....</p>'
+		'</div>'
+	end
+
+--- Mothers_Villa_Guest_Room ---------------------------------
+

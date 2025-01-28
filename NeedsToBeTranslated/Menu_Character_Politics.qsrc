@@ -1,0 +1,39 @@
+# Menu_Character_Politics
+
+
+
+	cls
+	gs'Menu_Time_Calc'
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Hidden'
+		gs'Menu_Act_Hidden'
+	'</div>'
+	
+	
+	'<div id="left-column">'
+		'<div class="charac_npc_list">'
+	
+	
+		  '<div class="charac_nps_list_foto">
+				<a class="photo" data-title="<<$AW.name>>" href="exec:gt ''Generic_NPC_Menu'',''<<$AW.name>>'',''<<$AW.love>>'',''<<$AW.bad>>'',''<<$AW.bio>>'',0,0,0,0,''<<$AW.money>>''"><img class="img_stretch" src="images\NPC\<<$AW.name>>a.gif"></a>'
+		  '</div>'
+		  
+	      '<div class="charac_nps_list_foto">
+				<a class="photo" data-title="<<$主角姓名>>(我)" href="exec:gt ''Menu_Character_GG'',''<<my.魅力>>''"><img class="img_stretch" src="images\NPC\WOa.gif"></a>'
+	      '</div>'
+		  
+	      '<div class="charac_nps_list_foto">
+				<a class="photo" data-title="<<$FK.name>>" href="exec:gt ''Generic_NPC_Menu'',''<<$FK.name>>'',''<<$FK.love>>'',''<<$FK.bad>>'',''<<$FK.bio>>'',0,0,0,0,''<<$FK.money>>''"><img class="img_stretch" src="images\NPC\<<$FK.name>>a.gif"></a>'
+	      '</div>'
+	
+	'</div>'
+	
+	
+	
+	
+	'<div class="options_back"><a href="exec:gt $loc,$metka"><div class="settings_back_menu"></div></a></div>'
+
+--- Menu_Character_Politics ---------------------------------
+

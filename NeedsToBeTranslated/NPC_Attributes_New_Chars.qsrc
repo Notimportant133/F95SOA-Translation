@@ -1,0 +1,166 @@
+# NPC_Attributes_New_Chars
+
+
+
+	if $meilisha.available=0:
+		$meilisha.name = "梅丽莎"
+		$meilisha.love = 0
+		$meilisha.lovenew = 0
+		$meilisha.bad = 0
+		$meilisha.bio ="梅丽莎·阿纳托尔耶夫娜，她是个严肃的女人，周围的员工都很怕她，但重要的是她有着傲人的身材，修长的双腿，坚挺的乳房，五官精致，白里透红的小脸，天使般的面容，她美得就像清晨的第一缕阳光。"
+		$meilisha.jindu=""
+		$meilisha.zhiwei=0
+		$meilisha.available=1
+		meilisha.jine=0
+		meilisha.zhoubao=0
+	End
+	
+	$sa1gag='作'
+	
+	
+	$absol='小'
+	
+	if $MQ.available=0:
+	    $MQ.name = "松下纱荣子(母亲)"
+	    $MQ.love = 0
+	    $MQ.bad = 0
+	    $MQ.available=1
+	    $MQ.bio ="市疗养院老板兼护士长，年龄37岁，净身高175。驻颜有术，长相美丽，身材成熟风韵；性格落落大方，对主角慈祥疼爱，对外人端庄得体，但生气时也会变得冰冷异常。"
+	End
+	if $MQMM.available=0:
+	    $MQMM.name = "白峰美羽(姨妈)"
+	    $MQMM.love = 0
+	    $MQMM.bad = 0
+	    $MQMM.available=1
+	    $MQMM.bio ="市重点中学优秀数学老师，年龄36岁，净身高175。身为班主任的她平时穿着简朴保守，性格也严肃冷漠，在校称号“灭绝师太”。儿子与丈夫在另一个市的重点高中上学、上班，一个多月回来一次。"
+	End
+	
+	if $CXG.available=0:
+		$CXG.name = "麻仓优(雌小鬼)"
+		$CXG.love = 0
+		$CXG.bad = 0
+		$CXG.bio ="我的青梅竹马，也是门当户对的世交家独生女。在17岁高中时患病死掉了。"
+	End
+	
+	if $anna.available=0:
+		$anna.name = "安娜(美女荷官)"
+		$anna.love = 0
+		$anna.bad = 0
+		$anna.bio ="安娜，小有名气的模特。黑原商会的美女荷官之一，一身黑裙，露出完美的腰形与马甲线，将活力与性感给发挥的淋漓尽致。"
+		anna.jindu=0
+	End
+	
+	if $HYX.available=0:
+		$HYX.name = "韩芸汐(韩府大小姐)"
+		$HYX.love = 0
+		$HYX.bad = 0
+		$HYX.bio ="安娜的闺蜜，同是潮流杂志的顶流模特，黑原商会的美女荷官之一，一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴，被称为黑原商会第一美女。"
+		HYX.jindu=0
+	End
+	
+	if annasuipian='':
+		annasuipian=0
+	end
+	
+	if annarenwu='':
+		annarenwu=0
+	end
+	
+	if xiaojusuipian='':
+		xiaojusuipian=0
+	end
+	
+	if xiaojurenwu='':
+		xiaojurenwu=0
+	end
+	
+	if xianyuanersuipian='':
+		xianyuanersuipian=0
+	end
+	
+	if xianyuanerrenwu='':
+		xianyuanerrenwu=0
+	end
+	
+	if wumengmengsuipian='':
+		wumengmengsuipian=0
+	end
+	
+	if wumengmengsuipi='':
+		wumengmengsuipi=0
+	end
+	
+	if wumengmengrenwu='':
+		wumengmengrenwu=0
+	end
+	
+	if wumengmengrenw='':
+		wumengmengrenw=0
+	end
+	
+	if shennanasuipian='':
+		shennanasuipian=0
+	end
+	
+	$ыкnm="1"
+	
+	if shennanarenwu='':
+		shennanarenwu=0
+	end
+	
+	if suchangsuipian='':
+		suchangsuipian=0
+	end
+	
+	if suchangrenwu='':
+		suchangrenwu=0
+	end
+	
+	if qingkexinsuipian='':
+		qingkexinsuipian=0
+	end
+	
+	if qingkexinrenwu='':
+		qingkexinrenwu=0
+	end
+	
+	if jiyanxisuipian='':
+		jiyanxisuipian=0
+	end
+	
+	if jiyanxirenwu='':
+		jiyanxirenwu=0
+	end
+	
+	if buzhimingxinheguansuipian='':
+		buzhimingxinheguansuipian=0
+	end
+	
+	if buzhimingxinheguanrenwu='':
+		buzhimingxinheguanrenwu=0
+	end
+	
+	if xianliangduihuanxianjin='':
+		xianliangduihuanxianjin=10000
+	end
+	
+	if week_day>=6 and xianliangduihuanxianjin<10:
+		xianliangduihuanxianjin=10000
+	end
+	
+	if ggcishu='':
+		ggcishu=0
+	end
+	
+	if video_on='':
+		video_on=0
+	end
+	
+	$saftqwer='Yaz'
+	
+	if xianliangduihuanxianjing='':
+		xianliangduihuanxianjing=10000
+	end
+
+--- NPC_Attributes_New_Chars ---------------------------------
+

@@ -1,0 +1,94 @@
+# Mothers_Villa_Mothers_Room
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	a=0 & q=0
+	gs'Yya'
+	
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		gs'Mothers_Villa_Map'
+	'</div>'
+	
+	if $args[0]="":
+		 '<div class ="show_menu"><img src="images\V70版本\增量包_20241111\place\母亲姨妈\图片\母亲的别墅_母亲的房间.jpg" width="854"></div>'
+		 '<div class="button_menu">'
+			 '<div class="button"><a href="exec:minutes+=30 & gt ''Mothers_Villa''">离开</a></div>'
+		 '</div>'
+	     '<div class="dialog_menu">'
+		     '<p>..</p>'
+		 '</div>'
+	End
+	
+	
+	if $args[0]="关门":
+		 '<div class ="show_menu"><img src="images\V70版本\增量包_20241111\place\母亲姨妈\图片\紧闭的门_母亲.jpg" width="854"></div>'
+		 '<div class="button_menu">'
+			 if $MQ_Event_store=7 :
+			  '<div class="button"><a href="exec:minutes+=5 & gt ''Mother_Event'',''问候''">问候</a></div>'
+			  end
+		     if $MQ_Event_store=11 :
+			'<div class="buttonS1"><a href="exec:  &  gt ''Mother_Event'',''MQ_Fuck_第一次''">溜进去偷丝袜</a></div>'
+			  end
+			 if $MQ_Event_store>11 :
+			  '<div class="button"><a href="exec:minutes+=5 & gt ''Mothers_Villa_Mothers_Room'',''偷看''">偷看</a></div>'
+			  end
+			 '<div class="button"><a href="exec:minutes+=5 & gt ''Mothers_Villa''">离开</a></div>'
+		 '</div>'
+	     '<div class="dialog_menu">'
+		     '<p>母亲的房门紧闭着，不知道在干啥....</p>'
+		 '</div>'
+	End
+	
+	
+	if $ARGS[0]="偷看":
+		$随机数=rand(1,10)
+		if $随机数>=7 and hour <=9 :gt'Mother_Event','MQ_Fuck_瑜伽'
+		if $随机数>=5 and hour <=15 :gt'Mother_Event','母亲_卧室内'
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQ\vids\偷窥~1.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+		 if $MQ_Event_store>=13 :
+			'<div class="buttonS1"><a href="exec: $MQ.bad+=1 &  gt ''Mothers_Villa_Mothers_Room'',''房间对话''">敲门进去</a></div>'
+			end
+			'<div class="button"><a href="exec:minutes+=5 & gt ''Mothers_Villa''">离开</a></div>'
+		'</div>'
+	
+	
+		'<div class="dialog_menu">'
+			'<p>-<<$MQ.name>>：<<$娇喘声>></p>'
+		'</div>'
+	
+	end
+	
+	if $ARGS[0]="房间对话":
+	
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQ\vids\床上~1.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec: $MQ.bad+=1 &  gt ''Mother_Event'',''MQ_房间抱'',''床上0开幕''">抱住她</a></div>'
+			'<div class="button"><a href="exec: $MQ.bad+=1 &  gt ''Mothers_Villa''">离开</a></div>'
+		'</div>'
+	
+	
+		'<div class="dialog_menu">'
+			'<p>-<<$MQ.name>>：咳咳....今天没去上课吗？</p>'
+		'</div>'
+	
+	end
+	
+	
+
+--- Mothers_Villa_Mothers_Room ---------------------------------
+
