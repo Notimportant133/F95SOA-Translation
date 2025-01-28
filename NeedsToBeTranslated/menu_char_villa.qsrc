@@ -1,0 +1,142 @@
+# menu_char_villa
+
+
+
+	cls
+	gs'menu_time_calc'
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_mainnpc'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				if $SB.available=1:'<a class="photo" data-title="班级名册" href="exec:gt ''menu_charac_学生'',''0''"><img class="img_stretch" src="images\place\名单.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				if $FK.available*$AW.available=1:'<a class="photo" data-title="权势名单" href="exec:gt ''menu_charac_政治'',''0''"><img class="img_stretch" src="images\place\名单2.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			if 市长确定=1:'<a class="photo" data-title="结局重置" href="exec:gt ''结局重置''"><img class="img_stretch" src="images\place\重置.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="家庭成员" href="exec: gt ''menu_char_def'',''0''"><img class="img_stretch" src="images\place\回家_小图.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="商场成员" href="exec: gt ''menu_char_market'',''0''"><img class="img_stretch" src="images\place\shopping_mall.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="医院成员" href="exec: gt ''menu_char_hos'',''0''"><img class="img_stretch" src="images\place\医院小图.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="学校成员" href="exec: gt ''menu_char_sch'',''0''"><img class="img_stretch" src="images\place\大学_.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="职场相好" href="exec: gt ''menu_char_group'',''0''"><img class="img_stretch" src="images\place\Imperial_Group.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="政府机构" href="exec: gt ''menu_char_gov'',''0''"><img class="img_stretch" src="images\place\town_Hall.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="小区别墅" href="exec: gt ''menu_char_villa'',''0''"><img class="img_stretch" src="images\place\联排别墅_.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="其他人物" href="exec: gt ''menu_char_oth'',''0''"><img class="img_stretch" src="images\place\海滩闲逛.jpg"></a>'
+			'</div>'
+		'</div>'
+	'</div>'
+	
+	'<div id="left-column">'
+		'<div class="charac_npc_list">'
+				
+				if $ZJ.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$ZJ.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$ZJ.name>>'',''<<$ZJ.love>>'',''<<$ZJ.bad>>'',''<<$ZJ.bio>>''"><img class="img_stretch" src="images\NPC\<<$ZJ.name>>.png"></a>'
+					'<p class="info2"><<$ZJ.name>></p><p class="info3">好感:<<$ZJ.love>></p><p class="info3">堕落:<<$ZJ.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$ZJ.name>>a.png"></a>'
+					'<p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+				if $BGH.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$BGH.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$BGH.name>>'',''<<$BGH.love>>'',''<<$BGH.bad>>'',''<<$BGH.bio>>''"><img class="img_stretch" src="images\NPC\<<$BGH.name>>.png"></a>'
+					'<p class="info2"><<$BGH.name>></p><p class="info3">好感:<<$BGH.love>></p><p class="info3">堕落:<<$BGH.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$BGH.name>>a.png"></a><p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+				if $DY.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$DY.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$DY.name>>'',''<<$DY.love>>'',''<<$DY.bad>>'',''<<$DY.bio>>''"><img class="img_stretch" src="images\NPC\<<$DY.name>>.png"></a>'
+					'<p class="info2"><<$DY.name>></p><p class="info3">好感:<<$DY.love>></p><p class="info3">堕落:<<$DY.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$DY.name>>a.png"></a><p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+				if $YY.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$YY.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$YY.name>>'',''<<$YY.love>>'',''<<$YY.bad>>'',''<<$YY.bio>>''"><img class="img_stretch" src="images\NPC\<<$YY.name>>.png"></a>'
+					'<p class="info2"><<$YY.name>></p><p class="info3">好感:<<$YY.love>></p><p class="info3">堕落:<<$YY.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$YY.name>>a.png"></a><p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+				if $RQ.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$RQ.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$RQ.name>>'',''<<$RQ.love>>'',''<<$RQ.bad>>'',''<<$RQ.bio>>''"><img class="img_stretch" src="images\NPC\<<$RQ.name>>.png"></a>'
+					'<p class="info2"><<$RQ.name>></p><p class="info3">好感:<<$RQ.love>></p><p class="info3">堕落:<<$RQ.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$RQ.name>>a.png"></a><p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+				if $YS.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$YS.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$YS.name>>'',''<<$YS.love>>'',''<<$YS.bad>>'',''<<$YS.bio>>''"><img class="img_stretch" src="images\NPC\<<$YS.name>>.png"></a>'
+					'<p class="info2"><<$YS.name>></p><p class="info3">好感:<<$YS.love>></p><p class="info3">堕落:<<$YS.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$YS.name>>a.png"></a>'
+					'<p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+				if $SML.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$SML.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$SML.name>>'',''<<$SML.love>>'',''<<$SML.bad>>'',''<<$SML.bio>>''"><img class="img_stretch" src="images\NPC\<<$SML.name>>.png"></a>'
+					'<p class="info2"><<$SML.name>></p><p class="info3">好感:<<$SML.love>></p><p class="info3">堕落:<<$SML.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$SML.name>>a.png"></a><p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+		'</div>'
+	'</div>'
+	
+	'<div class="options_back"><a href="exec:gt ''menu_char_def''"><div class="settings_back_menu"></div></a></div>'
+	
+	
+	
+	
+
+--- menu_char_villa ---------------------------------
+

@@ -1,0 +1,29 @@
+# KuroharaGuild_DoorCardRedeem
+
+
+
+	changemenka=0
+	if zuanshi>0:
+		changemenka = input('请输入您要兑换的门卡数！')
+		if changemenka > 0:
+			if zuanshi-changemenka>=0:
+				zuanshi=zuanshi-changemenka
+				menka+=changemenka
+				
+				play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/res/恭喜您，兑换成功了.mp3')
+			else
+				
+				play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/res/您的物品数量不足.mp3')
+			end
+		else
+			
+			play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/res/请输入大于0的数量.mp3')
+		end
+	else
+		
+		play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/res/您的物品数量不足.mp3')
+	end
+	
+
+--- KuroharaGuild_DoorCardRedeem ---------------------------------
+

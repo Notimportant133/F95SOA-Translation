@@ -1,0 +1,25 @@
+# LostHomelandGirlGuide
+
+
+
+	cls
+	gs'menu_time_calc'
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_mainnpc'
+		gs'menu_act_hidden'
+	'</div>'
+	
+	
+	'<div id="left-column-gl">'
+			'<p>·————————'
+			'<p><span class=''red''>☆失乡少女（桃谷绘里香）：</span></p>'
+			'<p>入境审核等级 7 级了，顺便把桃谷的剧情做了吧。去审核大厅，点击哭泣声触发。触发剧情后晚上去深巷点击桃谷并帮她租房，租下房间（Y-603）后进去她家刷双值逐步触发剧情就行了。刷完出现 COS 约拍点一下。 </p>'
+			'<p>·————————'
+	'</div>'
+	
+	'<div class="options_back"><a href="exec:gt ''游戏攻略改''"><div class="settings_back_menu"></div></a></div>'
+
+--- LostHomelandGirlGuide ---------------------------------
+

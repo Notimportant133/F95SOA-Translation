@@ -1,0 +1,266 @@
+# ImDoneForSurroundedByBeauties
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'ыя'
+	
+	
+	
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				if $HYX.available=0:
+				'<a class="photo" data-title="5000楼（韩）：没有权限""><img class="img_stretch" src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\杂乱\时空乱流.jpg"></a>'
+				else
+				'<a class="photo" data-title="5000楼（韩芸汐）" href="exec:minutes+=5 & gt ''ImDoneForSurroundedByBeauties'',''韩芸汐篇章''"><img class="img_stretch" src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\杂乱\时空乱流.jpg"></a>'
+				end
+			'</div>'
+			'<div class="action">'
+				'<a class="photo"  ><img class="img_stretch" src="images\place\空白.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			   if $CT.available=0:
+				'<a class="photo" data-title="100楼：没有权限""><img class="img_stretch" src="images\place\empire_dome.jpg"></a>'
+				else
+				'<a class="photo" data-title="100楼：帝国穹顶" href="exec:minutes+=5 & gt ''empire_dome''"><img class="img_stretch" src="images\place\empire_dome.jpg"></a>'
+				end
+			'</div>'
+			'<div class="action">'
+				'<a class="photo" ><img class="img_stretch" src="images\place\空白.jpg"></a>'
+			'</div>'
+
+			'<div class="action">'
+				'<a class="photo"  ><img class="img_stretch" src="images\place\空白.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				if 帝国level>=3:
+				'<a class="photo" data-title="99楼：帝国健康" href="exec:minutes+=5 & gt ''empire_health''"><img class="img_stretch" src="images\place\empire_health.jpg"></a>'
+				else
+				'<a class="photo" data-title="99楼：帝国健康（3级以上）" href="exec:"><img class="img_stretch" src="images\place\empire_health.jpg"></a>'
+				end
+			'</div>'
+			'<div class="action">'
+				'<a class="photo"  ><img class="img_stretch" src="images\place\电梯.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				if 帝国level>=7:
+				'<a class="photo" data-title="100楼：帝国能源" href="exec:minutes+=5 & gt ''Imperial_Energy''"><img class="img_stretch" src="images\place\Imperial_Energy.jpg"></a>'
+				else
+				'<a class="photo" data-title="100楼：帝国能源（7级以上）" href="exec:"><img class="img_stretch" src="images\place\Imperial_Energy.jpg"></a>'
+				end
+			'</div>'
+
+		
+			'<div class="action">'
+				'<a class="photo" data-title="地下交通" href="exec:minutes+=15 & gt ''subway''"><img class="img_stretch" src="images\place\subway.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				'<a class="photo" data-title="帝国集团大厅" href="exec:minutes+=15 & gt ''Imperial_Group''"><img class="img_stretch" src="images\place\帝国集团_大厅.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				'<a class="photo"  ><img class="img_stretch" src="images\place\电梯.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				'<a class="photo" data-title="69楼：帝国娱乐" href="exec:minutes+=5 & gt ''Empire_Entertainment''"><img class="img_stretch" src="images\place\Empire_Entertainment.jpg"></a>'
+			'</div>'
+			
+		'</div>'
+	'</div>'
+	
+	
+	if $ARGS[0]="":
+		'<div class ="show_menu">'
+			'<img src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\傻妞壁纸<<RAND(1,9)>>.jpg" width="854">'
+				'<div class="show_menu" style="width:0px;height:0px">'
+				'<video preload="metadata" autoplay height="480">'
+				'<source src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\傻妞介绍.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:day+=1 & gt ''ImDoneForSurroundedByBeauties'',''确认穿越''">确认穿越</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p>·机械女声：华人牌2060款手机傻妞为您服务</p>'
+			'<p>·机械女声：傻妞手机，帝国集团的最新科技，可以穿越时空。</p>'
+			'<p>·机械女声：SOB世界是树的树干，完蛋我被美女包围了世界是树的树枝，没有树干，树枝没办法长出来，但不论是树干，还是树枝，都是树的组成部分，也就是说你原先的现实世界，和你现在看到的世界，都是平行世界。</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="回SOB":
+		'<div class ="show_menu">'
+			'<img src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\傻妞壁纸<<RAND(1,9)>>.jpg" width="854">'
+				'<div class="show_menu" style="width:0px;height:0px">'
+				'<video preload="metadata" autoplay height="480">'
+				'<source src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\结束穿越.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:day+=1 & gt ''Home''">回家</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p>·机械女声：您已安全完成本次时空旅行。</p>'
+			'<p>·机械女声：期待您的下次光临。</p>'
+			'<p>·机械女声：您的满意就是对我们最大的认可！</p>'
+		'</div>'
+	end
+	
+
+
+
+
+
+
+	
+	if $ARGS[0]="确认穿越":
+		'<div class ="show_menu">'
+			
+				'<video preload="metadata" autoplay height="480">'
+				'<source src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\ImDoneForSurroundedByBeauties\开场.webm" type=''video/webm;''></video></div>'
+			
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:day+=1 & gt ''ImDoneForSurroundedByBeauties'',''第一章_1醉酒醒来''">继续探索</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p>这些女的是谁！</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="第一章_1醉酒醒来":
+		'<div class ="show_menu">'
+			
+				'<video preload="metadata" autoplay height="480">'
+				'<source src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\ImDoneForSurroundedByBeauties\第一章_1醉酒醒来.webm" type=''video/webm;''></video></div>'
+			
+		'</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:day+=1 & gt ''ImDoneForSurroundedByBeauties'',''第一章_2_初见郑梓妍_提供选择''">继续探索</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p>原来在这个世界我叫顾易。</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="第一章_2_初见郑梓妍_提供选择":
+		'<div class ="show_menu">'
+			
+				'<video preload="metadata" autoplay height="480">'
+				'<source src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\ImDoneForSurroundedByBeauties\第一章_2_初见郑梓妍_提供选择.webm" type=''video/webm;''></video></div>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:day+=1 & gt ''ImDoneForSurroundedByBeauties'',''第一章_3_初见郑梓妍_选择脱下外套给她''">继续探索</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p>原来在这个世界我叫顾易。</p>'
+		'</div>'
+	end
+	
+	
+	if $ARGS[0]="第一章_3_初见郑梓妍_选择脱下外套给她":
+		'<div class ="show_menu">'
+			
+				'<video preload="metadata" autoplay height="480">'
+				'<source src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\ImDoneForSurroundedByBeauties\第一章_3_初见郑梓妍_选择脱下外套给她.webm" type=''video/webm;''></video></div>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:day+=1 & gt ''ImDoneForSurroundedByBeauties'',''第一章_4_郑梓妍约喝酒_提供选择''">继续探索</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p>原来在这个世界我叫顾易。</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="第一章_4_郑梓妍约喝酒_提供选择":
+		'<div class ="show_menu">'
+			
+				'<video preload="metadata" autoplay height="480">'
+				'<source src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\ImDoneForSurroundedByBeauties\第一章_4_郑梓妍约喝酒_提供选择.webm" type=''video/webm;''></video></div>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:day+=1 & gt ''ImDoneForSurroundedByBeauties'',''第一章_5_郑梓妍_初见李云思_选择没有，咱俩肯定没有''">继续探索</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p>原来在这个世界我叫顾易。</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="第一章_5_郑梓妍_初见李云思_选择没有，咱俩肯定没有":
+		'<div class ="show_menu">'
+			
+				'<video preload="metadata" autoplay height="480">'
+				'<source src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\ImDoneForSurroundedByBeauties\第一章_5_郑梓妍_初见李云思_选择没有，咱俩肯定没有.webm" type=''video/webm;''></video></div>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:day+=1 & gt ''ImDoneForSurroundedByBeauties'',''第一章_6_李云思_选择当然记得，那幅画是我送你的''">当然记得，那幅画是我送你的</a></div>'
+			'<div class="button" id="Button"><a href="exec:day+=1 & gt ''ImDoneForSurroundedByBeauties'',''第一章_6_李云思_选择当然记得，我们是画展认识的''">当然记得，我们是画展认识的</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p></p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="第一章_6_李云思_选择当然记得，那幅画是我送你的":
+		'<div class ="show_menu">'
+			
+				'<video preload="metadata" autoplay height="480">'
+				'<source src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\ImDoneForSurroundedByBeauties\第一章_6_李云思_选择当然记得，那幅画是我送你的.webm" type=''video/webm;''></video></div>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:day+=1 & gt ''ImDoneForSurroundedByBeauties'',''回SOB''">回SOB</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p></p>'
+		'</div>'
+		$godvoice="韩芸汐_1"
+		HYX.jindu=1
+		$HYX.available=1
+		$SHUCHANG.available=1
+	end
+	
+	if $ARGS[0]="第一章_6_李云思_选择当然记得，我们是画展认识的":
+		'<div class ="show_menu">'
+			
+				'<video preload="metadata" autoplay height="480">'
+				'<source src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\ImDoneForSurroundedByBeauties\第一章_6_李云思_选择当然记得，我们是画展认识的_提供选择.webm" type=''video/webm;''></video></div>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:day+=1 & gt ''ImDoneForSurroundedByBeauties'',''回SOB''">回SOB</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p>后续剧情制作中！</p>'
+		'</div>'
+		$godvoice="韩芸汐_1"
+		HYX.jindu=1
+		$HYX.available=1
+		$SHUCHANG.available=1
+	end
+
+--- ImDoneForSurroundedByBeauties ---------------------------------
+

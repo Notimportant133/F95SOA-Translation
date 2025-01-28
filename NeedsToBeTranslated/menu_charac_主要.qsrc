@@ -1,0 +1,290 @@
+# menu_charac_主要
+
+
+
+	cls
+	gs'menu_time_calc'
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+
+	
+		
+	'<div class="option_menu">
+		<a href="exec:gt ''menu_charac_gg'',''<<my.魅力>>''"><div class="option_gg"></div></a>
+		<a href="exec:gt ''menu_charac_nps'',''0''"><div class="option_nps"></div></a>
+		<a href="exec:gt ''menu_reportbugs''"><div class="option_rebugs"data-title="BUG修复"></div></a>
+		<a href="exec:gt ''MenuUpdateLog''"><div class="option_update"data-title="更新日志"></div></a>
+		<a href="exec:gt ''menu_charac_学生'',''0''"><div class="option_32" data-title="班级名册"></div></a>
+	</div>'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				if $SB.available=1:'<a class="photo" data-title="班级名册" href="exec:gt ''menu_charac_学生'',''0''"><img class="img_stretch" src="images\place\名单.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				if $FK.available*$AW.available=1:'<a class="photo" data-title="权势名单" href="exec:gt ''menu_charac_政治'',''0''"><img class="img_stretch" src="images\place\名单2.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				if 市长确定=1:'<a class="photo" data-title="结局重置" href="exec:gt ''结局重置''"><img class="img_stretch" src="images\place\重置.jpg"></a>'
+			'</div>'
+		'</div>'
+	'</div>'
+	
+	
+	
+	'<div id="left-column">'
+		'<div class="charac_npc_list">'
+	
+	            
+	            if $SZ.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$SZ.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$SZ.name>>'',''<<$SZ.love>>'',''<<$SZ.bad>>'',''<<$SZ.bio>>''"><img class="img_stretch" src="images\NPC\<<$SZ.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$SZ.name>>a.png"></a>'
+	            '</div>'
+	            end
+			
+	            if $JYB.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$JYB.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$JYB.name>>'',''<<$JYB.love>>'',''<<$JYB.bad>>'',''<<$JYB.bio>>''"><img class="img_stretch" src="images\NPC\<<$JYB.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$JYB.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            if $SML.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$SML.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$SML.name>>'',''<<$SML.love>>'',''<<$SML.bad>>'',''<<$SML.bio>>''"><img class="img_stretch" src="images\NPC\<<$SML.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$SML.name>>a.png"></a>'
+	            '</div>'
+	            end
+	
+	            if $HB.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$HB.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$HB.name>>'',''<<$HB.love>>'',''<<$HB.bad>>'',''<<$HB.bio>>''"><img class="img_stretch" src="images\NPC\<<$HB.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="需与议员合作" ><img class="img_stretch" src="images\NPC\<<$HB.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            if $YXH.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$YXH.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$YXH.name>>'',''<<$YXH.love>>'',''<<$YXH.bad>>'',''<<$YXH.bio>>''"><img class="img_stretch" src="images\NPC\<<$YXH.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$YXH.name>>a.png"></a>'
+	            '</div>'
+	            end
+	          if $TCK.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo" data-title="<<$TCK.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$TCK.name>>'',''<<$TCK.love>>'',''<<$TCK.bad>>'',''<<$TCK.bio>>''"><img class="img_stretch" src="images\NPC\<<$TCK.name>>.png"></a>'
+				'</div>'
+	            end
+	            if $UN.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$UN.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$UN.name>>'',''<<$UN.love>>'',''<<$UN.bad>>'',''<<$UN.bio>>'',''<<$UN.fans>>''"><img class="img_stretch" src="images\NPC\<<$UN.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$UN.name>>a.png"></a>'
+	            '</div>'
+	            end
+	          if $ZMK.available=1:
+	               '<div class="charac_nps_list_foto">
+	                    <a class="photo" data-title="<<$ZMK.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$ZMK.name>>'',''<<$ZMK.love>>'',''<<$ZMK.bad>>'',''<<$ZMK.bio>>''"><img class="img_stretch" src="images\NPC\<<$ZMK.name>>.png"></a>'
+	               '</div>'
+	            end
+	            
+	            if $RQ.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$RQ.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$RQ.name>>'',''<<$RQ.love>>'',''<<$RQ.bad>>'',''<<$RQ.bio>>''"><img class="img_stretch" src="images\NPC\<<$RQ.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="公园早上8点" ><img class="img_stretch" src="images\NPC\<<$RQ.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            
+			if $WH.available=1:
+			'<div class="charac_nps_list_foto">
+				<a class="photo" data-title="<<$WH.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$WH.name>>'',''<<$love>>'',''<<$WH.bad>>'',''<<$WH.bio>>''"><img class="img_stretch" src="images\NPC\<<$WH.name>>.png"></a>'
+			'</div>'
+			else
+			'<div class="charac_nps_list_foto">
+				<a class="photo" data-title="<<$WH.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$WH.name>>'',''<<$WH.love>>'',''<<$WH.bad>>'',''<<$WH.bio>>''"><img class="img_stretch" src="images\NPC\<<$WH.name>>X.png"></a>'
+			'</div>'
+			end
+	            
+	            if $SB.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$SB.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$SB.name>>'',''<<$SB.love>>'',''<<$SB.bad>>'',''<<$SB.bio>>''"><img class="img_stretch" src="images\NPC\<<$SB.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="学校三年二班中相识" ><img class="img_stretch" src="images\NPC\<<$SB.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            
+	            if $DCM.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$DCM.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$DCM.name>>'',''<<$DCM.love>>'',''<<$DCM.bad>>'',''<<$DCM.bio>>''"><img class="img_stretch" src="images\NPC\<<$DCM.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="在大学里三年二班<<$SB.name>>处接任务" ><img class="img_stretch" src="images\NPC\<<$DCM.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            
+	            if $XH.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$XH.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$XH.name>>'',''<<$XH.love>>'',''<<$XH.bad>>'',''<<$XH.bio>>''"><img class="img_stretch" src="images\NPC\<<$XH.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="在大学里三年二班<<$SB.name>>处接任务" ><img class="img_stretch" src="images\NPC\<<$XH.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            
+	            if $BZ.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$BZ.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$BZ.name>>'',''<<$BZ.love>>'',''<<$BZ.bad>>'',''<<$BZ.bio>>''"><img class="img_stretch" src="images\NPC\<<$BZ.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="在大学里三年二班<<$SB.name>>处接任务" ><img class="img_stretch" src="images\NPC\<<$BZ.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            
+	            if $MZ.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$MZ.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$MZ.name>>'',''<<$MZ.love>>'',''<<$MZ.bad>>'',''<<$MZ.bio>>''"><img class="img_stretch" src="images\NPC\<<$MZ.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="商场美妆店相识" ><img class="img_stretch" src="images\NPC\<<$MZ.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            
+	            
+	            if $YH.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$YH.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$YH.name>>'',''<<$YH.love>>'',''<<$YH.bad>>'',''<<$YH.bio>>''"><img class="img_stretch" src="images\NPC\<<$YH.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="金融中心相识" ><img class="img_stretch" src="images\NPC\<<$YH.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            
+	            if $SWD.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$SWD.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$SWD.name>>'',''<<$SWD.love>>'',''<<$SWD.bad>>'',''<<$SWD.bio>>''"><img class="img_stretch" src="images\NPC\<<$SWD.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="商场丝袜店相识" ><img class="img_stretch" src="images\NPC\<<$SWD.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            
+	
+		
+	            if $DY.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$DY.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$DY.name>>'',''<<$DY.love>>'',''<<$DY.bad>>'',''<<$DY.bio>>''"><img class="img_stretch" src="images\NPC\<<$DY.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="便利店达标后相识" ><img class="img_stretch" src="images\NPC\<<$DY.name>>a.png"></a>'
+	            '</div>'
+	            end
+		
+	            if $XN.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$XN.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$XN.name>>'',''<<$XN.love>>'',''<<$XN.bad>>'',''<<$XN.bio>>''"><img class="img_stretch" src="images\NPC\<<$XN.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="教堂内主教房间相识" ><img class="img_stretch" src="images\NPC\<<$XN.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            if $LEI.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$LEI.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$LEI.name>>'',''<<$LEI.love>>'',''<<$LEI.bad>>'',''<<$LEI.bio>>''"><img class="img_stretch" src="images\NPC\<<$LEI.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="教堂剧情相识" ><img class="img_stretch" src="images\NPC\<<$LEI.name>>a.png"></a>'
+	            '</div>'
+	            end
+				if $YS.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo" data-title="<<$YS.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$YS.name>>'',''<<$YS.love>>'',''<<$YS.bad>>'',''<<$YS.bio>>''"><img class="img_stretch" src="images\NPC\<<$YS.name>>.png"></a>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo" data-title="<<$YS.name>>在医院的病房争吵声后相识" ><img class="img_stretch" src="images\NPC\<<$YS.name>>a.png"></a>'
+				'</div>'
+				end
+		        if $CT.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$CT.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$CT.name>>'',''<<$CT.love>>'',''<<$CT.bad>>'',''<<$CT.bio>>''"><img class="img_stretch" src="images\NPC\<<$CT.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="完成大别墅迎新会后接机相识" ><img class="img_stretch" src="images\NPC\<<$CT.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            if $QJ.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$QJ.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$QJ.name>>'',''<<$QJ.love>>'',''<<$QJ.bad>>'',''<<$QJ.bio>>''"><img class="img_stretch" src="images\NPC\<<$QJ.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="完成便利店后相识" ><img class="img_stretch" src="images\NPC\<<$QJ.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            if $YY.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$YY.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$YY.name>>'',''<<$YY.love>>'',''<<$YY.bad>>'',''<<$YY.bio>>''"><img class="img_stretch" src="images\NPC\<<$YY.name>>.png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="帝国豪宅内相识" ><img class="img_stretch" src="images\NPC\<<$YY.name>>a.png"></a>'
+	            '</div>'
+	            end
+	            
+	            if $MQ.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$MQ.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$MQ.name>>'',''<<$MQ.love>>'',''<<$MQ.bad>>'',''<<$MQ.bio>>''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\松下纱荣子(母亲).png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="经营着一家疗养院，平时也在里面兼职护士长" ><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\松下纱荣子(母亲)a.png"></a>'
+	            '</div>'
+	            end
+	            if $MQMM.available=1:
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="<<$MQMM.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$MQMM.name>>'',''<<$MQMM.love>>'',''<<$MQMM.bad>>'',''<<$MQMM.bio>>''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\白峰美羽(姨妈).png"></a>'
+	            '</div>'
+	            else
+	            '<div class="charac_nps_list_foto">
+	                <a class="photo" data-title="全市有名的数学老师，灭绝师太" ><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\白峰美羽(姨妈)a.png"></a>'
+	            '</div>'
+	            end
+	'</div>'
+	
+	
+	
+	
+	'<div class="options_back"><a href="exec:gt $loc,$metka"><div class="settings_back_menu"></div></a></div>'
+
+--- menu_charac_主要 ---------------------------------
+

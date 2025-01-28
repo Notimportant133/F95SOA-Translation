@@ -1,0 +1,31 @@
+# IdolCompetitionSequelAdditionalCharactersGuide
+
+
+
+	cls
+	gs'menu_time_calc'
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_mainnpc'
+		gs'menu_act_hidden'
+	'</div>'
+	
+	
+	'<div id="left-column-gl">'
+			'<p>·————————'
+			'<p><span class=''red''>☆偶像大赛后篇补充角色：魅魔使（楪可怜）：</span></p>'
+			'<p>如何解锁：偶像大赛完成后大别墅右下角房间召唤阵解锁</p>'
+			'<p>1.完成偶像大赛，获得私人大别墅后并解锁所有房间后，在大别墅右下角房间有个召唤阵，召唤她出来并签订契约。（没有的话就多点几次）</p>'
+			'<p>2.每日献上贡品：自己或者去居民区随机偶遇，记住他的电话后回去传送阵处电话骗来榨汁。每月尾号带 7 的日子，0 点后可以去找魅魔嘿嘿嘿。</p>'
+			'<p>3.攻略了车行千金和温泉老板后，大别墅随机门铃声她们会来做客（单独来的）。招待完车行千金可以在 4S 店有剧情（市场营销第三个选项解锁）。招待完温泉老板娘后可以再温泉研究新菜品时解锁第三个选项。</p>'
+			'<p>4.现在差不多能带魅魔出去玩了，并解锁夜店兼职。</p>'
+			'<p>5.温泉老板娘、车行千金单独来敲门时，分别让魅魔招待 5 次，18 点大别墅会有剧烈的门铃，求助魅魔改善她们的关系进度到 100%之后，可以触发 3P、4P 剧情。</p>'
+			'<p>魅魔能力可催眠的对象有：	月末查水表的人、帝国娱乐 CEO、西语老师、帝国健康 CMO、警局局长、警员、学校走	廊摔倒的老师。 </p>'
+			'<p>·————————'
+	'</div>'
+	
+	'<div class="options_back"><a href="exec:gt ''游戏攻略改''"><div class="settings_back_menu"></div></a></div>'
+
+--- IdolCompetitionSequelAdditionalCharactersGuide ---------------------------------
+

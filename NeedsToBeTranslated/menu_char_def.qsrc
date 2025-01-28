@@ -1,0 +1,166 @@
+# menu_char_def
+
+
+
+	cls
+	gs'menu_time_calc'
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_mainnpc'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				if $SB.available=1:'<a class="photo" data-title="班级名册" href="exec:gt ''menu_charac_学生'',''0''"><img class="img_stretch" src="images\place\名单.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				if $FK.available*$AW.available=1:'<a class="photo" data-title="权势名单" href="exec:gt ''menu_charac_政治'',''0''"><img class="img_stretch" src="images\place\名单2.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			if 市长确定=1:'<a class="photo" data-title="结局重置" href="exec:gt ''结局重置''"><img class="img_stretch" src="images\place\重置.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="家庭成员" href="exec: gt ''menu_char_def'',''0''"><img class="img_stretch" src="images\place\回家_小图.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="商场成员" href="exec: gt ''menu_char_market'',''0''"><img class="img_stretch" src="images\place\shopping_mall.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="医院成员" href="exec: gt ''menu_char_hos'',''0''"><img class="img_stretch" src="images\place\医院小图.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="学校成员" href="exec: gt ''menu_char_sch'',''0''"><img class="img_stretch" src="images\place\大学_.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="职场相好" href="exec: gt ''menu_char_group'',''0''"><img class="img_stretch" src="images\place\Imperial_Group.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="政府机构" href="exec: gt ''menu_char_gov'',''0''"><img class="img_stretch" src="images\place\town_Hall.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="小区别墅" href="exec: gt ''menu_char_villa'',''0''"><img class="img_stretch" src="images\place\联排别墅_.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			'<a class="photo" data-title="其他人物" href="exec: gt ''menu_char_oth'',''0''"><img class="img_stretch" src="images\place\海滩闲逛.jpg"></a>'
+			'</div>'
+		'</div>'
+	'</div>'
+	 
+	
+	'<div id="left-column">'
+		'<div class="charac_npc_list">'
+					
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$JM.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$JM.name>>'',''<<$JM.love>>'',''<<$JM.bad>>'',''<<$JM.bio>>''"><img class="img_stretch" src="images\NPC\<<$JM.name>>.png"></a>'
+					'<p class="info2"><<$JM.name>></p><p class="info3">好感:<<$JM.love>></p><p class="info3">堕落:<<$JM.bad>></p>'
+				'</div>'
+				
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$JJ.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$JJ.name>>'',''<<$JJ.love>>'',''<<$JJ.bad>>'',''<<$JJ.bio>>''"><img class="img_stretch" src="images\NPC\<<$JJ.name>>.png"></a>'
+					'<p class="info2"><<$JJ.name>></p><p class="info3">好感:<<$JJ.love>></p><p class="info3">堕落:<<$JJ.bad>></p>'
+				'</div>'
+				
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$MM.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$MM.name>>'',''<<$MM.love>>'',''<<$MM.bad>>'',''<<$MM.bio>>'',''<<mm_fans>>''"><img class="img_stretch" src="images\NPC\<<$MM.name>>.png"></a>'
+					'<p class="info2"><<$MM.name>></p><p class="info3">好感:<<$MM.love>></p><p class="info3">堕落:<<$MM.bad>></p>'
+				'</div>'
+				
+				if $MQ.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$MQ.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$MQ.name>>'',''<<$MQ.love>>'',''<<$MQ.bad>>'',''<<$MQ.bio>>''"><img class="img_stretch" src="images\NPC\<<$MQ.name>>.png"></a>'
+					'<p class="info2"><<$MQ.name>></p><p class="info3">好感:<<$MQ.love>></p><p class="info3">堕落:<<$MQ.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$MQ.name>>a.png"></a><p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+				if $MQMM.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$MQMM.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$MQMM.name>>'',''<<$MQMM.love>>'',''<<$MQMM.bad>>'',''<<$MQMM.bio>>''"><img class="img_stretch" src="images\NPC\<<$MQMM.name>>.png"></a>'
+					'<p class="info2"><<$MQMM.name>></p><p class="info3">好感:<<$MQMM.love>></p><p class="info3">堕落:<<$MQMM.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$MQMM.name>>a.png"></a><p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+				if $MMS.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$MMS.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$MMS.name>>'',''<<$MMS.love>>'',''<<$MMS.bad>>'',''<<$MMS.bio>>''"><img class="img_stretch" src="images\NPC\<<$MMS.name>>.png"></a>'
+					'<p class="info2"><<$MMS.name>></p><p class="info3">好感:<<$MMS.love>></p><p class="info3">堕落:<<$MMS.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$MMS.name>>a.png"></a><p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+				if $PW.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$PW.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$PW.name>>'',''<<$PW.love>>'',''<<$PW.bad>>'',''<<$PW.bio>>''"><img class="img_stretch" src="images\NPC\<<$PW.name>>.png"></a>'
+					'<p class="info2"><<$PW.name>></p><p class="info3">好感:<<$PW.love>></p><p class="info3">堕落:<<$PW.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$PW.name>>a.png"></a><p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+				if $HB.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$HB.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$HB.name>>'',''<<$HB.love>>'',''<<$HB.bad>>'',''<<$HB.bio>>''"><img class="img_stretch" src="images\NPC\<<$HB.name>>.png"></a>'
+					'<p class="info2"><<$HB.name>></p><p class="info3">好感:<<$HB.love>></p><p class="info3">堕落:<<$HB.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$HB.name>>a.png"></a><p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+				if $UN.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$UN.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$UN.name>>'',''<<$UN.love>>'',''<<$UN.bad>>'',''<<$UN.bio>>''"><img class="img_stretch" src="images\NPC\<<$UN.name>>.png"></a>'
+					'<p class="info2"><<$UN.name>></p><p class="info3">好感:<<$UN.love>></p><p class="info3">堕落:<<$UN.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$UN.name>>a.png"></a><p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+				if $ZMK.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$ZMK.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$ZMK.name>>'',''<<$ZMK.love>>'',''<<$ZMK.bad>>'',''<<$ZMK.bio>>''"><img class="img_stretch" src="images\NPC\<<$ZMK.name>>.png"></a>'
+					'<p class="info2"><<$ZMK.name>></p><p class="info3">好感:<<$ZMK.love>></p><p class="info3">堕落:<<$ZMK.bad>></p>'
+				'</div>'
+				end
+				
+				if $CXG.available=1:
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="<<$CXG.name>>" href="exec:gt ''Generic_NPC_menu'',''<<$CXG.name>>'',''<<$CXG.love>>'',''<<$CXG.bad>>'',''<<$CXG.bio>>''"><img class="img_stretch" src="images\NPC\<<$CXG.name>>.png"></a>'
+					'<p class="info2"><<$CXG.name>></p><p class="info3">好感:<<$CXG.love>></p><p class="info3">堕落:<<$CXG.bad>></p>'
+				'</div>'
+				else
+				'<div class="charac_nps_list_foto">
+					<a class="photo2" data-title="我还不认识她" ><img class="img_stretch" src="images\NPC\<<$CXG.name>>a.png"></a><p class="info2">(???)</p>'
+				'</div>'
+				end
+				
+		'</div>'
+	'</div>'
+	'<div class="options_back"><a href="exec:gt $loc,$metka"><div class="settings_back_menu"></div></a></div>'
+	
+	
+	
+	
+	
+	
+	
+	
+
+--- menu_char_def ---------------------------------
+

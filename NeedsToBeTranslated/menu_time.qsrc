@@ -1,0 +1,343 @@
+# menu_time
+
+
+
+	'<div class="time_menu">'
+		 gs'menu_time_calc'
+		 
+		 
+		 if 每日天气=0:
+		  $天气[0]='☀晴'
+		  $天气[1]='☀晴'
+		  $天气[2]='☀晴'
+		  $天气[3]='☀晴'
+		  $天气[4]='☀晴'
+		  $天气[5]='☁云'
+		  $天气[6]='☁阴'
+		  $天气[7]='☁阴'
+		  $天气[8]='☂雨'
+		  $天气[9]='☂雨'
+		  $天气=$天气[rand(0,9)]
+		  每日天气=1
+		 end
+		 
+		 if $lock1 = 1:
+			day = $lock_day
+			month = $lock_month
+			year = $lock_year
+		 end if
+		 
+		 if $lock2 = 1:
+			minutes = $lock_minutes
+			hour = $lock_hour
+		 end if
+	
+		 
+		 
+			'<p>'
+				gs '通用修改','天气'
+
+		        gs '通用修改','日期'
+
+				gs '通用修改','星期'
+			if  通关奖励领取>0:
+			'✌'
+			else
+			''
+			end
+			if  魔王之瞳>0:
+			'♕'
+			else
+			''
+			end
+			gs '通用修改','驾车'
+			'</p>'
+			'<p> </p>'
+	
+	
+		if hour < 10 and minutes<10: 
+			'<p class ="timer">'
+			'0<<hour>>:0<<minutes>>'
+			gs '通用修改','锁时间'
+			'<span style="font-size: 14px;">&emsp;'
+			'<a href="exec:minutes+=1440  & gt $loc,$metka"><span class =''red'' style="font-size: 14px;">+24H</span></a>'
+			'|'
+			'<a href="exec:minutes-=1440  & gt $loc,$metka"><span class =''red'' style="font-size: 14px;">-24H</span></a>'
+			'</span>'
+			'</p>'
+		end
+		if hour >= 10 and minutes<10: 
+			'<p class ="timer">'
+			'<<hour>>:0<<minutes>>'
+			gs '通用修改','锁时间'
+			'<span style="font-size: 14px;">&emsp;'
+			'<a href="exec:minutes+=1440  & gt $loc,$metka"><span class =''red'' style="font-size: 14px;">+24H</span></a>'
+			'|'
+			'<a href="exec:minutes-=1440  & gt $loc,$metka"><span class =''red'' style="font-size: 14px;">-24H</span></a>'
+			'</span>'
+			'</p>'
+		end
+		if hour < 10 and minutes=>10: 
+			'<p class ="timer">'
+			'0<<hour>>:<<minutes>>'
+			gs '通用修改','锁时间'
+			'<span tyle="font-size: 14px;">&emsp;'
+			'<a href="exec:minutes+=1440  & gt $loc,$metka"><span class =''red'' style="font-size: 14px;">+24H</span></a>'
+			'|'
+			'<a href="exec:minutes-=1440  & gt $loc,$metka"><span class =''red'' style="font-size: 14px;">-24H</span></a>'
+			'</span>'
+			'</p>'
+		end
+		if hour => 10 and minutes=>10: 
+			'<p class ="timer">'
+			'<<hour>>:<<minutes>>'
+			gs '通用修改','锁时间'
+			'<span style="font-size: 14px;">&emsp;'
+			'<a href="exec:minutes+=1440  & gt $loc,$metka"><span class =''red'' style="font-size: 14px;">+24H</span></a>'
+			'|'
+			'<a href="exec:minutes-=1440  & gt $loc,$metka"><span class =''red'' style="font-size: 14px;">-24H</span></a>'
+			'</span>'
+			'</p>'
+		end
+		
+	
+	if $The_Sword_of_Damocles<=4999999 or Sisyphus=1:'</div>'
+	
+	
+	gs "通用词库"
+	gs"MultiAbilityCheck"
+	gs"NPCattributes"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$The_Sword_of_Damocles+=1
+	
+	if $The_Sword_of_Damocles>5000011 and Sisyphus=0:gt'star'
+	
+	if $The_Sword_of_Damocles>5000009 and Sisyphus=0:
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images/videos/杂/商场76~1.webm" type=''video/webm;''></video></div>'
+
+
+
+
+
+
+
+
+
+
+
+
+		'</div>'
+	 end
+	
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+--- menu_time ---------------------------------
+

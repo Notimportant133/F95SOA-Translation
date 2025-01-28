@@ -1,0 +1,27 @@
+# menu_settings
+
+
+
+	cls
+	
+	'<div class="options_back"><a href="exec:gt $loc,$metka"><div class="settings_back_menu"></div></a></div>'
+	'<div class="charac_nps_info15">'
+			if year>=2024 and 999>=日期计数君 and 日期计数君>=25:
+			end
+	
+			if 日期计数君>999:
+			'哥们，你已经玩了很久了，祝你关掉游戏后的生活依旧顺利</p>'
+			end
+	
+	
+	
+	'</div>'
+			if (year>=2024 or day>=15) and 日期计数君>=10:
+
+			end
+		'<a href="exec: SAVEGAME & gt $loc,$metka"><div class="settings_save_menu"></div></a>'
+		'<a href="exec: OPENGAME"><div class="settings_load_menu"></div></a>'
+	
+
+--- menu_settings ---------------------------------
+

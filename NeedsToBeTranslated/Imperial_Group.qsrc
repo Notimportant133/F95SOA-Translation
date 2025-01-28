@@ -1,0 +1,114 @@
+# Imperial_Group
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'ыя'
+	
+	a=0
+	q=0
+	
+	if $校花事件链=1 and 13<=hour and hour<=16 and week_day =6:gt'Student_group_event','校花面试1'
+	if $校花事件链=3 and 13<=hour and hour<=16 and week_day =6:gt'Student_group_event','校花面试2'
+	
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		'<div class="actions_menu">'
+		
+			'<div class="action">'
+				if $ZZY.available=0 and $XL.available=0 and $LLQ.available=0 and $SHX.available=0 and $LYS.available=0 and $ZHONGZHEN.available=0:
+				'<a class="photo" data-title="1000楼：没有权限""><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\ImDoneForSurroundedByBeauties\杂乱\时空乱流.jpg"></a>'
+				else
+				'<a class="photo" data-title="1000楼：完蛋我被美女包围了" href="exec:minutes+=5 & gt ''ImDoneForSurroundedByBeauties''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\ImDoneForSurroundedByBeauties\杂乱\时空乱流.jpg"></a>'
+				end
+			'</div>'
+			'<div class="action">'
+				'<a class="photo"  ><img class="img_stretch" src="images\place\空白.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+			   if $CT.available=0:
+				'<a class="photo" data-title="100楼：没有权限""><img class="img_stretch" src="images\place\empire_dome.jpg"></a>'
+				else
+				'<a class="photo" data-title="100楼：帝国穹顶" href="exec:minutes+=5 & gt ''empire_dome''"><img class="img_stretch" src="images\place\empire_dome.jpg"></a>'
+				end
+			'</div>'
+			'<div class="action">'
+				'<a class="photo" ><img class="img_stretch" src="images\place\空白.jpg"></a>'
+			'</div>'
+
+			'<div class="action">'
+				'<a class="photo"  ><img class="img_stretch" src="images\place\空白.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				if 帝国level>=3:
+				'<a class="photo" data-title="99楼：帝国健康" href="exec:minutes+=5 & gt ''empire_health''"><img class="img_stretch" src="images\place\empire_health.jpg"></a>'
+				else
+				'<a class="photo" data-title="99楼：帝国健康（3级以上）" href="exec:"><img class="img_stretch" src="images\place\empire_health.jpg"></a>'
+				end
+			'</div>'
+			'<div class="action">'
+				'<a class="photo"  ><img class="img_stretch" src="images\place\电梯.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				if 帝国level>=7:
+				'<a class="photo" data-title="100楼：帝国能源" href="exec:minutes+=5 & gt ''Imperial_Energy''"><img class="img_stretch" src="images\place\Imperial_Energy.jpg"></a>'
+				else
+				'<a class="photo" data-title="100楼：帝国能源（7级以上）" href="exec:"><img class="img_stretch" src="images\place\Imperial_Energy.jpg"></a>'
+				end
+			'</div>'
+
+		
+			'<div class="action">'
+				'<a class="photo" data-title="地下交通" href="exec:minutes+=15 & gt ''subway''"><img class="img_stretch" src="images\place\subway.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				'<a class="photo" data-title="帝国集团大厅" href="exec:minutes+=15 & gt ''Imperial_Group''"><img class="img_stretch" src="images\place\帝国集团_大厅.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				'<a class="photo"  ><img class="img_stretch" src="images\place\电梯.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				'<a class="photo" data-title="69楼：帝国娱乐" href="exec:minutes+=5 & gt ''Empire_Entertainment''"><img class="img_stretch" src="images\place\Empire_Entertainment.jpg"></a>'
+			'</div>'
+			
+	
+			
+	
+	
+	
+			
+	
+			
+		'</div>'
+	'</div>'
+	
+	'<div class ="show_menu"><img src="images\place\帝国集团_大厅.jpg" width="854"></div>'
+	
+	'<div class="button_menu">'
+		'<div class="button" id="FButton"><a href="exec:minutes+=30 "onclick="checkSeason()">消磨时间</a></div>'
+		'<div class="button" id="buttonA" style="display: none;"><a href="exec:gt $loc,$metka">消磨时间</a></div>'
+		'<div class="button" id="buttonB" style="display: none;"><a href="exec:$The_Sword_of_Damocles=4999970 & gt $loc,$metka">消磨时间</a></div>'
+	'</div>'
+	
+	'<div class="dialog_menu">'
+		'<p>·机械AI声：欢迎来到帝国集团，本集团正积极拓展电动汽车、太阳能电池板以及适用于家庭和企业的综合可再生能源解决方案,加速世界向可持续能源的转变。</p>'
+		'<p>·机械AI声：帝国集团各子集团正在招人中。月薪20k~25k，朝九晚五，无加班要求，年假超过30天，欢迎有志之士（仅限女性）</p>'
+	'</div>'
+	
+
+
+
+
+
+
+	
+	
+	
+	 
+
+--- Imperial_Group ---------------------------------
+

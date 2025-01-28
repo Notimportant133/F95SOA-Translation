@@ -1,0 +1,524 @@
+# Home_Computer
+
+
+
+
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	
+	if dongmanjishu='':
+		dongmanjishu=1
+	end
+	
+
+
+
+	
+	gs'ыя'
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		gs "energy_judgment"
+		'<div class="actions_menu">'
+			'
+			<div class="action2">
+				<a class="photo" data-title="直播" href="exec:minutes+=15 & gt ''Home_Live_Broadcast''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\items\dy0.png"></a>
+			</div>
+			<div class="action2">
+				<a class="photo" data-title="抖音" href="exec:$抖音_num2=$抖音_num & minutes+=30 & gt ''Home_Computer'',''正在刷抖音''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\items\tk0.png"></a>
+			</div>
+			<div class="action2">
+				<a class="photo" data-title="看片" href="exec:minutes+=30 & gt ''Home_Computer'',''正在看片''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\items\ph0.png"></a>
+			</div>
+			<div class="action2">
+				<a class="photo" data-title="看电影" href="exec:minutes+=23 & dongmanjishu=1 & gt ''Home_Computer'',''看电影''"><img class="img_stretch" src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\电影\电影头像.jpg"></a>
+			</div>
+			<div class="action2">
+				<a class="photo" data-title="看动漫" href="exec:minutes+=23 & dongmanjishu=1 & gt ''Home_Computer'',''看动漫''"><img class="img_stretch" src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\动漫\动漫头像.jpg"></a>
+			</div>
+			<div class="action2">
+				<a class="photo" data-title="看美女" href="exec:minutes+=23 & dongmanjishu=1 & gt ''Home_Computer'',''看美女''"><img class="img_stretch" src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\美女\美女头像.jpg"></a>
+			</div>
+			<div class="action2">
+				<a class="photo" data-title="看死神" href="exec:minutes+=23 & dongmanjishu=1 & gt ''Home_Computer'',''看死神''"><img class="img_stretch" src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\死神头像.jpg"></a>
+			</div>
+			<div class="action2">
+				<a class="photo" data-title="看巨人" href="exec:minutes+=23 & dongmanjishu=1 & gt ''Home_Computer'',''看巨人''"><img class="img_stretch" src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\巨人头像.jpg"></a>
+			</div>
+			<div class="action2">
+				<a class="photo" data-title="看熊出没" href="exec:minutes+=23 & dongmanjishu=1 & gt ''Home_Computer'',''看熊出没''"><img class="img_stretch" src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\熊出没头像.jpg"></a>
+			</div>
+			<div class="action2">
+				<a class="photo" data-title="微博" href="exec:minutes+=15 & gt ''Home_Computer'',''微博''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\items\wb0.png"></a>
+			</div>
+			<div class="action2">
+				<a class="photo" data-title="监控&录像" href="exec:minutes+=5 & gt ''Home_Computer'',''监控''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\items\摄像头0.png"></a>
+			</div>
+			<div class="action2">
+				<a class="photo" data-title="<<$absol>><<$absolu>>" href="exec:minutes+=5 & gs ''яз''"><img class="img_stretch" src="images\NPC\<<$absol>><<$absolu>>.jpg"></a>
+			</div>
+			<div class="action">
+				<a class="photo" data-title="卧室" href="exec:minutes+=5 & gt ''Home_Bedroom''"><img class="img_stretch" src="images\place\房间_<<$times_of_day>>.jpg"></a>
+			</div>
+			'
+			'<div class="action2">'
+
+
+			'</div>'
+		'</div>'
+	'</div>'
+	
+	
+	
+	if $args[0] = '正在刷抖音':
+		$抖音_num = rand(1,213)
+		my.精力-=1
+		if $抖音_num = $抖音_num2:
+			$抖音_num = rand(1,212)
+		end
+		
+		if $WH.available=0:$抖音_num=50
+		
+
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images/videos/tiktok/抖音<<$抖音_num>>~1.webm" type=''video/webm;''></video></div>'
+		'</div>'
+
+		'<div class="button_menu">
+			<div class="button"><a href="exec:$抖音_num2=$抖音_num & minutes+=30 & gt ''Home_Computer'',''正在刷抖音''">上滑</a></div>'
+			if  $抖音_num = 50:'<div class="buttonS"><a href="exec:gt ''Home_Computer'',''私信''">私信她</a></div>'
+			'<div class="button"><a href="exec: minutes+=30 & gt ''Home_Computer''">发呆</a></div>
+		</div>'
+
+		'<div class="dialog_menu">'
+			'<p>这个抖音可真给劲儿！这是热榜上第<<$抖音_num>>个作品</p>'
+		'</div>'
+	End
+	
+	
+	
+
+
+
+	
+	if $args[0] = '':
+
+		'<div class="show_menu">'
+			'<img src="images\place\电脑.jpg" width="854">'
+		'</div>'
+
+		'<div class="button_menu">
+			<div class="button"><a href="exec: minutes+=30 & gt ''Home_Computer''">发呆</a></div>
+		</div>'
+
+		'<div class="dialog_menu">'
+			'<p>我该做什么呢.....</p>'
+		'</div>'
+	End
+	
+	
+	if $args[0] = '监控':
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\videos\杂\监控~1.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		 '<div class="button_menu">'
+			if FZL录像带>=1:
+			'<div class="button"><a href="exec: a=-1 & gt ''Student_group_event'',''FZL_录像带''">录像带·<<$FZL.name>></a></div>'
+			end 
+			if $HSW.录像带>=1:
+			'<div class="buttonR"><a href="exec: a=0 & gt ''Student_group_event'',''HSW_录像带''">录像带·<<$HSW.name>></a></div>'
+			end 
+			if $摄像头_仓库>=1:
+			'<div class="buttonPu4"><a href="exec: $B=''storehouse''  &  C=1 & gt ''stepmom_event'',''仓库监控''">药厂仓库：周六 23:00~24:00</a></div>'
+			end 
+			
+			if $摄像头_SS>=1 :
+			'<div class="buttonB3"><a href="exec:gt ''killer_event'',''厨房监控''">厨房监控·<<$SS.name>></a></div>'
+			end 
+	
+			if $摄像头_LY>=1 :
+			'<div class="buttonB5"><a href="exec:gt ''Anchor_event'',''厨房监控''">室内监控·<<$LY.name>></a></div>'
+			end 
+			
+			if $摄像_MS>=1 :
+			'<div class="buttonR"><a href="exec: a=0 & gt ''secretary_event'',''秘书_Fuck_访客2''">匿名录像带</a></div>'
+			end 
+			
+			if XM录像带>=2 :
+			'<div class="buttonR1"><a href="exec: a=0 & $XM录像未看天数=0 & gt ''School_Girl_Event'',''录像带选择''">盗摄<<$XM.name>></a></div>'
+			end 
+			
+			if $LEI录像带1>=1:
+			'<div class="buttonG2"><a href="exec: a=0 & gt ''nun_event'',''选择录像带''">录像带·<<$LEI.name>></a></div>'
+			end 
+
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>信号源获取中.....</p>'
+		'</div>'
+	
+	End
+	
+	if $meilisha.lovenew>0:
+		video_on=1
+	end
+	
+	if $args[0] = '正在看片':
+		my.精力-=10
+		$看片_num += rand(1,3)
+		if  $看片_num> 29:
+			$看片_num -=29
+		end
+
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images/videos/porn/黄片<<$看片_num>>~1.webm" type=''video/webm;''></video></div>'
+		'</div>'
+
+		'<div class="button_menu">
+			<div class="button"><a href="exec: minutes+=30 &gt ''Home_Computer'',''正在看片''">下一个</a></div>
+			<div class="button"><a href="exec: minutes+=30 & gt ''Home_Computer''">发呆</a></div>
+		</div>'
+
+		'<div class="dialog_menu">'
+			'<p>这个片儿可真给劲儿！这是热榜上第<<$看片_num>>个作品</p>'
+		'</div>'
+	End
+	
+	
+	if $args[0] = '微博':
+
+		'<div class="show_menu">'
+			'<img src="images\place\电脑.jpg" width="854">'
+		'</div>'
+
+		'<div class="button_menu">
+			<div class="button"><a href="exec: minutes+=30 & gt ''Home_Computer''">不看了</a></div>
+		</div>'
+
+		'<div class="dialog_menu">'
+			'<p>·全是一些没有营养的内容...</p>'
+			if $HZ_Event_coser>=0:'<p><a href="exec:minutes+=5 &gt ''Home_Computer'',''微博状态''">#Coser状态</a></p>'
+		'</div>'
+	End
+	
+	
+	if $args[0] = '微博状态':
+
+		'<div class="show_menu">'
+			'<img src="images\place\电脑.jpg" width="854">'
+		'</div>'
+
+		'<div class="button_menu">'
+			if 相机>0 and $HZ_Event_coser=0:'<div class="button"><a href="exec: minutes+=30 & gt ''Home_Computer'', ''联系她''">联系她</a></div>'
+			if $HZ_Event_coser=2:'<div class="buttonG"><a href="exec: minutes+=30 & $HZ_Event_coser=3  & money-=700 & gt ''Home_Computer'', ''微博状态''">雇佣水军 700￥</a></div>'
+			if $HZ_Event_coser=5 and $HZ.bad>0:'<div class="buttonG"><a href="exec: minutes+=30 & $HZ_Event_coser=6  & money-=700 & gt ''Home_Computer'', ''微博状态''">人肉黑历史 700￥</a></div>'
+			'<div class="button"><a href="exec: minutes+=30 & gt ''Home_Computer''">不看了</a></div>
+		</div>'
+
+		'<div class="dialog_menu">'
+			'<p>·#Coser状态</p>'
+		if $HZ_Event_coser<2:
+			'<p>·某女性coser正在寻找约拍摄影师。</p>'
+			'<p>要求：女性摄影师不限；蝈蝻摄影师必须听指挥，摄影器材只接受佳能R6单反，免费出片，包后期。</p>'
+			if $HZ_Event_coser=1:'<p>私信：双休日来城里的大学学生会接我!知道是哪吧?乡巴佬。你要是敢鸽我就网上曝光你这个垃圾蝈蝻。</p>'
+		end
+		if $HZ_Event_coser=2:
+			'<p>·你为她拍摄的照片平平无奇，没有什么点赞量。</p>'
+		end
+		if $HZ_Event_coser=3:
+			'<p>·一时间微博点赞量迅速上升，热搜竟然是#神秘coser横空出世 #这个coser是谁？#coser出处  #绝绝子coser</p>'
+			'<p>·反响热烈！是时候去学校找她邀功了。</p>'
+			$HZ_Event_coser=4
+		end
+		if $HZ_Event_coser=6:
+			'<p>·营销号:#爆火coser患有性病是怎么回事呢？前阵子爆火的coser相信大家都很熟悉，但是前阵子爆火的coser患有性病是怎么回事呢，下面就让小编带大家一起了解吧。</p>'
+			'<p>·营销号:#爆火coser的真实身份是<<$hz.name>>！大家可能会很惊讶学生会会长怎么会患有性病呢？</p>'
+			'<p>·营销号:据熟悉她的人爆料，她在高中时期交往过一个男友，但该男友因感染不治之症身亡，校内普遍分析为是<<$hz.name>>患有性病！！害死了其男友！！可惜事实就是这样，小编也感到非常惊讶。</p>'
+		end
+		'</div>'
+	End
+	
+	if $args[0] = '联系她':
+
+		'<div class="show_menu">'
+			'<img src="images\place\电脑.jpg" width="854">'
+		'</div>'
+
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec: minutes+=30 & gt ''Home_Computer''">好的</a></div>
+		</div>'
+
+		'<div class="dialog_menu">'
+			'<p>·嘟嘟嘟————</p>'
+			'<p>？？？：喂，嗷。免费的蝈蝻摄影师是吧。丑话说前头，我负责出cos服，你负责拍片和后期。我不会出一分钱的，你爱拍不拍有的是蝈蝻想拍我。</p>'
+			'<p>我：呃..可以，就当练练手。</p>'
+			'<p>？？？：你到底行不行啊？菜鸟蝈蝻就别来浪费时间了。</p>'
+			'<p>我：行！</p>'
+			'<p>？？？：双休日来城里的大学学生会接我!知道是哪吧?乡巴佬。你要是敢鸽我就网上曝光你这个垃圾蝈蝻。</p>'
+	         if $HZ_Event_coser=0:$HZ_Event_coser=1
+		'</div>'
+	End
+	
+	
+	if $args[0] = '私信':
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\WH\vids\私信.webm" type=''video/webm;''></video></div>'
+			'</div>'
+
+		'<div class="button_menu">'
+			if money>=4888:'<div class="buttonG"><a href="exec:money-=488 & gt ''网红_事件'',''见面''">见面4888￥</a></div>'else'<div class="buttonGr"><a href="exec:">见面4888￥</a></div>'
+		'</div>'
+
+		'<div class="dialog_menu">'
+			'<p>我：你好！</p>'
+			'<p><自动回复>门槛私信带上坐标年龄，面交无套路！可约可玩可啪啪。</p>'
+			'<p>我：……</p>'
+		'</div>'
+	End
+	
+	
+	if $args[0] = '测试':
+
+		'<div class="show_menu">'
+			'<img src="images\place\测试.jpg" width="854">'
+		'</div>'
+
+		'<div class="button_menu">
+			<div class="button"><a href="exec: minutes+=30 & gt ''Home_Computer'',''真测试''">执意进入</a></div>
+			<div class="button"><a href="exec: minutes+=30 & gt ''Home_Computer''">离开</a></div>
+		</div>'
+
+		'<div class="dialog_menu">'
+			'<p>·此房间是程序员/测试游戏的地方，不是你这个玩家该来的地方！</p>'
+			'<p>·此房间是程序员/测试游戏的地方，不是你这个玩家该来的地方！</p>'
+			'<p>·此房间是程序员/测试游戏的地方，不是你这个玩家该来的地方！</p>'
+		'</div>'
+	End
+	
+	if $args[0] = '看电影':
+		
+
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay controls loop height="480">
+			 <source src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\电影\电影<<dongmanjishu>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+
+		'<div class="button_menu">'
+			if dongmanjishu <=30:
+				'<div class="button"><a href="exec: minutes+=12 & dongmanjishu+=1 & gt ''Home_Computer'',''看电影''">下一个</a></div>'
+			end
+			'<div class="button"><a href="exec: minutes+=12 & gt ''Home_Computer''">发呆</a></div>'
+		'</div>'
+
+		'<div class="dialog_menu">'
+			'因为时间较长，增加视频时间控制功能</p>'
+			'<img src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\图片\pick2_logo.png" width="30"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;">这电影不错，好看，真好看！！！！！</a></p>'
+			
+			'<div><marquee style="width:800px;background: -webkit-linear-gradient(45deg, red, yellow, green, blue, Cyan, pink);-webkit-background-clip: text;-webkit-text-fill-color: transparent;display: inline-block;font-size:30px;font-weight:bold;line-height:30px" behavior=="alternate" direction="up"><img src="images/extracted_media/image_5153170712816127998.png" width="80">V<span></span>7<span></span>0<span></span>版<span></span>本<span></span>完<span></span>全<span></span>免<span></span>费<span></span>，<span></span>只<span></span>发<span></span>于<span></span>老<span></span>王<span></span>论<span></span>坛<span></span>，<span></span>作<span></span>者<span></span>本<span></span>人<span></span>未<span></span>做<span></span>任<span></span>何<span></span>整<span></span>合<span></span>，<span></span>不<span></span>负<span></span>责<span></span>整<span></span><span width="20px">合</span><span></span>版<span></span>本<span></span>的<span></span>b<span></span>u<span></span>g<span></span>修<span></span>复</marquee></div>'
+		
+			
+		'</div>'
+	End
+	
+	if $args[0] = '看动漫':
+		
+
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay controls loop height="480">
+			 <source src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\动漫\动漫<<dongmanjishu>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+
+		'<div class="button_menu">'
+			if dongmanjishu <=4:
+				'<div class="button"><a href="exec: minutes+=12 & dongmanjishu+=1 & gt ''Home_Computer'',''看动漫''">下一个</a></div>'
+			end
+			'<div class="button"><a href="exec: minutes+=12 & gt ''Home_Computer''">发呆</a></div>'
+		'</div>'
+
+		'<div class="dialog_menu">'
+			'因为时间较长，增加视频时间控制功能</p>'
+			
+			'<img src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\图片\pick2_logo.png" width="30"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;">这动漫不错，有意思，爱看！！！！！</a></p>'
+			
+			'<div><marquee style="width:800px;background: -webkit-linear-gradient(45deg, red, yellow, green, blue, Cyan, pink);-webkit-background-clip: text;-webkit-text-fill-color: transparent;display: inline-block;font-size:30px;font-weight:bold;line-height:30px" behavior=="alternate" direction="up"><img src="images/extracted_media/image_5153170712816127998.png" width="80">V<span></span>7<span></span>0<span></span>版<span></span>本<span></span>完<span></span>全<span></span>免<span></span>费<span></span>，<span></span>只<span></span>发<span></span>于<span></span>老<span></span>王<span></span>论<span></span>坛<span></span>，<span></span>作<span></span>者<span></span>本<span></span>人<span></span>未<span></span>做<span></span>任<span></span>何<span></span>整<span></span>合<span></span>，<span></span>不<span></span>负<span></span>责<span></span>整<span></span><span width="20px">合</span><span></span>版<span></span>本<span></span>的<span></span>b<span></span>u<span></span>g<span></span>修<span></span>复</marquee></div>'
+		
+			
+		'</div>'
+	End
+	
+	if $args[0] = '看美女':
+		
+
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay controls loop height="480">
+			 <source src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\美女\美女<<dongmanjishu>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+
+		'<div class="button_menu">'
+			if dongmanjishu <=8:
+				'<div class="button"><a href="exec: minutes+=12 & dongmanjishu+=1 & gt ''Home_Computer'',''看美女''">下一个</a></div>'
+			end
+			'<div class="button"><a href="exec: minutes+=12 & gt ''Home_Computer''">发呆</a></div>'
+		'</div>'
+
+		'<div class="dialog_menu">'
+			'因为时间较长，增加视频时间控制功能</p>'
+			
+			'<img src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\图片\pick2_logo.png" width="30"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;">❤❤❤❤❤！！！</a></p>'
+			
+			'<div><marquee style="width:800px;background: -webkit-linear-gradient(45deg, red, yellow, green, blue, Cyan, pink);-webkit-background-clip: text;-webkit-text-fill-color: transparent;display: inline-block;font-size:30px;font-weight:bold;line-height:30px" behavior=="alternate" direction="up"><img src="images/extracted_media/image_5153170712816127998.png" width="80">V<span></span>7<span></span>0<span></span>版<span></span>本<span></span>完<span></span>全<span></span>免<span></span>费<span></span>，<span></span>只<span></span>发<span></span>于<span></span>老<span></span>王<span></span>论<span></span>坛<span></span>，<span></span>作<span></span>者<span></span>本<span></span>人<span></span>未<span></span>做<span></span>任<span></span>何<span></span>整<span></span>合<span></span>，<span></span>不<span></span>负<span></span>责<span></span>整<span></span><span width="20px">合</span><span></span>版<span></span>本<span></span>的<span></span>b<span></span>u<span></span>g<span></span>修<span></span>复</marquee></div>'
+		
+			
+		'</div>'
+	End
+	
+	if $args[0] = '看死神':
+		
+
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay controls loop height="480">
+			 <source src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\死神<<dongmanjishu>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+
+		'<div class="button_menu">'
+			if dongmanjishu <=2:
+				'<div class="button"><a href="exec: minutes+=12 & dongmanjishu+=1 & gt ''Home_Computer'',''看死神''">下一个</a></div>'
+			end
+			'<div class="button"><a href="exec: minutes+=12 & gt ''Home_Computer''">发呆</a></div>'
+		'</div>'
+
+		'<div class="dialog_menu">'
+			'因为时间较长，增加视频时间控制功能</p>'
+			
+			'<img src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\图片\pick2_logo.png" width="30"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;">画面炫丽，剧情紧凑，特效牛逼，精彩，真精彩！！！！！</a></p>'
+			
+			'<div><marquee style="width:800px;background: -webkit-linear-gradient(45deg, red, yellow, green, blue, Cyan, pink);-webkit-background-clip: text;-webkit-text-fill-color: transparent;display: inline-block;font-size:30px;font-weight:bold;line-height:30px" behavior=="alternate" direction="up"><img src="images/extracted_media/image_5153170712816127998.png" width="80">V<span></span>7<span></span>0<span></span>版<span></span>本<span></span>完<span></span>全<span></span>免<span></span>费<span></span>，<span></span>只<span></span>发<span></span>于<span></span>老<span></span>王<span></span>论<span></span>坛<span></span>，<span></span>作<span></span>者<span></span>本<span></span>人<span></span>未<span></span>做<span></span>任<span></span>何<span></span>整<span></span>合<span></span>，<span></span>不<span></span>负<span></span>责<span></span>整<span></span><span width="20px">合</span><span></span>版<span></span>本<span></span>的<span></span>b<span></span>u<span></span>g<span></span>修<span></span>复</marquee></div>'
+		
+			
+		'</div>'
+	End
+	
+	
+	
+	
+	$ыvкnm="8"
+	
+	if $args[0] = '看巨人':
+		
+
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay controls loop height="480">
+			 <source src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\巨人<<dongmanjishu>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+
+		'<div class="button_menu">'
+			if dongmanjishu <=1:
+				'<div class="button"><a href="exec: minutes+=12 & dongmanjishu+=1 & gt ''Home_Computer'',''看巨人''">下一个</a></div>'
+			end
+			'<div class="button"><a href="exec: minutes+=12 & gt ''Home_Computer''">发呆</a></div>'
+		'</div>'
+
+		'<div class="dialog_menu">'
+			'因为时间较长，增加视频时间控制功能</p>'
+			
+			'<img src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\图片\pick2_logo.png" width="30"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;">剧情极其惊艳，震撼人心，刺激，真刺激！！！！！</a></p>'
+			
+			'<div><marquee style="width:800px;background: -webkit-linear-gradient(45deg, red, yellow, green, blue, Cyan, pink);-webkit-background-clip: text;-webkit-text-fill-color: transparent;display: inline-block;font-size:30px;font-weight:bold;line-height:30px" behavior=="alternate" direction="up"><img src="images/extracted_media/image_5153170712816127998.png" width="80">V<span></span>7<span></span>0<span></span>版<span></span>本<span></span>完<span></span>全<span></span>免<span></span>费<span></span>，<span></span>只<span></span>发<span></span>于<span></span>老<span></span>王<span></span>论<span></span>坛<span></span>，<span></span>作<span></span>者<span></span>本<span></span>人<span></span>未<span></span>做<span></span>任<span></span>何<span></span>整<span></span>合<span></span>，<span></span>不<span></span>负<span></span>责<span></span>整<span></span><span width="20px">合</span><span></span>版<span></span>本<span></span>的<span></span>b<span></span>u<span></span>g<span></span>修<span></span>复</marquee></div>'
+		
+			
+		'</div>'
+	End
+	
+	
+	if $args[0] = '看熊出没':
+		
+
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay controls loop height="480">
+			 <source src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\熊出没1.webm" type=''video/webm;''></video></div>'
+		'</div>'
+
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec: minutes+=12 & gt ''Home_Computer''">发呆</a></div>'
+		'</div>'
+
+		'<div class="dialog_menu">'		
+			'<img src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\图片\pick2_logo.png" width="30"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;">几年没看熊出没，现在强哥都开始修仙了？？？</a><img src="images\NPC\LY\vids\a\e\f\g\w\a\e\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\u\e\f\g\w\电影和动漫\无语表情包.png" width="100"></p>'
+			'<div><marquee style="width:800px;background: -webkit-linear-gradient(45deg, red, yellow, green, blue, Cyan, pink);-webkit-background-clip: text;-webkit-text-fill-color: transparent;display: inline-block;font-size:30px;font-weight:bold;line-height:30px" behavior=="alternate" direction="up"><img src="images/extracted_media/image_5153170712816127998.png" width="80">V<span></span>7<span></span>0<span></span>版<span></span>本<span></span>完<span></span>全<span></span>免<span></span>费<span></span>，<span></span>只<span></span>发<span></span>于<span></span>老<span></span>王<span></span>论<span></span>坛<span></span>，<span></span>作<span></span>者<span></span>本<span></span>人<span></span>未<span></span>做<span></span>任<span></span>何<span></span>整<span></span>合<span></span>，<span></span>不<span></span>负<span></span>责<span></span>整<span></span><span width="20px">合</span><span></span>版<span></span>本<span></span>的<span></span>b<span></span>u<span></span>g<span></span>修<span></span>复</marquee></div>'
+		
+		'</div>'
+	End
+	
+	
+	if hjkchouma<=2000:
+		hjkchouma+=-20
+	end
+	if heguanchouma<=2000:
+		heguanchouma+=80
+	end
+	if saoleijifen<=2000:
+		saoleijifen+=-20
+	end
+	
+	if hjkchouma>=10000:
+		hjkchouma+=-100
+	end
+	if heguanchouma>=10000:
+		heguanchouma+=500
+	end
+	if saoleijifen>=10000:
+		saoleijifen+=-100
+	end
+	
+	if hjkchouma>30000:
+		hjkchouma+=-1000
+	end
+	if heguanchouma>30000:
+		heguanchouma+=3000
+	end
+	if saoleijifen>30000:
+		saoleijifen+=-1000
+	end
+	
+	if hjkchouma>60000:
+		hjkchouma+=-3000
+	end
+	if heguanchouma>60000:
+		heguanchouma+=5000
+	end
+	if saoleijifen>60000:
+		saoleijifen+=-3000
+	end
+	
+	if hjkchouma>100000:
+		hjkchouma+=-8000
+	end
+	
+	if hjkchouma>100000 and abs>9:
+		abs+=-1
+	end
+	
+	if heguanchouma>100000:
+		heguanchouma+=9000
+	end
+	if saoleijifen>100000:
+		saoleijifen+=-8000
+	end
+	
+	
+
+
+
+
+
+
+
+--- Home_Computer ---------------------------------
+
