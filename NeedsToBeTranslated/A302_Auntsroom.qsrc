@@ -1,0 +1,83 @@
+# A302_Auntsroom
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	a=0 & q=0
+	gs'ыя'
+	
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		gs'A302_Map'
+	'</div>'
+	
+	if $args[0]="":
+		 '<div class ="show_menu"><img src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\A302_Auntsroom.jpg" width="854"></div>'
+		 '<div class="button_menu">'
+			 '<div class="button"><a href="exec:minutes+=30 & gt ''A302''">离开</a></div>'
+		 '</div>'
+	     '<div class="dialog_menu">'
+		     '<p>......</p>'
+		 '</div>'
+	End
+	
+
+
+
+	
+	if $args[0]="关门":
+		 '<div class ="show_menu">
+			<img src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\紧闭的门_A302.jpg" width="854">
+		</div>'
+		 '<div class="button_menu">'
+			 if $MQMM_Event_store=4 :
+			  '<div class="buttonR"><a href="exec:minutes+=5 & gt ''aunt_event'',''强奸''">姨妈第一次</a></div>'
+			  end
+			 if $MQMM_Event_store=11 :
+			  '<div class="buttonR"><a href="exec:minutes+=5 & a=0 & gt ''aunt_event'',''愿望'',''家里0''">讨要“奖励”</a></div>'
+			  end		  
+			 if $MQMM_Event_store>8 :
+			  '<div class="button"><a href="exec:minutes+=5 & gt ''A302_Auntsroom'',''偷看''">偷看</a></div>'
+			  end
+			 '<div class="button"><a href="exec:minutes+=5 & gt ''A302''">离开</a></div>'
+		 '</div>'
+	     '<div class="dialog_menu">'
+		     '<p>姨妈的房间留个缝？偷偷看看11</p>'
+		 '</div>'
+	End
+	
+	if $ARGS[0]="偷看":
+		$随机数=rand(1,10)
+		if $随机数>=5 and hour <=9 AND $MQMM_Event_store>=12:gt'aunt_event','MQMM_Fuck_卧室'
+		if $随机数>=5 and hour <=15 AND $MQMM_Event_store>=13:gt'aunt_event','姨妈_卧室做爱','诱惑0开幕'
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\MQMM\vids\偷窥~1.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+			if 精油>0 and $MQMM_Event_store>=13:
+			'<div class="buttonS3"><a href="exec: 精油-=1&gt ''aunt_event'',''MQMM_Fuck_精油'',''精油0开幕''">带一瓶精油进去</a></div>'
+			else
+			'<div class="buttonGr"><a href="exec:">买精油或者想想别的办法</a></div>'
+			end
+			if $MQMM.bad>=200 and $MQMM_Event_store=12:
+			'<div class="buttonR"><a href="exec: & gt ''aunt_event'',''MQMM_发现'',''发现0''">母亲到来(被发现)</a></div>'
+	        END
+			'<div class="button"><a href="exec:minutes+=5 & gt ''A302''">离开</a></div>'
+		'</div>'
+	
+	
+		'<div class="dialog_menu">'
+			'<p>-<<$MQMM.name>>：<<$娇喘声>></p>'
+		'</div>'
+	
+	end
+	
+
+--- A302_Auntsroom ---------------------------------
+
