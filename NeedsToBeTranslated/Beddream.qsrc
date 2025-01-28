@@ -1,0 +1,86 @@
+# Beddream
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+	:dream
+	random = rand(1,10)
+				
+	if $gg['激励'] < 10000:	
+		
+	if random = 1:$gg['激励'] +=25
+	if random = 2:$gg['激励'] +=5
+	if random = 3:$gg['激励'] +=25
+	if random = 4 and $data['事件_妈妈_红酒'] = 0 :$gg['激励'] +=5
+	if random = 5:$gg['激励'] +=25
+	if random = 6 and $data['开始_对话_安雅'] = 1:$gg['激励'] +=25
+	if random = 6 and $data['开始_对话_安雅'] = 0:jump'dream'
+	if random = 7 and $data['开始对话_阿纳斯塔西娅'] = 1:$gg['激励'] +=25
+	if random = 7 and $data['开始对话_阿纳斯塔西娅'] = 0:jump'dream'
+	if random = 8 or random =9 and $data['妈妈阿姨按摩'] = 1:$gg['激励'] +=25
+	if random = 8 or random =9 and $data['妈妈阿姨按摩'] = 0:jump'dream'
+	if random = 10 and $character_Маша['关系'] >= 700:$gg['激励'] +=25
+	if random = 10 and $character_Маша['关系'] < 700:jump'dream'
+	if random =4 and $data['事件_妈妈_红酒'] = 1 and $data['补偿'] < 3 :random = rand(20,23)	
+	if random =4 and $data['事件_妈妈_红酒'] = 1 and $data['补偿'] = 3 :random = rand(20,28)	
+	if random >= 21:$gg['激励'] +=25
+	
+	
+			if random = 1:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/1_1.webm" type=''video/webm;''></video></div>'
+	if random = 2:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/nodream.webm" type=''video/webm;''></video></div>'
+	if random = 3 and $data['事件_妹妹_porn']  = 0:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/1_3.webm" type=''video/webm;''></video></div>'
+	if random = 3 and $data['事件_妹妹_porn']  = 1:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/1_11.webm" type=''video/webm;''></video></div>'
+	if random = 4:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/1_4.webm" type=''video/webm;''></video></div>'
+	if random = 5:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/1_5.webm" type=''video/webm;''></video></div>'
+	if random = 6:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/1_6.webm" type=''video/webm;''></video></div>'
+	if random = 7:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/1_7.webm" type=''video/webm;''></video></div>'
+	if random = 8 or random =9:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/1_10.webm" type=''video/webm;''></video></div>'
+	if random = 10:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/1_12.webm" type=''video/webm;''></video></div>'
+	if random = 20:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/1_4.webm" type=''video/webm;''></video></div>'
+	if random >= 21 and random <=23:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/1_8.webm" type=''video/webm;''></video></div>'
+	if random >= 24 and random <=28:'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/dreams/1_9.webm" type=''video/webm;''></video></div>'
+	'<div class="button_menu">'
+		if week_day >= 1 and week_day <= 5 and hour >=7 and hour < 10 or week_day >= 6 and week_day <= 7 and hour >= 9 and hour < 11:
+		'<div class="button"><a href="exec: gt ''bedroom_gg'',''auntup''">.........</a></div>'
+		else 
+			'<div class="button"><a href="exec: gt ''bedroom_gg''">起床</a></div>'
+		end	
+		'</div>'
+				'<div class="dialog_menu">'
+			if random = 1:'克里斯蒂娜。。。。她漂亮的女体穿着白色蕾丝内衣，今天我做了一个梦。它可惜时间不长，一醒来就不记得了了..'			
+					if random = 2:'我关了灯睡着了，我今天什么都没梦到'
+					if random = 3 and $data['事件_妹妹_porn']  = 0:'该死。。。整晚我梦见赤身裸体的妹妹，醒来过后我想我以后得少盯着妹妹看了'
+					if random = 3 and $data['事件_妹妹_porn']  = 1:'卧槽。。。我整晚都梦见我在操珍妮。.<p>
+	- Aaaaaaaaa! 操我，哥哥!— 来吧,用力点，来吧! – 妹妹呻吟道.<p>
+	唔，我最终醒了.<p>'
+					if random = 4:'我梦见了我的母亲，她正兴致勃勃地谈论着什么，但我记不起是什么了'
+					if random = 5:'我做了一个关于伊芙的性爱梦，她慢慢地脱下衣服，用她的乳头逗我..<p>
+	<p>- 你想摸它吗？-她问.<p>
+	<p>>她丰满、多汁、有弹性的胸部和美丽的突出的乳头包裹着我的手掌，那感觉难以形容。<p>
+	<p>>我醒来时精神有点错乱，感觉失望不已，那只是一场梦。<p>'
+	                if random = 6:'>整个晚上我梦见了性感，苗条的安娜，只穿着比基尼'
+	if random = 7:'我做了一个关于维多利亚的奇怪梦。<p>
+	- 亚历山大，来找我，你喜欢我女儿吗？你觉得她妈妈怎么样，我真的这么没意思吗？-她看着我的眼睛问道。<p>
+	- 看看我的胸部，看看我的屁股——说完这些话，她转过身来，靠在桌子上，掀开裙子的下摆，让我看看她的屁股。<p>'
+	if random = 8 or random =9:'家庭按摩并不是一丝不挂地的，我有一个性幻想。赤身裸体的妈妈和姨妈热情洋溢地吻着对方，还把玩着我的鸡巴，卧槽，这个梦我不想醒过来...'
+	if random = 10:'我做了一个色情的梦。米娅终于放下课本，在我面前脱光了衣服。。。。响铃！！！！卧槽！！！该死的闹钟 '
+	if random = 20:'我梦见了我的母亲，她正兴致勃勃地谈论着什么，但我记不起是什么了'
+	if random >= 21 and random <=23:'哦，妈的，我做了一个关于我母亲的性爱梦，她赤裸着胸膛，我摸着她的奶子，我需要想想其他事情，让自己冷静下来。。。他妈的不管用。。。' 
+	if random >= 24 and random <=28:'我和我妈妈又做了一个性爱梦…我热情地吻了她，吮吸了她丰满的乳房。。我妈妈脱光衣服，然后我醒了。该死在最有趣的地点。虽然是妈妈-我在想什么。。。...?'   
+				'</div>'
+	
+	end
+	
+	
+
+
+--- Beddream ---------------------------------
+

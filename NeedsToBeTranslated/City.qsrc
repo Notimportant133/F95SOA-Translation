@@ -1,0 +1,250 @@
+# City
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu">'
+				if $args[0] = 'car':
+	
+			    '<div class="action">'
+				'<a class="photo" data-title="South area " href="exec:minutes+=20 & gt ''southarea''"><img class="img_stretch" src="pic/place/City/valleyt_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+			if $gg['能源'] >= 100:
+			'<div class="action">'
+				'<a class="photo" data-title="Coast " href="exec:minutes+=20 & gt ''Coast''"><img class="img_stretch" src="images\V70版本\增量包_20241111\place\Water_Park\coast_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+			end
+				'<div class="action">'
+				'<a class="photo" data-title="Home" href="exec:minutes+=40 & gt ''home''"><img class="img_stretch" src="pic/place/home/home_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+				end 
+							if $gg['能源'] >= 100 and $item['машина'] = 1 and $gg['酒精'] = 0:
+		'<div class="action">'
+						'<a class="photo" data-title="Car" href="exec:minutes+=5 & gt ''City'',''car''"><img class="img_stretch" src="pic/items/car.jpg"></a>'
+					'</div>'
+							end
+	if hour >= 8 and hour <= 22:
+	       ' <div class="action">'
+				'<a class="photo" data-title="University" href="exec:minutes+=5 & gt ''University''"><img class="img_stretch" src="pic/place/City/univer.jpg"></a>'
+			'</div>'
+	end
+			if $gg['能源'] >= 100:
+			
+			'<div class="action">'
+				'<a class="photo" data-title="Park " href="exec:minutes+=5 & gt ''Park''"><img class="img_stretch" src="pic/place/City/park_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+			
+	        '<div class="action">'
+				'<a class="photo" data-title="商店" href="exec:minutes+=5 & gt ''TC''"><img class="img_stretch" src="pic/place/City/tc.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="Gymnasium " href="exec:minutes+=5 & gt ''Sport_Com''"><img class="img_stretch" src="pic/place/City/sport_com.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="娱乐场所" href="exec:minutes+=5 & gt ''Recreation''"><img class="img_stretch" src="pic/place/City/recreation_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+			end	
+		'<div class="action">'
+				'<a class="photo" data-title="公共交通" href="exec:minutes+=5 & gt ''Transport''"><img class="img_stretch" src="pic/place/City/transport_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+				'<div class="action">'
+				'<a class="photo" data-title="Home" href="exec:minutes+=40 & gt ''home''"><img class="img_stretch" src="pic/place/home/home_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+			
+		
+	'</div>'
+	
+	'</div>'
+	if arrpos('$week_label','twin') = -1 and $data['标签_双胞胎'] >=6 and $data['标签_双胞胎'] <9 and hour >=21 and hour <= 23 and week_day <3 : gt'tech','gost'	
+	if arrpos('$week_label','twin') = -1 and hour >=10 and hour <= 17 and week_day <3 and $data['标签_双胞胎'] = 9 : gt'tech','dasha_invite'			
+		'<div class ="show_menu"><img src="pic/place/City/city_<<$times_of_day>>.jpg"></div>'
+		
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes += 40 & gt ''home''">Home</a></div>'
+			'<div class="button"><a href="exec:minutes += 5 & gt ''Transport''">公共交通</a></div>'
+		
+			
+		
+		
+			if $gg['能源'] >= 100:
+				if hour >= 8 and hour <= 22:
+					
+						if $gg['做快递员'] > 0 and $data['做快递员'] < 2:'<div class="button"><a href="exec:minutes+=5 & gt ''City'',''work_promo''">当快递员</a></div>'
+				end
+			end
+				if arrpos('$week_label','indate') ! -1 and week_day = 6 and arrpos('$day_label','indate') = -1:
+				if hour >= 19 and hour < 20:'<div class="button"><a href="exec:minutes+=5 & gt ''City'',''indate_1''">去见米娅</a></div>'
+				end
+			
+			'</div>'
+		'<div class="dialog_menu">'
+		'市中心'
+	
+		'</div>'
+	'</div>'
+	
+	
+	if $args[0] = 'work_promo':
+		cls
+		'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		
+		'<div class="actions_menu"></div>
+	</div>'
+	
+		minutes += 90 
+		money += 1800	
+	$gg['能源'] -=70
+		$data['做快递员'] += 1
+	
+		
+		
+		
+			'<div class ="show_menu"><img src="pic/gg/work_promo_<<rand(1,2)>>.jpg"></div>'
+			
+				'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''City''">完成</a></div>'
+			'</div>'
+			
+			'<div class="dialog_menu">'
+				'我从办公室拿了订单，文件，我想好了一条路线，并乘公交车去了指定的地址。</p> 
+				我已经把包裹送出去了，客户在发票上签了字，我也开始回去工作了，这是一项非常乏味的工作。</p>'
+			'</div>'
+			
+		
+		'</div>'	
+	end
+	if $args[0] = 'indate_1':
+		cls
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		'<div class="actions_menu"></div>
+	</div>'
+	
+	'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/indate_1.webm" type=''video/webm;''></video></div>'
+	  	'</div>'
+							'<div class="button_menu">'
+	   
+	'<div class="button"><a href="exec:minutes+=10 & gt ''City'',''indate_2''">观看表演</a></div>'
+	
+			
+		
+		'</div>'
+		'<div class="dialog_menu">'
+	'- Hi, 米娅.</p>
+	- Hi, 亚历克斯. </p>
+	- 你穿这件衣服很好看.</p>
+	- 别让我难堪了，我们走吧。 </p>'
+		'</div>'	
+	'</div>'
+	
+	end
+	if $args[0] = 'indate_2':
+		cls
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		'<div class="actions_menu"></div>
+	</div>'
+	
+	'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/indate_2.webm" type=''video/webm;''></video></div>'
+	  	'</div>'
+							'<div class="button_menu">'
+	   
+	'<div class="button"><a href="exec:minutes+=90 & gt ''City'',''indate_3''">....</a></div>'
+	
+			
+		
+		'</div>'
+		'<div class="dialog_menu">'
+		  '我们坐上我们的座位。几分钟后，演出开始了。</p>
+	我不得不说，这场演出真的很刺激，票显然值这个钱。 </p>'
+		'</div>'	
+	'</div>'
+	
+	end
+	if $args[0] = 'indate_3':
+		cls
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		'<div class="actions_menu"></div>
+	</div>'
+	
+	'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/indate_3.webm" type=''video/webm;''></video></div>'
+	  	'</div>'
+							'<div class="button_menu">'
+	   
+	'<div class="button"><a href="exec:minutes+=5 & gt ''City'',''indate_4''">....</a></div>'
+	
+			
+		
+		'</div>'
+		'<div class="dialog_menu">'
+		
+	'演出结束了，我们离开了大厅.</p>
+	- 米娅，还不晚，我们去咖啡馆吃点东西吧。</p>
+	- 我来了，我们走吧。不过，让我付钱！</p>
+	- 好的!</p>'
+		'</div>'	
+	'</div>'
+	
+	end
+	if $args[0] = 'indate_4':
+		cls
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		'<div class="actions_menu"></div>
+	</div>'
+	$character_Маша['关系'] += 100
+	$data['玛莎_手'] = 1 
+	'<div class ="show_menu"><video preload="metadata" autoplay loop height="480"><source src="pic/femaleprotagonist/fffff/indate_4.webm" type=''video/webm;''></video></div>'
+	  	'</div>'
+							'<div class="button_menu">'
+	   
+	'<div class="button"><a href="exec:minutes+=5 & gt ''City''">出去</a></div>'
+	
+			
+		
+		'</div>'
+		'<div class="dialog_menu">'
+	'- 亚历克斯，谢谢你，我今晚过得愉快！</p>
+	- 没关系!"</p>
+	我们聊了一会儿就回家了。</p>'
+		'</div>'	
+	'</div>'
+	
+	end
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+--- City ---------------------------------
+

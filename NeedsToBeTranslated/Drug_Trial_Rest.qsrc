@@ -1,0 +1,35 @@
+# Drug_Trial_Rest
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	
+	a=0
+	q=0
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu">'
+		 
+		'</div>'
+	'</div>'
+	
+	
+	'<div class="show_menu">'
+		 '<div class ="show_menu"><img src="images\place\医院场景\Hospital_Room<<$Q>>_<<$times_of_day>>.jpg" width="854"></div>'
+	'</div>'
+	
+	'<div class="button_menu">'
+			'<div class="buttonR"><a href="exec:minutes+=1425 & my.精力=mymax[精力] & gt ''Drug_Trial_Daily''">精疲力尽</a></div>
+	</div>'
+	
+	
+	'<div class="dialog_menu">'
+		'<p><font color="#FF0000">我精疲力竭了，被医生和护士们抬到了病床上。</font></p>'
+	'</div>'
+
+--- Drug_Trial_Rest ---------------------------------
+

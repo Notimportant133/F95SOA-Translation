@@ -1,0 +1,81 @@
+# Eye_of_God
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	q=0
+	gs'Yya' 
+	
+	'<div id="right-column">'
+		gs"Energy_Check"
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu">'
+			'<div class="action">
+				<a class="photo" data-title="Kabukicho" href="exec:minutes+=5 & gt ''Kabukicho''"><img class="img_stretch" src="images\place\歌舞伎町.jpg"></a>
+			</div>'
+		'</div>'
+	'</div>'
+	
+	
+	
+	if $args[0]="":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\videos\杂\Eye_of_God~1.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+	
+		'<div class="button_menu">'
+			if gif_on=0:'<div class="button"><a href="exec:gif_on=1 & gt ''Eye_of_God''">免费开启</a></div>'
+			if gif_on=1:'<div class="button"><a href="exec:gif_on=0 & money-=4999 &gt ''Eye_of_God''">关闭4999￥(我们接受贷款)</a></div>'
+			
+			if giflv   =0 and money>=5000:'<div class="button"><a href="exec:giflv=1 & money-=5000 &gt ''Eye_of_God''">付费视角5000￥</a></div>'
+			if giflv   =1 and money>=50000:'<div class="button"><a href="exec:giflv=2 & money-=50000 & gt ''Eye_of_God''">上帝视角50000￥</a></div>'
+			
+			if giflv   =0 and money<5000:'<div class="button"><a href="exec:gt ''Eye_of_God''">付费视角5000￥（金钱不足）</a></div>'
+			if giflv   <2 and money<50000:'<div class="button"><a href="exec:gt ''Eye_of_God''">上帝视角50000￥（金钱不足）</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>·数十位最顶尖的网络黑客，创造了如今被称为“Eye_of_God”的搜索引擎，主要的功能是检索身边的婊子，并且通过黑入摄像头的方式直播她们的生活。</p>'
+			'<p>·通过支付金钱让用户拥有比以往更高的网络权限，从而看到更多是他们的主要营收来源之一。</p>'
+			'<p>·但也有一小部分用户声称他们只是流氓广告软件，搜索引擎只会让他们无法集中注意力。</p>'
+			'<p>·<a href="exec:a=0 & gt ''Eye_of_God'',''AA''">-弦外之音</a></p>'
+		'</div>'
+	end
+		
+		
+	if $args[0]="AA":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\videos\杂\Eye_of_God<<a>>~1.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+			if a<=3:'<div class="buttonP"><a href="exec:a+=1 & gt ''Eye_of_God'',''AA''">下一个</a></div>'
+			if a=4:'<div class="buttonP"><a href="exec:a=0 & gt ''Eye_of_God'',''AA''">下一个</a></div>'
+			'<div class="button"><a href="exec: gt ''Eye_of_God''">返回</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p><<$主角姓名>>：原因是我发现之前用的这个视频是一个大佬自制的，顺着水印发现这个哥们的艺术造诣太深了…我觉得已经超出PMV范畴了，而且我太tm懂下载2小时的片子就用5秒钟的种种艰辛了，这绝对不能珠玉蒙尘。</p>'
+			if a=0:'<p><<$主角姓名>>：这蒙太奇的剪辑手法也太有节奏感了，镜头语言也极具叙事能力。</p>'
+			if a=1:'<p><<$主角姓名>>：正常类型PMV的就是手拿把掐。</p>'
+			if a=2:'<p><<$主角姓名>>：素材库也是中外贯通。</p>'
+			if a=3:'<p><<$主角姓名>>：我逐渐意识到我不会成为一个好作者，因为我没有像他这样富有表达欲。</p>'
+			if a=4:'<p><<$主角姓名>>：还有我也看不懂的。</p>'
+			'<p>———以下是那位大佬的留言———</p>'
+			'<p>最后提一下想复习的兄弟们可以去s站找，有位好兄弟上传了视频，千万别花钱去买我的视频，本来就是免费的没必要。</p>'
+			'<p>最后多说一句适当看黄解压就好，不要太沉迷咯。祝大家生活愉快，事事顺利。https://t.me/FRAUDWORKPMV</p>'
+		'</div>'
+	end
+	
+	
+	
+
+--- Eye_of_God ---------------------------------
+

@@ -1,0 +1,48 @@
+# A302_Guest_Room
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	a=0 & q=0
+	'<div id="right-column">'
+		gs"Energy_Check"
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		gs "A302_Map"
+	'</div>'
+	if $ARGS[0] ="":
+		'<div class ="show_menu"><img src="images\V70版本\增量包_20241111\place\母亲姨妈\图片\A302_客房.jpg" width="854"></div>'
+	'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=30 & gt ''A302''">离开</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>....</p>'
+		'</div>'
+	end
+	
+	if $args[0]="敲门":
+		 '<div class ="show_menu"><img src="images\V70版本\增量包_20241111\place\母亲姨妈\图片\紧闭的门_A302.jpg" width="854"></div>'
+		 '<div class="button_menu">'
+			 if $MQMM_Event_store=15 and $母亲原谅=1 :
+			  '<div class="buttonR"><a href="exec:minutes+=5 & gt ''Mother_Event'',''MQMM_MQ_夜袭''">“照顾”</a></div>'
+			  end
+			 if $MQMM_Event_store>15 and $姐妹花=1 :
+			  '<div class="buttonR"><a href="exec:minutes+=5 & gt ''Mother_Event'',''MQMM_MQ_姐妹花''">照顾老妈</a></div>'
+			  end
+			 '<div class="button"><a href="exec:minutes+=5 & gt ''A302''">离开</a></div>'
+		 '</div>'
+	     '<div class="dialog_menu">'
+		     '<p>怎么留个缝？难道.....</p>'
+		 '</div>'
+	End
+	
+
+--- A302_Guest_Room ---------------------------------
+

@@ -1,0 +1,1190 @@
+# Cousin_Event
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	my.精力-=3
+	minutes+=5
+	
+	'<div id="right-column">'
+		gs"Energy_Check"
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Hidden'
+		gs "BUG_Escape"
+	'</div>'
+	
+
+
+
+
+
+
+	
+	if $args[0]="强奸1":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐1_强迫抱住.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸2''">强迫亲吻</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">看到<<$BJ.name>>那张弹指可破的俏脸，还有那一双雪白修长的美腿，再加上她的这种美丽动人的气质，我实在忍不住了，强烈的浴火彻底爆发，猛的一把抱住了这个平日里凛然不可侵犯的表姐，推着她往角落靠近。</p>'
+			'<p class="dajianshi"><span style="color:red"><<$主角姓名>>，请你放尊重点！我是你表姐啊，放手。。。你怎么能做这种事！</span><<$BJ.name>>顿时用力挣扎起来，知道了<<$主角姓名>>想上她的企图，双手不停的剧烈推拒。</p>'
+			'<p class="dajianshi"><span style="color:red">你这个流氓，你知道你在犯罪么？！</span><<$BJ.name>>脸色羞恼万分。</p>'
+			'<p class="dajianshi"><span style="color:red">犯罪？我就是要强奸了你，谁让你穿的这么骚的，今天我就用大鸡巴好好教训你！</span></p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸2":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐2_强迫亲吻.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸3''">表姐3_强迫撕开上衣</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"> 浴火在<<$主角姓名>>体内燃烧，我饥渴的吸吮上了表姐柔软的下唇，舌头往她牙齿探去。</p>
+	        <p class="dajianshi">可她的牙齿紧闭，根本不让我进去，情急之下，我蛮狠的将舌尖轻舔她的贝齿，</p>
+	        <p class="dajianshi">两人鼻息相闻，表姐从未被男性接触过自己的小嘴，觉得羞愧难当，使力推着。</p>
+	        <p class="dajianshi">我趁乱用舌头撬开了她的齿缝，舌头终于长驱直入，搅弄着美味的舌尖，</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸3":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐3_强迫撕开上衣.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸4''">表姐4_强迫抚摸下体</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><<$主角姓名>>的双眼涌上了一抹疯狂之意，将表姐的双臂拉开，两手抓住她胸前的衣服，咝咝几下便凶猛的扯开了外套，女人的味道令我顶在表姐裙子上的肉棒越发粗大了几分。</p>'
+			'<p class="dajianshi"><span style="color:red">啊。。。啊!不要。。。你竟然做这种事。。。真是个畜生！</span></p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="强奸4":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐4_强迫抚摸下体.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸5''">表姐5_强迫撕开裙子</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><<$主角姓名>>隔着裙子就在表姐的下体抚摸起来。</p>'
+			'<p class="dajianshi">表姐顿时尖叫出声，拼命地夹紧双腿，前所未有的的屈辱感涌了上来。</p>'
+			'<p class="dajianshi">但已经被性欲充满头脑的<<$主角姓名>>反而更加兴奋了。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸5":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐5_强迫撕开裙子.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸6''">表姐6_强迫拨开挡住胸部的手并用脸贴贴</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">这房间隔音很好，你就是喊再大声也不会有人听得到的。当然你也不用担心一会儿你被干的浪叫声被人听到哦。</span></p>'
+			'<p class="dajianshi">看着身前绝望的表姐，强奸一个绝美的少女，这种快感让<<$主角姓名>>欲火中烧。</p>'
+			'<p class="dajianshi">在表姐绝望的目光中，我粗鲁的分开她的双腿，低吼一声，用力扯断了她的裙子。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸6":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐6_强迫拨开挡住胸部的手并用脸贴贴.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸7''">表姐7_强迫摸乳</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">看着表姐裙子下若隐若现的饱满胸部，<<$主角姓名>>将头直接埋了进去，感受着她胸部的柔软。</p>'
+			'<p class="dajianshi"><span style="color:red">你不是很骄傲么？不把我放在眼里，现在我就让你付出看不起我的代价！</span></p>'
+			'<p class="dajianshi"><span style="color:red">啊！放开我，臭流氓。。。啊！</span><<$BJ.name>>的双峰遭到<<$主角姓名>>袭击，始料不及，胸部是她的敏感之处，如今被肆意侵犯，她顿时剧烈挣扎起来，脸颊通红。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸7":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐7_强迫摸乳.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸8''">表姐8_强迫舔乳</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"></p>'
+			'<p class="dajianshi">我很不客气的拽开表姐的衣服，玩起了她的奶子。</p>'
+			'<p class="dajianshi">奶头果然是硬的，整个奶子现在就跟个水蜜桃一样，捏着是真的很舒服。</p>
+			<p class="dajianshi"><span style="color:red">啊。。。不要。。。你。。。下流！</span>表姐没想到<<$主角姓名>>如此的过分，竟然抓揉自己最私密的胸部，脸色再难平静下去，剧烈的挣扎起来。</p>
+			<p class="dajianshi">可是柔弱的她如何能够抗拒得了<<$主角姓名>>，不管她怎样拉扯，那只讨厌的手却是依然牢牢的抓在她略显高耸的胸脯上不停的揉搓着，敏感部位被侵犯使她感到了万分的羞耻，俏脸通红，浑身徒劳的扭动着。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸8":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐8_强迫舔乳.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸9''">表姐9_强迫亲吻</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"></p>'
+			'<p class="dajianshi"><span style="color:red">你看看你，嘴上说的不要不要，身体却诚实的要命，你看你这奶头硬的，就跟个花生米一样。</span>我对着表姐的奶子狠狠的吸咬一阵。</p>'
+			'<p class="dajianshi">表姐顿时满脸羞红，双手使劲拍打着压在自己身上的<<$主角姓名>>，可力道实在软绵无力，效果没有，反倒给他增添了几分强暴的快感。</p>'
+			'<p class="dajianshi">表姐屈辱的呻吟更加刺激了我的兽性，狠狠地含住了表姐左边的乳房死命的吮吸，右手在另一只乳房上疯狂的抓揉！</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸9":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐9_强迫亲吻.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸10''">表姐10_转移战场</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">哦！放开。。。嗯。。。不要啊。。。！</span>表姐雪白的小手死命地推拒着我的脑袋，可是哪里能摆脱我的魔掌</p>'
+			'<p class="dajianshi">表姐想要反抗，无奈我已一口吻在表姐微张的樱唇上，又强行突破她紧紧的牙关，开始纠缠表姐的香舌，并将它吸入口中，轻轻的咬住，用力的吸吮。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸10":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐10_转移战场.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸11''">表姐11_强迫舔乳</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">不要。。。求你了！</span>表姐这样赤裸的模样，还是第一次让一个男人看见，雪白的山丘上两个红色的圆点像熟透了的樱桃，吸引人去品尝。</p>'
+			'<p class="dajianshi">看着表姐现在这梨花带雨的样子还真有些我见犹怜，我嘿嘿一声，似乎是被怀中的美人挣扎烦了，一下子将她表推倒在沙发上，整个人骑了上去。</p>'
+			'<p class="dajianshi"><span style="color:red"></span></p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸11":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐11_强迫舔乳.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸12''">表姐12_强迫亲吻2</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">表姐惊喊地道 <span style="color:red">不要啊！求求你不要啊！</span></p>'
+			'<p class="dajianshi"><<$主角姓名>>现在脑子里全都是这白花花的乳房，闭着眼睛，不管不顾的吸吮揉捏。
+	         <p class="dajianshi">嘴巴吸了半天，也不甘如此，开始用牙齿轻轻的咬了下挺翘的乳尖，嘴唇揉着，吸着，含着，咬着，绝对的好吃又好玩。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸12":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐12_强迫亲吻2.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸13''">表姐13_强迫脱掉内裤</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><<$主角姓名>>一双充满兽欲眼睛死死盯着表姐的脸，表姐天使般的面庞此刻添加了一种诱人的神采。</p>'
+			'<p class="dajianshi">抿紧的双唇形成优美的弧度，让人忍不着想亲一下，我张嘴就吻了下去。</p>'
+			'<p class="dajianshi">霸道的将表姐小巧的舌头给吸进自己嘴里尽情的缠绕，还好不嫌弃的把她美味的津液吮吸进自己的口中，贪婪的咽着。</p>'
+			'<p class="dajianshi">表姐雪白的小手死命地推拒着我的脑袋，可是根本阻止不了我的暴行。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸13":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐13_强迫脱掉内裤.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸14''">表姐14_强迫抚摸下体</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">不要。。。你疯了么？我会去告诉你妈妈的！</span> </p>'
+			'<p class="dajianshi">表姐尖叫着，现在她下体只有着一件内裤，几乎包裹不住表姐圆硕的美臀。</p>'
+			'<p class="dajianshi">我的眼睛闪烁着异样的光辉，不断的抚摸着表姐的大腿，又长又直的美腿，足以令大部分女性羡慕嫉妒！</p>
+			<p class="dajianshi">我再次将表姐按在了沙发上，不给她任何机会，紧接着就彻底将她的内裤脱了下来！ </p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸14":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐14_强迫抚摸下体.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸15''">表姐15_强迫舔乳抚摸下体</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">这里也很漂亮呢，让我看看，表姐的小穴，和别的女人有什么不一样的地方，嘿嘿嘿。</span></p>
+			<p class="dajianshi"><<$主角姓名>>淫笑着，在表姐的骂喊声中抓起她的两条脚踝，粗鲁的将她双腿分开。</p>
+			<p class="dajianshi">用手指撩开她两腿间稀疏的毛发，露出里面粉色的娇嫩肉壁，我的手指熟练的剥开外面薄薄的唇瓣，缓缓插进入了那柔软紧窄的腔道中。</p>
+			<p class="dajianshi"><span style="color:red">哦！放手啊。。。流氓，别再插进去了！我不会放过你的！</span></p>
+			<p class="dajianshi">表姐的花径被我的手指缓缓抽动着，并且一边儿将拇指按在那小小的凸起之处，顿时开始了幅度极小，速度却奇快无比的震颤摩擦。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸15":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐15_强迫舔乳抚摸下体.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸16''">表姐16_强迫亲吻下体</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><<$主角姓名>>低头连乳头带半只丰腴白嫩的雪峰含进了嘴里，舌尖在香滑的蓓蕾上舔了几下随即用力地吮住了。</p>
+			<p class="dajianshi"><span style="color:red">啊。。。不要。。。把手拿开。。。混蛋。。。</span></p>
+			<p class="dajianshi">美女表姐娇躯剧颤，屈辱的快感化作另一个快感的闪电，在表姐的全身每一个毛孔炸开。<<$主角姓名>>早已身经百战，习惯了彼此配合，在众多女子身上实战出来的纯熟技巧又哪里是初经人事的表姐能够抵挡的，那从胸部和下身传来的陌生快感如同电流般从接触的部位迅速侵袭到全身，让她的娇躯痉挛般战栗起来，剧烈的喘息着，秀美的玉足时而绷紧，时而放松，纤手紧紧握着小拳头。</p>
+			<p class="dajianshi">正在吸吮着她的酥胸的我可以清晰地感觉到那点已经开始充血硬挺了，右手扣挖挑逗着的嫩穴也渐渐变得湿润起来，开始有着晶莹的蜜液流淌而出。</p>
+			<span style="color:red">反应很不错呢</span>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸16":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐16_强迫亲吻下体.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸17''">表姐17_强迫亲吻下体2</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">我猥亵的大嘴吻上了她光滑如玉的大腿，舌头舔在身体上那麻麻的感觉，让她厌恶并且恐惧得娇躯发抖。</p>
+			<p class="dajianshi">而那条舌头却没有停止的迹象，不断在她如羊脂白玉般洁白无暇的胴体上游走，越来越向上。。。</p>
+			<p class="dajianshi">终于，一股热气喷在了她的沟壑幽谷上，紧接着那湿软的舌头吻上了她肥美柔嫩的花瓣，她忍受不住这麻痒的刺激，不由自主地流下了羞辱的泪水。</p>
+			而我那硕大的舌头像一条毒蛇，左左右右，上上下下，对着小嫩逼是不断的变换着方向档位……
+			<<$BJ.name>>恨不得马上就死掉，来逃避这一切，没想到自己冰清玉洁的胴体有朝一日竟然沦陷在表弟这个大色狼手里，被他肆意蹂躏，任意羞辱，随意玩弄，真是造物弄人，无比羞耻，不堪忍受。'
+		'</div>'
+	end
+	
+	if $args[0]="强奸17":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐17_强迫亲吻下体2.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸18''">表姐18_强迫换位置亲吻下体</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">表姐，何必如此矜持端庄，何不放开身心尽情享受人世间最美妙绝伦的男女之事呢？马上你就明白那么多女人为什么对我那么迷恋地死心塌地的了！</span><<$主角姓名>>淫笑着捧着面前肥硕雪白的美臀小穴，埋头饥饿地舔拭，没有一丝疲倦。</p>
+			<p class="dajianshi">美女表姐不断娇斥，竭力扭动着肢体，剧烈的挣扎。强烈的刺激下，表姐肥白的雪臀不停晃动，喉中发出不能抑止的呻吟，如泣如诉。</p>
+			蜜穴深处的阴精连带着淫水仿佛是不要命似的不断喷洒而出。'
+		'</div>'
+	end
+	
+	if $args[0]="强奸18":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐18_强迫换位置亲吻下体.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸19''">表姐19_强迫为自己手淫</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">此刻，表姐的诱人模样，彻底激发了<<$主角姓名>>的兽欲，</p>
+			<p class="dajianshi">我张嘴噙住表姐那鲜艳的红豆，吸咬舔转，时不时的伸出舌头，重重的在硕大柔软的乳峰上舔弄，发出“滋滋”的声响。</p>
+			<p class="dajianshi"><span style="color:red">啊，你这个混蛋!!!</span></p>
+			<p class="dajianshi">表姐浑身不断颤抖，口中不断发出愤怒的叫骂。</p>
+			<p class="dajianshi">我接着将表姐的娇躯向上一推，对着脸色羞怒的表姐露出一个略有些刺眼的淫笑，然后将头凑到那湿淋淋的唇瓣上亲吻舔舐，舌头更是插进了湿滑的甬道里搅动起来。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸19":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐19_强迫为自己手淫.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸20''">表姐20_强迫乳交</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">我抓着表姐的玉手,放在了自己的大鸡巴上打起了手枪。</p>
+			<p class="dajianshi"><span style="color:red">啊。。。不要。。。把你那个丑东西拿开。。。混蛋。。。</span></p>
+			<p class="dajianshi">玉手正不断地在<<$主角姓名>>鸡巴上摸着，表姐能明显地感受到手里的东西正在一点一点涨大。</p>
+			<p class="dajianshi"><span style="color:red">岂有此理！</span>表姐已经玉面羞红，就是做梦也没有想到自己会给一个男人手淫。</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="强奸20":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐20_强迫乳交.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸21''">表姐21_求饶</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">随着鸡巴那里传来的肿胀感，跟龟头那里的强烈刺激，我直接拿掉了表姐的小手，骑到了表姐的身上，让她给自己做起了乳交。</p>
+			<p class="dajianshi">两团雪白的乳肉就好像初生婴儿的皮肤那样柔软，光滑，再配以香汗的的润滑，敏感的龟头一点也没有滞涩的感觉，反而一股凉丝丝，酸麻麻的感觉由龟头传至头顶，刺激得我几乎要呻吟出来。</p>
+			<p class="dajianshi"><span style="color:red">啊～～～啊～～嗯～～～不要！</span></p>
+	　　	表姐粉脸涨的通红，焦急地挣扎叫喊起来。'
+		'</div>'
+	end
+	
+	if $args[0]="强奸21":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐21_求饶.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸22''">表姐22_强迫强插</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">表姐又羞又怒，<span style="color:red">真是个满脑淫欲的畜生！你敢强奸我，你知道后果吗？！</span></p>
+			<p class="dajianshi"><span style="color:red"><<$BJ.name>>，我告诉你，就算今天<<$JM.name>>来了，也阻止不了老子干你！</span></p>
+			<p class="dajianshi"><span style="color:red">不，求求你，不要啊！饶了我吧！</span></p>
+			<p class="dajianshi">表姐知道接下来要发生什么事，如果真的被他强奸，自己以后怎么找男朋友呀。。。她哭着叫到。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸22":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐22_强迫强插.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸23''">表姐23_强迫缓存抽插</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">表姐，要怪就只能怪你穿的太骚了，太性感了，我一定要干死你个骚货！</span>我强行把表姐按在沙发上，紧盯着因一腿抬起，而形状扭曲的艳红阴唇。将表姐的下体整个上抬，然后紧紧的抓住表姐的腰侧，顿时令表姐的下半身再也难以动弹。</p>
+			<p class="dajianshi">听着<<$BJ.name>>的羞辱话语，表姐又羞又恼，虽然双腿被死死抓着，浑身都挣扎不得，可她还是被激怒了，再无顾忌</p>
+			<p class="dajianshi"><span style="color:red">你个下流的淫魔！老娘穿的好看管你屁事，穿的好看就要被你上？！你以为你是谁？！</span></p>
+			<p class="dajianshi">看着表姐突然变幻为“母老虎”的模样，我更加兴奋了，用它的大龟头狠命的在表姐濡湿娇嫩的阴唇口来回摩擦，一大片美丽黑森林保护的阴唇被阴茎摩擦的不断流出温热的淫水，舒服的大吼</p>
+			<p class="dajianshi"><span style="color:red">老子看你长得好看，看你穿的骚，就要操你，你这种骚货老子见一个就要操一个！</span></p>
+			<p class="dajianshi">唐月悲愤交加，脸红的像个大苹果，急得泪花都涌出来了，一双玉手不停捶打我的胸膛，愤怒骂道</p>
+			<p class="dajianshi"><span style="color:red">禽兽，流氓，住手！别，别再插进去！我求你了！</span></p>
+			<p class="dajianshi">表姐高叫着，涨红的粉脸仰起绷的紧紧地，她抬起头来，这个色狼脸上还露出无比淫荡的笑容。表姐真不敢相信被按在地上一丝不挂将被强暴的女人是自己，表姐再次哭泣着，好希望<<$主角姓名>>能在最后时刻良心发现。</p>
+			 <p class="dajianshi">看着表姐迷人的脸蛋和闪烁着泪花的目光，我情欲更加暴涨，不能再犹豫了，免得夜长梦多。牙一咬，腰部用尽猛一用力，藉着湿滑的淫液将整根粗壮的大肉棒不经意间向前一挤，接着用尽全力猛力地插了进去!!</p>
+			 <p class="dajianshi">表姐清晰感觉到那十分粗大长耸的大阴茎从大龟头到大肉棒中后部已狠狠插入了自己娇嫩夹紧的阴道中，直抵那从未被人开采的花心。</p>
+			 <p class="dajianshi">美女审判员双手不断的拍打着地面，剧烈的破处痛疼使得她紧接着又发出一声惨叫</p>
+			 <p class="dajianshi"><span style="color:red">啊！不，不要啊！！。。。啊！</span></p>
+			 <p class="dajianshi">表姐呻吟着昂起了头，痛得柳眉微皱，贝齿轻咬，娇靥晕红，桃腮羞红似火，伴随着巨痛和强烈的性器官刺激，紧张的不断摇头，可是一切都太晚了，阴部像撕裂一般，感觉仿佛一个大木桩深深地打入自己的阴道一样。
+			 <p class="dajianshi"><span style="color:red">完了，真得被他强奸了！</span></p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸23":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐23_强迫缓存抽插.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸24''">表姐25_强迫舔嘴唇</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">终于得到了表姐这个超级美女，老子要彻底征服她，玩个痛快！</span></p>
+			<p class="dajianshi">我扭动腰肢干起表姐来，前前后后，出出入入，在表姐那充满吸力的迷人肉穴当中缓慢抽插起来，幹的她是惨叫连连。</p>
+			<p class="dajianshi">表姐的房间顿时“啾啾”声大作。这次表姐可吃苦头了！一阵痛苦中夹杂的快感从她心底里升腾而起，一向成熟妩媚的表姐放声哭了起来，在她下体那黑密的阴毛丛中不断进出的巨大阳物，在默默地昭示着她的不幸。</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="强奸24":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐25_强迫舔嘴唇.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸25''">表姐26_强迫舔乳加快抽插</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">哈哈哈。。。</span></p>
+			<p class="dajianshi">意识到这位尤物级表姐被自己侵犯哭了，我得意的大笑起来。</p>
+			<p class="dajianshi">一把抱起表姐，舔弄起表姐冷艳的脸蛋，一直在等待机会的舌头，以迅雷不及掩耳的速度钻进了她的玉嘴中。</p>
+			<p class="dajianshi">当两片湿热的舌头碰触到的瞬间，只见表姐慌乱地张大眼睛，拼命想吐出口中的闯入者，但我会让她如愿？</p>
+			<p class="dajianshi">不仅舌尖不断猛探着表姐的咽喉，逼得她只好用自己的香舌去阻挡那强悍的入侵，当四片嘴唇紧紧地烙印在一起以后，两片舌头便毫无选择的更加纠缠不清，最后只听房内充满了滋滋啧啧的热吻之声。</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="强奸25":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐26_强迫舔乳加快抽插.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸26''">表姐27_强迫口交</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">哈哈哈。。。</span></p>
+			<p class="dajianshi">我一边肆意舔含着表姐那团雪白的乳肉，一边将大肉棒一次又一次的挺入到表姐的屄洞深处</p>
+			<p class="dajianshi">表姐带着哭腔尖叫着，身体向前倾斜</p>
+			<p class="dajianshi"><span style="color:red">啊。。。啊。。。求求你停下吧。。。啊。。。好痛。。。</span></p>
+			<p class="dajianshi">我依然不间断的猛力抽插，每一次的都带出大量的淫水，下体疯狂的挺动着，嘴巴含住乳头，乳头更是被我吮吸的硬了起来，我粗暴的奸淫着平日里在自己面前素来高高在上的表姐，她此刻赤裸的娇躯泛出点潮红，口鼻中哼出本能的呻吟。</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="强奸26":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐27_强迫口交.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸27''">表姐28_强迫口交2</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">终于，表姐受不住冲击带来的快感，开始高声呻吟叫床起来，呻吟声中明显带着欢欲，真是足够荡人心魄。</p>
+	　　     <p class="dajianshi">突然表姐感到一个粗大的东西一下子从自己阴道内拔出来，刚松了口气。</p>
+			<p class="dajianshi">我疯狂的抓住表姐凌乱的金色长发，一把将她寒魅绝艳的俏脸粗暴的抓到自己胯下，大鸡巴强行塞进她诱人的小嘴里，用力抽插了几个来回！</p>
+			<p class="dajianshi">美女表姐感觉自己的口腔一下就被填的满满得，发现我的动作就像在强奸她，表姐委屈的泪水夺眶而出，真是又羞又急。</p>
+			<p class="dajianshi">嘴里发出“恩。恩。”的声音，不断摆动头部想甩开大鸡巴的纠缠，可是我的大鸡巴大龟头又大又粗又硬，撑得表姐的小嘴像要裂开一样，一时怎么摆脱的了。</p>
+			<p class="dajianshi">我的双手又将表姐的金色长发死死抓住，大鸡巴正顶住表姐的头部不断深入，毫不留情。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸27":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐28_强迫口交2.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸28''">表姐29_强迫吞精</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">表姐感觉自己的小嘴已经被撑开张大到了极限，就快要裂开了一样，连呼吸都有困难。</p>
+			<p class="dajianshi">为了减少痛苦，美女表姐只好用两手握住我的肉棒，张开她的杏口开始前后套弄，可她毕竟没有任何性经验，弄得很是粗糙。</p>
+			<p class="dajianshi">我心想她在敷衍了事，便按住表姐的后脑勺，快速抽插起了鸡巴。</p>
+	　　     <p class="dajianshi">事情到了这种地步，表姐眼睛里含着泪，只好模仿色情电影里小姐们的口技动作，用口套弄我的大阴茎。</p>
+			 <p class="dajianshi">嘴巴含住老色狼的大龟头，像吹萧一样不断吮吸着。火红的大龟头上刺激的腥骚味让表姐头晕目旋。</p>
+			<p class="dajianshi"><span style="color:red">嗯……嗯……啊……啊……</span>表姐不断地发出一种说不清是痛苦还是快乐的呻吟声。</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="强奸28":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐29_强迫吞精<<RAND(1,4)>>.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸29''">表姐31_强迫再次插入</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸28''">换个视角</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">要来了，要来了！</span>快感越来越强烈，我大吼一声，无情地快速抽插，表姐的小嘴被撑得极大，口水不自觉的从嘴角流了下来。</p>
+			<p class="dajianshi">粗长的肉棒将表姐精致小巧的瓜子脸撑得高高鼓起，每一次进入都能顶到她的喉咙，呛得她很是难受。</p>
+			<p class="dajianshi">表姐紧皱黛眉，难受的下意识闭上红润双唇，檀口突然的夹紧让抽插的快感更加强烈，一股炽烈的酥麻感不可遏制迅速传来。</p>
+			<p class="dajianshi">我粗重的喘息，顿时绷紧了神经，浑身的肌肉骤然收缩，坚硬的肉棒涨大到了极点，持续膨胀的欲望终于随着凶勐的抽插达到了爆发的顶点。</p>
+			<p class="dajianshi">我的左手死命按住表姐由于恶心“干呕”而想要后退的脑袋，不管不顾的在她小嘴里快速抽插着，右手狠狠的抓揉表姐的巨大爆乳。</p>
+			<p class="dajianshi">紧接着，暴涨到极致的大肉棒一阵颤抖，强劲的液体猛然喷出，急涌在表姐湿滑柔软的小嘴里，随着大肉棒的不断进出，她的嘴角不断地飞溅出白色的泡沫，极度的难受使表姐全身开始用力地抽搐，她奋力地扭动挣扎，但是无济于事。</p>
+			<p class="dajianshi"><span style="color:red">嗯。。。唔。。。</span>表姐喉中的精液不由自主地咽了下去，双目微闭，迷芒的神情浮现出来，傲人的身材不住地颤动。</p>
+	　　     <p class="dajianshi">表姐紧闭着眼，直到我喷射结束抽出大肉棒后才睁开，粉红的香舌如一只冬眠后的小蛇，慢慢探出檀口，舔舐着嘴边灼热的精液，随后用手指将脸上的精液一点点刮下放入口中，当手指从口中抽出，再也看不到半点精液，只有唾液在房间昏黄的光线下泛着淫靡的光芒。。。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸28":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐29_强迫吞精.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸29''">表姐31_强迫再次插入</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">要来了，要来了！</span>快感越来越强烈，我大吼一声，无情地快速抽插，表姐的小嘴被撑得极大，口水不自觉的从嘴角流了下来。</p>
+			<p class="dajianshi">粗长的肉棒将表姐精致小巧的瓜子脸撑得高高鼓起，每一次进入都能顶到她的喉咙，呛得她很是难受。</p>
+			<p class="dajianshi">表姐紧皱黛眉，难受的下意识闭上红润双唇，檀口突然的夹紧让抽插的快感更加强烈，一股炽烈的酥麻感不可遏制迅速传来。</p>
+			<p class="dajianshi">我粗重的喘息，顿时绷紧了神经，浑身的肌肉骤然收缩，坚硬的肉棒涨大到了极点，持续膨胀的欲望终于随着凶勐的抽插达到了爆发的顶点。</p>
+			<p class="dajianshi">我的左手死命按住表姐由于恶心“干呕”而想要后退的脑袋，不管不顾的在她小嘴里快速抽插着，右手狠狠的抓揉表姐的巨大爆乳。</p>
+			<p class="dajianshi">紧接着，暴涨到极致的大肉棒一阵颤抖，强劲的液体猛然喷出，急涌在表姐湿滑柔软的小嘴里，随着大肉棒的不断进出，她的嘴角不断地飞溅出白色的泡沫，极度的难受使表姐全身开始用力地抽搐，她奋力地扭动挣扎，但是无济于事。</p>
+			<p class="dajianshi"><span style="color:red">嗯。。。唔。。。</span>表姐喉中的精液不由自主地咽了下去，双目微闭，迷芒的神情浮现出来，傲人的身材不住地颤动。</p>
+	　　     <p class="dajianshi">表姐紧闭着眼，直到我喷射结束抽出大肉棒后才睁开，粉红的香舌如一只冬眠后的小蛇，慢慢探出檀口，舔舐着嘴边灼热的精液，随后用手指将脸上的精液一点点刮下放入口中，当手指从口中抽出，再也看不到半点精液，只有唾液在房间昏黄的光线下泛着淫靡的光芒。。。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸29":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐31_强迫再次插入.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=1 & gt ''Cousin_Event'',''强奸30''">表姐33_强迫射精</a></div>'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">看着表姐这副淫荡欠操的样子，我又忍不住了，下体才发泄过的大肉棒再次起了反应，下体狰狞巨物又暴涨到了无比坚硬的地步！</p>
+			<p class="dajianshi"><span style="color:red">啊～～～～你～～～～你不会是想～～～～不要啊～～～～</span></p>
+			<p class="dajianshi">表姐内心惊恐，隐隐猜到了我想干什么，吓得尖叫起来，没想到这个无耻的男人将自己操成这样也还不罢休，真的是一个不折不扣的禽兽！</p>
+			<p class="dajianshi">我深吸一口气，不理会表姐的抗议，顶在了她的小穴上，腰猛地向下一压，我的腹部终于紧紧的贴在了表姐的阴户上，肉棒已全根没入！</p>
+			<p class="dajianshi">接着便开始了大力的抽插，腰肢猛力挺动，肉棒深入浅出，凶猛的进出着表姐的肉穴，</p>
+			<p class="dajianshi">我只觉表姐的小穴美妙无比，丰厚多肉，紧窄柔软，最重要的是浪水特别多，鸡巴犹如泡在满是粘液的大海里，插干起来特别舒服。</p>
+			<p class="dajianshi"><span style="color:red">淫贼。。。轻点儿。。。你。。。你好凶啊。。。啊。。。和禽兽一样。。。哦。。。嗯。。。</span></p>
+			<p class="dajianshi">表姐被插得哭叫呻吟着，对此我兴奋若狂，腰肢狂摆，前后挺动，大鸡巴如撞钟一般重重的奸淫着淫水潺潺的小穴，插穴声连绵不绝。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="强奸30":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay height="480">'
+				 '<source src="images\the_dev_is_stupid\e\视频\强迫\表姐33_强迫射精.webm" type=''video/webm;''></video></div>'
+				
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=1 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><span style="color:red">呜……饶……了……我……吧……呜……呜……</span></p>
+			<p class="dajianshi">表姐咬着嘴唇，不想让自己发出声来，可在被我插了才几下后就忍不住叫出声来，不，应该是哭叫起来，因为，那种快感实在是太强烈了，表姐如果不这样，也许就要窒息过去。</p>
+			<p class="dajianshi">一直狂抽了近千下，我只觉腰际酸麻，快感连连，忍不住就要射精，高叫道</p>
+			<p class="dajianshi"><span style="color:red">表姐。。。好爽啊你。。。你的处女小穴真是太好了。。。我就要射了！</span></p>
+			<p class="dajianshi">美女表姐又气又急，扭动着腰肢挣扎着哭道<span style="color:red">求你。。。不要射在里面。。。快。。。快拔出来。。。我不能怀孕。。。啊。。。</span></p>
+			<p class="dajianshi">她可不想让这个强暴自己的禽兽在身体里留下任何精液，可是不争气的阴道小穴却在男人的抽插下将大鸡巴夹得更紧了，整个阴道一张一合就象小嘴一样吮吸着男人的阳具，阴道内一阵阵痉挛！</p>
+			<p class="dajianshi"><span style="color:red">我射死你，我射死你，我射死你！！！</span></p>
+			<p class="dajianshi">我爽快的不断嘶吼，下体疯狂的在表姐娇嫩红润的蜜穴里抽送，断断续续的悲鸣声夹杂着喘息声不断发出，让我更加亢奋。</p>
+			<p class="dajianshi">终于，在表姐悲惨的哀泣声中，我将一股股浓稠的精液射进了处女子宫深处，灌满了表姐的蜜壶，玷污了她最后的纯洁。</p>
+			美女表姐痛苦的闭上了眼睛，被我内射，她能够感觉到身体里多了点东西，可紧接着，满是汗水的白皙胴体剧烈颤抖起来，一股股温热的液体从身体深处喷涌而出，回应着我的中出。表姐躺在地上，无声哭泣着，俏脸上的表情满是悲哀，伤心欲绝，她分开的两腿间，一股白浊的液体从微微分开的唇瓣间缓缓流出，把黑色的芳草之地染得黑白斑驳，也流到了地面上。'
+		'</div>'
+	end
+	
+
+
+
+
+
+
+	
+	if $args[0]="BJ_Fuck_夜袭":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\come_sleep_suck_1.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_深喉''">深喉</a></div>'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_操她''">操她</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">- 起床了，美女！- 我脱光衣服后，叫醒了表姐。</p>
+				 <p class="dajianshi">我的鸡巴已经挺立了起来，表姐做起来，开始用手抚摸我的鸡巴。期间打了几个哈欠，看来还没睡醒。</p>
+				<p class="dajianshi">她用嘴含住了我的鸡巴，开始认真的吸吮起来，她的嘴唇沿着我的肉棒来回移动，在安静的房间里只有口水发出的声音。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="夜袭_深喉":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\come_sleep_suck_<<RAND(2,3)>>.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_操她''">操她</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">我把手放在表姐的后面把她拉向我。我的鸡巴穿过她的口腔深深的插进了她的喉咙里，整根没入，只有睾丸留在外面。</p>
+				<p class="dajianshi">表姐的嘴角流出了口水，整个脸憋得通红。这个小婊子正在窒息，我送开了手，让她缓了口气，然后再次插了进去。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="夜袭_操她":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\come_sleep_fuck_side.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_深喉''">深喉</a></div>'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_正常位''">正常位</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				'<p class="dajianshi">- 哦……嗯嗯…… - 表姐发出一串甜腻诱人的呻吟声</p>
+				<p class="dajianshi">叫床声不断刺激着我的神经，我兴奋地一波接一波的撞击着她娇美的身体。</p>
+				<p class="dajianshi">表姐那两条黑丝美腿顺势缠到了我的腰间，同时肉屄里的穴肉疯狂的挤压包裹着我的鸡巴。</p>
+				<p class="dajianshi">我只觉得无数褶皱和穴肉从四面八方涌来，尤其是最深处的花心，更是如同吮吸乳汁的婴儿，死死的含住龟头，不愿意松开。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="夜袭_正常位":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\come_sleep_fuck_miss_<<RAND(1,2)>>.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_后背位''">后背位</a></div>'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_女上位''">女上位</a></div>'
+				if my.夜袭忍耐度<1:
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''夜袭_射精''">射精</a></div>'
+				end
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				'<p class="dajianshi">表姐躺在我下面。 她的双腿分开，我抓着她的两条腿，把我的鸡巴轻松的插进她湿润的蜜穴。</p>
+				<p class="dajianshi">我开始快速的抽插起来。美丽的表姐深情的看着我，我们嘴唇触碰在一起然后热情的吻了起来。</p>
+				<p class="dajianshi">过了一会，她高潮了，她的舌头在我的嘴里不断地探索着，同时从她的喉咙里发出愉快的呻吟声。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="夜袭_后背位":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\come_sleep_fuck_back_<<RAND(1,2)>>.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_女上位''">女上位</a></div>'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_狗爬式''">狗爬式</a></div>'
+				if my.夜袭忍耐度<1:
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''夜袭_射精''">射精</a></div>'
+				end
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">表姐满脸病态般的红润，眼里的媚意和饥渴都快化为实质，将我给吞下去了。</p>
+				<p class="dajianshi">她发出甜腻的娇吟 - 给我你的鸡巴……我要你的鸡巴…… - </p>
+				<p class="dajianshi"> - 要我的鸡巴干什么啊？- 我坏笑着问道。</p>
+				<p class="dajianshi">表姐没好气的瞪了我一眼，可她还是用贝齿轻咬着红润的嘴唇，低声娇吟 -我要你的鸡巴，给我的小妹妹喂鸡吃啊！-</p>
+				<p class="dajianshi">-噗嗤！-随着她的这句求饶声响起，我也猛地抽插起自己的鸡巴，开始在表姐的肉屄里迅猛的抽插肏干起来。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="夜袭_女上位":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\come_sleep_fuck_up.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_狗爬式''">狗爬式</a></div>'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_后背位''">后背位</a></div>'
+				if my.夜袭忍耐度<1:
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''夜袭_射精''">射精</a></div>'
+				end
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				  '<p class="dajianshi">我躺在床上，表姐爬过来，双腿膝盖弯曲坐下来.</p>
+				<p class="dajianshi">肉棒撑开她的阴道壁，插进了她的阴道里。我按着女孩，开始快速抽插 .</p>
+				<p class="dajianshi">她华丽的乳房紧紧贴着我的身体，同时不停地呻吟着。一段时间后她高潮了，火辣辣的肉体虚弱的趴在我的胸口上.</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="夜袭_狗爬式":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\come_sleep_fuck_doggy.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_正常位''">正常位</a></div>'
+				'<div class="button"><a href="exec:my.夜袭忍耐度+=-1 & gt ''Cousin_Event'',''夜袭_女上位''">女上位</a></div>'
+				if my.夜袭忍耐度<1:
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''夜袭_射精''">射精</a></div>'
+				end
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">我把表姐放到了床的边缘，她趴了下来，然后我试图将我的鸡巴插进她的骚穴里。</p>
+				<p class="dajianshi">但它还不够湿，但这并没有阻止我，我还是用力将我的鸡巴顶了进去，撑开了她的阴道壁。</p>
+				<p class="dajianshi">在我快速的抽插下，她的大奶子也随着不停晃动。我把手放在她的脖子上，用力的挤压着。</p>
+				<p class="dajianshi">痛苦和快乐交织在一起，形成了强烈的高潮。表姐手撑不住了，趴到了床单上，大口的呼吸着。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="夜袭_射精":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\come_sleep_fuck_end.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''夜袭_舔干净''">舔干净</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">表姐躺了下来，我坐在她的胸口上。</p>
+				<p class="dajianshi">她张大了嘴巴等待着，我对着她的脸快速的手淫着。</p>
+				<p class="dajianshi">很快我的精子就射了出来，射进了她的嘴里，她立即吞了下去。</p>
+				<p class="dajianshi">接着一波接一波的精子射在了她的下巴和嘴唇上，我发出愉悦的呻吟声。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="夜袭_舔干净":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\come_sleep_fuck_end_2.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''夜袭_舒服吗''">舒服吗</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">我的表姐嘴里含满了我的精子，她把大部分精液都咽了下去。我用龟头沿着她的嘴唇，把她嘴角的精液清理干净。</p>
+				<p class="dajianshi">- 好姑娘！- 我称赞我的表姐，- 太棒了！- 我躺到了床上。</p>
+				<p class="dajianshi">- 再来一次！- 表姐咯咯笑着，同时吞咽着我的精子，赈灾我的胳膊上，- 你是留下来还是走？</p>
+				<p class="dajianshi">- 得了！你一定有阴谋！</p>
+				<p class="dajianshi">- - 看来我的想别的办法！- 女孩一边笑一边跟我告别。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="夜袭_舒服吗":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\舒服吗.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''Home''">离开</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">过了片刻之后，表姐才从高潮的余韵里反应过来，她满脸红润，媚眼如丝的将脑袋贴到<<$主角姓名>>的胸前。</p>
+				<p class="dajianshi">- 美死了，你终于肯碰我了，你知道我这几年是怎么过的吗？- </p>
+				<p class="dajianshi">- 总不会是玩贪玩蓝月过来的吧？- </p>
+				<p class="dajianshi">- 讨厌！真是的，没想到你的家伙那么大，真的是快把表姐都干死了！- 表姐面色羞红的娇嗔。</p>
+				<p class="dajianshi">表姐看着<<$主角姓名>>那张帅气却略显稚嫩的脸，也是露出了一丝微笑，她相信自己的选择，<<$主角姓名>>是自己终生的归宿。</p>'
+			 '</div>'
+	End
+	
+	
+	if $args[0]="操表姐":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\fuck_sister_nadlom_1_<<RAND(1,2)>>.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:my.操表姐忍耐度+=-1 & gt ''Cousin_Event'',''操表姐_骑乘式''">骑乘式</a></div>'
+				'<div class="button"><a href="exec:my.操表姐忍耐度+=-1 & gt ''Cousin_Event'',''操表姐_后入式''">后入式</a></div>'
+				'<div class="button"><a href="exec:my.操表姐忍耐度+=-1 & gt ''Cousin_Event'',''操表姐_经典式''">经典式</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">我躺到床上,然后表姐习惯性的用嘴含住了我的鸡巴，用嘴唇紧紧包裹着。</p>
+				 <p class="dajianshi">她开始用力吸我的肉棒，有时用舌头舔我的龟头，技术非常娴熟。</p>
+				<p class="dajianshi">她的眼睛盯着我，时刻关注着我的神情，为了能确定她的男人对她的动作满不满意。</p>
+				<p class="dajianshi">而我一直在想的是今天要用哪个姿势去操我的表姐。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="操表姐_骑乘式":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\fuck_sister_nadlom_2_<<RAND(1,2)>>.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:my.操表姐忍耐度+=-1 & gt ''Cousin_Event'',''操表姐_后入式''">后入式</a></div>'
+				'<div class="button"><a href="exec:my.操表姐忍耐度+=-1 & gt ''Cousin_Event'',''操表姐_经典式''">经典式</a></div>'
+				if my.操表姐忍耐度<1:
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''操表姐_口爆''">口爆</a></div>'
+				end
+				if my.操表姐忍耐度<1:
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''操表姐_内射''">内射</a></div>'
+				end
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">我决定对表姐温柔一点。知道她放荡但有要强的性格，我可以确定，她喜欢骑乘位。</p>
+				 <p class="dajianshi">但由于我的要求，她甚至没有表示过自己的想法。就像一个吃货见到美食会流口水一样，我的表姐一想到了她的弟弟会像上次一样再一次操她，她的腿先开始忍不住的抽筋了。</p>
+				<p class="dajianshi">女孩爬到我的鸡巴上，眼睛盯着天花板。她接着主动坐到了肉棒上，开心的大叫着，淫水流的到处都是。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="操表姐_后入式":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\fuck_sister_nadlom_3_<<RAND(1,2)>>.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:my.操表姐忍耐度+=-1 & gt ''Cousin_Event'',''操表姐_骑乘式''">骑乘式</a></div>'
+				'<div class="button"><a href="exec:my.操表姐忍耐度+=-1 & gt ''Cousin_Event'',''操表姐_经典式''">经典式</a></div>'
+				if my.操表姐忍耐度<1:
+					'<div class="button"><a href="exec:gt ''Cousin_Event'',''操表姐_口爆''">口爆</a></div>'
+				end
+				if my.操表姐忍耐度<1:
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''操表姐_内射''">内射</a></div>'
+				end
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">脱掉奥克萨娜的裙子，把她摆好姿势，对准她的小穴，我把我的大肉棒直接插了进去。她在又疼又爽，大声叫着，像母狗一样趴在床上，全心全意的服从于她的男人。</p>
+				 <p class="dajianshi">紧紧抓着表姐的手，我开始用鸡巴一次次撞击她的身体，操的越来越快。充满淫水的小穴在每一次冲击下发出巨大的噗呲噗呲声，奥克萨娜的叫床声充斥着整个卧室。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="操表姐_经典式":
+			'<div class="show_menu">'
+				
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\fuck_sister_nadlom_4_<<RAND(1,2)>>.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:my.操表姐忍耐度+=-1 & gt ''Cousin_Event'',''操表姐_骑乘式''">骑乘式</a></div>'
+				'<div class="button"><a href="exec:my.操表姐忍耐度+=-1 & gt ''Cousin_Event'',''操表姐_后入式''">后入式</a></div>'
+				if my.操表姐忍耐度<1:
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''操表姐_口爆''">口爆</a></div>'
+				end
+				if my.操表姐忍耐度<1:
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''操表姐_内射''">内射</a></div>'
+				end
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">听到我的命令，女孩顺从的迅速掀起她的裙子然后朝后躺下，张开她的双腿。我把龟头放到表姐的小穴前面，慢慢插了进去。</p>
+				 <p class="dajianshi">硕大的奶子，随着肉棒抽插的频率激烈的晃动着，我硬邦邦的鸡巴在表姐的娇喘和呻吟声中一次次冲击着她的高潮。表姐的脸上闪着一片红晕。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="操表姐_口爆":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\fuck_sister_nadlom_end.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''Home''">离开</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">表姐含住我的鸡巴开始用力吸吮，直到我射了。她含着我的龟头，开始吞咽我射在她嘴里的精液，</p>
+				 <p class="dajianshi">当我在喂她吃精子的时候，她的双眼一直在盯着我。最后我射完了，女孩按我的要求，张开嘴想我展示还没有来的及吞下的精子。</p>
+				 <p class="dajianshi">白色的精液在表姐的舌头上的画面看上去很美妙。 我很满意，我同意让她咽下去并提上了内裤。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="操表姐_内射":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\NPC\操表姐_内射.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''Home''">离开</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				 '<p class="dajianshi">表姐花心大开间，一股股温热浓稠的阴精，顿时从里面喷涌而出，朝着<<$主角姓名>>的龟头浇灌而去。</p>
+				 <p class="dajianshi">这回我可算是撑不住了，精关失守马眼大开间，一股股浓稠滚烫的精液，顿时喷射而出，正好喷在了表姐的娇嫩花心之上。原本就没有完全退去高潮的表姐，被这一股股滚烫且足以让她怀孕的致命毒汁浇灌，顿时娇躯一僵，竟是再度高潮了一回！</p>
+				 <p class="dajianshi">一丝丝的精液从表姐的蜜穴，缓缓的溢出，滴落在地板之上，很快便形成了一丝丝的精液水洼。</p>'
+			 '</div>'
+	End
+	
+	if $args[0]="纯爱转变":
+			'<div class="show_menu">'
+				 '<img src="images\NPC\sister_nadlom.jpg" width="854">'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''纯爱转变2''">揍她前男友！</a></div>'
+				'<div class="buttonS1"><a href="exec:$godvoice=''表姐_1'' & gt ''Home_Cousins_Room'',''强奸1''">不管那么多直接上她（慎重）</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				'表姐痛苦地坐在那里哭泣着，手机放在她的一旁。我坐下来搂住她的肩膀：</p>
+				- 告诉我！- 我用坚定的语气说。</p>
+				- 混蛋...学校臭名昭著的富二代谢伟 - 她泪流满面的说道，- 一直疯狂追求我，刚才给我打电话让我去找他，被我拒绝后他开始用各种方式威胁和侮辱我！</p> 
+				- 我该怎么办，弟弟？- 她泪眼婆娑的看着我。'	
+			 '</div>'
+	End
+	
+	if $args[0]="纯爱转变2":
+			'<div class="show_menu">'
+				 '<img src="images\NPC\sister_nadlom.jpg" width="854">'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''纯爱转变3''">出外面</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				'- 没有什么可说的,- 我站起来说，- 我是你的男人,我会为你做任何事情.</p>
+				- 但他年纪比你要大...或许... ...</p>
+				- 不！那个混蛋打不过我的！- 我往外走去，回过头说，- 你别哭了！</p>
+				- 我会让那个混蛋打电话给你寻求原谅的！- 我说道，我一定要为自己的女人出气。'	
+			 '</div>'
+	End
+	
+	if $args[0]="纯爱转变3":
+			'<div class="show_menu">'
+				 '<img src="images\NPC\sister_nadlom_1.jpg" width="854">'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''纯爱转变4''">打电话！</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				'我去外面,谢伟穿着运动服在篱笆附近闲荡，专心的用手机发短信,手里还拎着一瓶酒。</p>
+				- 嘿，混蛋！- 我说着靠近了他.</p>
+				- 啊？</p>
+				- 去你妈的！- 我上前直接一拳把他打倒在地，接着骑在他身上一顿暴揍，他根本来不及反抗只能拼命求饶。'
+			 '</div>'
+	End
+	
+
+
+
+
+	
+	
+
+
+
+
+
+
+	if $args[0]="纯爱转变4":
+			'<div class="show_menu">'
+				 '<img src="images\NPC\sister_nadlom_2.jpg" width="854">'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''纯爱转变5''">回家</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				'- 拿起电话,打给我表姐!- 我告诉他，从他的口袋里掏出一部手机。</p>
+				— 道歉,说你这混蛋永远不会再纠缠她,她永远不会听到你看到你,立刻！ - 他乖乖按我说的做了，挂断电话后,像被打的狗一样不敢看我.</p>
+				- 不用说,如果表姐再次告诉我你的存在,我会抓住你,带到树林里,我会把一个酒瓶从你的屁眼里塞进去一直捅到喉咙,你明白了吗?— 等他快速听话的点了点头,我在他屁股上踢了一脚然后离开了.'
+			 '</div>'
+	End
+	
+	if $args[0]="纯爱转变5":
+			'<div class="show_menu">'
+				 '<img src="images\NPC\sister_nadlom_3.jpg" width="854">'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''纯爱转变6''">我不是你的弟弟！</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				'表姐在卧室里深情的看着我！就像看着一个英雄胜利归来一样。</p>
+				- 怎么样，感觉好点了吗？- 我问道。</p>
+				- 好弟弟！你真是太好了！'
+			 '</div>'
+	End
+	
+	if $args[0]="纯爱转变6":
+			'<div class="show_menu">'
+				 '<img src="images\NPC\sister_nadlom_3.jpg" width="854">'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''Cousin_Event'',''纯爱转变7''">承认这一点！</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				'- 我不是你的弟弟，- 我纠正她的说法，- 我是你的男人！- 她睁大了眼睛看着我，我继续说，
+				- 我操过你，亲爱的，并不是为了玩，我是把你当做我的女人来对待的！</p> 
+				- 可是视频...</p>
+				- 视频和照片已经都被我删除了！那只是我为了吸引你的注意力而拍摄的，- 我撒谎说，- 现在我不在需要这些该死的视频了！你自己也很喜欢被我操，不是吗表姐？</p>
+				- 当然... - 是我眼花了吗，我的表姐竟然脸红了。'
+			 '</div>'
+	End
+	
+
+
+
+
+	
+	if $args[0]="纯爱转变7":
+			'<div class="show_menu">'
+				 '<img src="images\NPC\sister_nadlom_3.jpg" width="854">'
+			'</div>'
+		
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:gt ''Home''">离开</a></div>'
+			'</div>'
+			 		
+			 '<div class="dialog_menu">'
+				'- 所以，别欺骗自己了，大胆的承认吧，我是你的男人，你喜欢被我操！从今以后只有我能操你！
+				- 好吧！好吧！- 表姐点点头，看着我，- 你是我的男人，你可以随时操我！</p>
+				- 既然如此，如果你想要了，你也可以随时来找我！我会帮你解决的，明白吗？
+				她点点头，我把手放在她的屁股上摸了几把，然后离开了房间。现在这个婊子从头到脚都是属于我的了！'
+			 '</div>'
+			 BJ.jindu=3
+			 $ZZY.available=1
+		$LLQ.available=1
+		ZZY.jindu=1
+		LLQ.jindu=1
+		$godvoice="完蛋我被美女包围了_1"
+	End
+	
+
+
+
+
+
+
+
+--- Cousin_Event ---------------------------------
+

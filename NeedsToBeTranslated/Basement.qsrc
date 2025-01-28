@@ -1,0 +1,49 @@
+# Basement
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	a=0
+	q=0
+	gs'Yya' 
+	
+	'<div id="right-column">'
+		gs"Energy_Check"
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu">'
+			'<div class="action">
+				<a class="photo" data-title="Deep_Alley" href="exec:minutes+=5 & gt ''Deep_Alley''"><img class="img_stretch" src="images\place\深巷.jpg"></a>
+			</div>'
+		'</div>'
+	'</div>'
+	
+		 '<div class ="show_menu"><img src="images\place\地下室.jpg" width="854"></div>'
+	
+	
+		'<div class="button_menu">'
+			if 8>$HZ_Event_coser AND $HZ_Event_coser>=5:'<div class="buttonS"><a href="exec:minutes+=5 & gt ''President_Event'',''HZ_Fuck_调教''">调教<<$HZ.name>></a></div>'
+			if $LJ_Event_Steal>=3:'<div class="buttonS"><a href="exec:minutes+=5 & gt ''Repeating_Year_Event'',''抓住''">调教<<$LJ.name>></a></div>'
+			if $冠军事件链=13:'<div class="buttonR"><a href="exec:minutes+=5 & gt ''Champion_Event'',''GJ_Fuck_调教''">教训<<$GJ.name>></a></div>'
+			'<div class="button"><a href="exec:minutes+=5 & gt ''Deep_Alley''">离开</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>·只属于你的地下室，无论在这里发生什么，其他人都不会在意。</p>'
+		'</div>'
+		
+		
+		
+		
+
+
+
+
+
+
+
+--- Basement ---------------------------------
+

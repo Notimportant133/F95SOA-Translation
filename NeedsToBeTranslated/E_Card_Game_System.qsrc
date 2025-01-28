@@ -1,0 +1,881 @@
+# E_Card_Game_System
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	a=0
+	q=0
+	
+	if sfssss='':
+		sfssss=0
+	end
+	
+
+
+
+
+	
+
+	$E卡荷官[1] = '国王'
+	$E卡玩家[1] = '奴隶'
+	$E卡荷官[2] = '平民'
+	$E卡玩家[2] = '平民'
+	$E卡荷官[3] = '平民'
+	$E卡玩家[3] = '平民'
+	$E卡荷官[4] = '平民'
+	$E卡玩家[4] = '平民'
+	$E卡荷官[5] = '平民'
+	$E卡玩家[5] = '平民'
+	
+	$E卡卡牌类别[1] = '特等奖-荷官小鞠钥匙碎片'
+	$E卡卡牌类别[2] = '特等奖-荷官安娜钥匙碎片'
+	$E卡卡牌类别[3] = '一等奖'
+	$E卡卡牌类别[4] = '二等奖'
+	$E卡卡牌类别[5] = '三等奖'
+	$E卡卡牌类别[6] = '万能碎片'
+	$E卡卡牌类别[7] = '三等奖'
+	$E卡卡牌类别[8] = '三等奖'
+	
+	$heguan='1_1_1_1_1'
+	$ziji='1_1_1_1_1'
+	
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				'<a class="photo" data-title="地下交通" href="exec:minutes+=15 & gt ''Subway''"><img class="img_stretch" src="images\place\地铁.jpg"></a>'
+			'</div>'
+	
+			'<div class="action">'
+				'<a class="photo" data-title="村子里" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''村子里''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\村子里.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="民工宿舍" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''民工宿舍''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\民工宿舍.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="黑原基地的大门" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''黑原基地的大门''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑原秘密基地的大门.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="Black_Jack" href="exec:minutes+=5 & gt ''Black_Jack''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="E_Card_Game" href="exec:minutes+=5 & wanjiayaopaicishu=0 & gt ''E_Card_Game''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡游戏.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="积分兑换处" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''游戏商店''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\游戏商店.jpg"></a>'
+			'</div>'
+			
+		'</div>'
+	'</div>'
+	
+	if $args[0]="":
+	
+		'<div class ="show_menu">
+			<img src="images/V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖/images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/国王游戏/E卡游戏.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\主题曲.webm" type=''video/webm;''></video></div>
+		</div>'
+	
+		'<div class="button_menu">'
+			if chouma>=1000:
+				'<div class="buttonS"><a href="exec:minutes+=15 & sfssss=0 & chouma-=1000 & gt ''E_Card_Game'',''开始游戏''">开始游戏</a></div>'
+			else
+				'<div class="buttonS"><a href="exec:minutes+=15 & sfssss=0 & chouma-=1000 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\穷逼.mp3'')">开始游戏</a></div>'
+			end
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">您当前筹码<<chouma>>点。</p>'
+			'<p class="dajianshi3">共2套牌，游戏者2人对战，门票1000筹码，顶级大奖有几率获得小鞠和安娜碎片<p>
+			<p class="dajianshi3">每套牌5张，分为国王套和奴隶套牌2套。<p>
+			<p class="dajianshi3">国王套牌：国王-市民-市民-市民-市民 共5张 持有国王套牌的为国王方，胜利后赔率低。<p>
+			<p class="dajianshi3">奴隶套牌：奴隶-市民-市民-市民-市民 共5张 持有奴隶套牌的为奴隶方，胜利后赔率高。<p>
+			<p class="dajianshi3">双方各自选择其中一套牌对战，一次出一张牌扣底，双方均扣底出牌以后，翻牌决定胜负。<p>
+			<p class="dajianshi3">注意游戏规则在这里有个特点:国王遇见市民，则国王方直接胜利。国王遇见奴隶，则奴隶方直接胜利，若奴隶遇见平民，则国王方直接胜利，若市民遇见市民则平手，继续下一次出牌。<p>
+			<p class="dajianshi3">因为国王赢平民，平民赢奴隶，故理论上国王方胜率大于奴隶方。国王方只需在前4轮出国王牌同时不遇见奴隶即可获胜。<p>
+			<p class="dajianshi3"><span style="color:red">荷官固定国王套。</span><p>
+			.</p>
+			.</p>
+			</p>'
+		'</div>'
+	
+	end
+	
+	
+	if $args[0]="开始游戏":
+	
+		'<div class ="show_menu">
+		<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官6.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\选择5.webm" type=''video/webm;''></video></div>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+		   '<a style="width:50px" href="exec:minutes+=1 & sfssss=0 & $heguan=''0_1_1_1_1'' & gt ''E_Card_Game'',''0_1_1_1_1''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶.png" width="70" ></a>
+			<a style="width:50px" href="exec:minutes+=1 & sfssss=0 & $heguan=''1_0_1_1_1'' & gt ''E_Card_Game'',''1_0_1_1_1''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70" ></a>
+			<a style="width:50px" href="exec:minutes+=1 & sfssss=0 & $heguan=''1_1_0_1_1'' & gt ''E_Card_Game'',''1_1_0_1_1''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70" ></a>
+			<a style="width:50px" href="exec:minutes+=1 & sfssss=0 & $heguan=''1_1_1_0_1'' & gt ''E_Card_Game'',''1_1_1_0_1''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70" ></a>
+			<a style="width:50px" href="exec:minutes+=1 & sfssss=0 & $heguan=''1_1_1_1_0'' & gt ''E_Card_Game'',''1_1_1_1_0''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70" ></a>
+			'
+		'</div>'
+	end
+	
+	if $args[0]="0_1_1_1_1":
+		suit = RAND (1,5)
+		
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\胜利.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\赢了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			end
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶.png" width="70"></marquee>'
+			
+			if suit=1:
+			'<p class="dajianshi3">您赢了！获得</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & anna.jindu+=1 & HYX.jindu+=1 & gt ''E_Card_Game'',''大转盘抽奖''">大转盘抽奖</a></div></p>'
+			else
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			
+			
+		'</div>'
+	end
+	
+	if $args[0]="1_0_1_1_1":
+		suit = RAND (1,5)
+			
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官1.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平局.webm" type=''video/webm;''></video></div>'
+			end
+	
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70"></marquee>'
+			if suit=1:
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			else
+			'<p class="dajianshi3">平局</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''E_Card_Game'',''1_1_1_1''">继续</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+		'</div>'
+	end
+	
+	if $args[0]="1_1_0_1_1":
+		suit = RAND (1,5)
+			
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官1.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平局.webm" type=''video/webm;''></video></div>'
+			end
+	
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70"></marquee>'
+			if suit=1:
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			else
+			'<p class="dajianshi3">平局</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''E_Card_Game'',''1_1_1_1''">继续</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+		'</div>'
+	end
+	
+	if $args[0]="1_1_1_0_1":
+		suit = RAND (1,5)
+			
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官1.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平局.webm" type=''video/webm;''></video></div>'
+			end
+	
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70"></marquee>'
+			if suit=1:
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			else
+			'<p class="dajianshi3">平局</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''E_Card_Game'',''1_1_1_1''">继续</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+		'</div>'
+	end
+	
+	if $args[0]="1_1_1_1_0":
+		suit = RAND (1,5)
+			
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官1.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平局.webm" type=''video/webm;''></video></div>'
+			end
+	
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70"></marquee>'
+			if suit=1:
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			else
+			'<p class="dajianshi3">平局</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''E_Card_Game'',''1_1_1_1''">继续</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+		'</div>'
+	end
+	
+	if $args[0]="1_1_1_1":
+	
+		'<div class ="show_menu">
+		<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官7.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\选择4.webm" type=''video/webm;''></video></div>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+		   '<a style="width:50px" href="exec:minutes+=1 & $heguan=''0_1_1_1'' & gt ''E_Card_Game'',''0_1_1_1''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶.png" width="70" ></a>
+			<a style="width:50px" href="exec:minutes+=1 & $heguan=''1_0_1_1'' & gt ''E_Card_Game'',''1_0_1_1''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70" ></a>
+			<a style="width:50px" href="exec:minutes+=1 & $heguan=''1_1_0_1'' & gt ''E_Card_Game'',''1_1_0_1''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70" ></a>
+			<a style="width:50px" href="exec:minutes+=1 & $heguan=''1_1_1_0'' & gt ''E_Card_Game'',''1_1_1_0''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70" ></a>
+			'
+		'</div>'
+	end
+	
+	if $args[0]="0_1_1_1":
+		suit = RAND (1,4)
+		
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\胜利.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\赢了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			end
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶.png" width="70"></marquee>'
+			
+			if suit=1:
+			'<p class="dajianshi3">您赢了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & anna.jindu+=1 & HYX.jindu+=1 & gt ''E_Card_Game'',''大转盘抽奖''">大转盘抽奖</a></div></p>'
+			else
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			
+			
+		'</div>'
+	end
+	
+	if $args[0]="1_0_1_1":
+		suit = RAND (1,4)
+			
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官2.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平局.webm" type=''video/webm;''></video></div>'
+			end
+	
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70"></marquee>'
+			if suit=1:
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			else
+			'<p class="dajianshi3">平局</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''E_Card_Game'',''1_1_1''">继续</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+		'</div>'
+	end
+	
+	if $args[0]="1_1_0_1":
+		suit = RAND (1,4)
+			
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官2.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平局.webm" type=''video/webm;''></video></div>'
+			end
+	
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70"></marquee>'
+			if suit=1:
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			else
+			'<p class="dajianshi3">平局</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''E_Card_Game'',''1_1_1''">继续</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+		'</div>'
+	end
+	
+	if $args[0]="1_1_1_0":
+		suit = RAND (1,4)
+			
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官2.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平局.webm" type=''video/webm;''></video></div>'
+			end
+	
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70"></marquee>'
+			if suit=1:
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			else
+			'<p class="dajianshi3">平局</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''E_Card_Game'',''1_1_1''">继续</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+		'</div>'
+	end
+	
+	if $args[0]="1_1_1":
+	
+		'<div class ="show_menu">
+		<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官4.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\选择3.webm" type=''video/webm;''></video></div>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+		   '<a style="width:50px" href="exec:minutes+=1 & $heguan=''0_1_1'' & gt ''E_Card_Game'',''0_1_1''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶.png" width="70" ></a>
+			<a style="width:50px" href="exec:minutes+=1 & $heguan=''1_0_1'' & gt ''E_Card_Game'',''1_0_1''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70" ></a>
+			<a style="width:50px" href="exec:minutes+=1 & $heguan=''1_1_0'' & gt ''E_Card_Game'',''1_1_0''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70" ></a>
+			'
+		'</div>'
+	end
+	
+	if $args[0]="0_1_1":
+		suit = RAND (1,3)
+		
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\胜利.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\赢了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			end
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶.png" width="70"></marquee>'
+			
+			if suit=1:
+			'<p class="dajianshi3">您赢了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & anna.jindu+=1 & HYX.jindu+=1 & gt ''E_Card_Game'',''大转盘抽奖''">大转盘抽奖</a></div></p>'
+			else
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			
+			
+		'</div>'
+	end
+	
+	
+	if $args[0]="1_0_1":
+		suit = RAND (1,3)
+			
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官8.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平局.webm" type=''video/webm;''></video></div>'
+			end
+	
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70"></marquee>'
+			if suit=1:
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			else
+			'<p class="dajianshi3">平局</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''E_Card_Game'',''1_1''">继续</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+		'</div>'
+	end
+	
+	if $args[0]="1_1_0":
+		suit = RAND (1,3)
+			
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官8.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平局.webm" type=''video/webm;''></video></div>'
+			end
+	
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70"></marquee>'
+			if suit=1:
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			else
+			'<p class="dajianshi3">平局</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''E_Card_Game'',''1_1''">继续</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+		'</div>'
+	end
+	
+	if $args[0]="1_1":
+	
+		'<div class ="show_menu">
+		<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官3.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\选择1.webm" type=''video/webm;''></video></div>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+		   '<a style="width:50px" href="exec:minutes+=1 & $heguan=''0_1'' & gt ''E_Card_Game'',''0_1''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶.png" width="70" ></a>
+			<a style="width:50px" href="exec:minutes+=1 & $heguan=''1_0'' & gt ''E_Card_Game'',''1_0''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\平民.png" width="70" ></a>
+			'
+		'</div>'
+	end
+	
+	
+	if $args[0]="0_1":
+		suit = RAND (1,2)
+		
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\胜利.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\赢了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			end
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶.png" width="70"></marquee>'
+			
+			if suit=1:
+			'<p class="dajianshi3">您赢了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & anna.jindu+=1 & HYX.jindu+=1 & gt ''E_Card_Game'',''大转盘抽奖''">大转盘抽奖</a></div></p>'
+			else
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			
+			
+		'</div>'
+	end
+	
+	if $args[0]="1_0":
+		suit = RAND (1,2)
+		
+		'<div class ="show_menu">'
+			if suit=1:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\胜利.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\赢了.webm" type=''video/webm;''></video></div>'
+			else
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡荷官5.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶输了.webm" type=''video/webm;''></video></div>'
+			end
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>庄家牌:'
+			wait 1000
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\<<$E卡荷官[suit]>>.png" width="70"></marquee>'
+			'<p></p>__________________________'
+			'<p></p>玩家牌:'
+			'<marquee behavior="slide" width="400" scrollamount="12" direction="left"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\奴隶.png" width="70"></marquee>'
+			
+			if suit=1:
+			'<p class="dajianshi3">您赢了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & anna.jindu+=1 & HYX.jindu+=1 & gt ''E_Card_Game'',''大转盘抽奖''">大转盘抽奖</a></div></p>'
+			else
+			'<p class="dajianshi3">您输了！</p>'
+			'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce''">返回黑原商会</a></div></p>'
+			end
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			'<div><p>.</p></div>'
+			
+		'</div>'
+	end
+	
+	if $args[0]="大转盘抽奖":
+		'<div class ="show_menu">
+			<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/转盘.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/轮盘大抽奖.webm" type=''video/webm;''></video></div>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & $jilu=1 & sfssss=99 & gt ''E_Card_Game'',''开始抽奖''">开始抽奖</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">E卡游戏大抽奖。</p>
+			<p class="dajianshi3">五分之一概率获得特等奖————解锁美女荷官安娜碎片。</p>
+			<p class="dajianshi3">五分之一概率获得特等奖————解锁美女荷官小鞠碎片。</p>
+			<p class="dajianshi3">五分之一概率获得一等奖————所花积分的二十倍。</p>
+			<p class="dajianshi3">五分之一概率获得二等奖————所花积分的十二倍。</p>
+			<p class="dajianshi3">五分之一概率获得三等奖————所花积分的五倍。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="开始抽奖":
+		sfssss+=1
+		suit = RAND (1,8)
+		'<div class ="show_menu">
+			<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/转盘.jpg" width="854">
+			</div>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">抽奖中，请稍后...</p>'
+			wait 2000
+			if $jilu=1:
+				'<p class="dajianshi3">恭喜您，获得<<$E卡卡牌类别[suit]>></p>'
+				if suit=1:
+					xiaojusuipian+=1
+					play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/小菊钥匙.mp3')
+				elseif suit=2:
+					annasuipian+=1
+					play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/安娜碎片.mp3')
+				elseif suit=3:
+					hjkchouma+=20000
+					play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/两万筹码.mp3')
+				elseif suit=4:
+					hjkchouma+=12000
+					play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/一万二.mp3')
+				elseif suit=5:
+					hjkchouma+=5000
+					play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/五千.mp3')
+				elseif suit=6:
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\万能碎片.mp3')
+					gs 'Kurohara_Universal_Shards'
+				elseif suit=7:
+					hjkchouma+=5000
+					play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/五千.mp3')
+				else
+					hjkchouma+=5000
+					play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/五千.mp3')
+				end
+			else
+				'<p class="dajianshi3">恭喜您，作弊被游戏设计者发现了！！！</p>'
+				xiaojusuipian+=-1
+				annasuipian+=-1
+				hjkchouma+=-5000
+				play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/抽奖作弊.mp3')
+			end
+		'</div>'
+		if sfssss>100:
+			video_on=1
+		end
+	end
+	
+
+--- E_Card_Game_System ---------------------------------
+

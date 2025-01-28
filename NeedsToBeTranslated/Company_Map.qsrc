@@ -1,0 +1,59 @@
+# Company_Map
+
+
+
+		'<div class="actions_menu">'
+			
+			'<div class="action">'
+				if Secretary_Office=0:
+				if money>=2000 :'<a class="photo" data-title="Secretary_Office￥2k" href="exec:money-=2000 & Secretary_Office=1 & gt ''Company''"><img class="img_stretch" src="images\place\未装修.jpg"></a>'else'<a class="photo" data-title="Secretary_Office￥2k" ><img class="img_stretch" src="images\place\未装修.jpg"></a>'
+				end
+				if Secretary_Office=1:'<a class="photo" data-title="Secretary_Office" href="exec:minutes+=30 & gt ''Secretary_Office''"><img class="img_stretch" src="images\place\秘书室.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				if Massage_Parlor=0:
+				if money>=25000 :'<a class="photo" data-title="按摩院￥25k" href="exec:money-=25000 & Massage_Parlor=1 & gt ''Company''"><img class="img_stretch" src="images\place\未装修.jpg"></a>'else'<a class="photo" data-title="按摩院￥25k" ><img class="img_stretch" src="images\place\未装修.jpg"></a>'
+				end
+				if Massage_Parlor=1:'<a class="photo" data-title="按摩院" href="exec:minutes+=30 & gt ''Massage_Parlor''"><img class="img_stretch" src="images\place\按摩房.jpg"></a>'
+			'</div>'
+	
+			'<div class="action">'
+				if Good_Wife_Class=0:
+				if money>=15000 :'<a class="photo" data-title="Good_Wife_Class￥15k" href="exec:money-=15000 & Good_Wife_Class=1 & gt ''Company''"><img class="img_stretch" src="images\place\未装修.jpg"></a>'else'<a class="photo" data-title="Good_Wife_Class￥15k" ><img class="img_stretch" src="images\place\未装修.jpg"></a>'
+				end
+				if Good_Wife_Class=1:'<a class="photo" data-title="Good_Wife_Class" href="exec:minutes+=30 & gt ''Good_Wife_Class''"><img class="img_stretch" src="images\place\好妻子辅导班.jpg"></a>'
+			'</div>'
+	
+	        '<div class="action">'
+	            if Coser_Photography_Studio=0:
+	            if money>=35000 and 相机 > 0:'<a class="photo" data-title="Coser_Photography_Studio￥35k & 相机" href="exec:money-=35000 & Coser_Photography_Studio=1 & gt ''Company''"><img class="img_stretch" src="images\place\未装修.jpg"></a>'else'<a class="photo" data-title="Coser_Photography_Studio￥35k & 相机" ><img class="img_stretch" src="images\place\未装修.jpg"></a>'
+	            end
+	            if Coser_Photography_Studio=1:'<a class="photo" data-title="Coser_Photography_Studio" href="exec:minutes+=30 & 约拍馆页数=1 & gt ''Coser_Photography_Studio''"><img class="img_stretch" src="images\place\私房照.jpg"></a>'
+	        '</div>'
+	
+			'<div class="action">'
+				'<a class="photo" data-title="公司大厅" href="exec:minutes+=15 & gt ''Company''"><img class="img_stretch" src="images\place\公司.jpg"></a>'
+			'</div>'
+			
+	        '<div class="action">'
+				if $帝国001="":
+					'<a class="photo" data-title="人工授精室"><img class="img_stretch" src="images\place\未装修.jpg"></a>'
+				else
+					'<a class="photo" data-title="人工授精室" href="exec:minutes+=30 & gt ''Insemination_Room''"><img class="img_stretch" src="images\place\授精室.jpg"></a>'
+				end
+	        '</div>'
+	
+			'<div class="action">'
+				'<a class="photo" data-title="地下交通" href="exec:minutes+=15 & gt ''Subway''"><img class="img_stretch" src="images\place\地铁.jpg"></a>'
+			'</div>'
+	
+		 if 保时捷=1:
+			'<div class="action">
+				<a class="photo" data-title="Driving"href="exec:minutes+=5 & gt ''Driving''"><img class="img_stretch" src="images\place\车.jpg"></a>
+			</div>'
+		 end 
+		'</div>'
+
+--- Company_Map ---------------------------------
+

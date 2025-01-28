@@ -1,0 +1,19 @@
+# Energy_Check
+
+
+
+	if my.精力<=0:
+		if medicine=1:gt"Drug_Trial_Daily"
+
+		if $在偶像家>0:my.精力 = mymax[精力] & gt"Idol_Event",'醒来'
+		if $编导连战>0:my.精力 = mymax[精力] & gt"Director_Event",'第二天'
+		if $大别墅醒来>0:my.精力 = mymax[精力] & gt"Grand_Villa",'主卧休息'
+		gt"Forced_Rest"
+	end
+	
+	if my.精力 >= mymax[精力]:
+		my.精力 = mymax[精力]
+	end
+
+--- Energy_Check ---------------------------------
+

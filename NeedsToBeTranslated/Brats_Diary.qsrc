@@ -1,0 +1,85 @@
+# Brats_Diary
+
+
+
+	cls
+	$metka = $ARGS[0] 
+	$loc = $CURLOC
+	gs'Yya'
+	minutes+=5
+	
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		gs "BUG_Escape"
+	'</div>'
+	
+
+	
+	if $args[0]="日记":
+		'<div class="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			<source src="images\V70版本\增量包_20241111\place\雌小鬼\图片\diary\日记_page<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+			if a=0 or a=1 or a=2 or a=3 or a=5 or a=7 or a=8 or a=9 or a=16:'<div class="button"><a href="exec:">防止误点</a></div>'else'<div class="button"><a href="exec:a-=1 & hour+=1 & gt ''Brats_Diary'',''日记''">上一页</a></div>'
+			if a=1 or a=2 or a=3 or a=5 or a=7 or a=8 or a=9 or a=16 or a=21:'<div class="button"><a href="exec:">防止误点</a></div>'else'<div class="button"><a href="exec:a+=1 & hour+=1 & gt ''Brats_Diary'',''日记''">下一页</a></div>'
+			if a=1 or $CXG_Event>2:'<div class="buttonS1"><a href="exec:a=0 & $m=''CXG'' & $ma=$CXG.name & $m地址=''HXTS1'' & Telove=$CXG.love & $Tename=''满足'' & Tebad=$CXG.bad & gt ''Brat_Event'',''雌小鬼_互相探索''">回忆互相探索</a></div>'
+			if a=2 or $CXG_Event>3:'<div class="buttonS2"><a href="exec:a=0 & gt ''Brat_Event'',''雌小鬼_初次''">回忆最初</a></div>'
+			if a=5 or $CXG_Event>4:'<div class="buttonS3"><a href="exec:a=0 & gt ''Brat_Event'',''雌小鬼_教室''">回忆教室运动</a></div>'
+			if a=7 or $CXG_Event>5:'<div class="buttonS4"><a href="exec:a=0 & gt ''Brat_Event'',''雌小鬼_情人节1''">回忆疯狂一天</a></div>'
+			if a=9 or $CXG_Event>6:'<div class="buttonS5"><a href="exec:a=0 & gt ''Brat_Event'',''雌小鬼_医院护士''">回忆医院嬉闹</a></div>'
+			if a=16 or $CXG_Event>7:'<div class="buttonGn"><a href="exec:a=0 & gt ''Brat_Event'',''雌小鬼_临别1''">回忆临别的一天</a></div>'
+			'<div class="button"><a href="exec:gt $出去的位置">关上日记</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>从头看日记<a href="exec:a=0 & gt ''Brats_Diary'',''日记''">翻到第一页</a></p>'
+			if a=0:'<p>你：是她啊……还以为这本弄丢了呢。</p>'
+			if a=1:'<p>当初我随便从家里找了一身管家的衣服去她家初次互相探索。</p>'
+			if a=2:'<p>不管嘴上说的怎样，行动还是很诚实的。</p>'
+			if a=3:'<p>突然想去高中的旧址去看看了。</p>'
+			if a=3:'<p>这个地方后来被推平建成了公园绿地。</p>'
+			if a=3:'<p>高中失火被烧成平地了，对外说是校办实验室线路老化引起的。</p>'
+			if a=3:'<p>幸好当时是暑假，学校里没人。</p>'
+			if a=4:'<p>早知道不告诉她真相了……</p>'
+			if a=5:'<p>非要缠着我在学校偷偷来。</p>'
+			if a=6:'<p>当时我们疯狂了一整天。</p>'
+			if a=7:'<p>哼！杂鱼？坚持到最后才会知道到底谁才是杂鱼！</p>'
+			if a=8:'<p>唉，当时我太年轻了……</p>'
+			if a=8:'<p>既然翻到这了，去医院转转吧。</p>'
+			if a=9:'<p>这个时候她还有心思和我在病房里胡闹。</p>'
+			if a=9:'<p>我们还偷穿了医生和护士的衣服。</p>'
+			if a=10:'<p>我在这个时候猜到了部分真相。</p>'
+			if a=11:'<p>如果这个时候我能更主动一些的话……</p>'
+			if a=12:'<p>我想我永远忘不了这个感觉。</p>'
+			if a=13:'<p>到这个时候她还在骗我。</p>'
+			if a=14:'<p>肯定会遇到别人，但是你只有一个啊。</p>'
+			if a=15:'<p>这个录音我留到了现在。</p>'
+			if a=15:'<p>·这磁带这么感觉有点发凉呢，受潮了吗？</p>'
+			if a=15:'<p>唉，回家吧。</p>'
+			if a=16:'<p>她告诉我有个家族有一种特别的药可以治疗她，代价就是要她嫁过去。</p>'
+			if a=16:'<p>这是哪来的三流小说剧情啊。</p>'
+			if a=17:'<p>这还是我想偷偷去机场送她，结果遇到了她家被遣散的佣人。</p>'
+			if a=17:'<p>她看我那么痛苦，忍不住告诉我的。</p>'
+			if a=17:'<p>·我以为你只是从我身边离开，没想到是从整个世界离开。</p>'
+			if a=18:'<p>…………</p>'
+			if a=19:'<p>如果……没有如果。</p>'
+			if a=20:'<p>时间的力量真是伟大啊。</p>'
+			if a=21:'<p>后来才知道她家为了救她，强行对从山峦挖出来的奇特植物进行高频率实验。</p>'
+			if a=21:'<p>高中的实验室实际是因为高频率实验而失火。</p>'
+			if a=21:'<p>她父母也死在了这场大火中。</p>'
+			if a=21 and $CXG_Event=8:$CXG_Event=9
+		'</div>'
+	end
+	
+	
+	
+	
+	
+	
+
+--- Brats_Diary ---------------------------------
+

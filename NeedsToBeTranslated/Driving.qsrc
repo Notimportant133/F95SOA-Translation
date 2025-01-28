@@ -1,0 +1,130 @@
+# Driving
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	
+	close all
+	if $车载音响打开=1:
+	 PLAY 'mp3/car_<<rand(0,23)>>.ogg'
+	else
+	 close all
+	
+	end
+	
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		
+		
+	'<div class="actions_menu_quick">
+		<p>
+			<a class="photo" href="exec:close all & gt ''Home''">Home</a>
+			<a class="photo" href="exec:close all & gt ''Home_Bedroom''">卧室</a>
+			<a class="photo" href="exec:close all & gt ''Residential_Area''">Residential_Area</a>
+			<a class="photo" href="exec:close all & gt ''Townhouse''">联排</a>
+			<a class="photo" href="exec:close all & gt ''Talent_Apartment''">人才</a>
+			<a class="photo" href="exec:close all & gt ''Grand_Villa''">✡Grand_Villa</a>
+			<a class="photo" href="exec:close all & gt ''Hospital''">Hospital</a>
+			<a class="photo" href="exec:close all & gt ''Possessed_Dean'',''主卧''">✡院长家</a>
+		</p>
+		<p>
+			<a class="photo" href="exec:close all & gt ''Mall''">Mall</a>
+			<a class="photo" href="exec:close all & gt ''Department_Store''">商店</a>
+			<a class="photo" href="exec:close all & gt ''Fitness_Center''">健身</a>
+			<a class="photo" href="exec:close all & gt ''Restaurant''">Restaurant</a>
+			<a class="photo" href="exec:close all & gt ''4S_Shop''">4S_Shop</a>
+			<a class="photo" href="exec:close all & gt ''Hair_Salon''">美发</a>
+			<a class="photo" href="exec:close all & gt ''Hosiery_Shop''">丝袜</a>
+			<a class="photo" href="exec:close all & gt ''Makeup_Store''">美妆</a>
+		</p>
+		<p>
+			<a class="photo" href="exec:close all & gt ''Kabukicho''">Kabukicho</a>
+			<a class="photo" href="exec:close all & gt ''Night_Nest''">Night_Nest</a>
+			<a class="photo" href="exec:close all & gt ''Heaven_Escort''">伴游</a>
+			<a class="photo" href="exec:close all & gt ''Sex_Doll''">Sex_Doll</a>
+			<a class="photo" href="exec:close all & gt ''Eye_of_God''">Eye_of_God</a>
+			<a class="photo" href="exec:close all & gt ''Deep_Alley''">Deep_Alley</a> 
+		</p>
+		<p>
+			<a class="photo" href="exec:close all & gt ''Subway''">Subway</a>
+			<a class="photo" href="exec:close all & gt ''Park''">Park</a>
+			<a class="photo" href="exec:close all & gt ''University''">University</a>
+			<a class="photo" href="exec:close all & gt ''University_Backdoor''">3年2班</a>
+			<a class="photo" href="exec:close all & gt ''Empire_Group''">Empire_Group</a>
+			<a class="photo" href="exec:close all & gt ''Empire_Entertainment''">Empire_Entertainment</a>
+		</p>
+		<p>
+			<a class="photo" href="exec:close all & gt ''City_Hall''">City_Hall</a>
+			<a class="photo" href="exec:close all & gt ''Mayors_Office''">市长</a>
+			<a class="photo" href="exec:close all & gt ''Immigration_Office''">出入境</a>
+			<a class="photo" href="exec:close all & gt ''Police_Station''">Police_Station</a>
+			<a class="photo" href="exec:close all & gt ''TV_Station''">TV_Station</a>
+			<a class="photo" href="exec:close all & gt ''Bank''">Bank</a>
+			<a class="photo" href="exec:close all & gt ''Competition''">✡竞演舞台</a>
+		</p>
+		<p>
+			<a class="photo" href="exec:close all & gt ''Mugou_Pharma''">Mugou_Pharma</a>
+			<a class="photo" href="exec:close all & gt ''Company''">Company</a>
+			<a class="photo" href="exec:close all & gt ''Massage_Parlor''">按摩</a>
+			<a class="photo" href="exec:close all & gt ''Coser_Photography_Studio''">cos</a>
+			<a class="photo" href="exec:close all & gt ''Insemination_Room''">授精</a>
+			<a class="photo" href="exec:close all & gt ''Outskirts''">Outskirts</a>
+			<a class="photo" href="exec:close all & gt ''Meditation_Winery''">✡酒庄</a>
+			<a class="photo" href="exec:close all & gt ''Island''">✡Island</a>
+		<p>
+			<a class="photo" href="exec:close all & gt ''Hot_Spring''">Hot_Spring</a>
+			<a class="photo" href="exec:close all & gt ''Hot_Spring_Corridor''">温泉内</a>
+			<a class="photo" href="exec:close all & gt ''Hot_Girl_Gang''">Hot_Girl_Gang</a>
+			<a class="photo" href="exec:close all & gt ''Mountain_RM''">山峦</a>
+			<a class="photo" href="exec:close all & gt ''West_Coast''">West_Coast</a>
+			<a class="photo" href="exec:close all & gt ''Prison_Daily'',''警告''">监狱</a>
+			<a class="photo" href="exec:close all & gt ''Church''">Church</a>
+			<a class="photo" href="exec:close all & gt ''Airport''">Airport</a>
+		</p>
+	
+	</div>'
+		
+		
+	'</div>'
+	
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\videos\杂\Porsche_<<$times_of_day>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+		
+		'<div class="button_menu">'
+		 if $车载音响=1:
+			if $车载音响打开!1:
+				'<div class="button"><a href="exec:$车载音响打开=1 & gt ''Driving''">打开车载音响</a></div>'
+			else
+				'<div class="button"><a href="exec:gt ''Driving''">切歌</a></div>'
+				'<div class="button"><a href="exec:$车载音响打开=0 & gt ''Driving''">关闭车载音响</a></div>'
+			end
+		 end
+			'<div class="button"><a href="exec:close all & gt ''Home''">回家</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'	
+			'<p>·驾车慢行无所谓,家人望你平安归。</p>'
+			'<p>↑送给所有正在玩的玩家❤</p>'
+		 if $车载音响=1:'<p>——</p>'
+		 if $车载音响=1:'<p>【现实中我没有车，所以不知道音响里该放什么，如果你有好听的歌，可以发给我，我为你加上去】</p>'
+		'</div>'
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+--- Driving ---------------------------------
+

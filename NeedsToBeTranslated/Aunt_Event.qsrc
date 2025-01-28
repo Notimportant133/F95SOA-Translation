@@ -1,0 +1,2110 @@
+# Aunt_Event
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	my.精力-=3
+	minutes+=10
+	$随机数=rand(0,100)
+	
+
+
+
+
+
+
+	
+	'<div id="right-column">'
+		gs"Energy_Check"
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Hidden'
+		gs "BUG_Escape"
+	'</div>'
+	if $ARGS[0]="相遇":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\遇见1-<<a>>.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			'<div class="button_menu">'
+			if a=0:'<div class="buttonP"><a href="exec:a=1 & $MQMM.love+=5 & $MQMM.available=1 & gt ''Aunt_Event'',''相遇''">自我介绍</a></div>'
+			if a=1:'<div class="button"><a href="exec:a=2 & $MQMM.love+=5 & gt ''Aunt_Event'',''相遇''">一起聊天</a></div>'
+			if 4>=a and a>=2:
+				if a=2:'<div class="buttonR1"><a href="exec:a=3 & $MQMM.love+=10 & gt ''Aunt_Event'',''相遇''">当时的情况</a></div>'
+				if a=3 :'<div class="buttonP"><a href="exec:a=4 & $MQMM.love+=10 &$MQ_Event_store=7 & gt ''Aunt_Event'',''相遇''">聊聊现在</a></div>'
+				if a=4 :'<div class="buttonR"><a href="exec:a=5 & $MQMM.love+=9 & $MQMM_Event_store=1 &  gt ''Mothers_Villa''">好吧</a></div>'
+			end
+	'</div>'
+	
+		'<div class="dialog_menu">'
+			if a=0:'<p>我: 好美啊，不知道姨妈在床上还是这种模样吗？（想到这我不禁打了个冷颤，暗骂自己一声：“狗东西在想什么呢，那可是你姨妈啊）”</p>'
+			if a=1:
+			'<p>我: 你好，我是<<$主角姓名>>，<<$MQ.name>>的儿子。</p>'
+			'<p><<$MQMM.name>>: 你是<<$主角姓名>>？都长这么大了啊！小伙子真帅呀！！！</p>'
+			end
+			
+			if a=2:
+			'<p>我: 姨妈？这个称呼不会很奇怪吧.......</p>'
+			'<p><<$MQMM.name>>:小滑头，你还想怎么称呼？？</p>'
+			end
+			
+			if a=3:
+			'<p>我: 我妈到底咋回事？他为什么不记得我了？</p>'
+			'<p><<$MQMM.name>>: 我也是听警察说起的，好像被海浪卷到了很远的岸边，被渔民救了，命是保住了，但是脑袋受了点伤，丧失了部分记忆…</p>'
+			'<p>我: 这些年都是你照顾她吗？</p>'
+			'<p><<$MQMM.name>>: 对啊，我接到消息就赶去医院了，住了一个月院才出院呢…</p>'
+			end
+			
+			if a=4:
+			'<p>我: 那你也在疗养院上班？</p>'
+			'<p><<$MQMM.name>>: 没有啊，那是你外公临走前留下的，就让你妈接手了，我在大学当老师。</p>'
+			'<p>我: 大学老师？？</p>'
+			'<p><<$MQMM.name>>: 咋了？不像啊，我在大学教高数。</p>'
+			'<p>我: 老师好！！！【我尴尬的说道】</p>'
+			'<p><<$MQMM.name>>:你的高数课修完了吗？</p>'
+			'<p>我: 这学期课程还没有选呢.</p>'
+			'<p><<$MQMM.name>>:那不是正好，我直接在教务系统后台把你拉到我的班，以后记得每天下午17：00-19：00来上课！</p>'
+			'<p><<$MQMM.name>>: 这么强制性的吗！！（先去看看老妈房间看看回来没）</p>'
+			end
+		'</div>'
+	end
+	
+	if $args[0]="接你回家":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\接你回家.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:minutes+=15 &gt ''Aunt_Event'',''A302卧室01''">十五分钟后</a></div>'
+			'</div>'
+			
+		'<div class="dialog_menu">'
+			'<p>·<<$MQMM.name>>：忙碌的一天终于结束了.....</p>'
+		'</div>'
+		$MQMM.love+=1
+	End
+	
+	if $args[0]="A302卧室01":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\备课.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+			'<div class="button_menu">'
+			if $MQMM_Event_store=2 :'<div class="buttonP"><a href="exec:minutes+=5  & gt ''Aunt_Event'',''MQMM_按摩'',''按摩0换衣''">给姨妈按摩</a></div>'
+			if $MQMM_Event_store=9 :'<div class="buttonP"><a href="exec:minutes+=5  & gt ''Aunt_Event'',''MQMM_姨父回家''">“团聚”</a></div>'
+			if $MQMM_Event_store>=11 :'<div class="buttonP"><a href="exec:minutes+=5 & gt ''Aunt_Event'',''姨妈房间3''">运动运动！</a></div>'
+			'<div class="button"><a href="exec:  gt ''Generic_Overnight_2''">去睡觉</a></div>'
+			'</div>'
+			
+		'<div class="dialog_menu">'
+			if $MQMM_Event_store=2:
+			'<p>·<<$MQMM.name>>：（站了一天，全身好酸啊）我去洗个澡，别偷看！</p>'
+			'<p>·我：姨妈，我给你捏捏肩膀吧。</p>'
+			'<p>·<<$MQMM.name>>：别动手动脚的！老实点！</p>'
+			end
+			if $MQMM_Event_store>=8:
+			'<p>·姨妈在接电话，好像是姨父打过来的</p>'
+			'<p>·我：姨妈，姨父回来了吗？</p>'
+			'<p>·<<$MQMM.name>>：嗯，你自己玩会，我去做饭了！</p>'
+			else
+			'<p>·<<$MQMM.name>>：我一会还要备课，你早点休息吧.....</p>'
+			end
+		'</div>'
+	End
+	
+	if $args[0]="MQMM_按摩":
+		if $MQMM.bad>= a*2+2:
+			else
+			$args[1]="停止"
+			$args[2]="结束"
+		end
+	
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\<<$ARGS[1]>>~1.webm" type=''video/webm;''></video></div>'
+			'</div>'
+	
+		if $args[2]!"结束":
+			'<div class="button_menu">'
+				if a!1 and q<=2:
+				'<div class="buttonP"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_按摩'',''按摩1挑逗''">挑逗</a></div>'
+				end
+				if a!2 and q<=3:
+				'<div class="buttonP"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_按摩'',''按摩2肩膀''">按摩♥肩膀</a></div>'
+				end
+				if a!3 and 2<=q and q<=5:
+				'<div class="buttonP"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_按摩'',''按摩3后背''">按摩♥♥后背</a></div>'
+				end
+				if a!4 and 3<=q and q<8:
+				'<div class="buttonP"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_按摩'',''按摩4腰部''">按摩♥♥♥腰部</a></div>'
+				end
+				if a!5 and 4<=q and q<9:
+				'<div class="buttonP"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_按摩'',''按摩5腿部''">按摩♥♥♥♥腿部</a></div>'
+				end
+				if a!6 and 5<=q :
+				'<div class="buttonP"><a href="exec:a=6 & gt ''Aunt_Event'',''MQMM_按摩'',''按摩6开背''">精油♥♥♥♥♥开背</a></div>'
+				end
+				if a=6:
+				'<div class="buttonP"><a href="exec:a=7 & gt ''Aunt_Event'',''MQMM_按摩'',''按摩7臀部''">按摩♥♥♥♥♥♥臀部</a></div>'
+				end
+	            if a=7:
+				'<div class="buttonP"><a href="exec:a=8 & gt ''Aunt_Event'',''MQMM_按摩'',''按摩8胸部''">按摩♥♥♥♥♥♥胸部</a></div>'
+				end
+				if a=8: 
+				'<div class="buttonR"><a href="exec:a=-1 & gt ''Aunt_Event'',''MQMM_按摩'',''按摩9结束'',''结束''">结束（欲擒故纵）</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+	
+					'<div class="button"><a href="exec:minutes+=60 & gt ''A302''">离开</a></div>'
+	
+				'</div>'
+		end
+	
+		if a=0:
+			 '<div class="dialog_menu">'
+				 '<p>我：姨妈，工作一天了，我给你按摩按摩，放松一下吧。</p>'
+				 '<p><<$MQMM.name>>她白了你一眼....就懂了你的心思...</p>'
+				 '<p><<$MQMM.name>>：好热...好痒.....OS：被这坏小子摸的我心跳好快，好想被抚摸....</p>'
+			 '</div>'
+		end
+		if $args[1]="停止":
+			 $MQMM.bad+= q+2
+			 $MQMM.love+= q+my.魅力
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：好了，好了，到此为止！！！别得寸进尺！</p>'
+			 	 '<p>我：真是扫兴~</p>'
+			 '</div>'
+		end
+		if 3>=a and a>=1 :
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>： ..<<$娇喘声>></p>'
+			 '</div>'
+		end
+	
+		if a>=4 :
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：…混蛋！…<<$娇喘声>>..…再这么下去的话…</p>'
+			 '</div>'
+		end
+		
+		if a=-1:
+			 $MQMM.bad+= q+5
+			 $MQMM.love+= q+my.魅力
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：我是怎么了（内心强烈的欲望再次被激发）....</p>'
+			 '</div>'
+		end
+			
+	
+	 q+=1
+	
+	end
+	
+	if $args[0]="姨妈电话":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\电话.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:$MQMM_Event_store=3 & gt ''A302''">好的</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'	
+			'<p><<$MQMM.name>>:周五你不用接我回家了.</p>'
+			'<p>我:咋了？出啥事了？</p>'
+			'<p><<$MQMM.name>>:周五我们教师组在赤色餐厅聚餐，估计会很晚了。</p>'
+			'<p>我:教师组聚餐（那帮老色皮没安好心吧）？要我等你吗？</p>'
+			'<p><<$MQMM.name>>:你自己回去，早点休息吧，别等我了！</p>'
+			'<p>OS：我还是不放心，周五晚上七点去赤色餐厅看看吧</p>'
+			$姨妈电话=1
+		'</div>'
+	End
+	
+	if $args[0]="姨妈电话1":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\电话.webm" type=''video/webm;''></video></div>'
+			'</div>'
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec: & gt ''A302''">好的</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'	
+			'<p><<$MQMM.name>>:你姨父周六晚上要回家，你老实点.</p>'
+			'<p>我:我咋不老实了？嘿嘿</p>'
+			'<p><<$MQMM.name>>:你还好意思说，每天晚上都来折腾我。</p>'
+			'<p>我:.......</p>'
+			'<p>OS：给姨父灌点安眠药不就好了。</p>'
+			$姨妈电话1=1
+		'</div>'
+	End
+	
+	if $ARGS[0]="教师组吃饭":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\聚餐1-<<a>>.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			'<div class="button_menu">'
+			if a=0:'<div class="button"><a href="exec:a=1 & $MQMM.love+=5  & gt ''Aunt_Event'',''教师组吃饭''">偷听聊天</a></div>'
+			if a=1:'<div class="button"><a href="exec:a=2 & $MQMM.love+=5 & gt ''Aunt_Event'',''教师组吃饭''">开始灌酒</a></div>'
+			if 4>=a and a>=2:
+				if a=2:'<div class="buttonP"><a href="exec:a=3 & $MQMM.love+=10 & gt ''Aunt_Event'',''教师组吃饭''">现身“救驾”</a></div>'
+				if a=3 :'<div class="buttonP"><a href="exec:a=4 & $MQMM.love+=10  & gt ''Aunt_Event'',''教师组吃饭''">带回家</a></div>'
+				if a=4 :'<div class="button"><a href="exec:minutes+=5 & $MQMM_Event_store=4 & gt ''A302''">回家</a></div>'
+			end
+	'</div>'
+	
+		'<div class="dialog_menu">'
+			if a=0:'<p>我: 居然都开始喝酒了...</p>'
+			if a=1:
+			'<p>我:聊的真起劲......</p>'
+			end
+			if a=2:
+			'<p>我:这个喝法不是一会就喝醉了.......</p>'
+			end		
+			if a=3:
+			'<p>我: 各位老师好！！</p>'
+			'<p>小伙子，你是？…</p>'
+			'<p>我: 我是<<$MQMM.name>>的外甥.</p>'
+			'<p><<$MQMM.name>>: 你咋来了，不是让你..先回家吗？</p>'
+			'<p>我: 我恰巧路过，看见你喝醉了，就进来了.瞧你醉的那样子.....</p>'
+			'<p><<$MQMM.name>>: 我哪里喝醉了....额...</p>'
+			end
+			
+			if a=4:
+			'<p>我: 你都不会走路了，还没醉</p>'
+			'<p><<$MQMM.name>>: 怎....么.....会......</p>'
+			'<p>我: 走稳点，哎呦妈呀，真重，喝那么多就干啥，我还得照顾你（好机会，去姨妈房间“照顾”她）.....</p>'
+			end
+		'</div>'
+	end
+	
+	if $ARGS[0]="强奸":
+	
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\强奸<<a>>~1.webm" type=''video/webm;''></video></div>'
+		'</div>'
+		'<div class="button_menu">'
+			if a=0:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">亲胸</a></div>'
+			if a=1:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">舔穴</a></div>'
+			if a=2:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">口交</a></div>'
+			if a=3:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">后入</a></div>'
+			if a=4:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">冲刺</a></div>'
+			if a=5:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">颜射</a></div>'
+		    if a=6:'<div class="buttonR"><a href="exec: $MQMM_Event_store=5 &$MQMM.love-=500 & gt ''Generic_Overnight_2''">溜走</a></div>'
+		'</div>'
+	
+	
+		'<div class="dialog_menu">'	
+			if a=0:
+			'<p>背对着客厅的阳台，夕阳将我的影子拉的长长的，几乎覆盖住了姨妈瘫坐在地的娇躯。</p>'
+			'<p>姨妈并没有察觉到什么，或者说她就算意识到什么也不会多想，人呢在面对小孩的时候往往容易放松警惕，哪怕是身为老师的姨妈也一样。</p>'
+			end
+			if a=1:
+			'<p><<$MQMM.name>>:“你干什么！快放开，唔～”姨妈想呵斥我下来，结果话还没说完就被我俯下身子将其檀口堵了起来。</p>'
+			'<p><<$MQMM.name>>:“<<$主角姓名>>！你知道你自己在干嘛吗！”.</p>'
+			'<p>我：“姨妈，我喜欢你，自从住在这里我每天无不关注着你美丽的容貌，你的身材，我……”</p>'
+			'<p><<$MQMM.name>>:“嗯～滚开！滚开！<<$主角姓名>>，我可是你姨妈！你快起来！快起来啊～”。</p>'
+			end
+			if a=2:
+			 '<p>姨妈的双腿间传来狗舔水的声音，我的将头深埋在姨妈的大腿中，品尝着这甜蜜的鲍汁，时而上下晃动，时而左右摇摆，刺激的姨妈的娇躯也轻微颤动。</p>'
+			 '<p><<$MQMM.name>>:“不～我不要！～别舔，别舔啊～”</p>'
+			end
+			if a=3:
+			'<p><<$MQMM.name>>:“住……手！”</p>'
+			'<p>姨妈的娇躯都快扭成麻花了，她不停晃动着腰肢想借此脱离嘴中的抽插的巨屌。可那巨屌在我的控制下插入着姨妈的小嘴却也无法摆脱。</p>'
+	
+			end
+			if a=4:
+			'<p><<$MQMM.name>>:“畜牲！你就是个畜牲！我姐怎么就生了你这么一个不是人的东西！”</p>'
+			'<p>姨妈喘着粗气骂道，不过她的反应却更加激起了我征服的欲望。</p>'
+	        end
+			if a=5:
+			'<p>我:“没错，就这样，姨妈，叫出来，都叫出来，我想听你的声音，快来”</p>'
+			'<p><<$MQMM.name>>:“啊～快停下～嗯啊～不要～嗯～不要～嗯嗯～嗯哼～滚开～你给我滚开～滚……开……啊～～！”</p>'
+			'<p>胯部和姨妈奶子撞击的声音回荡在房间上空。姨妈的两个奶子就像是装满了蜜汁的水袋一样，沉甸甸的，被我撞的一阵晃动。</p>'
+			END
+			if a=6:
+			'<p>我:“不行，我要射了，我要射了”</p>'
+			'<p><<$MQMM.name>>:“我，我是你姨妈，你不能射进来，嗯～我们这是乱伦啊～”</p>'
+			'<p>姨妈举起颤抖的手指着我嘶吼着，如同一个生气的母狮子。现在的她已经缓过神来，刚刚发生的一切还历历在目，让她几近崩溃。</p>'
+			'<p>我默默的爬下床捡起衣服回到自己的房间，害怕姨妈作出什么傻事我把门漏个缝，偷听着门外的动静。只听到姨妈在房间中摔了几件东西，然后顾不上穿鞋一路小跑跑进卫生间，精液顺着她的股缝间滑出，滴了一地。</p>'
+			END
+	    '</div>'  
+	End
+	
+	if $ARGS[0]="A302_Bathroom":
+		$浴室num=rand(1,2)
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\浴室<<$浴室num>>.webm" type=''video/webm;''></video></div>'
+			'</div>'
+	
+		'<div class="button_menu">'
+			if $浴室num=1 and $MQMM_Event_store>=12 and $MQMM.bad>=150:'<div class="buttonR"><a href="exec:gt ''Aunt_Event'',''MQMM_Fuck_按摩''">按摩-加入"麦高芬"</a></div>'
+			if $浴室num=2 and $MQMM_Event_store>=13:'<div class="buttonS"><a href="exec:gt ''Aunt_Event'',''MQMM_Fuck_浴室内''">进去干她</a></div>'
+	
+			'<div class="button"><a href="exec:minutes+=15 & gt ''A302''">离开</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>- <<$MQMM.name>>姨妈在洗澡......</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="MQMM_下药":
+	
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\下药1-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+		'<div class="button_menu">'
+			if a=0:'<div class="buttonR"><a href="exec:a+=1& $MQMM.love+=15 & gt ''Aunt_Event'',''MQMM_下药''">去教室</a></div>'
+			if a=1:'<div class="buttonR"><a href="exec:a+=1& $MQMM.love+=15 & gt ''Aunt_Event'',''MQMM_下药''">递水</a></div>'
+			if a=2:'<div class="buttonR"><a href="exec:a+=1& $MQMM.love+=15 & gt ''Aunt_Event'',''MQMM_下药''">听课</a></div>'
+		    if a=3:'<div class="button"><a href="exec:minutes+=110 & gt ''Generic_Reading''">下课</a></div>'
+		'</div>'
+	
+	
+		'<div class="dialog_menu">'	
+			if a=0:
+			'<p>....。</p>'
+			end
+			if a=1:
+			'<p>我：“姨妈，好久不见，喝点水吧……”</p>'
+			'<p><<$MQMM.name>>:“你伤好了??</p>'
+			'<p>我：“嗯，昨天天就出院了”.</p>'
+			'<p><<$MQMM.name>>:“嗯～那就每天记得来上课，马上就考试了，你要是能考80分以上，我答应你妈的，满足你一个愿望～”。</p>'
+			'<p>我：“真的吗？”.（看你到时候怎么拒绝）</p>'
+			end
+			if a=2:
+			 '<p>姨妈接过水，一口喝了下去。</p>'
+			 '<p>我:看着姨妈喝下加了麦高芬的水，真是双喜临门啊，到时候我看你还能不能坚持的住.....”</p>'
+			end
+			if a=3:
+			'<p>怎么没反应，有抗药性吗？看来要多使几次才行啊。</p>'
+	
+			end
+	    '</div>'  
+	End
+	
+	if $ARGS[0]="MQMM_姨父回家":
+	
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\姨父1-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+		'<div class="button_menu">'
+			if a=0:
+	        '<div class="button"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''MQMM_姨父回家''">回家</a></div>'
+	        end
+			if a=1:
+	        '<div class="button"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''MQMM_姨父回家''">吃饭</a></div>'
+	        end
+			if a=2:
+	        '<div class="buttonR"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''MQMM_姨父回家''">偷看</a></div>'
+	        end
+			if a=3:
+	        '<div class="buttonR"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''MQMM_姨父回家''">偷看</a></div>'
+	        end
+			if a=4:
+	        '<div class="buttonR"><a href="exec:a+=1& gt ''Aunt_Event'',''MQMM_姨父回家''">溜走</a></div>'
+	        end
+	        if a=5:
+	        '<div class="buttonR"><a href="exec: $MQMM_Event_store=10 & gt ''Generic_Overnight_2''">休息</a></div>'
+	        end
+		'</div>'
+		'<div class="dialog_menu">'	
+			if a=0:
+			'<p>..</p>'
+			end
+			if a=1:
+			'<p>姨妈一个人在厨房忙碌着，为即将到来的姨父跟表弟准备着丰盛的早餐……”</p>'
+			'<p>姨妈满脸充满着喜悦，似乎期待这天很久了....”</p>'
+			end
+			if a=2:
+			 '<p>姨父：“老婆，最近事有点多，回来的有点晚了。”</p>'
+			 '<p><<$MQMM.name>>:“没事老公，你在外面带着儿子辛苦了，来家里好好休息休息吧”</p>'
+			 '<p><<$MQMM.name>>:你俩也多吃一点，吃完早点去休息，坐车都累坏了吧！</p>'
+			 '<p>我:早点睡？这么明显的吗？难道是要......（看来今晚可以爬墙根了）</p>'
+			end
+			if a=3:
+			'<p><<$MQMM.name>>:“志明，今天难得你回来，我们……”</p>'
+			'<p>接着又是一阵衣服摩擦的声音，隔着房门我都能感觉屋里的气氛变得有些灼热起来。</p>'
+			'<p>姨夫此刻的内心充满了疑问，因为他发现自己不管怎么努力自己的下本身始终毫无反应。其实从刚开始关灯睡觉时他就想着和自己的妻子来一场鱼水之欢，可是躺在床上下面却一直没有反应。</p>'
+			'<p><<$MQMM.name>>:“怎么会事？”</p>'
+			'<p>姨父：“咳咳……，这个……呃……可能是我最近有点累了，下面有点不听使唤”</p>'
+			'<p><<$MQMM.name>>:算了，老公，你应该是在外面太辛苦了，今天咱们就算了，先睡觉吧”</p>'
+			end
+			if a=4:
+			'<p>望着面前满脸通红下体却没一丝动静的丈夫，姨妈主动安慰起姨父来，自己的丈夫需要休息，她应该要懂得理解他。但是内心的那团火已经被点燃了，看来只能自己动手了..</p>'
+			'<p>在昏暗的灯光下，姨妈的手渐渐伸到了下面......嗯....…啊~~好喜欢这种感觉…</p>'
+	        end
+	        if a=5:
+			'<p>我：看来麦高芬起作用了，嘿嘿，姨父，你不行，我就替你照顾姨妈吧。铛...</p>'
+			'<p>我：不好，踢到门了，被发现了，先溜了，等考完试再拿下姨妈，我还是先准备考试吧.</p>'
+	        end
+	    '</div>'  
+	End
+	
+	if $args[0]="考试":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\考试.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		$竞赛题目[1]='1、13个梨子放到5个盘子里，总有一个盘子里至少要放入（ ）个梨子。'
+		$竞赛选项[1]='A.3	   B.4	     C.5      D.6 '
+		$竞赛题目[2]='1、郭阿姨把21块蛋糕分给5个小组，总有一个小组至少要分（   ）。'
+		$竞赛选项[2]='A.5块		   B.4块		C.6块     D.7块 '
+		$竞赛题目[3]='2、有红、黄、蓝、白珠子各10粒，装在一个袋子里，为了保证摸出的珠子有两粒颜色相同，应至少摸出（  ）粒。'
+		$竞赛选项[3]='A.5	    B.4	     C.3	   D.6'
+		$竞赛题目[4]='3、有一副去掉大、小王的扑克牌，至少抽出（  ）张牌才能保证至少6张牌的花色相同。'
+		$竞赛选项[4]='A.21   	B.22	  C.23	   D.24'
+		$竞赛题目[5]='4、某旅游团共49名游客，中午吃饭时用了8个餐桌，总有（ ）个餐桌的人数不少于7人。'
+		$竞赛选项[5]='A.1	   B.2	    	C.3        D.7'
+		$竞赛题目[6]='5、从一副扑克牌中（去掉大、小王）任意抽取了9张扑克牌，其中至少有（   ）张扑克牌是同色的。'
+		$竞赛选项[6]='A.3	  B.4	    	C.2      D.5'
+		$竞赛题目[7]='6、把25本书最多放进（   ）个抽屉中才能保证至少有一个抽屉中放进7本书。'
+		$竞赛选项[7]='A.4	   B.3		   C.2	    	D.1'
+		$竞赛题目[8]='7、将一些书放入三个抽屉里，总有一个抽屉至少放5本书，这些书共有（   ）本。'
+		$竞赛选项[8]='A.13～15     B.12～16     C.12～15     D.13～16'
+		$竞赛题目[9]='8、至少在（     ）个人中，才能保证找到两个同一月份出生的人。'
+		$竞赛选项[9]='A.13      B.14      C.12      D.31'
+		$竞赛题目[10]='9、要把13只蝈蝈放在3个蝈笼里，总有1个蝈笼至少要放（   ）只蝈蝈。'
+		$竞赛选项[10]='A.5      B.4      C.6      D.7 '
+		$竞赛题目[11]='10、13个梨子放到5个盘子里，总有一个盘子里至少要放入（ ）个梨子。'
+		$竞赛选项[11]='A.3   	B.4	    C.5      D.6 '
+		if a!12:
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:minutes+=5 &pick_a+=1& gt ''Aunt_Event'',''考试''">选A</a></div>'
+				'<div class="button"><a href="exec:minutes+=5 &pick_b+=1& gt ''Aunt_Event'',''考试''">选B</a></div>'
+				'<div class="button"><a href="exec:minutes+=5 &pick_c+=1& gt ''Aunt_Event'',''考试''">选C</a></div>'
+				'<div class="button"><a href="exec:minutes+=5 &pick_d+=1& gt ''Aunt_Event'',''考试''">选D</a></div>'
+			'</div>'
+	
+			else
+				'<div class="button_menu">'
+				if pick_a>=8:
+					'<div class="buttonP"><a href="exec:minutes+=30 &$MQMM_Event_store=11 & gt ''A302''">回家找姨妈实现“愿望”！！</a></div>'
+					else
+					'<div class="buttonR"><a href="exec:minutes+=120 & gt ''University''">为了姨妈.再考一次</a></div>'
+					end
+				'</div>'
+		end
+	
+		if a!12:
+		 '<div class="dialog_menu">'
+			 '<p><<$MQMM.name>>:认真答题，不许交头接耳。</p>'
+			 '<p><<$竞赛题目[a]>></p>'
+			 '<p><<$竞赛选项[a]>></p>'
+		 '</div>'
+		 end 
+	
+		if a=12:
+	
+			$得分=(pick_a*10+pick_b*3+pick_c*3+pick_d*3)
+		 '<div class="dialog_menu">'
+			 '<p><<$FXZ.name>>:你的分数是【<<$得分>>分】！</p>'
+		 '</div>'
+		 end 
+		 a+=1
+	End
+	
+	if $args[0]="愿望":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\家里<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if  a!6:
+			'<div class="button_menu">'
+				if a!1 and q<=1:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Aunt_Event'',''愿望''">亲吻</a></div>'
+				end
+				if a!2 and q<=2:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Aunt_Event'',''愿望''">扣穴</a></div>'
+				end
+				if a!3 and 4>=q and q>=2:
+				'<div class="buttonP"><a href="exec:a=3 & gt ''Aunt_Event'',''愿望''">打飞机</a></div>'
+				end
+				if a!4 and 5>=q and q>=3:         
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Aunt_Event'',''愿望''">口交</a></div>'
+				end
+				if a=4:  
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Aunt_Event'',''愿望''">插入</a></div>'
+				end
+				if a=5:
+				'<div class="buttonS5"><a href="exec:a=6 & $MQMM_Event_store=12 & gt ''Aunt_Event'',''愿望''">内射</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec:minutes+=10 & gt ''A302''">离开</a></div>'
+				'</div>'
+		end
+		if a=0:
+			 '<div class="dialog_menu">'
+			 '<p><<$MQMM.name>>:“你看着我干嘛？”</p>'
+	         '<p>我:“额，我感觉姨妈你好漂亮，忍不住想看，姨妈，我都考试完了，我的奖励呢？”</p>'
+	         '<p><<$MQMM.name>>:奖励我还没想好呢，你别以为我不知道你那龌蹉思想，你最好给我老实点，不然，哼哼”</p>'
+	         '<p>我:那我可要自己讨了</p>'
+			 '</div>'
+		end
+		if a=1:
+			 '<div class="dialog_menu">'
+			 '<p>姨妈也明白了我的企图，她的两条修长的大腿不停踢蹬着，连脚上的拖鞋都不知道踢飞哪去了。同时姨妈的两只玉手掐着我环在她腰间的胳膊用力掰扯着，可都无济于事。现在的姨妈颇有一种被套上紧箍后的孙猴子的感觉。</p>'
+			 '<p>我：“姨妈，你就别挣扎了，好吧，我想你了，你就再给我一次吧”</p>'
+	         '<p><<$MQMM.name>>:“你混蛋！还再给你一次，<<$主角姓名>>，你眼里还有没有把我当你的长辈了？”</p>'
+			 '</div>'
+		end
+		if a=2:
+			 '<div class="dialog_menu">'
+			 '<p><<$MQMM.name>>:<<$主角姓名>>，到此为止好吧，你长大了，开始有一些那方面的想法我也理解，但你要合理的去发泄自己才行。我是你姨妈，先前咱们的事已经是大逆不道了，趁现在收手还来得及”</p>'
+			 '<p>我：“姨妈，我是有欲望不假，但是你也有作为一个女人的需求不是，我们彼此正好可以互补，只要我们专心点，不会有人发现的”</p>'
+	         '<p><<$MQMM.name>>:“滚蛋，你起开，我没有需求”</p>'
+	         '<p>我：“你没有需求那上次……”</p>'
+	         '<p><<$MQMM.name>>:“上次是你强奸了我！强奸你懂吗！陆小浩！你已经是犯罪了！这次你还想，你给我滚开！”</p>'
+	         '<p>我：“那上次姨父来的那天晚上，你干什么了？自慰的滋味如何，没有这个爽吧”</p>'
+	         '<p><<$MQMM.name>>:“我没有！”</p>'
+			 '</div>'
+		end
+		if a=3:
+			 '<div class="dialog_menu">'
+			 '<p><<$MQMM.name>>:“嗯～轻点～别……”</p>'
+			 '<p>我：姨妈，忙我舔舔，行不”</p>'
+	         '<p><<$MQMM.name>>:“滚蛋，把你的脏东西拿开，呜..呜...呜......”</p>'
+	         '<p>我：“呼～怎么样？姨妈，舒服吗？”</p>'
+	         '<p><<$MQMM.name>>:“嗯～不…舒…服”</p>'
+			 '</div>'
+		end
+		if a=4:
+			 '<div class="dialog_menu">'
+			 '<p>我：“姨妈，你就别忍了，家里就我们两个，我们做什么都不会有人知道的”</p>'
+	         '<p><<$MQMM.name>>:“不～不啊～不…拔出来…“呃啊……不要……不行…………停下……停下啊！””</p>'
+	         '<p>姨妈绝望的叫喊着，下体那熟悉的充盈感伴着阵阵剧痛向她袭来，疼的她洁白的脑门上挂着大块汗珠，眼珠转动间，两滴晶莹的泪珠在其眼角积攒。</p>'
+			 '</div>'
+		end
+		if a=5:
+			 '<div class="dialog_menu">'
+			 '<p>眼看姨妈已经逐渐放开了，我抬起姨妈的腿，对准姨妈的穴口，然后在姨妈的惊呼声中又猛然发力，倏的一声再度全根没入。</p>'
+	         '<p><<$MQMM.name>>:“嗯哼～轻点～”</p>'
+	         '<p>不给姨妈反应时间，我又往外抽出肉棒，随后更加快速用力的破开嫩肉顶在了姨妈的花心上，细细研磨一番后再度抽出，进入。一次，两次，三次……</p>'
+	         '<p><<$MQMM.name>>:“不～嗯～啊～慢，慢一点啊～嗯嗯～嗯～嗯哼～嗯”</p>'
+	         '<p>我：“呼～呼～姨妈，爽不爽？你说你爽不爽？”</p>'
+	         '<p><<$MQMM.name>>:“嗯～你……闭……嘴……”</p>'
+			 '</div>'
+		end
+		if a=6:
+			 $MQMM.bad+=q
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:你真是....疯了...不……嗯……嗯哼……我……不行了……嗯……嗯嗯……我，我不行了……</p>'
+				 '<p>我：离胜利又近了一步，应该是上次的麦高芬起作用了，趁姨妈在卧室的时候多调戏几次。</p>'
+			 '</div>'
+		end
+	 q+=1
+	End
+	
+	if $args[0]="MQMM_Fuck_卧室":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\卧室1-<<a>>~1.webm" type=''video/webm;''></video></div>'
+			'</div>'
+	
+		if a<2:
+			'<div class="button_menu">'
+				if a!1 and q<=2:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_Fuck_卧室''">调戏</a></div>'
+				end
+				if a=1:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_Fuck_卧室''">脱衣抚摸</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					if $MQMM_Event_store>=12 and $MQMM.bad>=50:
+					'<div class="buttonS3"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_Fuck_卧室1''">亲奶头</a></div>'
+					else
+					'<div class="buttonRGr"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_Fuck_卧室''">亲奶头</a></div>'
+					end
+					'<div class="button"><a href="exec:gt ''A302''">离开</a></div>'
+				'</div>'
+		end
+	
+		if a=0:
+			 '<div class="dialog_menu">'
+			 '<p>我悄悄的走到姨妈房间，趁他不注意调戏她。我原本以为姨妈在那次后会变得有些娇羞，谁知道她却面无表情的一直盯着我，眼神中也看不出喜怒哀乐，看得我都有些发怵，一时间竟感觉有些无从下手。</p>'
+	         '<p>我：“姨妈，你这么看着我干嘛？怪吓人的”</p>'
+			 '<p><<$MQMM.name>>“哼！做贼心虚”</p>'
+			 '<p>我将脱下来的衣物扔到一旁，挺着身下已经有些苏醒之势的肉虫双手掐腰望着姨妈。</p>'
+			 '<p>我：“好了，姨妈，你是准备自己脱呢，还是让我帮你脱了？”</p>'
+			 '<p><<$MQMM.name>>“你想死是不是！”</p>'
+			 '<p>我看着姨妈乱动的身躯，眼神中闪烁着狡黠的光芒。</p>'
+			 '</div>'
+		end
+		if a=1:
+			 '<div class="dialog_menu">'
+			     '<p>我：姨妈，这么快就受不了了？</p>'
+				 '<p><<$MQMM.name>>：“不……嗯……”</p>'
+			 '</div>'
+		 $MQMM.love+=2
+		 $MQMM.bad+=2
+		end
+		if a=2:
+			 '<div class="dialog_menu">'
+				 '<p>我：“姨妈，你真美，太美了。你这么美的女人不应该将自己那么好的年华都白白浪费在课堂之上，你是老师，是妻子，但你更是个女人，你应该也有一些自己的追求。”</p>'
+				 '<p><<$MQMM.name>>：“<<$主角姓名>>！你是不是想死？”</p>'
+			 '</div>'
+		end
+		if a=3:
+			 '<div class="dialog_menu">'
+			 '<p>：姨妈对这次的亲乳要更加的敏感。这种麻酥酥的感觉已经不是如同按摩了，更像是来自爱人的轻抚，一下又一下，如同有人拿着羽毛在不停撩拨自己的心房一般，久而久之她竟想纵声低吟一番来宣泄一下内心深处被积攒的欲望。</p>'
+			 '<p>我：“呼～怎么样？姨妈，舒服吗？”</p>'
+			 '<p><<$MQMM.name>>： “嗯～不…舒…服”</p>'
+			 '</div>'
+		end
+	
+	 q+=1
+	End
+	
+	if $args[0]="MQMM_Fuck_卧室1":
+	
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\卧室1-<<a>>~1.webm" type=''video/webm;''></video></div>'
+			'</div>'
+	
+		if a<8:
+			'<div class="button_menu">'
+				if a!4 and 8>=q and  q>=3:
+				'<div class="buttonP"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_Fuck_卧室1''">口交</a></div>'
+				end
+				if a!5 and  9>=q and  q>=4:
+				'<div class="buttonP"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_Fuck_卧室1''">插入</a></div>'
+				end
+				if a!6 and q>=5:
+				'<div class="buttonS1"><a href="exec:a=6 & gt ''Aunt_Event'',''MQMM_Fuck_卧室1''">女上位</a></div>'
+				end
+				if a!7 and q>=6:
+				'<div class="buttonS2"><a href="exec:a=7 & gt ''Aunt_Event'',''MQMM_Fuck_卧室1''">后入</a></div>'
+				end
+				if a!8 and q>=8:
+				'<div class="buttonS3"><a href="exec:a=8 & gt ''Aunt_Event'',''MQMM_Fuck_卧室1''">传教士</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					if $MQMM_Event_store>=12 and $MQMM.bad>=100:
+					'<div class="buttonR"><a href="exec:a=0 & q=0 & gt ''Aunt_Event'',''MQMM_Fuck_卧室2''">调教</a></div>'
+					else
+					'<div class="buttonGr"><a href="exec:a=9 & gt ''Aunt_Event'',''MQMM_Fuck_卧室1''">调教</a></div>'
+					end
+					'<div class="button"><a href="exec:gt ''A302''">离开</a></div>'
+				'</div>'
+		end
+		if a=3:
+			 '<div class="dialog_menu">'
+			 '<p>：姨妈对这次的亲乳要更加的敏感。这种麻酥酥的感觉已经不是如同按摩了，更像是来自爱人的轻抚，一下又一下，如同有人拿着羽毛在不停撩拨自己的心房一般，久而久之她竟想纵声低吟一番来宣泄一下内心深处被积攒的欲望。</p>'
+			 '<p>我：“呼～怎么样？姨妈，舒服吗？”</p>'
+			 '<p><<$MQMM.name>>： “嗯～不…舒…服”</p>'
+			 '</div>'
+		end
+	
+		if a=4:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>...滋……噗滋滋…….......</p>'
+				 '<p>不知道是不是因为口交带来的刺激太过于新颖，这才一小会姨妈就已经有些受不了了，双眼紧闭听声音如同在哭泣悲鸣的黄莺一般凄婉。而她的小穴更是已经泛滥不堪，要不是口中的味道不曾淡却我还以为这么大的出水量是花洒里的水混进来了呢。</p>'
+			 '</div>'
+		end
+	
+	
+		if a=9:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>..<<$主角姓名>>~你要干啥....“呜……嗯……别……嗯哼……嗯……别这样……啊……”</p>'
+			 '</div>'
+		end
+	
+		if 8>a and a>=4 :
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>： ..<<$娇喘声>>..</p>'
+			 '</div>'
+		end
+		
+		if a=8:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>..达咩达咩...<<$娇喘声>>..</p>'
+			 '</div>'
+		 $MQMM.love+=q/2
+		 $MQMM.bad+=q/2
+		end
+	 q+=1
+	End
+		
+	if $args[0]="MQMM_Fuck_卧室2":
+		 $MQMM.love+=1
+		 $MQMM.bad+=1
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\卧室2-<<a>>~1.webm" type=''video/webm;''></video></div>'
+			'</div>'
+	
+		if a<4:
+			'<div class="button_menu">'
+				if a!1 and q<=5:
+				'<div class="buttonR"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_Fuck_卧室2''">调教奶子</a></div>'
+				end
+				if a!2 and q<=5:
+				'<div class="buttonR"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_Fuck_卧室2''">调教小穴</a></div>'
+				end
+				if a!3 and 2<=q and q<=7:
+				'<div class="buttonR"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_Fuck_卧室2''">调教阴蒂</a></div>'
+				end
+				if a!4 and 3<=q and q<=8:
+				'<div class="buttonR"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_Fuck_卧室2''">假阴茎插入</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					if $MQMM_Event_store>=12 and $MQMM.bad>=150:
+					'<div class="buttonR"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_Fuck_卧室3''">上下调教</a></div>'
+					else
+					'<div class="buttonGr"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_Fuck_卧室2''">上下调教</a></div>'
+					end
+					'<div class="button"><a href="exec:gt ''A302''">离开</a></div>'
+				'</div>'
+		end
+	
+		if a=0:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>...“嗯……不行……了……嗯……我……嗯哼……嗯……不……嗯……”</p>'
+				 '<p>但是由于下体的刺激太过于强烈，姨妈居然凭借着肉体的本能硬生生的一直维持着这个意识，甚至她还不自觉的小幅度摆动着腰肢，来迎合着我的调教。</p>'
+			 '</div>'
+		end
+	
+	
+		if a=5:
+			 '<div class="dialog_menu">'
+			 '<p>W我：“姨妈，我想肏你了”</p>'
+			 '<p><<$MQMM.name>>..“你做梦！嗯……...绝对不行！！</p>'
+			 '</div>'
+		end
+	
+		if 4>=a and a>=1 :
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>： ..<<$娇喘声2>>..</p>'
+			 '</div>'
+		end
+	 q+=1
+	End
+	
+	if $args[0]="MQMM_Fuck_卧室3":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\卧室2-<<a>>~1.webm" type=''video/webm;''></video></div>'
+			'</div>'
+	
+		if a!8:
+			'<div class="button_menu">'
+				if a!6:
+				'<div class="buttonS1"><a href="exec:a=6 & gt ''Aunt_Event'',''MQMM_Fuck_卧室3''">抬腿插入</a></div>'
+				end
+				if a=6:
+				'<div class="buttonS2"><a href="exec:a=7 & gt ''Aunt_Event'',''MQMM_Fuck_卧室3''">翘臀后入</a></div>'
+				end
+				if a=7:
+				'<div class="buttonS3"><a href="exec:a=8 & gt ''Aunt_Event'',''MQMM_Fuck_卧室3''">再次内射</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec:gt ''A302''">离开</a></div>'
+				'</div>'
+		end
+		if a=5:
+			 '<div class="dialog_menu">'
+			 '<p>我：“姨妈，我想肏你了”</p>'
+			 '<p><<$MQMM.name>>“你做梦！嗯......绝对不行！！</p>'
+			 '</div>'
+		end
+	
+		if a=6:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>嗯……拔出来！快点！嗯……嗯哼……嗯……轻点儿……嗯嗯……嗯……...</p>'
+			 '</div>'
+		end
+	
+	
+		if a=7:
+			 '<div class="dialog_menu">'
+				 '<p><<$mm.name>>.（大口喘气）.<<$话>>.</p>'
+			 '</div>'
+		end
+	
+		if a=8:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>.“呜……嗯……呜呜……”</p>'
+				 '<p>姨妈双手抓着嘴里的毛巾呜咽的叫喊着，在强烈的快感冲击下她的双眼都已经开始泛白，整幅娇躯都在打颤，将身上的水流抖落在地面上溅起朵朵水花。</p>'
+				 '<p>邪笑：应该可以去浴室干姨妈了（解锁浴室新剧情）</p>'
+			 '</div>'
+			 $MQMM.love+=q+my.魅力
+			 $MQMM.bad+=q
+		end
+	 q+=1
+	End
+	
+	
+	if $args[0]="姨妈_卧室做爱":
+	
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\<<$args[1]>>~1.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			if a<9:
+			'<div class="button_menu">'
+				if a!1 and q<=2:
+				'<div class="buttonP"><a href="exec:a=1 & gt ''Aunt_Event'',''姨妈_卧室做爱'',''诱惑1挑逗''">挑逗</a></div>'
+				end
+				if a!2 and q<=3:
+				'<div class="buttonP"><a href="exec:a=2 & gt ''Aunt_Event'',''姨妈_卧室做爱'',''诱惑2扣穴''">扣穴</a></div>'
+				end
+				if a!3 and 3>=q and q>=2:
+				'<div class="buttonP"><a href="exec:a=3 & gt ''Aunt_Event'',''姨妈_卧室做爱'',''诱惑3口交''">口交</a></div>'
+				end
+				if a!4 and 4>=q and q>=3:
+				'<div class="buttonP"><a href="exec:a=4 & gt ''Aunt_Event'',''姨妈_卧室做爱'',''诱惑4插入''">插入</a></div>'
+				end
+				if a!5 and 5>=q and q>=4:
+				'<div class="buttonP"><a href="exec:a=5 & gt ''Aunt_Event'',''姨妈_卧室做爱'',''诱惑5女上位''">女上位</a></div>'
+				end
+				if a!6 and 6>=q and q>=5:
+				'<div class="buttonP"><a href="exec:a=6 & gt ''Aunt_Event'',''姨妈_卧室做爱'',''诱惑6侧入''">侧入</a></div>'
+				end
+				if a!7 and 7>=q and q>=6:
+				'<div class="buttonS1"><a href="exec:a=7 & gt ''Aunt_Event'',''姨妈_卧室做爱'',''诱惑7冲刺''">冲刺</a></div>'
+				end
+				if a!8 and 8>=q and q>=7:
+				'<div class="buttonS2"><a href="exec:a=8 & gt ''Aunt_Event'',''姨妈_卧室做爱'',''诱惑8颜射''">颜射</a></div>'
+				end
+				if a=8:
+				'<div class="buttonP"><a href="exec:a=9 & gt ''Aunt_Event'',''姨妈_卧室做爱'',''诱惑9结束''">拥抱</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec: minutes+=5 & gt ''A302''">离开</a></div>'
+				'</div>'
+		end
+	
+		if a=0:
+			 '<div class="dialog_menu">'
+				 '<p>我：“姨妈，我想你了……”</p>'
+				 '<p><<$MQMM.name>>:“别闹……”</p>'
+			 '</div>'
+		end
+		if a=1:
+			 '<div class="dialog_menu">'
+				 '<p>我:“没事，你让我亲亲你就好了”</p>'
+				 '<p><<$MQMM.name>>:不是说只亲一下嘛……嗯……嗯哼……你的手……嗯……不要……</p>'
+			 '</div>'
+		end
+	
+		if 3>=a and a>1:
+			 '<div class="dialog_menu">'
+				 '<p>（大口喘气）...<<$娇喘声>>...</p>'
+			 '</div>'
+		end
+	
+		if 7>=a and a>3:
+			 '<div class="dialog_menu">'
+				 '<p>（大口喘气）..<<$娇喘声>>....<<$话>>......</p>'
+			 '</div>'
+		end
+	
+		if a=8:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>啊..好烫...炙热的精液..全部射在我的脸上了嗯……嗯哼……嗯</p>'
+			 '</div>'
+		end
+	
+		if a=9:
+			 $MQMM.bad+=q
+			 $MQMM.love+= q+my.魅力
+			 '<div class="dialog_menu">'
+				 '<p>我:“姨妈，你的胸真美~”</p>'
+				 '<p><<$MQMM.name>>那再睡一会.........</p>'
+				 '<p>----------------------------------------</p>'
+			 '</div>'
+		end		
+		q+=1
+	end
+	
+	
+	if $args[0]="MQMM_Fuck_按摩":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\按摩2-<<a>>.webm" type=''video/webm;''></video></div>'
+			'</div>'
+	
+		if a<10:
+			'<div class="button_menu">'
+				if a!1  and q<=2 :
+				'<div class="buttonP"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_Fuck_按摩''">挑逗</a></div>'
+				end
+				if a!2  and 1<=q and q<=3:
+				'<div class="buttonP"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_Fuck_按摩''">按摩乳头</a></div>'
+				end
+				if a!3  and 2<=q and q<=4:
+				'<div class="buttonP"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_Fuck_按摩''">按摩乳房</a></div>'
+				end
+				if a!4 and 3<=q and q<=6:
+				'<div class="buttonS1"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_Fuck_按摩''">按摩小穴</a></div>'
+				end
+				if a!5 and 4<=q and q<=7:
+				'<div class="buttonS2"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_Fuck_按摩''">潮吹</a></div>'
+				end
+				if a!6 and 5<=q and q<=8:
+				'<div class="buttonS3"><a href="exec:a=6 & gt ''Aunt_Event'',''MQMM_Fuck_按摩''">上下其手</a></div>'
+				end
+				if a!7 and 6<=q and q<=9:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Aunt_Event'',''MQMM_Fuck_按摩''">素股</a></div>'
+				end
+				if a=7 :
+				'<div class="buttonR"><a href="exec:a=8 & gt ''Aunt_Event'',''MQMM_Fuck_按摩''">女上-第一次高潮</a></div>'
+				end
+				if a=8:
+				'<div class="buttonR"><a href="exec:a=9 & gt ''Aunt_Event'',''MQMM_Fuck_按摩''">后入-第二次高潮</a></div>'
+				end
+				if a=9:
+				'<div class="buttonR"><a href="exec:a=10 & gt ''Aunt_Event'',''MQMM_Fuck_按摩''">正常位-第三次高潮</a></div>'
+	            end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec:minutes+=30 & gt ''A302''">离开</a></div>'
+				'</div>'
+		end
+	
+		if a=0:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：“<<$主角姓名>>，你又想干什么！”</p>'
+				 '<p>我：姨妈，浴室温度这么高，渴了吧，喝杯水缓缓，要不我来帮你按一按吧！！</p>'
+				 '<p><<$MQMM.name>>：“你又打什么注意呢？我可再不上你的当了”</p>'
+				 '<p>我：哪有，我就是看着姨妈站了一天，很幸苦，忙你按摩按摩，缓解一下疲劳！！</p>'
+				 '<p><<$MQMM.name>>：“真的？“先去换拖鞋......”</p>'
+			 '</div>'
+		end
+	
+		if 6>=a and a>=1:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：<<$娇喘声>></p>'
+			 '</div>'
+		end
+		if 9>=a and a>=7:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：<<$话>></p>'
+			 '</div>'
+		end
+		if a=10:
+			 $MQMM.love+=q+my.魅力
+			 $MQMM.bad+=q
+			 '<div class="dialog_menu">'
+				 '<p><<$MQ.name>>：“嗯……不行……嗯哼……不行了……”…</p>'
+				 '<p>三次的高潮令姨妈瘫倒在浴室里，粗重的喘息声回荡在卧室上空，久久不曾平息……</p>'
+				 '<p>继续让姨妈在高潮中堕落吧，看他能坚持多久...嘿嘿....</p>'
+			 '</div>'
+		end
+	 q+=1
+	End
+	
+	if $args[0]="MQMM_发现":
+			q+=1
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\<<$ARGS[1]>>~1.webm" type=''video/webm;''></video></div>'
+			'</div>'
+	
+		if $args[2]!"结束":
+			'<div class="button_menu">'
+				if a!1 and q=1  :
+				'<div class="buttonP"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_发现'',''发现1''">和姨妈挑逗</a></div>'
+				end
+				if a!2 and q=2  :
+				'<div class="buttonP"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_发现'',''发现2''">口交</a></div>'
+				end
+				if a!3 and q=3  :
+				'<div class="buttonR"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_发现'',''发现3''">被发现</a></div>'
+				end
+				if a=3:
+				'<div class="buttonP"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_发现'',''发现4''">在母亲注视下插入</a></div>'
+				end
+				if a=4:
+				'<div class="buttonP"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_发现'',''发现5''">疯狂骑乘</a></div>'
+				end
+				if a=5:
+				'<div class="buttonP"><a href="exec:a=6 & gt ''Aunt_Event'',''MQMM_发现'',''发现6''">内射</a></div>'
+				end
+				if a=6:
+				'<div class="buttonR"><a href="exec:a=7 & $MQMM_Event_store=13 & $MQ_Event_store=9 & gt ''Aunt_Event'',''MQMM_发现'',''发现7''">母亲训斥</a></div>'
+				end
+				if a=7:
+				'<div class="buttonR"><a href="exec:a=8 & gt ''Aunt_Event'',''MQMM_发现'',''发现8'',''结束''">被揪回家</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec: minutes+=30 & gt ''Mothers_Villa''">回家</a></div>'
+				'</div>'
+		end
+	
+		if a=0:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQ.name>>:这两人在干啥，把个房间整的跟猪窝一样，真是的.......</p>'
+				 '<p><<$MQ.name>>:这是？避孕套？怎么会有这东西，妹夫不是没有回来吗？难道.......</p>'
+			 '</div>'
+		end
+	
+		if a=1:
+			 '<div class="dialog_menu">'
+				 '<p>啊~啊~啊~姨妈制不住开始呻吟起来...</p>'
+				 '<p><<$MQMM.name>>:坏蛋！你就饶了姨妈吧...……<<$娇喘声2>>……...</p>'
+			 '</div>'
+		end
+	
+		if a=2:
+			 '<div class="dialog_menu">'
+				 '<p>我：姨妈，给我舔一舔吧</p>'
+				 '<p><<$MQMM.name>>:要死了……<<$娇喘声2>>……姨妈张开小口直接吞了下去....</p>'
+			 '</div>'
+		end
+	
+		if a=3:
+			 '<div class="dialog_menu">'
+				 '<p>母亲来到客厅刚拿起沙发上的包包却隐约听到一声细不可闻的呻吟声，那声音的主人不是自己的妹妹还能是谁？</p>'
+				 '<p><<$MQ.name>>:“妹妹和儿子在屋里干嘛呢？”</p>'
+				 '<p>“嗯……嗯……嗯哼……嗯”</p>'
+				 '<p>又是一声呻吟传来，这次可比刚才要清晰的多，呻吟声是自己的妹妹不假，但是语气未免也太过酥软，和自己妹妹平日里的形象完全不服。</p>'
+				 '<p><<$MQ.name>>:“妹妹怎么会发出这样的声音？她和儿子在里面究竟在干什么？”</p>'
+			 '</div>'
+		end
+		
+		if a=4:
+			 '<div class="dialog_menu">'
+				 '<p>又是一声娇喊打乱了母亲的思绪。现在的她感觉自己的大脑乱的和浆糊一样，一个是自己的儿子，另一个是自己的妹妹，哪怕到现在她也不愿相信房间中正在发生的事情。</p>'
+				 '<p><<$MQ.name>>:“不行！我必须得看一下！”</p>'
+				 '<p>眼前的景象却让母亲睁大双眼，一只手捂住自己的嘴巴，露出不可置信的惊悚表情。</p>'
+				 '<p>自己妹妹赤身裸体，抱着自己的儿子交织在一起。</p>'
+				 '<p>我：“姨妈，我要来喽”</p>'
+				 '<p><<$MQ.name>>:　“他这是要……”</p>'
+				 '<p>我：“我的好姨妈，你给我好不好？”</p>'
+				 '<p><<$MQMM.name>>:“……”</p>'
+	
+			 '</div>'
+		end
+		if a=5:
+			 '<div class="dialog_menu">'
+				 '<p>望着自己儿子粗长的肉棒一点点的没进妹妹的臀缝之中，站在门外的母亲惊呼一声，随机赶紧将自己的嘴巴捂死。眼睛死死盯着儿子和妹妹相连之处，在那里二人的距离在不断拉近，仿佛要融为一体一般。</p>'
+				 '<p><<$MQ.name>>:“进去了……真的进去了……”</p>'
+				 '<p>母亲心中喃喃道，神情都变得有些恍惚。一方面是因为面前发生的近亲乱伦一幕太过于毁三观。另一方面则是因为如此粗长的肉棒肏入体内所带来的视觉冲击太过强烈。</p>'
+				 '<p>“这么大，要是全部进去的话身体会受不了的吧？”</p>'
+				 '<p><<$MQ.name>>:“天啊，全，全部进去了！！！”</p>'
+				 '<p><<$MQ.name>>:“冷静点，冷静点……等他们结束，等他们结束我再进去问问这究竟是怎么一回事”</p>'
+			 '</div>'
+		end
+	
+		if a=6:
+			 '<div class="dialog_menu">'
+				 '<p>……<<$娇喘声2>>……<<$话>>……</p>'
+				 '<p><<$MQ.name>>:“啊，居然射里面了，怎么会这样......”</p>'
+			 '</div>'
+		end
+		if a=7:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQ.name>>:“把你姨妈给我放下！”</p>'
+				 '<p>刚射精的我听到房门被人拉开的声音，转过头来向门口看去，脑子轰的一声炸开了。</p>'
+				 '<p><<$MQ.name>>:“<<$主角姓名>>，你滚出去，待会再教训你”</p>'
+				 '<p><<$MQ.name>>:“唉……妹妹，你也是成年人了，怎么也跟着他胡来呢？你这让我以后怎么办才好？”</p>'
+				 '<p><<$MQMM.name>>:“唔……不……唔唔……呜……”</p>'
+				 '<p><<$MQ.name>>:难道是上次你打电话，你们就......</p>'
+				 '<p><<$MQMM.name>>:“姐，对不起……呜……”</p>'
+			 '</div>'
+		end
+		if a=8:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQ.name>>:<<$主角姓名>>，过来！”</p>'
+				 '<p>我：“妈妈……我错了……”</p>'
+				 '<p><<$MQ.name>>:“你错了？这个时候你和我说你错了？要不是我今天发现这事你是不是想着错一辈子啊？嗯？”</p>'
+				 '<p><<$MQ.name>>:“你去收拾东西，今天就跟我回家，看我回家怎么收拾你”</p>'
+				 '<p><<$MQ.name>>:“妹妹，那我先带着小浩回去了吧”</p>'
+				 '<p><<$MQMM.name>>:“嗯，姐，我没事的，你就先走吧，让我一个人静一静……”</p>'
+				 '<p>“走吧，不要再过来了，就当这一切是一场梦好了……”</p>'
+			 '</div>'
+		end
+	end
+	
+	if $args[0]="再见姨妈":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\离家出走<<a>>~1.webm" type=''video/webm;''></video></div>'
+			'</div>'
+	
+		if a!5:
+			'<div class="button_menu">'
+				'<div class="button"><a href="exec:a+=1 & gt ''Aunt_Event'',''再见姨妈''">...... </a></div>'
+			'</div>'
+	
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec:minutes+=30 & $MQMM_Event_store=14 & $MQ_Event_store=13& gt ''A302_Guest_Room''">Sleep</a></div>'
+				'</div>'
+		end
+		if a=0:
+			 '<div class="dialog_menu">'
+				 '<p>哗哗哗……</p>'
+				 '<p>大雨一直下，从上午便一直下到了晚上。而在这雨天里美美的睡上一觉可比做什么都要舒服。</p>'
+				 '<p>然而躺在床上的姨妈却怎么也睡不着，她梦到一个小孩在雨夜中奔跑，摔倒了又爬起来，爬起来又摔倒，她凑上前去想要提供点帮助，可那孩子仿佛没看到她似的径直走了过去，然后不出意外的又摔倒了。</p>'
+				 '<p>她再也忍不住了，跑到那孩子的面前想要将她扶起来，而那孩子也在此时抬起头，露出那张满是泥泞但依稀能看出其俊俏样貌的面庞。</p>'
+				 '<p><<$主角姓名>>？？？</p>'
+			 '</div>'
+		end
+		if a=1:
+			 '<div class="dialog_menu">'
+				 '<p>姨妈惊叫一声，猛然从床上爬起，紧接着浑身和做噩梦一样不自觉的颤抖起来。她抱紧双臂，发现自己浑身尽有些汗透了。</p>'
+				 '<p><<$MQMM.name>>:“刚才的梦……"</p>'
+				 '<p>她口中喃喃道，望了一眼窗外，外面风雨交加，天空时不时地还发出阵阵雷鸣，这样的天气想必是没人愿意待在外面。</p>'
+				 '<p><<$MQMM.name>>:“是噩梦吗？”</p>'
+				 '<p>她没有多想，擦了擦额头的汗水便又再度睡下。可没过一会，似乎是心有所感她又爬了起来，穿上拖鞋走出卧室来到玄关前。</p>'
+				 '<p>吱……呀……已经深夜，开门所发出的声音在走廊里是那么的刺耳。姨妈将头伸出门外朝两边张望一番，并没有看到半个人人影。</p>'
+	             '<p><<$MQMM.name>>:“<<$主角姓名>>？？？”</p>'
+			 '</div>'
+		end
+		if a=2:
+			 '<div class="dialog_menu">'
+				 '<p>我：“姨妈……”</p>'
+				 '<p>初次见面不知道是一种什么样的感觉。烦恼？觉得自己好不容易摆脱的麻烦又找上门？不是，在见到自己侄子的一刹那除了惊讶以外姨妈心中却生出一种惊喜，好像是丢失的心爱之物突然被找回一般。</p>'
+				 '<p>不过她可没有那时间好好思考自己为什么会惊喜，望着浑身雨污的少年她感觉将其扶到家中。</p>'
+				 '<p><<$MQMM.name>>:“怎么了？为什么大晚上的跑到我这边来了？”</p>'
+				 '<p>我:“……”</p>'
+				 '<p>姨妈询问道，可面前的孩子却如同受了很大刺激一般一言不发。</p>'
+				 '<p><<$MQMM.name>>:“你妈妈呢？下这么大雨你就一个人跑过来的？”</p>'
+			 '</div>'
+		end
+		if a=3:
+			 '<div class="dialog_menu">'
+				 '<p>姨妈隐隐感觉侄子现在这幅模样和自己的姐姐应该有有点关系，不过面对自己的询问侄子依然一句话也不说。</p>'
+				 '<p><<$MQMM.name>>:“算了，先去洗个澡吧，别着凉了”</p>'
+				 '<p><<$MQMM.name>>:“自己把衣服脱了哈，我来给你放水”</p>'
+				 '<p><<$MQMM.name>>:“你不会连衣服都不会脱了了吧？”</p>'
+				 '<p><<$MQMM.name>>:“你……该不会是让我帮你脱吧？”</p>'
+				 '<p>我:“嗯……”</p>'
+				 '<p>心这么想着，可看着眼前的孩子一副被淋成落汤鸡的可怜巴巴的模样，再看看他那刚刚才展现出一丝神采的眼神，梦雪琴最终还是妥协了。</p>'
+	
+			 '</div>'
+		end
+	
+		if a=4:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:“你，你快去洗澡吧”</p>'
+				 '<p>姨妈闭着眼睛说道，不敢睁眼看眼前的巨物。不过这次他倒是乖巧了不少，很听话的便自己跑过于洗澡去了，放以前那肯定会好好调戏自己一番。</p>'
+				 '<p><<$MQ.name>>:“嘟……嘟……歪？妹妹啊？有什么事吗？”</p>'
+				 '<p><<$MQMM.name>>:“姐，<<$主角姓名>>在我这”</p>'
+				 '<p><<$MQ.name>>:“他真的在你这吗？他现在怎么样？没什么事吧？”</p>'
+				 '<p><<$MQMM.name>>:“哼！没事？他在大雨天活生生走到我家里来的怎么会一点事也没有？现在就有点低烧。待会等他泡完澡我让他吃点退烧药就行了”</p>'
+				 '<p><<$MQ.name>>:“嗯，好，我知道了，麻烦你了”</p>'
+				 '<p><<$MQMM.name>>:“哎，姐，你们俩是怎么了？让他会一个人跑到我这来？”</p>'
+	             '<p><<$MQ.name>>:没，没什么事，就这么说，先挂了哈……”</p>'
+			 '</div>'
+		end
+	
+		if a=5:
+			 '<div class="dialog_menu">'
+				 '<p>我:““姨妈，你给我妈打电话啦””</p>'
+				 '<p>于当初走的匆忙，所以姨妈家里还有几套我的衣服。我洗完澡换上衣服后出门问道，她刚才在客厅打电话的声音我还是能听到一些的。</p>'
+				 '<p><<$MQMM.name>>:“嗯，给你妈打了个电话，你个小王八蛋是真不让人省心，多大人了还玩离家出走这一套，你是想把你妈急死是不是？”</p>'
+				 '<p>姨妈拿着手机双手掐腰训斥道，虽然只穿着内衣，但丝毫也无法掩盖她盛气凌人的气质。</p>'
+				 '<p><<$MQMM.name>>:“茶几上有冲好的感冒药，你赶快喝了”</p>'
+				 '<p>我:“姨妈，我身体棒着呢，又没感冒”我嘟囔道，自从锻炼身体之后感冒啥的毛病再也没出现过，尽管今天淋了一天的雨也没有要感冒的迹象。</p>'
+				 '<p><<$MQMM.name>>:“<<$主角姓名>>，我让你喝你就给我喝了，非得我出来灌你是吧？”</p>'
+				 '<p><<$MQMM.name>>:“喝完了就回屋里休息，记得盖好被子，早点睡，我明天还要去上课呢”</p>'
+	             '<p>时候不早了，听了姨妈的话后我便乖乖的回卧室里睡了(明天去学校看看)。</p>'
+				 $赌气=1
+			 '</div>'
+		end
+	 q+=1
+	End
+	
+	if $args[0]="MQMM_FACK_办公室":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\办公室<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+	
+	
+		if  a!10:
+			'<div class="button_menu">'
+				if a!1 and q<=1:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_FACK_办公室''">撸管</a></div>'
+				end
+				if a!2 and q<=2:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_FACK_办公室''">亲吻</a></div>'
+				end
+				if a!3 and 4>=q and q>=2:
+				'<div class="buttonP"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_FACK_办公室''">摸小穴</a></div>'
+				end
+				if a!4 and 5>=q and q>=3:         
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_FACK_办公室''">亲奶子</a></div>'
+				end
+				if a!5 and 6>=q and q>=4:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_FACK_办公室''">舔她</a></div>'
+				end
+				if a!6 and 7>=q and q>=5:
+				'<div class="buttonS5"><a href="exec:a=6 & my.精力+=100 &  gt ''Aunt_Event'',''MQMM_FACK_办公室''">插入</a></div>'
+				end
+				if a!7 and 8>=q and q>=6:
+				'<div class="buttonS5"><a href="exec:a=7 &  gt ''Aunt_Event'',''MQMM_FACK_办公室''">后入</a></div>'
+				end
+				if a!8 and 9>=q and q>=7:
+				'<div class="buttonS5"><a href="exec:a=8 &  gt ''Aunt_Event'',''MQMM_FACK_办公室''">抱腿冲刺</a></div>'
+				end
+				if a=8:
+				'<div class="buttonS5"><a href="exec:a=9 &  gt ''Aunt_Event'',''MQMM_FACK_办公室''">内射</a></div>'
+				end
+				if a=9:
+				'<div class="buttonS5"><a href="exec:a=10 &  gt ''Aunt_Event'',''MQMM_FACK_办公室''">聊天</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec:minutes+=10 & gt ''University''">好的</a></div>'
+				'</div>'
+		end
+		if a=0:
+			 '<div class="dialog_menu">'
+	         '<p>姨妈穿着制服好漂亮，好久不见姨妈了，不知道姨妈想我没有！要不试试看！！！</p>'
+			 '</div>'
+		end
+		if a=1:
+			 '<div class="dialog_menu">'
+			 '<p>我的龟头隔着衣服在姨妈后背上蹭来蹭去，那调情的声音却不小心惊醒了睡觉的姨妈。</p>'
+			 '<p><<$MQMM.name>>:“啊！<<$主角姓名>>，你疯啦！你想干什么！”</p>'
+	         '<p>我:“我想肏你！”</p>'
+	         '<p><<$MQMM.name>>:“不行！这里是学校！”</p>'
+			 '</div>'
+		end
+	
+		if a=2:
+			 '<div class="dialog_menu">'
+			 '<p>煮熟的鸭子还能让它飞了？眼见姨妈要逃跑，我也顾别的了，扑过去将姨妈拦腰抱住，一口就吻了上去。</p>'
+	         '<p><<$MQMM.name>>:“嗯……”</p>'
+			 '</div>'
+		end
+	
+		if a=3:
+			 '<div class="dialog_menu">'
+			 '<p><<$MQMM.name>>:“别闹，有人……”</p>'
+	         '<p>姨妈刚在心中给自己加油打气，谁知附着在腿上的那个坏手突然调转进攻的方向，隔着内裤朝着那中心地带猛攻过去。</p>'
+	         '<p><<$MQMM.name>>:“嗯……”</p>'
+	         '<p>我：“姨妈，你的下面有点湿了哦”</p>'
+	         '<p><<$MQMM.name>>:“不是的……”</p>'
+			 '</div>'
+		end
+		if a=4:
+			 '<div class="dialog_menu">'
+			 '<p><<$MQMM.name>>:“不行，这里是学校，我们不可以……”</p>'
+	         '<p>姨妈摇了摇头无助道，一想到自己身为老师如今却和自己的学生在学校里做这种事，一股凄凉的感觉油然而生。。</p>'
+	         '<p><<$MQMM.name>>:“嗯……”</p>'
+	         '<p>我：“姨妈，小声点，别让人发现了”</p>'
+	         '<p><<$MQMM.name>>:“嗯……”</p>'
+			 '</div>'
+		end
+		if a=5:
+			 '<div class="dialog_menu">'
+			  '<p>我：“没想到姨妈今天穿的是包臀丝袜呢，是不是想享受一下丝袜被人撕开的感觉？”</p>'
+	         '<p><<$MQMM.name>>:“不是的……”</p>'
+	         '<p>不知道为何，一听到说要撕开丝袜，她的心就变得更加火热起来，似乎对这种对待方式充满着好奇和尝试的欲望。</p>'
+	         '<p><<$MQMM.name>>:“不要！”</p>'
+	         '<p>不等姨妈反抗，我就撕开姨妈的丝袜，拨开内裤，舔起了姨妈的嫩穴。</p>'
+	         '<p><<$MQMM.name>>:“嗯～你……快……停下……”</p>'
+			 '</div>'
+		end
+		if a=6:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:“嗯~不行了~姨妈求，求你~嗯啊~嗯~我们回去，回去……</p>'
+				 '<p>我：“不行，就这边”。</p>'
+				 '<p>我左右摇晃着肉棒将姨妈挡在前面的双手给拨开，然后将龟头插进她大腿根部和内裤只间的缝隙中，象征着女人最后一道防护的小内内一下子便被我挑到一边，我现在的动作是越来越娴熟了。</p>'
+				 '<p>我：“姨妈，你想它了吗？”</p>'
+				 '<p><<$MQMM.name>>:“嗯~呼~你要，想要就要，说那么多话干嘛……啊！轻点…”</p>'
+			 '</div>'
+		end
+		if 9>=a and a>=7:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：<<$娇喘声>> <<$话>></p>'
+			 '</div>'
+		end
+		if a=10:
+		     $MQMM.love+=q
+			 $MQMM.bad+=q
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:“让你回去你不回去，非要在这里折腾……”</p>'
+				 '<p>我：“可是我已经等不及了嘛，我太想姨妈了”</p>'
+				 '<p><<$MQMM.name>>:“想个屁，我看你就是想色而已”</p>'
+				 '<p>我：“那就是想对姨妈色色喽”</p>'
+				 '<p><<$MQMM.name>>:“好了好了，快起来，不然待会被人发现了怎么办。我一会还要去上课呢，你快收拾，收拾完记得来上课。”</p>'
+			 '</div>'
+		end
+	 q+=1
+	End
+	
+	if $args[0]="MQMM_Fuck_性骚扰":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\教室00<<a>>~1.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if  a!4:
+			'<div class="button_menu">'
+				if a=1:
+				'<div class="buttonS1"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_Fuck_性骚扰''">频率一</a></div>'
+				end
+				if a=2:
+				'<div class="buttonS2"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_Fuck_性骚扰''">频率二</a></div>'
+				end
+				if a=3 :
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_Fuck_性骚扰''">潮吹</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					if $MQMM.bad>=200:'<div class="buttonS"><a href="exec:minutes+=15 & q=0 & a=0 & gt ''Aunt_Event'',''	MQMM_Fuck_隔壁教室''">去隔壁教室</a></div>'else'<div class="buttonGr"><a href="exec:">？？？</a></div>'
+					'<div class="button"><a href="exec:minutes+=30 & gt ''University''">离开</a></div>'
+				'</div>'
+		end
+		if a=1:
+		     $MQMM.love+=q
+			 $MQMM.bad+=q+my.魅力
+			 '<div class="dialog_menu">'
+				 '<p>我:<<$MQMM.name>>老师，我有问题不明白！</p>'
+				 '<p><<$MQMM.name>>:…………</p>'
+			 '</div>'
+		end
+		if 5>=a and a>=2:
+			 '<div class="dialog_menu">'
+				 '<p>要死啊，快停下…唔………</p>'
+			 '</div>'
+		end
+	 q+=1
+	End
+	
+	if $args[0]="MQMM_Fuck_隔壁教室":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\空教室-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if  a!9:
+			'<div class="button_menu">'
+				if a!1 and q<=1:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_Fuck_隔壁教室''">挑逗乳头</a></div>'
+				end
+				if a!2 and q<=2:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_Fuck_隔壁教室''">扣穴</a></div>'
+				end
+				if a!3 and 4>=q and q>=2:
+				'<div class="buttonP"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_Fuck_隔壁教室''">口交</a></div>'
+				end
+				if a!4 and 5>=q and q>=3:         
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_Fuck_隔壁教室''">插入</a></div>'
+				end
+				if a!5 and 6>=q and q>=4:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_Fuck_隔壁教室''">快一点</a></div>'
+				end
+				if a!6 and 7>=q and q>=5:
+				'<div class="buttonS5"><a href="exec:a=6 & my.精力+=100 &  gt ''Aunt_Event'',''MQMM_Fuck_隔壁教室''">后入</a></div>'
+				end
+				if a!7 and 8>=q and q>=6:
+				'<div class="buttonS5"><a href="exec:a=7 &  gt ''Aunt_Event'',''MQMM_Fuck_隔壁教室''">抱腿冲刺</a></div>'
+				end
+				if a=7:
+				'<div class="buttonS5"><a href="exec:a=8 &  gt ''Aunt_Event'',''MQMM_Fuck_隔壁教室''">夹乳狂操</a></div>'
+				end
+				if a=8:
+				'<div class="buttonS5"><a href="exec:a=9 &  gt ''Aunt_Event'',''MQMM_Fuck_隔壁教室''">内射</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec:minutes+=30 & gt ''University''">好</a></div>'
+				'</div>'
+		end
+	
+		if a=0:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:“上课呢，你瞎闹什么？还开个跳蛋，你要死啊，被同学发现怎么办。”</p>'
+				 '<p>我：不会的，他们都是好学生，姨妈，我又有反应了，咱们再来一次好不好？”</p>'
+				 '<p><<$MQMM.name>>:“不行，要是被发现了怎么办？我们快点回去吧”</p>'
+				 '<p>我：不会的，我很快的....”</p>'
+			 '</div>'
+		end
+	
+		if 3>=a and a>=1:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:…<<$娇喘声>>……</p>'
+			 '</div>'
+		end
+		if 8>=a and a>=4:
+			 $MQMM.love+=q
+			 $MQMM.bad+=q
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:<<$娇喘声>> <<$话>></p>'
+			 '</div>'
+		end
+	
+		if a=9 :
+			 '<div class="dialog_menu">'
+			     if $MQMM.bad>300 and $MQMM_Event_store=14:
+				 '<p><<$MQMM.name>>:“都怪你，非要在学校里做，回家不行吗”</p>'
+				 '<p>我：姨妈见我不说话转头埋怨道。</p>'
+				 '<p>“回家？回家做也行啊，姨妈咱们这就回去再做一次呗”</p>'
+				 '<p><<$MQMM.name>>:我警告你可别蹬鼻子上脸啊，回去之后你给我老老实实的,你老妈打电话了，说他周五半夜要过来“查岗”。”</p>'
+				 '<p>我：什么？查岗？查什么岗？查谁的岗？(看来老妈气消了)</p>'
+				 $MQMM_Event_store=15
+		         else
+				 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:“都怪你，非要在学校里做，回家不行吗”</p>'
+				 '<p>我：姨妈见我不说话转头埋怨道。</p>'
+				 '<p>“回家？回家做也行啊，姨妈咱们这就回去再做一次呗”</p>'
+				 '<p><<$MQMM.name>>:我警告你可别蹬鼻子上脸啊，回去之后你给我老老实实的”</p>'
+				 end
+			 '</div>'
+		end
+	 q+=1
+	End
+	
+	if $args[0]="MQMM_夜袭":
+		 '<div class ="show_menu"><img src="images\V70版本\增量包_20241111\place\母亲姨妈\图片\紧闭的门_A302.jpg" width="854"></div>'
+		 '<div class="button_menu">'
+			 if $MQMM_Event_store=1 or $MQMM_Event_store=3 or $MQMM_Event_store=2 or $MQMM_Event_store=4 :
+			  '<div class="buttonR"><a href="exec:minutes+=0 & gt ''Aunt_Event'',''MQMM_夜袭0''">夜袭1</a></div>'
+			  end
+			 if $MQMM_Event_store=12:
+			  '<div class="buttonR"><a href="exec:minutes+=0 & gt ''Aunt_Event'',''MQMM_夜袭1''">夜袭2</a></div>'
+			  end
+			 if $MQMM_Event_store>=14 and 4>=week_day :
+			  '<div class="buttonR"><a href="exec:minutes+=0 & gt ''Aunt_Event'',''MQMM_夜袭2''">夜袭3</a></div>'
+			  end
+			 if (hour >=23 and week_day =5 and $MQMM_Event_store=15) or (hour <8 and week_day =6 and $MQMM_Event_store=15):
+			  '<div class="buttonR"><a href="exec:minutes+=0 & gt ''Aunt_Event'',''MQMM_MQ_夜袭''">夜袭</a></div>'
+			  end
+			 if (hour >=23 and week_day =5 and $MQMM_Event_store>15) or (hour <8 and week_day =6 and $MQMM_Event_store>15):
+			  '<div class="buttonR"><a href="exec:minutes+=0 & gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">姐妹花</a></div>'
+	          end
+			 if (hour >=23 and week_day =6 and $MQMM_Event_store>=16 AND $MQMM.bad>400 and $姨妈电话1=1) or (hour <8 and week_day =7 and $MQMM_Event_store>=16 AND $MQMM.bad>400 and $姨妈电话1=1):
+			  '<div class="buttonR"><a href="exec:minutes+=0 & gt ''Aunt_Event'',''MQMM_夫前侵犯''">夫前侵犯</a></div>'
+	          end
+			 '<div class="button"><a href="exec:minutes+=0 & gt ''A302''">离开</a></div>'
+		 '</div>'
+	     '<div class="dialog_menu">'
+		     '<p>姨妈的房间留个缝？偷偷看看</p>'
+		 '</div>'
+	End
+	
+	if $ARGS[0]="MQMM_夜袭0":
+	
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\夜袭0-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+			if a=0:'<div class="buttonP"><a href="exec:a+=1&  gt ''Aunt_Event'',''MQMM_夜袭0''">揉奶</a></div>'
+			if a=1:'<div class="buttonP"><a href="exec:a+=1&  gt ''Aunt_Event'',''MQMM_夜袭0''">脱胸罩</a></div>'
+			if a=2:'<div class="buttonP"><a href="exec:a+=1&  gt ''Aunt_Event'',''MQMM_夜袭0''">捏奶子</a></div>'
+			if a=3:'<div class="buttonP"><a href="exec:a+=1&  gt ''Aunt_Event'',''MQMM_夜袭0''">隔着内裤摸</a></div>'
+			if a=4:'<div class="buttonP"><a href="exec:a+=1&  gt ''Aunt_Event'',''MQMM_夜袭0''">梦中打飞机</a></div>'
+		    if a=5:'<div class="buttonR"><a href="exec:  & gt ''A302''">溜走</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'	
+			if 4>=a and a>=0:
+			'<p><<$MQMM.name>>:…Zzzzz……</p>'
+			end
+			if a=5:
+			'<p>我:为了计划，先撤，吵醒就不得了了.....</p>'
+			END
+	    '</div>'  
+	End
+	
+	if $args[0]="MQMM_夜袭1":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\夜袭1-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if  a!9:
+			'<div class="button_menu">'
+				if a!1 and q<=1:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_夜袭1''">强上</a></div>'
+				end
+				if a!2 and q<=2:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_夜袭1''">舔穴</a></div>'
+				end
+				if a!3 and 4>=q and q>=2:
+				'<div class="buttonP"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_夜袭1''">口交</a></div>'
+				end
+				if a!4 and 5>=q and q>=3:         
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_夜袭1''">后入</a></div>'
+				end
+				if a!5 and 6>=q and q>=4:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_夜袭1''">插深点</a></div>'
+				end
+				if a!6 and 7>=q and q>=5:
+				'<div class="buttonS5"><a href="exec:a=6 & my.精力+=100 &  gt ''Aunt_Event'',''MQMM_夜袭1''">抬腿操</a></div>'
+				end
+				if a!7 and 8>=q and q>=6:
+				'<div class="buttonS5"><a href="exec:a=7 &  gt ''Aunt_Event'',''MQMM_夜袭1''">冲刺</a></div>'
+				end
+				if a=7:
+				'<div class="buttonS5"><a href="exec:a=8 &  gt ''Aunt_Event'',''MQMM_夜袭1''">内射</a></div>'
+				end
+				if a=8:
+				'<div class="buttonS5"><a href="exec:a=9 &  gt ''Aunt_Event'',''MQMM_夜袭1''">温存</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec:minutes+=30 & gt ''A302''">离开</a></div>'
+				'</div>'
+		end
+	
+		if a=0:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:“<<$主角姓名>>！你又想干嘛！”</p>'
+				 '<p>我：“姨妈，你今晚就给我一次嘛，我弄轻一点就不会被发现了。”</p>'
+				 '<p><<$MQMM.name>>:“你做梦！今天不行”</p>'
+				 '<p>我：“那今天不行以后都给我肏？”</p>'
+				 '<p><<$MQMM.name>>:“以后，以后也不行”</p>'
+				 '<p>我：“不行，你说好了，今天不行以后都给我肏”</p>'
+				 '<p><<$MQMM.name>>:“你……行，我答应你，但是今天不行”</p>'			 
+			 '</div>'
+		end
+		if a=1:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:“真的！你先放开我”</p>'
+				 '<p>我：“姨妈，你身材好棒哦”</p>'
+				 '<p><<$MQMM.name>>:瞎贫!先放开我</p>'
+				 '<p>我：“那今晚再给我一次吧”</p>'
+				 '<p><<$MQMM.name>>:“真是拿你没办法......”</p>'
+			 '</div>'
+		end
+	
+	
+		if 3>=a and a>1:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:…<<$娇喘声>>……</p>'
+			 '</div>'
+		end
+		if 8>=a and a>=4:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:<<$娇喘声>> <<$话>></p>'
+			 '</div>'
+		end
+	
+		if a=9 :
+			 '<div class="dialog_menu">'
+				 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:“真不知道你妈怎么生你的，跟种牛一样”</p>'
+				 '<p>我：姨妈，今晚上舒服吗</p>'
+				 '<p><<$MQMM.name>>:滚蛋？你还当我是你姨妈吗？一天到晚的要。</p>'
+			 '</div>'
+		end
+	 q+=1
+	End
+	
+	if $args[0]="MQMM_夜袭2":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\夜袭2-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if  a!9:
+			'<div class="button_menu">'
+				if a!1 and q<=1:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_夜袭2''">挑逗乳头</a></div>'
+				end
+				if a!2 and q<=2:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_夜袭2''">舔脚</a></div>'
+				end
+				if a!3 and 4>=q and q>=2:
+				'<div class="buttonP"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_夜袭2''">挑逗小穴</a></div>'
+				end
+				if a!4 and 5>=q and q>=3:         
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_夜袭2''">口交</a></div>'
+				end
+				if a!5 and 6>=q and q>=4:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_夜袭2''">女上位</a></div>'
+				end
+				if a!6 and 7>=q and q>=5:
+				'<div class="buttonS5"><a href="exec:a=6 & my.精力+=100 &  gt ''Aunt_Event'',''MQMM_夜袭2''">快一点</a></div>'
+				end
+				if a!7 and 8>=q and q>=6:
+				'<div class="buttonS5"><a href="exec:a=7 &  gt ''Aunt_Event'',''MQMM_夜袭2''">镜前后入</a></div>'
+				end
+				if a=7:
+				'<div class="buttonS5"><a href="exec:a=8 &  gt ''Aunt_Event'',''MQMM_夜袭2''">冲刺</a></div>'
+				end
+				if a=8:
+				'<div class="buttonS5"><a href="exec:a=9 &  gt ''Aunt_Event'',''MQMM_夜袭2''">颜射</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec:minutes+=30 & gt ''A302''">离开</a></div>'
+				'</div>'
+		end
+	
+		if a=0:
+			 '<div class="dialog_menu">'
+				 '<p>我：姨妈，我想你了，睡不着。</p>'
+				 '<p><<$MQMM.name>>:来吧，儿子，我搂着你睡觉...</p>'
+				 '<p>我：姨妈，你下面怎么湿了....</p>'
+				 '<p><<$MQMM.name>>:那你还不来安慰安慰姨妈，我也睡不着......</p>'
+			 '</div>'
+		end
+	
+		if 4>=a and a>=1:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:…<<$娇喘声>>……</p>'
+			 '</div>'
+		end
+		if 8>=a and a>=5:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:<<$娇喘声>> <<$话>></p>'
+			 '</div>'
+		end
+	
+		if a=9 :
+			 '<div class="dialog_menu">'
+				 '<p>我：“姨妈，我喜欢你放荡的样子……”</p>'
+				 '<p><<$MQMM.name>>:“讨厌……弄我一脸…………”</p>'
+			 '</div>'
+		end
+	 q+=1
+	End
+	
+	if $ARGS[0]="MQMM_MQ_夜袭":
+	
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\母前夜袭<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		'<div class="button_menu">'
+			if a=0:'<div class="buttonP"><a href="exec:a+=1& $MQ.love+=5 & gt ''Aunt_Event'',''MQMM_MQ_夜袭''">揉奶</a></div>'
+			if a=1:'<div class="buttonP"><a href="exec:a+=1& $MQ.love+=5 & gt ''Aunt_Event'',''MQMM_MQ_夜袭''">扣穴</a></div>'
+			if a=2:'<div class="buttonP"><a href="exec:a+=1& $MQ.love+=5 & gt ''Aunt_Event'',''MQMM_MQ_夜袭''">插入</a></div>'
+			if a=3:'<div class="buttonP"><a href="exec:a+=1& $MQ.love+=5 & gt ''Aunt_Event'',''MQMM_MQ_夜袭''">门外</a></div>'
+			if a=4:'<div class="buttonP"><a href="exec:a+=1& $MQ.love+=5 & gt ''Aunt_Event'',''MQMM_MQ_夜袭''">内射</a></div>'
+		    if a=5:'<div class="buttonR"><a href="exec:  & gt ''A302''">去客房找老妈</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'	
+			if a=0:
+			'<p><<$MQMM.name>>:很晚了呢，不睡觉，跑我这想干啥？</p>'
+			'<p>我：姨妈，我想要了，下面难受。</p>'
+			'<p><<$MQMM.name>>:要死啊，你妈来了，在客房睡着呢。</p>'
+			'<p>我：那你可要小点声呦。</p>'
+			end
+			if 3>=a and a>=1:
+			'<p><<$MQMM.name>>:…<<$娇喘声>>……</p>'
+			end
+			if a=4:
+			'<p>外面这个声影怎么那么熟悉？难道是......</p>'
+			'<p><<$MQMM.name>>:等一下，让我缓缓……唔……啊？外面是我姐！</p>'
+	        end
+			if a=5:
+			'<p><<$MQMM.name>>:完蛋了，又被你妈发现了，这次你自己去哄吧，我睡了，免得挨骂。</p>'
+			'<p>我:……</p>'
+			$母亲原谅=1
+			END
+	    '</div>'  
+	End
+	
+	if $args[0]="MQMM_夫前侵犯":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\夫前侵犯-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if  a!9:
+			'<div class="button_menu">'
+				if a!1 and q<=1:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_夫前侵犯''">挑逗乳头</a></div>'
+				end
+				if a!2 and q<=2:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_夫前侵犯''">揉奶子</a></div>'
+				end
+				if a!3 and 4>=q and q>=2:
+				'<div class="buttonP"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_夫前侵犯''">挑逗小穴</a></div>'
+				end
+				if a!4 and 5>=q and q>=3:         
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_夫前侵犯''">震动棒</a></div>'
+				end
+				if a!5 and 6>=q and q>=4:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_夫前侵犯''">刺激阴蒂</a></div>'
+				end
+				if a!6 and 7>=q and q>=5:
+				'<div class="buttonS5"><a href="exec:a=6 & my.精力+=100 &  gt ''Aunt_Event'',''MQMM_夫前侵犯''">假JB插入</a></div>'
+				end
+				if a!7 and 8>=q and q>=6:
+				'<div class="buttonS5"><a href="exec:a=7 &  gt ''Aunt_Event'',''MQMM_夫前侵犯''">电动调教</a></div>'
+				end
+				if a=7:
+				'<div class="buttonS5"><a href="exec:a=8 &  gt ''Aunt_Event'',''MQMM_夫前侵犯''">口交</a></div>'
+				end
+				if a=8:
+				'<div class="buttonS5"><a href="exec:a=9 &  gt ''Aunt_Event'',''MQMM_夫前侵犯''">口爆</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec:minutes+=30 & gt ''A302''">离开</a></div>'
+				'</div>'
+		end
+	
+		if a=0 :
+			 '<div class="dialog_menu">'
+			     if $MQMM_Event_store=16:
+				 '<p><<$MQMM.name>>:老公，醒醒....</p>'
+				 '<p>我：姨妈，别喊了，我给姨父灌了点安眠药....</p>'
+				 '<p><<$MQMM.name>>:“这个喝了就醒不来了？”</p>'
+				 '<p>我：“嗯嗯，无色无味，无毒无害，就是让人好好的睡一觉而已”</p>'
+				 '<p><<$MQMM.name>>:……唉，老公，对不起……”</p>'
+				 '<p>我：“姨妈，姨夫睡着了吗？睡着了吗？”</p>'
+				 '<p><<$MQMM.name>>:你这东西啥效果你不知道吗？小小年纪身上带这个，你的心得是有多肮脏。</p>'
+				 '<p><<$MQMM.name>>:“切，肮脏？你不也挺舒服的吗？”</p>'
+				 '<p><<$MQMM.name>>:“你想死是吧，再说一个字试试？”</p>'
+				 '<p>我：那我不说了，我做.......</p>'
+		         else
+				 '<div class="dialog_menu">'
+				 '<p>我：“姨妈，姨夫睡着了吗？睡着了吗？”</p>'
+				 '<p><<$MQMM.name>>:“睡了，你这药效果真好....”</p>'
+				 '<p>我：姨妈，我又想了。</p>'
+				 '<p><<$MQMM.name>>:…………………………”</p>'
+				 end
+			 '</div>'
+		end
+	
+		if 8>=a and a>=1:
+			 $MQMM.love+=q
+			 $MQMM.bad+=q
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:<<$娇喘声>></p>'
+			 '</div>'
+		end
+	
+		if a=9 :
+			 '<div class="dialog_menu">'
+			     if $MQMM_Event_store=16:
+				 '<p>我：“姨妈，我喜欢你”</p>'
+				 '<p><<$MQMM.name>>:“有，有你这样的喜欢方式吗？”</p>'
+				 '<p>我：“没有”</p>'
+				 '<p><<$MQMM.name>>:“那你……”</p>'
+				 '<p>我：“所以我对你的爱才独一无二”</p>'
+				 '<p><<$MQMM.name>>:“你个小屁孩懂什么叫爱吗？”</p>'
+				 $MQMM_Event_store=17
+		         else
+				 '<div class="dialog_menu">'
+				 '<p>姨妈眯着眼，小手抓着身下的被子，声音不再像刚才那般凄楚，反而有些娇嗔。</p>'
+				 '<p>我“姨妈，这就是爱”</p>'
+				 '<p><<$MQMM.name>>:““变，变态……”</p>'
+				 '<p>我：“呵呵，变态？那就让我继续变态下去吧”</p>'
+				 '<p><<$MQMM.name>>:“好了，你快出去吧”</p>'
+				 end
+			 '</div>'
+		end
+	 q+=1
+	End
+	
+	
+	if $args[0]="MQMM_MQ_姐妹花":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\姐妹花-<<a>>.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+		if  a!14:
+			'<div class="button_menu">'
+				if a!1 and q<=1:
+				'<div class="buttonS1"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">挑逗乳头</a></div>'
+				end
+				if a!2 and q<=2:
+				'<div class="buttonS2"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">六九</a></div>'
+				end
+				if a!3 and 4>=q and q>=2:
+				'<div class="buttonP"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">插入</a></div>'
+				end
+				if a!4 and 5>=q and q>=3:         
+				'<div class="buttonS3"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">门外</a></div>'
+				end
+				if a!5 and 6>=q and q>=4:
+				'<div class="buttonS4"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">女上位</a></div>'
+				end
+				if a!6 and 7>=q and q>=5:
+				'<div class="buttonS5"><a href="exec:a=6 & my.精力+=100 &  gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">自慰的老妈</a></div>'
+				end
+				if a!7 and 8>=q and q>=6:
+				'<div class="buttonS5"><a href="exec:a=7 &  gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">后入</a></div>'
+				end
+				if a!8 and 9>=q and q>=7:
+				'<div class="buttonS5"><a href="exec:a=8 &  gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">门外春色</a></div>'
+				end
+				if a!9 and 10>=q and q>=8:
+				'<div class="buttonS5"><a href="exec:a=9 &  gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">抱腿抽插</a></div>'
+				end
+				if a!10 and 11>=q and q>=9:
+				'<div class="buttonS5"><a href="exec:a=10 &  gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">共上高潮</a></div>'
+				end
+				if a!11 and 12>=q and q>=10:
+				'<div class="buttonS5"><a href="exec:a=11  &  gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">射胸上</a></div>'
+				end
+				if a!12 and 13>=q and q>=11:
+				'<div class="buttonS5"><a href="exec:a=12 &  gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">再次插入</a></div>'
+				end
+				if a=12:
+				'<div class="buttonS5"><a href="exec:a=13 &  gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">内射</a></div>'
+				end
+				if a=13:
+				'<div class="buttonS5"><a href="exec:a=14 &  gt ''Aunt_Event'',''MQMM_MQ_姐妹花''">温存</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="buttonP"><a href="exec:minutes+=30 & gt ''A302''">照顾老妈</a></div>'
+				'</div>'
+		end
+	
+		if a=0:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:“不睡觉跑我这里干啥”</p>'
+				 '<p>我：姨妈，我想你了，咱们来一次好不好？”</p>'
+				 '<p><<$MQMM.name>>:“小脑袋一天到晚想什么呢”</p>'
+				 '<p>我：我脑子里都是姨妈的奶子，身体，小穴....”</p>'
+				 '<p><<$MQMM.name>>:滚蛋，小色鬼。</p>'
+			 '</div>'
+		end
+	
+		if 3>=a and a>=1:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:…<<$娇喘声>>……</p>'
+			 '</div>'
+		end
+		if a=4 or a=6 or a=8 or a=10:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQ.name>>:......儿子...嗯.....<<$娇喘声>>.....</p>'
+			 '</div>'
+		end
+		if a=5 or a=7 or a=9 or a=11 or a=12 or a=13:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:...<<$娇喘声>> <<$话>>....</p>'
+			 '</div>'
+		end
+		if a=14 :
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>:“嗯哼……啊……不行了……嗯……我……我……”</p>'
+				 '<p>我：姨妈，那你刚才舒服不？”</p>'
+				 '<p><<$MQMM.name>>:“不许再提这个！</p>'
+				 '<p><<$MQMM.name>>:我都被你快折腾死了，去旁边折腾你妈吧!!</p>'
+				 $姐妹花=1
+			     $MQMM.love+=q
+			     $MQMM.bad+=q
+			 '</div>'
+		end
+	 q+=1
+	End
+	
+	if $args[0]="MQMM_Fuck_浴室内":
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\浴室内1-<<a>>.webm" type=''video/webm;''></video></div>'
+			'</div>'
+	
+		if a<9:
+			'<div class="button_menu">'
+				if a!1  and q<=2 :
+				'<div class="buttonP"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_Fuck_浴室内''">挑逗乳头</a></div>'
+				end
+				if a!2  and 1<=q and q<=3:
+				'<div class="buttonP"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_Fuck_浴室内''">挑逗小穴</a></div>'
+				end
+				if a!3  and 2<=q and q<=4:
+				'<div class="buttonP"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_Fuck_浴室内''">撸管</a></div>'
+				end
+				if a!4 and 3<=q and q<=6:
+				'<div class="buttonS1"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_Fuck_浴室内''">腿交</a></div>'
+				end
+				if a!5 and 4<=q :
+				'<div class="buttonS2"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_Fuck_浴室内''">插入</a></div>'
+				end
+				if a=5:
+				'<div class="buttonR1"><a href="exec:a=6 & gt ''Aunt_Event'',''MQMM_Fuck_浴室内''">加快</a></div>'
+				end
+				if a=6:
+				'<div class="buttonS4"><a href="exec:a=7 & gt ''Aunt_Event'',''MQMM_Fuck_浴室内''">抬腿</a></div>'
+				end
+				if a=7:
+				'<div class="buttonS5"><a href="exec:a=8 & gt ''Aunt_Event'',''MQMM_Fuck_浴室内''">内射</a></div>'
+				end
+				if a=8:
+				'<div class="buttonP"><a href="exec:a=9 & gt ''Aunt_Event'',''MQMM_Fuck_浴室内''">口交</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec:minutes+=30 & gt ''A302''">离开</a></div>'
+				'</div>'
+		end
+	
+		if a=0:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：“<<$主角姓名>>，你咋进来了！”</p>'
+				 '<p>我：我给你带了一件衣服，你穿上试试看。</p>'
+				 '<p><<$MQMM.name>>：我洗澡穿什么衣服，真是的！！</p>'
+				 '<p>我：事件泳衣，你试试呗！我想看你穿！</p>'
+				 '<p><<$MQMM.name>>：你什么心思我能不知道，小色鬼，拿来......</p>'
+			 '</div>'
+		end
+	
+	
+	
+		if 4>=a and a>=1:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：<<$娇喘声>></p>'
+			 '</div>'
+		end
+		if 8>=a and a>=5:
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：<<$娇喘声>> <<$话>></p>'
+			 '</div>'
+		end
+		if a=9:
+			 $MQMM.love+=q+my.魅力
+			 $MQMM.bad+=q
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：“嗯……这回满足了吧，快出去吧，我还要洗澡呢……”…</p>'
+				 '<p>白里透红的肌肤一点点暴露在空气中，散发着阵阵热汽，让姨妈看起来就像是置身于仙气中的裸体仙子。这是怎样的一幅绝美画面，看得我一时间竟有些呆住了。</p>'
+			 '</div>'
+		end
+	 q+=1
+	End
+	
+	if $args[0]="MQMM_Fuck_精油":
+		if $MQMM.bad>= a*10+33:
+			else
+			$args[1]="停止"
+			$args[2]="结束"
+		end
+	
+			'<div class="show_menu">'
+				 '<video preload="metadata" autoplay loop height="480">
+				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\<<$ARGS[1]>>~1.webm" type=''video/webm;''></video></div>'
+			'</div>'
+	
+		if $args[2]!"结束":
+			'<div class="button_menu">'
+				if a!1 and q<=2:
+				'<div class="buttonP"><a href="exec:a=1 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油1挑逗''">挑逗乳房</a></div>'
+				end
+				if a!2 and q<=3:
+				'<div class="buttonP"><a href="exec:a=2 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油2挑逗2''">挑逗小穴</a></div>'
+				end
+				if a!3 and 2<=q and q<=4:
+				'<div class="buttonP"><a href="exec:a=3 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油3喷水''">强制喷水</a></div>'
+				end
+				if a!4 and 3<=q and q<5:
+				'<div class="buttonP"><a href="exec:a=4 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油4胸部''">按摩胸部</a></div>'
+				end
+				if a!5 and 4<=q and q<6:
+				'<div class="buttonP"><a href="exec:a=5 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油5假JB''">假JB抽插</a></div>'
+				end
+				if a!6 and 5<=q and q<7:
+				'<div class="buttonP"><a href="exec:a=6 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油6扣到高潮''">扣到高潮</a></div>'
+				end
+				if a!7 and 6<=q and q<8:
+				'<div class="buttonP"><a href="exec:a=7 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油7口交''">口交</a></div>'
+				end
+				if a!8 and 7<=q and q<9:
+				'<div class="buttonS1"><a href="exec:a=8 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油8插入''">插入</a></div>'
+				end
+				if a!9 and 8<=q and q<10:
+				'<div class="buttonS2"><a href="exec:a=9 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油9抬腿''">抬腿</a></div>'
+				end
+				if a!10 and 9<=q and q<11:
+				'<div class="buttonS3"><a href="exec:a=10 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油10摩擦''">摩擦</a></div>'
+				end
+				if a!11 and 10<=q and q<12: 
+				'<div class="buttonS4"><a href="exec:a=11 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油11后入''">后入</a></div>'
+				end
+				if a!12 and 11<=q and q<13:
+				'<div class="buttonR"><a href="exec:a=12 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油12加麦高芬''">加麦高芬</a></div>'
+				end
+				if a=12: 
+				'<div class="buttonP"><a href="exec:a=13 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油13冲刺''">冲刺</a></div>'
+				end
+				if a=13: 
+				'<div class="buttonP"><a href="exec:a=-1 & gt ''Aunt_Event'',''MQMM_Fuck_精油'',''精油14内射'',''结束''">内射</a></div>'
+				end
+			'</div>'
+			else
+				'<div class="button_menu">'
+					'<div class="button"><a href="exec:minutes+=60 & gt ''A302''">离开</a></div>'
+				'</div>'
+		end
+	
+		if a=0:
+			 '<div class="dialog_menu">'
+				 '<p>我：姨妈，我给你按按放松一下吧。你晃了晃手中的精油。</p>'
+				 '<p><<$MQMM.name>>她暧昧地看了你一眼....就懂了你的心思...</p>'
+				 '<p><<$MQMM.name>>：好热...好痒....你这是什么精油...</p>'
+			 '</div>'
+		end
+		if $args[1]="停止":
+			 $MQMM.bad+= q+2
+			 $MQMM.love+= q+my.魅力
+			 '<div class="dialog_menu">'
+				 '<p><<$JM.name>>：好了，好了，到此为止！！！被人发现了可不好！</p>'
+			 '</div>'
+		end
+		if 7>=a and a>=1 :
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>： ..<<$娇喘声>></p>'
+			 '</div>'
+		end
+	
+		if 13>=a and a>7 :
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：..<<$娇喘声>> <<$话>>..</p>'
+			 '</div>'
+		end
+		
+		if a=-1:
+			 $MQMM.bad+= q+5
+			 $MQMM.love+= q+my.魅力
+			 '<div class="dialog_menu">'
+				 '<p><<$MQMM.name>>：好舒服..<<$主角姓名>>，你啥时候手法这么好了，我快被你玩坏了......</p>'
+			 '</div>'
+		end		
+	 q+=1
+	end
+	
+
+
+
+
+--- Aunt_Event ---------------------------------
+
