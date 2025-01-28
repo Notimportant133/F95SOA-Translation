@@ -1,0 +1,37 @@
+# 4S_Shop_Guide
+
+
+
+	cls
+	gs'Menu_Time_Calc'
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_MainNPC'
+		gs'Menu_Act_Hidden'
+	'</div>'
+	
+	
+	'<div id="left-column-gl">'
+			'<p>·————————'
+			'<p><span class=''red''>☆4S Store Chapter: Salesgirl & Dealer Heiress </span></p>'
+			'<p><span class=''red''>1. Salesgirl (Saito Amari): Prepare about 50W</span></p>'
+			'<p>Unlock: Visit 4S Store in mall and buy car</p>'
+			'<p>1. Buy car at mall 4S store, pay deposit. Return home to bedroom to receive call scheduling Saturday 21:00 restaurant meeting for customization.</p>'
+			'<p>2. Attend restaurant meeting, drink together and take her home. Next day continue configuration at 4S store. Find spec sheet left at home. Wait at her apartment, get teased, then play with her.</p>'
+			'<p>3. Return to 4S store, pay more than 40W to get the car in full. Sign documents in manager office (manager asleep). After flirting with salesgirl, return later to collect car and "service". Later can take her out during work hours. Visit M-858 alley at night for action.</p>'
+			'<p>4. After getting car: Can take Aozora schoolgirl to hot springs at 16:00+, get car sex scene next morning. Also available during business trips with secretary.</p>'
+			'<p><span class=''red''>2. Dealer Heiress (Sakura Momo):</span></p>'
+			'<p>Unlock: Visit 4S Store VIP lounge</p>'
+			'<p>1. After buying car, upgrade audio system in VIP lounge. Help boost electric motorcycle sales through marketing investments (spend half wallet repeatedly) until Friday 18:00 Crimson Restaurant meeting.</p>'
+			'<p>2. Attend Friday client meetings (rich woman, Angel Moe, Empire CEO) with bathroom "negotiations". Teach sales techniques back at VIP lounge.</p>'
+			'<p>3. After raising affinity to 100+, send colleague to brothel during work. Deal with new phone call issue - visit Empire Building 69F photography studio at 13:00 weekends for ad shoots.</p>'
+			'<p>4. After motorcycle showcase failure, comfort her with drunk hotel session. Recruit new models at photography studio.</p>'
+			'<p>5. Finalize all events at Friday 18:00 restaurant to complete chapter.</p>'
+			'<p>·————————'
+'</div>'
+	
+	'<div class="options_back"><a href="exec:gt ''Game_Guide_Update''"><div class="settings_back_menu"></div></a></div>'
+
+--- 4S_Shop_Guide ---------------------------------
+
