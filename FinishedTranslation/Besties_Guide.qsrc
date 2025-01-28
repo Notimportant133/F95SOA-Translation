@@ -1,0 +1,39 @@
+# Besties_Guide
+
+
+
+	cls
+	gs'Menu_Time_Calc'
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_MainNPC'
+		gs'Menu_Act_Hidden'
+	'</div>'
+	
+	
+	'<div id="left-column-gl">'
+			'<p>·————————'
+			'<p><span class=''red''>☆Best Friend Chapter:</span></p>'
+			'<p><span class=''red''>1. Sister''s Best Friend: Kojima Minami (Geologist)</span></p>'
+			'<p>Unlock condition: After submitting 50 fruits to the character, click "Fruit Research Progress" → "Propose Hypothesis", then visit the Red Restaurant at the mall (13:00-15:00) to reconcile with your sister.</p>'
+			'<p>1. After unlocking, she works daily at the pharmaceutical company. Trigger the event by selecting "Regular Soil Test", then visit mom''s office and choose the third request (requires completing mom''s route first). Complete prerequisites after talking with her.</p>'
+			'<p>2. Subsequent tsundere-style story requires ignoring her for 7 consecutive days. After skipping 7 days, choose: Jealousy → Tease → "Hell yeah" → "Sister..." (Max +17 favorability each time).</p>'
+			'<p>3. Repeat favorability grind (skip 7 days each time). At 50+ favorability, invite to dinner at 16:00-17:00. Get her drunk to take to a hotel. Repeat 3x dinners to reach 100+ favorability. Unlock intimate scenes at the restaurant (18:00-19:00 Saturdays). Repeat 5x to boost corruption value over 100. New office option appears - search her home for documents. Triggers geologist''s cousin RION event. At 150+ corruption value, bring MacGuffin to company for new story.</p>'
+			'<p>4. At 200+ corruption value, unlock threesome options with sister and best friend. Warehouse threesome available.</p>'
+			'<p><span class=''red''>2. Kojima Minami''s Sister: RION (Immigration Officer)</span></p>'
+			'<p>Unlock condition: Complete Kojima Minami''s route or visit Immigration Bureau directly</p>'
+			'<p>1. Pass examiner interview (Intelligence Lv4+). Tests: Essay → Written Exam (DDDAC) → Interview.</p>'
+			'<p>2. Reach Lv7+ review level through "Start Review". Prohibited entries:</p>'
+			'<p>Banned regions: Idonia, Harlan City, Raccoon City, Los Santos, Gotham, Yharnam</p>'
+			'<p>Banned professions: Female journalists, athletes</p>'
+			'<p>Banned reasons: Settlement, expired nucleic acid test certificates</p>'
+			'<p>Cheat method: After 1 correct answer, repeatedly "Skip 1 Hour" to chain 50 correct answers.</p>'
+			'<p>3. After Lv7, inspect mall pedestrians. Visit Immigration Bureau after 16:00 for "Family Dinner" option. Morning after scene available. At 200+ corruption value, cuckold fiancé. Sundays 10:00-14:00 at hot springs: peep on RION fighting fiancé (fails to satisfy her). Repeat scenes while fiancé fetches gifts.</p>' 
+			'<p>·————————'
+	'</div>'
+	
+	'<div class="options_back"><a href="exec:gt ''Game_Guide_Update''"><div class="settings_back_menu"></div></a></div>'
+
+--- Besties_Guide ---------------------------------
+
