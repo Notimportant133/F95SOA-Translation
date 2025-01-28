@@ -1,0 +1,1482 @@
+# язязяз黑з杰з克з
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'ыя'
+	a=0
+	q=0
+	
+	
+	
+
+	$E卡卡牌类别[1] = '神秘大奖-a'
+	$E卡卡牌类别[2] = '神秘大奖-b'
+	$E卡卡牌类别[3] = '神秘大奖-c'
+	$E卡卡牌类别[4] = '神秘大奖-d'
+	
+	
+
+
+
+
+
+	
+
+	$suit[1] = 'a'
+	$symbol[1] = '♠'
+	$suit[2] = 'v'
+	$symbol[2] = '♣'
+	$suit[3] = 'c'
+	$symbol[3] = '♥'
+	$suit[4] = 'w'
+	$symbol[4] = '♦' 
+	
+	$number[1] = 'A '
+	points[1] = 11
+	$number[2] = '2 '
+	points[2] = 2
+	$number[3] = '3 '
+	points[3] = 3
+	$number[4] = '4 '
+	points[4] = 1
+	$number[5] = '5 '
+	points[5] = 5
+	$number[6] = '6 '
+	points[6] = 6
+	$number[7] = '7 '
+	points[7] = 7
+	$number[8] = '8 '
+	points[8] = 8
+	$number[9] = '9 '
+	points[9] = 9
+	$number[10] = '10 '
+	points[10] = 90
+	$number[11] = 'J '
+	points[11] = 90
+	$number[12] = 'Q '
+	points[12] = 90
+	$number[13] = 'K '
+	points[13] = 90
+	
+	if $hegana='':
+		$hegana='0'
+	end
+	
+	if $hegana1='':
+		$hegana1='0'
+	end
+	
+	if $hegana2='':
+		$hegana2='0'
+	end
+	
+	if $hegana3='':
+		$hegana3='0'
+	end
+	
+	if $hegana4='':
+		$hegana4='0'
+	end
+	
+	if $zji='':
+		$zji='0'
+	end
+	
+
+	if chouma=0:
+		chouma=10
+	end
+	
+	if chouma='':
+		chouma=100
+	end
+	
+	if heguanrengwu='':
+		heguanrengwu=0
+	end
+	
+	if linshihguanrenwu='':
+		linshihguanrenwu=0
+	end
+	
+	if week_day=7 and hour=20 and xianliangduihuanxianjin<10:
+		xianliagduihuanxianjin=10000
+	end
+	
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				'<a class="photo" data-title="地下交通" href="exec:minutes+=15 & gt ''subway''"><img class="img_stretch" src="images\place\subway.jpg"></a>'
+			'</div>'
+	
+			'<div class="action">'
+				'<a class="photo" data-title="村子里" href="exec:minutes+=5 & gt ''Kurohara_Shokai'',''村子里''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\村子里.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="民工宿舍" href="exec:minutes+=5 & gt ''Kurohara_Shokai'',''民工宿舍''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\民工宿舍.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="黑原基地的大门" href="exec:minutes+=5 & gt ''Kurohara_Shokai'',''黑原基地的大门''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑原秘密基地的大门.jpg"></a>'
+			'</div>'
+			
+			
+			'<div class="action">'
+				'<a class="photo" data-title="blackjack" href="exec:minutes+=5 & gt ''blackjack''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\blackjack.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="积分兑换处" href="exec:minutes+=5 & gt ''Kurohara_Shokai'',''游戏商店''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\游戏商店.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="顶楼VIP海景房" href="exec:minutes+=5 & gt ''blackjack'',''VIPSeaviewRoom''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\penthouse.jpg"></a>'
+			'</div>'
+			
+		'</div>'
+	'</div>'
+	
+	if $args[0]="":
+		if chouma<0:
+			chouma=100
+		end
+		
+		'<div class ="show_menu">'
+			if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/黑杰克游戏界面.jpg" width="854">'
+					'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\游戏配乐.webm" type=''video/webm;''></video>'
+			elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\鞠婧祎荷官3.webm" type=''video/webm;''></video>'
+			elseif heguanrenwu=2:
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\金晨荷官视频1.webm" type=''video/webm;''></video>'
+			elseif heguanrenwu=4:
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\仙儿媛荷官开场.webm" type=''video/webm;''></video>'
+				 
+			end
+		'</div>'
+	
+		'<div class="button_menu">'
+			if heguanrenwu=4:
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''blackjack'',''开始脱衣黑杰克''">开始脱衣黑杰克</a></div>'
+			else
+				'<div class="buttonS"><a href="exec:minutes+=15 & gt ''blackjack'',''开始游戏''">开始游戏</a></div>'
+				'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''blackjack'',''切换荷官''">切换荷官</a></div>'
+				'<div class="buttonS1"><a href="exec:shenglicishu=0 & play(''images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\重置胜利次数.mp3'')">重置胜利次数</a></div>'
+			end
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">当前荷官筹码：<<heguanchouma>>点</p>'
+			if heguanrenu=4:
+				'<p class="dajianshi3">当前胜利次数：<<shenglicishu>></p>'
+			end
+			'<p class="dajianshi3">BlackJack的规则相较于经典规则，在简化方面略有不同。如果花完筹码，可以领取低保10筹码。</p>
+	
+	<p class="dajianshi3">必要条件 </p>
+	<p class="dajianshi3">游戏中使用无限数量的精心混合的52张牌，从二到A。</p>
+	
+	<p class="dajianshi3">卡片价值</p>
+	<p class="dajianshi3">国王、皇后、侍卫和十点牌的价值都是10分。这些牌都相等。A被视为11分。其他牌的价值根据其等级确定（二为2分，八为8分，依此类推）。卡牌的花色无关紧要。</p>
+	
+	
+	<p class="dajianshi3">游戏目标 游戏的目标是尽可能地收集到总点数接近21点的卡片。21点是最高分，超过这个点数会导致立即失败。点数越高，卡片的价值也越高。 如果一开始就通过两张卡片组合得到21点，这被称为黑杰克。这种情况下会自动获胜。 两张Ace卡片的组合也视为黑杰克，点数等于21。</p>
+	
+	<p class="dajianshi3">游戏过程 通常在赌桌旁会有几名玩家，他们在游戏开始前下注，将筹码放在他们占据的框中。然后荷官给每位玩家发一张卡片，再给自己发一张，然后再次给玩家们发一张卡片。所有卡片都是公开的。现在荷官开始轮流与每位玩家进行游戏。在某个时刻，轮到您了。</p>
+	
+	<p class="dajianshi3">假设您下注了100美元。您可以看到自己的两张牌和庄家的一张牌。其他玩家的卡片对您来说没有价值，游戏只与庄家进行。您的两张卡片构成了您的初始组合，您可以尝试通过抽取更多卡片来改善它。然后庄家也会做同样的事情，通过抽取额外的一张卡片来“改善”他的一张牌。最终点数更高的人获胜，赢家的奖金就是您的投注金额（100美元）。但如果您运气好，一次性就得到了黑杰克，庄家将支付您150美元，即3:2的比例。如果您的卡片和庄家的卡片价值相同，游戏以平局结束（在国际语言中，赌场平局用英文表示为push或stay）。</p>
+	
+	<p class="dajianshi3">如果您对初始的两张卡片不满意，您可以要求庄家再发一张。评估完新组合后，您可以要求再来一张牌，依此类推。最后，您可以选择停牌，或者在点数超过21点时直接输掉，庄家将立即收取您的投注。</p>
+	
+	<p class="dajianshi3">在服务完所有玩家后，庄家会为自己抽取组合（除非所有框中都已经发生了爆点）。与您不同，庄家的行动完全是自动的。他必须继续抽牌，直到总点数达到17点或更高（但总点数不得超过三张牌）。一旦达到这个点数，抽牌立即停止。如果庄家爆点，您就赢了。如果不是，他将比较自己的组合与玩家的卡片，并进行支付。</p>
+	
+	<p class="dajianshi3">如果所有框中都已经发生了爆点，并且庄家没有必要给自己再抽第二张牌，他将将自己的唯一一张牌与玩家们的卡片混合到无限牌堆中。为了庄家下一次抽牌，不会有保留的牌。</p>
+	
+			.</p>
+			.</p>'
+		'</div>'
+	
+	end
+	
+	
+	if $args[0]="开始脱衣黑杰克":
+		if chouma<0:
+			chouma=100
+		end
+		
+		'<div class ="show_menu">'
+			if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/黑杰克游戏界面.jpg" width="854">'
+					'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\游戏配乐.webm" type=''video/webm;''></video>'
+			elseif heguanrenwu=1:
+				'<img src="images\NPC/荷官展示.jpg" width="854">'
+					'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\别问机车多少钱.webm" type=''video/webm;''></video>'
+			elseif heguanrenwu=4:
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\脱衣黑杰克.webm" type=''video/webm;''></video>'
+				 
+			end
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''blackjack'',''开始游戏''">开始游戏</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''blackjack'',''切换荷官''">切换荷官</a></div>'
+			'<div class="buttonS1"><a href="exec:shenglicishu=0 & play(''images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\重置胜利次数.mp3'')">重置胜利次数</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">当前荷官筹码：<<heguanchouma>>点</p>'
+			'<p class="dajianshi3">当前胜利次数：<<shenglicishu>></p>'
+			'<p class="dajianshi3">脱衣扑克，最终目的是为了在一群相互同意的成年人中营造有趣的气氛。</p>'
+			'<p class="dajianshi3">虽然有时候人们会在前戏中玩脱衣扑克，但它本身不被视为性互动。</p>'
+			'.</p>'
+		'</div>'
+	
+	end
+	
+	
+	
+	if $args[0]="开始游戏":
+	
+		'<div class ="show_menu">'
+			if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/黑杰克游戏界面.jpg" width="854">'
+					'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\游戏配乐.webm" type=''video/webm;''></video>'
+			elseif heguanrenwu=1:
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\鞠婧祎荷官.webm" type=''video/webm;''></video>'
+			elseif heguanrenwu=2:
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\安娜开始游戏.webm" type=''video/webm;''></video>'
+			else
+				'<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\仙儿媛开始游戏.webm" type=''video/webm;''></video>'
+			end
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>当前荷官筹码：<<heguanchouma>>点</p>'
+			if chouma>=-2000:
+				'<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & chouma-=10 & heguanchouma-=10 & deal=10 & gt ''blackjack'',''turn1''">放置 10$</a></div></p>
+				<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & chouma-=25 & heguanchouma-=25 & deal=25 & gt ''blackjack'',''turn1''">放置 25$</a></div></p>
+				<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & hjkchouma-=50 & heguanchouma-=50 & deal=50 & gt ''blackjack'',''turn1''">放置 50$</a></div></p>
+				<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & hjkchouma-=100 & heguanchouma-=100 & deal=100 & gt ''blackjack'',''turn1''">放置 100$</a></div></p>'
+			else
+				'<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & hjkchouma-=10 & heguanchouma-=10 & deal=10 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\给羊爬.mp3'')">放置 10$</a></div></p>
+				<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & hjkchouma-=25 & heguanchouma-=25 & deal=25 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\给羊爬.mp3'')">放置 25$</a></div></p>
+				<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & hjkchouma-=50 & heguanchouma-=50 & deal=50 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\给羊爬.mp3'')">放置 50$</a></div></p>
+				<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & hjkchouma-=100 & heguanchouma-=100 & deal=100 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\给羊爬.mp3'')">放置 100$</a></div></p>'
+			end
+			if week_day=7 and hour=20:
+				if chouma>=-2000:
+					'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & hjkchouma-=1000 & heguanchouma-=1000 & deal=1000 & gt ''blackjack'',''turn1''">放置 1000$（周日20点大狂欢）</a></div></p>'
+				else
+					'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & hjkchouma-=1000 & heguanchouma-=1000 & deal=1000 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\给羊爬.mp3'')">放置 1000$（周日20点大狂欢）</a></div></p>'
+				end
+			end
+			'<p class="dajianshi3"><span style="font-weight:bold;color:purple">您当前筹码<<hjkchouma>>点。</span></p>'
+			'<p>.</p>'
+			'<p>.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="turn1":
+	
+		'<div class ="show_menu">'
+			if shenglicishu=0:
+				if heguanrenwu=0:
+					'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">
+					<video preload="metadata" autoplay height="480" loop>'
+						 '<source src="images\NPC\YS\vids\游戏过程中1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第一场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=1:
+				if heguanrenwu=0:
+					'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">
+					<video preload="metadata" autoplay height="480" loop>'
+						 '<source src="images\NPC\YS\vids\游戏过程中1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第二场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=2:
+				if heguanrenwu=0:
+					'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">
+					<video preload="metadata" autoplay height="480" loop>'
+						 '<source src="images\NPC\YS\vids\游戏过程中1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第三场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=3:
+				if heguanrenwu=0:
+					'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">
+					<video preload="metadata" autoplay height="480" loop>'
+						 '<source src="images\NPC\YS\vids\游戏过程中1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第四场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=4:
+				if heguanrenwu=0:
+					'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">
+					<video preload="metadata" autoplay height="480" loop>'
+						 '<source src="images\NPC\YS\vids\游戏过程中1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第五场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=5:
+				if heguanrenwu=0:
+					'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">
+					<video preload="metadata" autoplay height="480" loop>'
+						 '<source src="images\NPC\YS\vids\游戏过程中1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第六场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			end
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			' 庄家发牌:</p>'
+			'......'
+			wait 1000
+			if p_points < 21:
+			'<p></p>庄家牌:'
+			  '  <<$d_card[1]>>'
+			  '<p></p>__________________________'
+			  '<p></p>玩家牌:'
+			  '  <<$p_card[1]>>'
+			  '  <<$p_card[2]>>'
+			  '<p><div class="buttonGn3"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=2 & gt ''blackjack'',''turn3''">够了</a></div></p>
+				<p><div class="buttonS1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''blackjack'',''turn2''">还要牌</a></div></p>'
+			end
+			if p_points = 21:
+			  '<p></p>荷官牌:'
+			  '  <<$d_card[1]>>'
+			  '<p></p>__________________________'
+			  '<p></p>玩家牌:'
+			  '  <<$p_card[1]>>'
+			  '  <<$p_card[2]>>'
+			  '21点!!!'
+			  prise = deal*3
+			  chouma +=prise
+			  saoleijifen+=prise
+			  heguanchouma-=prise
+			  '<p class="dajianshi3">您赢得筹码和积分<<prise>>点。</p>'
+				if heguanchouma<=0:
+					'<p><div class="buttonS2"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & $ziji=''1'' & gt ''blackjack'',''获取新荷官''">解锁新荷官</a></div></p>'
+				elseif heguanrenwu=0:
+					'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=0 & gt ''blackjack'',''开始游戏''">重新开始</a></div></p>'
+				else
+					'<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=0 & gt ''blackjack'',''游戏胜利''">战败CG</a></div></p>'
+				end
+			end
+			 '<p class="dajianshi3"><span style="font-weight:bold;color:purple">您当前筹码<<hjkchouma>>点。</span></p>'
+			'<p>.</p>'
+			'<p>.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="turn2":
+	
+		'<div class ="show_menu">'
+			if shenglicishu=0:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中2.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第一场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=1:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中2.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第二场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=2:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中2.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第三场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=3:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中2.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+					 
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第四场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=4:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中2.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第五场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=5:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中2.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第六场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			end
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			' 荷官再发一张牌:</p>'
+			'......'
+			wait 1000
+			if p_points <= 21:
+			'<p></p>庄家牌:'
+			  '  <<$d_card[1]>>'
+			  '<p></p>__________________________'
+			  '<p></p>玩家牌:'
+			  '  <<$p_card[1]>>'
+			  '  <<$p_card[2]>>'
+			  '  <<$p_card[3]>>'
+			  '<p><div class="buttonGn3"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=3 & gt ''blackjack'',''turn3''">够了</a></div></p>
+				<p><div class="buttonGn3"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''blackjack'',''turn22''">还要牌</a></div></p>'
+			end
+			if p_points > 21:
+			  '<p></p>荷官牌:'
+			  '  <<$d_card[1]>>'
+			  '<p></p>__________________________'
+			  '<p></p>玩家牌:'
+			  '  <<$p_card[1]>>'
+			  '  <<$p_card[2]>>'
+			  '  <<$p_card[3]>>'
+			  '爆点!!!'
+			  '<p class="dajianshi3">您输了。</p>'
+			  prise = deal*2
+			  heguanchouma+=prise
+			  '<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''blackjack'',''开始游戏''">重新开始</a></div></p>'
+			end
+			 '<p class="dajianshi3"><span style="font-weight:bold;color:purple">您当前筹码<<chouma>>点。</span></p>
+			'
+			'<p>.</p>'
+			'<p>.</p>'
+		'</div>'
+		
+	end
+	
+
+
+
+
+
+
+	
+	if $args[0]="turn22":
+	
+		'<div class ="show_menu">'
+			
+			if shenglicishu=0:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中3.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第一场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=1:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中3.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第二场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=2:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中3.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第三场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=3:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中3.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第四场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=4:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中3.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第五场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=5:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中3.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第六场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			end
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'......'
+			wait 1000
+			if p_points <= 21:
+			'<p></p>庄家牌:'
+			  '  <<$d_card[1]>>'
+			  '<p></p>__________________________'
+			  '<p></p>玩家牌:'
+			  '  <<$p_card[1]>>'
+			  '  <<$p_card[2]>>'
+			  '  <<$p_card[3]>>'
+			  '  <<$p_card[4]>>'
+			  '<p><div class="buttonGn3"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=4 & gt ''blackjack'',''turn3''">够了</a></div></p>
+				<p><div class="buttonGn3"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''blackjack'',''turn222''">还要牌</a></div></p>'
+			end
+			if p_points > 21:
+			  '<p></p>荷官牌:'
+			  '  <<$d_card[1]>>'
+			  '<p></p>__________________________'
+			  '<p></p>玩家牌:'
+			  '  <<$p_card[1]>>'
+			  '  <<$p_card[2]>>'
+			  '  <<$p_card[3]>>'
+			  '  <<$p_card[4]>>'
+			  '爆点!!!'
+			  '<p class="dajianshi3">您输了。</p>'
+			  prise = deal*2
+			  heguanchouma+=prise
+			  '<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''blackjack'',''开始游戏''">重新开始</a></div></p>'
+			end
+			 '<p class="dajianshi3"><span style="font-weight:bold;color:purple">您当前筹码<<hjkchouma>>点。</span></p>
+			'
+			'<p>.</p>'
+			'<p>.</p>'
+		'</div>'
+		
+	end
+	
+	if $args[0]="turn222":
+	
+		'<div class ="show_menu">'
+			
+			if shenglicishu=0:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中4.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第一场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=1:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中4.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第二场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=2:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中4.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				else
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第三场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=3:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中4.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第四场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=4:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中4.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第五场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=5:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\游戏过程中4.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第六场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			end
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			' 荷官再发一张牌:</p>'
+			'......'
+			wait 1000
+			if p_points <= 21:
+			'<p></p>庄家牌:'
+			  '  <<$d_card[1]>>'
+			  '<p></p>__________________________'
+			  '<p></p>玩家牌:'
+			  '  <<$p_card[1]>>'
+			  '  <<$p_card[2]>>'
+			  '  <<$p_card[3]>>'
+			  '  <<$p_card[4]>>'
+			  '  <<$p_card[5]>>'
+			  '<p><div class="buttonGn3"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=5 & gt ''blackjack'',''turn3''">够了</a></div></p>'
+			end
+			if p_points > 21:
+			  '<p></p>荷官牌:'
+			  '  <<$d_card[1]>>'
+			  '<p></p>__________________________'
+			  '<p></p>玩家牌:'
+			  '  <<$p_card[1]>>'
+			  '  <<$p_card[2]>>'
+			  '  <<$p_card[3]>>'
+			  '  <<$p_card[4]>>'
+			  '  <<$p_card[5]>>'
+			  '爆点!!!'
+			  '<p class="dajianshi3">您输了。</p>'
+			  prise = deal*2
+			  heguanchouma+=prise
+			  '<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''blackjack'',''开始游戏''">重新开始</a></div></p>'
+			end
+			 '<p class="dajianshi3"><span style="font-weight:bold;color:purple">您当前筹码<<chouma>>点。</span></p>
+			'
+			'<p>.</p>'
+			'<p>.</p>'
+		'</div>'
+		
+	end
+	
+	if $args[0]="turn3":
+	
+		'<div class ="show_menu">'
+			
+			if shenglicishu=0:
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\战斗BGM.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第一场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=1:		
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\战斗BGM.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第二场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=2:		
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\战斗BGM.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第三场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=3:		
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\战斗BGM.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第四场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=4:		
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\战斗BGM.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第五场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=5:		
+				if heguanrenwu=0:
+				'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克游戏界面.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\战斗BGM.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\发牌员发牌1.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\安娜再要一张牌.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第六场_仙儿媛分配纸牌.webm" type=''video/webm;''></video>'
+				end
+			end
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			' 荷官验牌:</p>'
+			'......'
+			wait 1000
+			if d_points >=18:
+				'<p></p>荷官牌:'
+			  '  <<$d_card[1]>>'
+			  '  <<$d_card[2]>>'
+			  '<p></p>__________________________'
+			  '<p></p>玩家牌:'
+				if wanjiayaopaicishu=2:
+				  '  <<$p_card[1]>>'
+				  '  <<$p_card[2]>>'
+				elseif wanjiayaopaicishu=3:
+					'  <<$p_card[1]>>'
+					'  <<$p_card[2]>>'
+					'  <<$p_card[3]>>'
+				elseif wanjiayaopaicishu=4:
+					'  <<$p_card[1]>>'
+					'  <<$p_card[2]>>'
+					'  <<$p_card[3]>>'
+					'  <<$p_card[4]>>'
+				else
+					'  <<$p_card[1]>>'
+					'  <<$p_card[2]>>'
+					'  <<$p_card[3]>>'
+					'  <<$p_card[4]>>'
+					'  <<$p_card[5]>>'
+				end
+				if d_points >= p_points:
+					'<p></p>赌场赢了'
+					prise = deal*2
+					heguanchouma+=prise
+					'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=0 & gt ''blackjack'',''开始游戏''">重新开始</a></div></p>'
+					 '<p><span style="font-weight:bold;color:purple">您当前筹码<<chouma>>点。</span></p>
+					'
+				end
+				if d_points < p_points:
+					'<p></p>你赢了'
+					prise = deal*2
+					chouma +=prise
+					saoleijifen+=prise
+					heguanchouma-=prise
+					'<p class="dajianshi3">您赢得筹码和积分<<prise>>点。</p>'
+						if heguanchouma<=0:
+							'<p><div class="buttonS2"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & $ziji=''1'' & gt ''blackjack'',''获取新荷官''">解锁新荷官</a></div></p>'
+						elseif heguanrenwu=0:
+							'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=0 & gt ''blackjack'',''开始游戏''">重新开始</a></div></p>'
+						else
+							'<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=0 & gt ''blackjack'',''游戏胜利''">战败CG</a></div></p>'
+						end
+			    end
+			  '<p class="dajianshi3"><span style="font-weight:bold;color:purple">您当前筹码<<chouma>>点。</span></p>'
+			 
+			end
+			if d_points <18:
+				  suit = RAND (1,4)
+				  number = RAND (1,13) 
+				  $d_card[3] = $symbol[suit] + $number[number]
+				  d_points = d_points + points[number]
+			   IF d_points <= 21:
+					'<p></p>荷官牌:'
+				  '  <<$d_card[1]>>'
+				  '  <<$d_card[2]>>'
+				  '  <<$d_card[3]>>'
+				  '<p></p>__________________________'
+				  '<p></p>玩家牌:'
+					if wanjiayaopaicishu=2:
+					  '  <<$p_card[1]>>'
+					  '  <<$p_card[2]>>'
+					elseif wanjiayaopaicishu=3:
+						'  <<$p_card[1]>>'
+						'  <<$p_card[2]>>'
+						'  <<$p_card[3]>>'
+					elseif wanjiayaopaicishu=4:
+						'  <<$p_card[1]>>'
+						'  <<$p_card[2]>>'
+						'  <<$p_card[3]>>'
+						'  <<$p_card[4]>>'
+					else
+						'  <<$p_card[1]>>'
+						'  <<$p_card[2]>>'
+						'  <<$p_card[3]>>'
+						'  <<$p_card[4]>>'
+						'  <<$p_card[5]>>'
+					end
+					if d_points > p_points:
+					'<p></p>赌场赢了'
+					prise = deal*2
+					heguanchouma+=prise
+					'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=0 & gt ''blackjack'',''开始游戏''">重新开始</a></div></p>'
+					end
+					IF d_points = p_points:
+					'<p></p>平局'
+					'<p></p>取走投注'
+					 saoleijifen+=deal
+					 chouma +=deal
+					 heguanchouma+=deal
+					 '<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=0 & gt ''blackjack'',''开始游戏''">重新开始</a></div></p>'
+					end
+					IF d_points < p_points:
+					'<p></p>你赢了'
+					prise = deal*2
+					chouma +=prise
+					saoleijifen+=prise
+					heguanchouma-=prise
+					'<p class="dajianshi3">您赢得筹码和积分<<prise>>点。</p>' 
+						if heguanchouma<=0:
+							'<p><div class="buttonS2"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & $ziji=''1'' & gt ''blackjack'',''获取新荷官''">解锁新荷官</a></div></p>'
+						elseif heguanrenwu=0:
+							'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=0 & gt ''blackjack'',''开始游戏''">重新开始</a></div></p>'
+						else
+							'<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=0 & gt ''blackjack'',''游戏胜利''">战败CG</a></div></p>'
+						end
+					end
+					'<p><span style="font-weight:bold;color:purple">您当前筹码<<chouma>>点。</span></p>'
+				end
+				IF d_points > 21:
+					'<p></p>荷官牌:'
+				  '  <<$d_card[1]>>'
+				  '  <<$d_card[2]>>'
+				  '  <<$d_card[3]>>'
+				  '<p></p>__________________________'
+					'<p></p>爆点!!!'	
+				  '<p></p>__________________________'
+				  '<p></p>你赢了'
+					prise = deal*2
+					chouma +=prise
+					saoleijifen+=prise
+					heguanchouma-=prise
+					'<p class="dajianshi3">您赢得筹码和积分<<prise>>点。</p>' 
+					if heguanchouma<=0:
+						'<p><div class="buttonS2"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & $ziji=''1'' & gt ''blackjack'',''获取新荷官''">解锁新荷官</a></div></p>'
+					elseif heguanrenwu=0:
+						'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=0 & gt ''blackjack'',''开始游戏''">重新开始</a></div></p>'
+					else
+						'<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=0 & gt ''blackjack'',''游戏胜利''">战败CG</a></div></p>'
+					end
+					'<p class="dajianshi3"><span style="font-weight:bold;color:purple">您当前筹码<<chouma>>点。</span></p>'
+				end
+			end
+			'<p>.</p>'
+			'<p>.</p>'
+		'</div>'
+		
+	end
+	
+	
+	if $args[0]="获取新荷官":
+		'<div class ="show_menu"><img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\荷官选择.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\只若初见.webm" type=''video/webm;''></video>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''blackjack''">回游戏页面</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p class="dajianshi3">您已经战胜了地狱人机！请选择你想要的荷官碎片！</p>'
+			if $ziji='1':
+				'<a data-title="沈娜娜" style="width:50px" href="exec:minutes+=1 & $ziji=''0'' & shennansuipian+=1 & gt ''blackjack'',''解锁新荷官成功''"><img  src="images\NPC\YS\vids\荷官沈娜娜.jpg" width="70" ></a>'
+			else
+				'<a data-title="沈娜娜" style="width:50px" href="exec:minutes+=1 & $ziji=''0'' & $heguan=1 & gt ''blackjack'',''解锁新荷官成功''"><img  src="images\NPC\YS\vids\荷官沈娜娜.jpg" width="70" ></a>'
+			end
+			if $ziji='1':
+				'<a data-title="仙儿媛" style="width:50px" href="exec:minutes+=1 & $ziji=''0'' & xianyuanrsuipian+=1 & gt ''blackjack'',''解锁新荷官成功''"><img  src="images\NPC\YS\vids\仙儿媛人物碎片.jpg" width="70" ></a>'
+			else
+				'<a data-title="仙儿媛" style="width:50px" href="exec:minutes+=1 & $ziji=''0'' & $heguan=1 & gt ''blackjack'',''解锁新荷官成功''"><img  src="images\NPC\YS\vids\仙儿媛头像.jpg" width="70" ></a>'
+			end
+			if $ziji='1':
+				'<a data-title="苏畅" style="width:50px" href="exec:minutes+=1 & $ziji=''0'' & suchngsuipian+=1 & gt ''blackjack'',''解锁新荷官成功''"><img  src="images\NPC\YS\vids\苏畅4.jpg" width="70" ></a>'
+			else
+				'<a data-title="苏畅" style="width:50px" href="exec:minutes+=1 & $ziji=''0'' & $heguan=1 & gt ''blackjack'',''解锁新荷官成功''"><img  src="images\NPC\YS\vids\苏畅4.jpg" width="70" ></a>'
+			end
+			if $ziji='1':
+				'<a data-title="吴梦梦" style="width:50px" href="exec:minutes+=1 & $ziji=''0'' & wumengmegsuipian+=1 & gt ''blackjack'',''解锁新荷官成功''"><img  src="images\NPC\YS\vids\吴梦梦2.jpg" width="70" ></a>'
+			else
+				'<a data-title="吴梦梦" style="width:50px" href="exec:minutes+=1 & $ziji=''0'' & $heguan=1 & gt ''blackjack'',''解锁新荷官成功''"><img  src="images\NPC\YS\vids\吴梦梦2.jpg" width="70" ></a>'
+			end
+			'<p>.</p>
+			<p>.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="解锁新荷官成功":
+		'<div class ="show_menu"><img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\荷官选择.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\只若初见.webm" type=''video/webm;''></video>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''blackjack''">回游戏页面</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p class="dajianshi3">解锁中，请稍后...</p>'
+			wait 2000
+			if $heguan=1:
+				'<p class="dajianshi3">解锁失败！</p>'
+				play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\小子竟然敢作弊.mp3')
+			else
+				'<p class="dajianshi3">解锁成功！</p>'
+				play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\解锁人物.mp3')
+			end
+			'<p></p>
+			<p></p>'
+		'</div>'
+	end
+	
+	if $args[0]="切换荷官":
+		'<div class ="show_menu"><img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\荷官选择.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\爱你至死不渝.webm" type=''video/webm;''></video>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''blackjack''">回游戏页面</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">请选择你喜欢的荷官人物！</p>
+			<a data-title="小鞠" style="width:50px" href="exec:minutes+=1 & linshiheguanrenwu=''1'' & gt ''blackjack'',''人物切换成功''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\小鞠.jpg" width="70" ></a>
+			<a data-title="安娜" style="width:50px" href="exec:minutes+=1 & linshiheguanrenwu=''2'' & gt ''blackjack'',''人物切换成功''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\安娜.jpg" width="70" ></a>'
+
+			'<a data-title="仙儿媛" style="width:50px" href="exec:minutes+=1 & linshiheguanrenwu=''4'' & gt ''blackjack'',''人物切换成功''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\仙儿媛.jpg" width="70" ></a>'
+
+
+			'<a data-title="地狱人机" style="width:50px" href="exec:minutes+=1 & linshiheguanrenwu=''0'' & gt ''blackjack'',''人物切换成功''"><img  src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\机器人.png" width="70" ></a>'
+			'<p>.</p>
+			<p>.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="人物切换成功":
+	
+		'<div class ="show_menu"><img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\荷官选择.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\爱你至死不渝.webm" type=''video/webm;''></video>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''blackjack''">回游戏页面</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">切换中，请稍后...</p>'
+			wait 2000
+			
+			if linshiheguanrenwu=0:
+				'<p class="dajianshi3">恭喜你，切换回地狱人机</p>'
+			elseif linshiheguanrenwu=1:
+				if xiaojurenwu=1:
+					'<p class="dajianshi3">恭喜你，切换荷官小鞠成功</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\，切换荷官小鞠成功.mp3')
+				else
+					'<p class="dajianshi3">未解锁对应人物</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\未解锁对应人物.mp3')
+				end
+			elseif linshiheguanrenwu=2:
+				if annarenwu=1:
+					'<p class="dajianshi3">恭喜你，切换荷官安娜成功</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\切换荷官安娜成功.mp3')
+				else
+					'<p class="dajianshi3">未解锁对应人物</p>'
+					play('images\NPC\YS\vids\c\aa\a\a\未解锁对应人物.mp3')
+				end
+			elseif linshiheguanrenwu=3:
+				if shennanarenwu=1:
+					'<p class="dajianshi3">恭喜你，切换荷官沈娜娜成功</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\aa\a\a\切换荷官沈娜娜成功.mp3')
+				else
+					'<p class="dajianshi3">未解锁对应人物</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\未解锁对应人物.mp3')
+				end
+			elseif linshiheguanrenwu=4:
+				if xianyuanerrenwu=1:
+					heguanrenwu=4
+					'<p class="dajianshi3">恭喜你，切换荷官仙儿媛成功</p>'
+					play('images\NPC\YS\vids\c\a\切换荷官仙儿媛成功.mp3')
+				else
+					'<p class="dajianshi3">未解锁对应人物</p>'
+					play('images\NPC\YS\vids\c\未解锁对应人物.mp3')
+				end
+			elseif linshiheguanrenwu=5:
+				if suchangrenwu=1:
+					
+					'<p class="dajianshi3">恭喜你，切换荷官苏畅成功</p>'
+					play('images\NPC\YS\vids\c\a\a\切换荷官苏畅成功.mp3')
+				else
+					'<p class="dajianshi3">未解锁对应人物</p>'
+					play('images\NPC\YS\vids\c\a\a\a\未解锁对应人物.mp3')
+				end
+			elseif linshiheguanrenwu=6:
+				if wumengmengrenwu=1:
+					'<p class="dajianshi3">恭喜你，切换荷官吴梦梦成功</p>'
+					play('images\NPC\YS\vids\c\a\a\切换荷官吴梦梦成功.mp3')
+				else
+					'<p class="dajianshi3">未解锁对应人物</p>'
+					play('images\NPC\YS\vids\c\a\未解锁对应人物.mp3')
+				end
+			else
+				'<p class="dajianshi3">未解锁对应人物</p>'
+				play('images\NPC\YS\vids\未解锁对应人物.mp3')
+			end
+			'<p style="color:red"><a style="width:100px" href="exec:minutes+=1 & gt ''blackjack'',''切换荷官''"><img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\返回人物选择页面.png" width="200"></a></p>'
+			'<p>.</p>'
+			'<p>.</p>'
+		'</div>'
+	
+	end
+	
+	
+	if $args[0]="游戏胜利":
+		shenglicishu+=1
+		'<div class ="show_menu">'
+			if shenglicishu=1:
+				if heguanrenwu=0:
+					'<img src="images\NPC\黑杰克游戏界面.jpg" width="854">'
+						'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\游戏配乐.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\gdgasagq.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\rwqrfa.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\仙儿媛荷官\第一场_仙儿媛游戏胜利.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=2:
+				if heguanrenwu=0:
+					'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/黑杰克游戏界面.jpg" width="854">'
+						'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\游戏配乐.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\gdgasagq.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\rwqrfa.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\仙儿媛荷官\第二场_仙儿媛游戏胜利.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=3:
+				if heguanrenwu=0:
+					'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/黑杰克游戏界面.jpg" width="854">'
+						'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\游戏配乐.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\gdgasagq.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\rwqrfa.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第三场_仙儿媛游戏胜利.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=4:
+				if heguanrenwu=0:
+					'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/黑杰克游戏界面.jpg" width="854">'
+						'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\游戏配乐.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\gdgasagq.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\rwqrfa.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第四场_仙儿媛游戏胜利.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=5:
+				if heguanrenwu=0:
+					'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/黑杰克游戏界面.jpg" width="854">'
+						'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\游戏配乐.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\gdgasagq.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\rwqrfa.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第五场_仙儿媛游戏胜利.webm" type=''video/webm;''></video>'
+				end
+			elseif shenglicishu=6:
+				if heguanrenwu=0:
+					'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/黑杰克游戏界面.jpg" width="854">'
+						'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\游戏配乐.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=1:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\gdgasagq.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=2:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\rwqrfa.webm" type=''video/webm;''></video>'
+				elseif heguanrenwu=4:
+					'<video preload="metadata" autoplay height="480" loop>'
+					 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛荷官\第六场_仙儿媛游戏胜利.webm" type=''video/webm;''></video>'
+				end
+			end
+		'</div>'
+	
+		'<div class="button_menu">'
+			if shenglicishu=6:
+				'<div class="button"><a href="exec:minutes+=15 & gt ''''">前往荷官公寓</a></div>'
+				'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+			else
+				'<div class="button"><a href="exec:minutes+=15 & gt ''blackjack'',''开始游戏''">重新开始</a></div>'
+				'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+			end
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">当前荷官筹码：<<heguanchouma>>点</p>'
+			'<p class="dajianshi3">胜利次数：<<shenglicishu>></p>'
+			if heguanchouma<=0:
+					'<p><div class="buttonS2"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & $ziji=''1'' & gt ''blackjack'',''获取新荷官''">解锁新荷官</a></div></p>'
+			else
+				'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & wanjiayaopaicishu=0 & gt ''blackjack'',''开始游戏''">重新开始</a></div></p>'
+			end
+			'<p class="dajianshi3"><span style="font-weight:bold;color:purple">您当前筹码<<chouma>>点。</span></p>'
+			'<p>.</p>'
+			'<p>.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="VIPSeaviewRoom":
+		if heguanchouma<0:
+			heguanchouma=100
+		end
+		
+		'<div class ="show_menu">'
+			'<marquee style="color:red;position:absolute;" scrollamount="10" behavior=="alternate" direction="right">'
+			'
+			<a style="width:500px" href="exec:minutes+=1 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\视频\小语音1.mp3'')">
+			<img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\金晨1.png" width="200px">
+			</a>
+			<a style="width:500px" href="exec:minutes+=1 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\视频\小语音2.mp3'')">
+			<img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\鞠婧祎1.png" width="200px">
+			</a>
+			<a style="width:500px" href="exec:minutes+=1 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\视频\小语音3.mp3'')">
+			<img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\金晨2.png" width="200px">
+			</a>
+			<a style="width:500px" href="exec:minutes+=1 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\视频\小语音4.mp3'')">
+			<img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\鞠婧祎2.png" width="200px">
+			</a>
+			<a style="width:500px" href="exec:minutes+=1 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\视频\小语音5.mp3'')">
+			<img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\金晨3.png" width="200px">
+			</a>
+			<a style="width:500px" href="exec:minutes+=1 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\视频\小语音6.mp3'')">
+			<img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\鞠婧祎3.png" width="200px">
+			</a>
+			<a style="width:500px" href="exec:minutes+=1 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\视频\小语音7.mp3'')">
+			<img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\金晨4.png" width="200px">
+			</a>
+			<a style="width:500px" href="exec:minutes+=1 & play(''images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\视频\小语音8.mp3'')">
+			<img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\鞠婧祎4.png" width="200px">
+			</a>
+			
+			</marquee>'
+			
+			'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\penthouse.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\视频\超级温柔.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			if chouma>=100000:
+				'<div class="buttonS"><a href="exec:minutes+=15 & chouma+=-100000 & gt ''VIPSeaviewRoom''">支付10万筹码进入</a></div>'
+			else
+				'<div class="buttonGr"><a href="exec:">支付1万筹码进入</a></div>'
+			end
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">当前荷官筹码：<<chouma>>点</p>'
+			'<p class="dajianshi3">当前胜利次数：<<shenglicishu>></p>'
+			'<p class="dajianshi3">这是赌场顶楼的VIP豪华酒店。</p>'
+			'<p class="dajianshi3">据说进入这里可以享受女荷官的服务。</p>'
+			'.</p>'
+		'</div>'
+	end
+	
+	
+
+
+
+
+
+
+
+--- язязяз黑з杰з克з ---------------------------------
+

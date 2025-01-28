@@ -1,0 +1,46 @@
+# 疗养院
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'ыя'
+	minutes+=5
+	a=0 & q=0
+	
+	
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		gs "Shopping_Mall_Map"
+	'</div>'
+	'<div class="show_menu">'
+			 if $MQ_Event_store=3:
+	         '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\MQ\vids\疗养院.webm" type=''video/webm;''></video></div>'
+			 else
+	         '<div class ="show_menu"><img src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\疗养院.jpg" width="854"></div>'
+			 end
+		'</div>'
+	'<div class="button_menu">'
+			if $MQ_Event_store=3 and MQ.KEY=0:'<div class="button"><a href="exec:minutes+=50 & $MQ.KEY=1 & $MQ_Event_store=4 & gt ''疗养院''">收下钥匙</a></div>'
+	        '<div class="button"><a href="exec:minutes+=5 & gt ''shopping_mall''">离开</a></div>'
+	
+		'</div>'
+	
+		'<div class="dialog_menu">'
+		if $MQ_Event_store=3:	
+	        '<p>我：老妈！</p>'
+			'<p><<$MQ.name>>：唉，注意称谓！要叫姐姐！哼，跑我这干嘛来了？我最近忙的很，这是家里的钥匙，你要是没事干，帮我去浇浇花，收拾收拾！！</p>'
+			'<p>我：好吧！</p>'
+		if $MQ_Event_store=4:
+			'<p><<$MQ.name>>：别忘了！</p>'
+		if $MQ.key=0 AND 4=>$MQ_Event_store>3:'<p><a href="exec:minutes+=15 & $MQ.KEY=1 & gt ''疗养院''">收下钥匙</a></p>'
+		    end 
+		    	'</div>'
+		    	END
+
+--- 疗养院 ---------------------------------
+

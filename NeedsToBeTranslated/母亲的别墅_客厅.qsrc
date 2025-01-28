@@ -1,0 +1,37 @@
+# 母亲的别墅_客厅
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'ыя'
+	minutes+=10
+	my.精力-=1
+	'<div id="right-column">'
+		gs"energy_judgment"
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		gs "母亲的别墅_地图"
+	'</div>'
+	if $ARGS[0] ="":
+		'<div class ="show_menu"><img src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\别墅客厅.jpg" width="854"></div>'
+	
+	'<div class="button_menu">'
+			if $MQ_Event_store=4:'<div class="button"><a href="exec:minutes+=50 & $MQ_Event_store=5 & gt ''母亲的别墅_客厅''">浇花，打扫卫生</a></div>'else'<div class="button"><a href="exec:minutes+=5 & gt ''母亲的别墅''">离开</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+		if $MQ_Event_store=4:	
+			'<p>我应该帮老妈去浇浇花，收拾收拾房间！！</p>'
+	    end
+		if $MQ_Event_store=5:
+			'<p>花浇好了，屋内打扫完顿时焕然一新（好累啊，去卧室休息会吧）</p>'
+		    end 
+		'</div>'
+		End
+	
+
+--- 母亲的别墅_客厅 ---------------------------------
+

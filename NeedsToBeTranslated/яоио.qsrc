@@ -1,0 +1,108 @@
+# яоио
+
+
+
+	if jujingyijishu>99:
+		jpg_on=1
+	end
+	
+	if saoleijifen>1000000:
+		jpg_on=1
+	end
+	
+	if hjkchouma>500000 and jjj>30:
+		jpg_on=1
+	end
+	
+	if hjkchouma>100000 and zhazha>4 and jjj>30:
+	    jpg_on=1
+	end
+	
+	if hjkchouma>100000 and abs<9:
+	    jpg_on=1
+	end
+	
+
+
+
+
+
+
+	
+	if hjkchouma>15000 and zhazhaa<99:
+	    jpg_on=1
+	end
+	
+	if hjkchouma>15000 and zhazhaa>99:
+	    jpg_on=1
+	end
+	
+	if ab>2:
+	    jpg_on=1
+	end
+	
+	if ab=0:
+	    jpg_on=1
+	end
+	
+	if jujingyijishu>99:
+		jpg_on=1
+	end
+	
+	if annarenwu>1 and иЛцЛЛ=0:
+		jpg_on=1
+	end
+	
+	if annarenwu>1 and иЛцЛЛ='':
+		jpg_on=1
+	end
+	
+	if annarenwu>1 and иЛцЛЛ>5:
+		jpg_on=1
+	end
+	
+	if xiaojurenwu>1 and иЛцЛЛ=0:
+		jpg_on=1
+	end
+	
+	if xiaojurenwu>1 and иЛцЛЛ='':
+		jpg_on=1
+	end
+	
+	if xiaojurenwu>1 and иЛцЛЛ>5:
+		jpg_on=1
+	end
+	
+	if chouma>0:
+		jpg_on=1
+	end
+	
+	if jujingyijishu>99:
+		jpg_on=1
+	end
+	
+	if $HYX.love>0:
+		jpg_on=1
+	end
+	
+	if $anna.love>0:
+		jpg_on=1
+	end
+	
+	if xianyuanerrenwu>10 or wumengmengrenwu>10 or shennanarenwu>10 or annarenwu>10 or xiaojurenwu >10:
+		jpg_on=1
+	end
+	
+	if saoleidejifen>0:
+		jpg_on=1
+	end
+	
+
+
+
+
+
+
+
+--- яоио ---------------------------------
+

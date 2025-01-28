@@ -1,0 +1,113 @@
+# 联排别墅
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	a=0 & q=0
+	$随机数=rand(0,100)
+	gs'ыя'
+	
+	if day=25 and month=12 and $times_of_day='':gt 'Group_Performance_Event','圣诞老人'
+	if $凯撒打工=1 and $times_of_day='' and 50<=$随机数 and $随机数<=55:gt 'task_event','狩猎路人'
+	if $看过平面图=1 and $随机数<=40:gt 'widow_event','二把手归来'
+	
+	
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				if $FXZ.key=1 :
+				'<a class="photo" data-title="<<$FXZ.name>>Home" href="exec:minutes+=5 & gt ''Vice_chancellors_house''"><img class="img_stretch" src="images\place\副校长家小图.jpg"></a>'
+				else
+				'<a class="photo" data-title="【锁住】" href="exec:"><img class="img_stretch" src="images\place\Vice_chancellors_house.jpg"></a>'
+				end
+			'</div>'
+			'<div class="action">'
+				if $MQ.key=0 or $MQ_Event_store=12 or $MQ_Event_store=13 :
+				'<a class="photo" data-title="【锁住】" href="exec:"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\母亲的别墅.jpg"></a>'			
+				else
+				'<a class="photo" data-title="<<$MQ.name>>Home" href="exec:minutes+=5 & gt ''母亲的别墅''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\母亲的别墅.jpg"></a>'
+				end
+			'</div>'
+			'<div class="action">'
+				if $NY.key=1:
+				'<a class="photo" data-title="<<$NY.name>>Home" href="exec:minutes+=5 & gt ''能源_事件'',''NY_家''"><img class="img_stretch" src="images\place\NY家小图.jpg"></a>'
+				else
+				'<a class="photo" data-title="【锁住】" href="exec:"><img class="img_stretch" src="images\place\NY家.jpg"></a>'
+				end
+			'</div>'
+			
+			'<div class="action">'
+				if $TalentApartment=0:'<a class="photo" data-title="【施工中】" href="exec: gt ''Group_Performance_Event'',''施工别墅''"><img class="img_stretch" src="images\place\施工别墅.jpg"></a>'
+				if $TalentApartment=1:'<a class="photo" data-title="TalentApartment" href="exec: gt ''TalentApartment''"><img class="img_stretch" src="images\place\TalentApartment.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				if $竞演开始=999:
+				'<a class="photo" data-title="Big_villa" href="exec:minutes+=5 & gt ''Big_villa''"><img class="img_stretch" src="images\place\竞演\别墅1.jpg"></a>'
+				else
+				'<a class="photo" data-title="【锁住】" ><img class="img_stretch" src="images\place\竞演\别墅0.jpg"></a>'
+				end
+			'</div>'
+			'<div class="action">'
+				if $YS.key=1:
+				'<a class="photo" data-title="<<$YS.name>>Home" href="exec:gt ''遗孀家''"><img class="img_stretch" src="images\place\YS家.jpg"></a>'
+				else
+				'<a class="photo" data-title="【锁住】" href="exec:"><img class="img_stretch" src="images\place\YS家.jpg"></a>'
+				end
+			'</div>'
+			'<div class="action">'
+				if $BTH事件链>=3:
+					'<a class="photo" data-title="圣本尼迪克特的家" href="exec:gt ''Student_group_event'',''BTH_家''"><img class="img_stretch" src="images\place\花家.jpg"></a>'
+				end
+			'</div>'
+			'<div class="action">'
+				if $FK事件链>=1:
+					if $FK死=0 or $HB.name="河北彩花(议员养女)":'<a class="photo" data-title="1600号" href="exec:gt ''FKhome'',''SML立绘''"><img class="img_stretch" src="images\NPC\JYB\pics\FKhome.jpg"></a>'else'<a class="photo" data-title="1600号" href="exec:gt ''FKhome2''"><img class="img_stretch" src="images\NPC\JYB\pics\FKhome2.jpg"></a>'
+				else
+					'<a class="photo" data-title="没有资格"><img class="img_stretch" src="images\NPC\JYB\pics\FKhome.jpg"></a>'
+				end
+			'</div>'
+			'<div class="action">'
+				$wqrdeqsx='зз'
+				$sggga1='梅'
+				$sggga2='丽'
+				$sggga3='莎'
+				if $meilisha.zhiwei=3 :
+					if hour>=8 and hour<=18:
+						'<a class="photo" data-title="<<$meilisha.name>>Home" href="exec:minutes+=5 & gt ''<<$saftqwer>><<$wqrtqtd>><<$wqrdeqsx>>''"><img class="img_stretch" src="images\NPC\YY\vids\a\a\a\a\a\b\a\a\a\a\b\a\a\a\a\b\a\a\a\a\b\a\a\a\a\home_melissa\home_melissa_day.jpg"></a>'
+					else
+						'<a class="photo" data-title="<<$meilisha.name>>Home" href="exec:minutes+=5 & gt ''<<$saftqwer>><<$wqrtqtd>><<$wqrdeqsx>>''"><img class="img_stretch" src="images\NPC\YY\vids\a\a\a\a\a\b\a\a\a\a\b\a\a\a\a\b\a\a\a\a\b\a\a\a\a\home_melissa\home_melissa_night.jpg"></a>'
+					end
+				else
+					if hour>=8 and hour<=18:
+						'<a class="photo" data-title="【<<$sggga1>><<$sggga2>><<$sggga3>>的家_锁住】" href="exec:"><img class="img_stretch" src="images\NPC\YY\vids\a\a\a\a\a\b\a\a\a\a\b\a\a\a\a\b\a\a\a\a\b\a\a\a\a\home_melissa\home_melissa_day.jpg"></a>'
+					else
+						'<a class="photo" data-title="【<<$sggga1>><<$sggga2>><<$sggga3>>的家_锁住】" href="exec:"><img class="img_stretch" src="images\NPC\YY\vids\a\a\a\a\a\b\a\a\a\a\b\a\a\a\a\b\a\a\a\a\b\a\a\a\a\home_melissa\home_melissa_night.jpg"></a>'
+					end
+				end
+			'</div>'
+		'</div>'
+	'</div>'
+	
+	'<div class ="show_menu"><img src="images\place\联排别墅_<<$times_of_day>>.jpg" width="854"></div>'
+	
+	'<div class="button_menu">'
+		'<div class="button" id="FButton"><a href="exec:minutes+=30 "onclick="checkSeason()">姐</a></div>'
+		'<div class="button" id="buttonA" style="display: none;"><a href="exec:gt $loc,$metka">消磨时间</a></div>'
+		'<div class="button" id="buttonB" style="display: none;"><a href="exec:$The_Sword_of_Damocles=4999970 & gt $loc,$metka">消磨时间</a></div>'
+		'<div class="button"><a href="exec:minutes+=5 & gt ''Residential_area''">离开</a></div>'
+	'</div>'
+	
+	'<div class="dialog_menu">'
+		'<p>高档的别墅区，是只有一定社会地位的人才能购买的住宅区。</p>'
+		if 百日宴!0 and day=13 and hour=13:'<p>·㊖一辆【百日宴大巴】停在了此地<a href="exec:gt ''Group_Performance_Event'',''富婆_Fuck_GM1''">-上车</a></p>'
+		if $MQ_Event_store=6 and hour=19 and week_day =6:'<p>·你是<<$主角姓名>>？？我是<<$MQ.name>>的妹妹<<$MQMM.name>>,你好...<a href="exec:gt ''aunt_event'',''相遇''">见面，送玫瑰花</a></p>'
+	'</div>'
+
+--- 联排别墅 ---------------------------------
+

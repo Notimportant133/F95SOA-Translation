@@ -1,0 +1,36 @@
+# язык11
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'ыя'
+	
+	if $ARGS[0]="":
+		$asfsafsa1 ='回'
+		$asfsafsa2 ='Home'
+		
+		'<div class ="show_menu">'
+			
+			'<img src="images/extracted_media/image_5181967060640143660.jpeg" width="854">'
+		
+		'</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''Home''"><<$asfsafsa1>><<$asfsafsa2>></a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			
+		'</div>'
+	end
+	
+
+
+
+
+
+
+
+--- язык11 ---------------------------------
+

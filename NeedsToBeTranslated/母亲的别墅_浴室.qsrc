@@ -1,0 +1,32 @@
+# 母亲的别墅_浴室
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'ыя'
+	
+	
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		gs'母亲的别墅_地图'
+	'</div>'
+	
+	'<div class ="show_menu"><img src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\母亲的别墅_浴室.jpg" width="854"></div>'
+	
+	
+	'<div class="button_menu">'
+		'<div class="button"><a href="exec:minutes+=30 & gt ''母亲的别墅''">离开</a></div>'
+	'</div>'
+	
+	
+	'<div class="dialog_menu">'
+		'<p>....</p>'
+	'</div>'
+	
+
+--- 母亲的别墅_浴室 ---------------------------------
+

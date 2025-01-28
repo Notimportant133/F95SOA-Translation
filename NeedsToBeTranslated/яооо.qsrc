@@ -1,0 +1,59 @@
+# яооо
+
+
+
+
+	
+	if $meilisha.lovenew>0:
+		jpg_on=1
+	end
+	
+	if $meilisha.love>600:
+		jpg_on=1
+	end
+	
+	if $meilisha.love>600:
+		jpg_on=1
+	end
+	
+	if $meilisha.love>100 and $meilisha.love<300:
+		jpg_on=1
+	end
+	
+	if $meilisha.love<100 and $meilisha.love>0:
+		jpg_on=1
+	end
+	
+	if $meilisha.lovenew>0:
+		jpg_on=1
+	end
+	
+	if jujingyijishu>99:
+		jpg_on=1
+	end
+	
+	if $meilisha.lovenew>0:
+		jpg_on=1
+	end
+	
+	if $meilisha.love>600:
+		jpg_on=1
+	end
+	
+	if $meilisha.love>100 and $meilisha.love<300:
+		jpg_on=1
+	end
+	
+	if $meilisha.love<100 and $meilisha.love>0:
+		jpg_on=1
+	end
+	
+
+
+
+
+
+
+
+--- яооо ---------------------------------
+
