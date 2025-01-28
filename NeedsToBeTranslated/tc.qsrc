@@ -1,0 +1,203 @@
+# tc
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		'<div class="actions_menu">'
+		
+			IF arrpos('$day_label','energy_day') = -1 and $item['энергетик']=0 and money >= 300:
+			'<div class="action">'
+			'<a class="photo" data-title="能量饮料 (300)" href="exec:minutes+=5 & $item[''энергетик''] +=1 & $day_label[]=''energy_day'' & money -= 300 & gt ''tc''"><img class="img_stretch" src="pic/items/energy.jpg"></a>'
+		
+		
+				'</div>'
+				
+			elseif arrpos('$day_label','energy_day') = -1 and $item['энергетик']=0 and money< 300:
+			'<div class="action">'
+			'<a class="photo" data-title="能量饮料 (300)" href="exec:minutes+=5 & gt ''tc''"><img class="img_stretch" src="pic/items/energy.jpg"></a>'
+		
+		
+				'</div>'	
+				
+			end
+			
+		if $item['еда']=0 and money >= 1000 and $gg['烹饪'] >= 30:
+				'<div class="action">'
+	
+	'<a class="photo" data-title="食物 (1000) " href="exec:minutes+=5  & $item[''еда''] +=1 & money -= 1000 & gt ''tc''"><img class="img_stretch" src="pic/items/eda.jpg"></a>'
+	
+		'</div>'
+	
+					
+			elseif $item['еда']=0 and money < 1000 and $gg['烹饪'] >= 30:
+				'<div class="action">'
+	
+	'<a class="photo" data-title="食物 (1000) " href="exec:minutes+=5 & gt ''tc''"><img class="img_stretch" src="pic/items/eda.jpg"></a>'
+	
+		'</div>'
+		end
+	
+		if $item['палатка']=0 and money >= 10000:
+		'<div class="action">'
+	'<a class="photo" data-title="帐篷 (10000) " href="exec:minutes+=5 & $item[''палатка''] +=1 & money -= 10000 & gt ''tc''"><img class="img_stretch" src="pic/items/palatka.jpg"></a>'
+	
+		'</div>'
+		elseif $item['палатка']=0 and money < 10000:
+		'<div class="action">'
+	'<a class="photo" data-title="帐篷 (10000) " href="exec:minutes+=5 & gt ''tc''"><img class="img_stretch" src="pic/items/palatka.jpg"></a>'
+	
+		'</div>'
+		end
+		
+		
+		if $item['купальник']=0 and money >= 1000 and $data['竞赛'] = 1 and $data['事件_elena_照片'] = 4:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="泳装 (1000) " href="exec:minutes+=5 & $item[''купальник''] +=1 & money -= 1000 & gt ''tc''"><img class="img_stretch" src="pic/items/swimsuit.jpg"></a>'
+	
+		'</div>'
+		end
+		if $item['купальник']=0 and money < 1000 and $data['竞赛'] = 1 and $data['事件_elena_照片'] = 4:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="泳装 (1000) " href="exec:minutes+=5 & gt ''tc''"><img class="img_stretch" src="pic/items/swimsuit.jpg"></a>'
+	
+		'</div>'
+		end
+	
+	
+	if $item['фотик']=0 and money >= 25000:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="照相机 (25000) " href="exec:minutes+=5 & $item[''фотик''] +=1 & money -= 25000 & gt ''tc''"><img class="img_stretch" src="pic/items/canon.jpg"></a>'
+	
+		'</div>'
+		
+		
+		elseif $item['фотик']=0 and money < 25000:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="照相机 (25000) " href="exec:minutes+=5 & gt ''tc''"><img class="img_stretch" src="pic/items/canon.jpg"></a>'
+	
+		'</div>'
+		end
+		
+		if $item['телескоп']=0 and money >= 5000:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="望远镜 (5000)" href="exec:minutes+=5 &  $item[''телескоп''] +=1 & money -= 5000 & gt ''tc''"><img class="img_stretch" src="pic/items/teleskop.jpg"></a>'
+	
+		'</div>'
+		
+	elseif $item['телескоп']=0 and money < 5000:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="望远镜 (5000)" href="exec:minutes+=5 & gt ''tc''"><img class="img_stretch" src="pic/items/teleskop.jpg"></a>'
+	
+		'</div>'
+	
+	end
+		
+		if $item['фото']=0 and  money >= 15000 and $data['竞赛'] = 1:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="灯光设备 (15000)" href="exec:minutes+=5 & $item[''фото''] +=1  & money -= 15000 & gt ''tc''"><img class="img_stretch" src="pic/items/cvet.jpg"></a>'
+	
+		'</div>'
+		elseif $item['фото']=0 and  money < 15000 and $data['竞赛'] = 1:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="灯光设备 (15000)" href="exec:minutes+=5 & gt ''tc''"><img class="img_stretch" src="pic/items/cvet.jpg"></a>'
+	
+		'</div>'
+	    end
+		
+		if $item['крем']=0 and money >= 500 and $character_Елена['关系'] >= 700:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="防晒霜 (500) " href="exec:minutes+=5 & $item[''крем''] +=1  & money -= 500 & gt ''tc''"><img class="img_stretch" src="pic/items/sun.jpg"></a>'
+	
+		'</div>'
+		elseif $item['крем']=0 and money < 500 and $character_Елена['关系'] >= 700:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="防晒霜 (500) " href="exec:minutes+=5 & gt ''tc''"><img class="img_stretch" src="pic/items/sun.jpg"></a>'
+	
+		'</div>'
+		end
+		
+		
+		if $item['красное']=0 and $item['синее']=0 and $character_Мария['关系'] >= 400 and money >= 40000 and $data['事件_妈妈_红酒'] = 1 and $data['事件_妈妈_礼服'] = 0:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="给妈妈买两条裙子 (40000) " href="exec:minutes+=5 & $item[''красное''] +=1 & $item[''синее''] +=1 & money -= 40000 & gt ''tc''"><img class="img_stretch" src="pic/items/dress.jpg"></a>'
+	
+		'</div>'
+		elseif $item['красное']=0 and $item['синее']=0 and $character_Мария['关系'] >= 400 and money < 40000 and $data['事件_妈妈_红酒'] = 1 and $data['事件_妈妈_礼服'] = 0:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="给妈妈买两条裙子 (40000) " href="exec:minutes+=5 & gt ''tc''"><img class="img_stretch" src="pic/items/dress.jpg"></a>'
+	
+		'</div>'
+		end
+			if $item['сумка']=0 and money >= 10000 and $data['события_сумка']  = 1:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="时尚手提包 (10000)" href="exec:minutes+=5 & $item[''сумка''] +=1  & money -= 10000 & gt ''tc''"><img class="img_stretch" src="pic/items/handbag.jpg"></a>'
+	
+		'</div>'
+		elseif $item['сумка']=0 and money < 10000 and $data['события_сумка']  = 1:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="时尚手提包 (10000) " href="exec:minutes+=5 & gt ''tc''"><img class="img_stretch" src="pic/items/handbag.jpg"></a>'
+	
+		'</div>'
+		end
+			if $item['стол']=0 and money >= 20000 and $item['profess_massaz'] = 1:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="按摩桌 (20000)" href="exec:minutes+=5 & $item[''стол''] +=1  & money -= 20000 & gt ''tc''"><img class="img_stretch" src="pic/items/table.jpg"></a>'
+	
+		'</div>'
+		elseif $item['стол']=0 and money < 20000 and $item['profess_massaz'] = 1:
+					'<div class="action">'
+		
+		'<a class="photo" data-title="按摩桌 (20000) " href="exec:minutes+=5 & gt ''tc''"><img class="img_stretch" src="pic/items/table.jpg"></a>'
+	
+		'</div>'
+		end
+	'</div>'
+	'</div>'
+		'<div class ="show_menu"><img src="pic/place/city/tc.jpg"></div>'
+		
+		
+		'</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=10 & gt ''city''">市中心</a></div>'
+		
+			
+		
+			
+		'</div>'
+		'<div class="dialog_menu">'
+			'The shopping mall '
+	'</div>'
+
+
+
+
+
+
+
+
+
+
+--- tc ---------------------------------
+

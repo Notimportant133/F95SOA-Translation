@@ -1,0 +1,289 @@
+# VIPSeaviewRoom
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'ыя'
+	a=0
+	q=0
+	
+	if jujingyijishu='':
+		jujingyijishu=0
+	end
+	
+	
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				'<a class="photo" data-title="地下交通" href="exec:minutes+=15 & gt ''subway''"><img class="img_stretch" src="images\place\subway.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="blackjack" href="exec:minutes+=5 & gt ''blackjack''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\blackjack.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="积分兑换处" href="exec:minutes+=5 & gt ''Kurohara_Shokai'',''游戏商店''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\游戏商店.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="顶楼VIP海景房" href="exec:minutes+=5 & gt ''blackjack'',''VIPSeaviewRoom''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\penthouse.jpg"></a>'
+			'</div>'
+			
+		'</div>'
+	'</div>'
+	
+	if $args[0]="":
+		heguansuijichouqu = RAND(1,7)
+		heguansuijichouqu1 = RAND(1,2)
+		'<div class ="show_menu">'
+			
+			'<marquee style="width:500px;color:red;position:absolute;" scrollamount="16" behavior=="alternate" direction="right">'
+			'<a href="exec:minutes+=1 & jujingyijishu=0 & gt ''VIPSeaviewRoom'',''鞠婧祎TYPE<<heguansuijichouqu>>_初始''">
+			<img src="images\NPC\鞠婧祎酒店<<RAND(1,7)>>.png" width="200px">
+			</a>
+			</marquee>'
+			
+			'<marquee style="width:500px;color:red;position:absolute;margin-top:200px" scrollamount="16" behavior=="alternate" direction="left">'
+			'<a href="exec:minutes+=1 & jujingyijishu=0 & gt ''VIPSeaviewRoom'',''金晨<<heguansuijichouqu1>>''">
+			<img src="images\NPC\金晨酒店<<RAND(1,10)>>.png" width="200px">
+			</a>
+			</marquee>'
+			
+			
+			'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\penthouse.jpg" width="854">'
+				'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\视频\擦玻璃.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Shokai''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">这是赌场顶楼的VIP豪华酒店。</p>'
+			'<p class="dajianshi3">您可以选择目前空闲的女荷官。</p>'
+			'.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="金晨1":
+		jujingyijishu+=1
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\金晨<<jujingyijishu>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom'',''金晨1''">下一个姿势</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom''">回大厅</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+
+			'<div id="VIP海景房金晨展示文字<<jujingyijishu>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="VIP海景房金晨展示文字<<jujingyijishu>>()">展示文字</a></div>'
+	        '<div id="VIP海景房金晨展示文字<<jujingyijishu>>" class="dajianshi3"></div>'
+			'.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="金晨2":
+		jujingyijishu+=1
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\仙儿媛\仙儿媛<<jujingyijishu>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom'',''金晨2''">下一个姿势</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom''">回大厅</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+
+			'<div id="仙儿媛展示文字<<jujingyijishu>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="仙儿媛展示文字<<jujingyijishu>>()">展示文字</a></div>'
+	        '<div id="仙儿媛展示文字<<jujingyijishu>>" class="dajianshi3"></div>'
+			'.</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="鞠婧祎TYPE1_初始":
+		jujingyijishu+=1
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\顶楼酒店\抽卡类型1\鞠婧祎<<jujingyijishu>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom'',''鞠婧祎TYPE1_初始''">下一个姿势</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom''">回大厅</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+
+			'<div id="VIP海景房鞠婧祎类型1展示文字<<jujingyijishu>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="VIP海景房鞠婧祎类型1展示文字<<jujingyijishu>>()">展示文字</a></div>'
+	        '<div id="VIP海景房鞠婧祎类型1展示文字<<jujingyijishu>>" class="dajianshi3"></div>'
+			'.</p>'
+		'</div>'
+	end
+	
+	gs 'яоио'
+	
+	if $args[0]="鞠婧祎TYPE2_初始":
+		jujingyijishu+=1
+		
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\顶楼酒店\抽卡类型2\鞠婧祎<<jujingyijishu>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom'',''鞠婧祎TYPE2_初始''">下一个姿势</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom''">回大厅</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+
+			'<div id="VIP海景房鞠婧祎类型2展示文字<<jujingyijishu>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="VIP海景房鞠婧祎类型2展示文字<<jujingyijishu>>()">展示文字</a></div>'
+	        '<div id="VIP海景房鞠婧祎类型2展示文字<<jujingyijishu>>" class="dajianshi3"></div>'
+			'.</p>'
+		'</div>'
+	end
+	
+	
+	
+	if $args[0]="鞠婧祎TYPE3_初始":
+		jujingyijishu+=1
+		
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\顶楼酒店\抽卡类型3\鞠婧祎<<jujingyijishu>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom'',''鞠婧祎TYPE3_初始''">下一个姿势</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom''">回大厅</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+
+			'<div id="VIP海景房鞠婧祎类型3展示文字<<jujingyijishu>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="VIP海景房鞠婧祎类型3展示文字<<jujingyijishu>>()">展示文字</a></div>'
+	        '<div id="VIP海景房鞠婧祎类型3展示文字<<jujingyijishu>>" class="dajianshi3"></div>'
+			'.</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="鞠婧祎TYPE4_初始":
+		jujingyijishu+=1
+		
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\顶楼酒店\抽卡类型4\鞠婧祎<<jujingyijishu>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom'',''鞠婧祎TYPE4_初始''">下一个姿势</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom''">回大厅</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+
+			'<div id="VIP海景房鞠婧祎类型4展示文字<<jujingyijishu>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="VIP海景房鞠婧祎类型4展示文字<<jujingyijishu>>()">展示文字</a></div>'
+	        '<div id="VIP海景房鞠婧祎类型4展示文字<<jujingyijishu>>" class="dajianshi3"></div>'
+			'.</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="鞠婧祎TYPE5_初始":
+		jujingyijishu +=1
+		
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\顶楼酒店\抽卡类型5\鞠婧祎<<jujingyijishu>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+		'<div class="button_menu">'
+				'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom'',''鞠婧祎TYPE5_初始''">下一个姿势</a></div>'
+				'<div class="button"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom''">回大厅</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+
+			'<div id="VIP海景房鞠婧祎类型5展示文字<<jujingyijishu>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="VIP海景房鞠婧祎类型5展示文字<<jujingyijishu>>()">展示文字</a></div>'
+	        '<div id="VIP海景房鞠婧祎类型5展示文字<<jujingyijishu>>" class="dajianshi3"></div>'
+			'.</p>'
+		'</div>'
+	end
+	
+	if chouma>0:
+		jpg_on=1
+	end
+	
+	if saoleidejifen>0:
+		jpg_on=1
+	end
+	
+	if jujingyijishu>99:
+		jpg_on=1
+	end
+	
+	if $HYX.love>0:
+		jpg_on=1
+	end
+	
+	if $anna.love>0:
+		jpg_on=1
+	end
+	
+	
+	if $args[0]="鞠婧祎TYPE6_初始":
+		jujingyijishu +=1
+		
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\顶楼酒店\抽卡类型6\鞠婧祎<<jujingyijishu>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom'',''鞠婧祎TYPE6_初始''">下一个姿势</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom''">回大厅</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+
+			'<div id="VIP海景房鞠婧祎类型6展示文字<<jujingyijishu>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="VIP海景房鞠婧祎类型6展示文字<<jujingyijishu>>()">展示文字</a></div>'
+	        '<div id="VIP海景房鞠婧祎类型6展示文字<<jujingyijishu>>" class="dajianshi3"></div>'
+			'.</p>'
+		'</div>'
+	end
+	
+	if xianyuanerrenwu>50 or wumengmengrenwu>50 or shennanarenwu>50 or annarenwu>50 or xiaojurenwu >50:
+		jpg_on=1
+	end
+	
+	if $args[0]="鞠婧祎TYPE7_初始":
+		jujingyijishu +=1
+		
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\顶楼酒店\抽卡类型7\鞠婧祎<<jujingyijishu>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom'',''鞠婧祎TYPE7_初始''">下一个姿势</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''VIPSeaviewRoom''">回大厅</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+
+			'<div id="VIP海景房鞠婧祎类型7展示文字<<jujingyijishu>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="VIP海景房鞠婧祎类型7展示文字<<jujingyijishu>>()">展示文字</a></div>'
+	        '<div id="VIP海景房鞠婧祎类型7展示文字<<jujingyijishu>>" class="dajianshi3"></div>'
+			'.</p>'
+		'</div>'
+	end
+
+--- VIPSeaviewRoom ---------------------------------
+

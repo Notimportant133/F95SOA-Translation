@@ -1,0 +1,44 @@
+# WandaMansion
+
+
+
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		'<div class="actions_menu">'
+			'<div class="action">
+				<a class="photo" data-title="回家" href="exec:minutes+=25 & gt ''Home''"><img class="img_stretch" src="images\place\回家_小图.jpg"></a>
+			</div>'
+			'<div class="action">
+				<a class="photo" data-title="Residential_area" href="exec:minutes+=15 & gt ''Residential_area''"><img class="img_stretch" src="images\place\居民区_<<$times_of_day>>.jpg"></a>
+			</div>'
+			'<div class="action">'
+				if $MQ_Event_store=9 OR $MQ_Event_store=10 OR $MQ_Event_store=11 or $MQMM.available=0:
+				'<a class="photo" data-title="【锁住】" href="exec:"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\A302.jpg"></a>'
+				else
+				'<a class="photo" data-title="A302-<<$MQMM.name>>Home" href="exec:minutes+=5 & gt ''A302''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\A302.jpg"></a>'
+				end
+			'</div>'
+	'</div>'
+	'</div>'
+	if $args[0]="":
+		'<div class ="show_menu"><img src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\WandaMansion.jpg" width="854"></div>'
+	
+	
+		'<div class="button_menu">'
+			
+			'<div class="button"><a href="exec:minutes+=5 & gt ''Residential_area''">离开</a></div>'
+			'<div class="button"><a href="exec:minutes+=5 & gt ''subway''">subway</a></div>'
+			'<div class="button"><a href="exec:minutes+=5 & gt ''shopping_mall''">shopping_mall</a></div>'
+		'</div>'
+	
+	
+		'<div class="dialog_menu">'
+			'<p>·万达公馆极致考究，集优择材打造殿堂级精装豪宅。</p>'
+			'<p>·只为皇家御用的紫铜大门，超高大堂，天然大理石人工水刀拼花,手工贴金马赛克，豪华装修。！</p>'
+		'</div>'
+	End
+
+--- WandaMansion ---------------------------------
+

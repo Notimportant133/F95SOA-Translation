@@ -1,0 +1,91 @@
+# sport_com
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		'<div class="actions_menu">'
+		   ' <div class="action">'
+				'<a class="photo" data-title="Fitness" href="exec:minutes+=5 & gt ''fitness''"><img class="img_stretch" src="pic/place/city/fitness/enter.jpg"></a>'
+			'</div>'
+			'<div class="action">'
+				'<a class="photo" data-title="Tennis " href="exec:minutes+=5 & gt ''tennis''"><img class="img_stretch" src="pic/place/city/tennis/enter.jpg"></a>'
+			'</div>'
+	
+						if $gg['能源'] >= 100 and $item['машина'] = 1 and $gg['酒精'] = 0:
+		'<div class="action">'
+						'<a class="photo" data-title="Car" href="exec:minutes+=5 & gt ''sport_com'',''car''"><img class="img_stretch" src="pic/items/car.jpg"></a>'
+					'</div>'
+					
+				
+					end
+		
+			
+			
+				if $args[0] = 'car':
+				
+					'<div class="action">'
+				'<a class="photo" data-title="Home" href="exec:minutes+=20 & gt ''home''"><img class="img_stretch" src="pic/place/home/home_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+				if hour >= 8 and hour <= 22:
+	       ' <div class="action">'
+				'<a class="photo" data-title="University" href="exec:minutes+=5 & gt ''univer''"><img class="img_stretch" src="pic/place/city/univer.jpg"></a>'
+			'</div>'
+	end
+				
+				'<div class="action">'
+				'<a class="photo" data-title="Park " href="exec:minutes+=5 & gt ''park''"><img class="img_stretch" src="pic/place/city/park_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+			
+	        '<div class="action">'
+				'<a class="photo" data-title="Shops" href="exec:minutes+=5 & gt ''tc''"><img class="img_stretch" src="pic/place/city/tc.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="Sport " href="exec:minutes+=5 & gt ''sport_com''"><img class="img_stretch" src="pic/place/city/sport_com.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="West area" href="exec:minutes+=5 & gt ''recreation''"><img class="img_stretch" src="pic/place/city/recreation_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+			    '<div class="action">'
+				'<a class="photo" data-title="South area " href="exec:minutes+=20 & gt ''southarea''"><img class="img_stretch" src="pic/place/city/valleyt_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+			if $gg['能源'] >= 100:
+			'<div class="action">'
+				'<a class="photo" data-title="Coast " href="exec:minutes+=20 & gt ''coast''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\water_park\coast_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+			end
+				end 
+			
+			
+	'</div>'
+	'</div>'
+		
+	
+	
+		
+	
+		'<div class ="show_menu"><img src="pic/place/city/sport_com.jpg"></div>'
+		
+	
+	
+		
+		'</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=10 & gt ''city''">市中心</a></div>'
+			
+			
+		'</div>'
+			'<div class="dialog_menu">'
+			'24小时健身俱乐部'
+	'</div>'
+
+--- sport_com ---------------------------------
+
