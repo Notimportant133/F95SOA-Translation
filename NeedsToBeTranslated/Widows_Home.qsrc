@@ -97,7 +97,7 @@
 	        '</div>'
 	
 		'<div class="button_menu">'
-			if $times_of_day!'':'<div class="buttonS"><a href="exec:a=2 & gt ''Widow_Event'',''YS_Fuck_安慰''">进去操她</a></div>'
+			if $times_of_day!'':'<div class="buttonS"><a href="exec:a=2 & gt ''Widow_Event'',''ys_fuck_comfort''">进去操她</a></div>'
 			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home''">离开</a></div>'
 		'</div>'
 	
@@ -127,7 +127,7 @@
 	end
 	
 	if $args[0]="客厅2":
-			if $主厨招呼=2:gt'Widow_Event','YS_Fuck_离婚'
+			if $主厨招呼=2:gt'Widow_Event','ys_fuck_divorce'
 	        '<div class="show_menu">'
 	             '<video preload="metadata" autoplay loop height="480">
 	             <source src="images\NPC\YS\vids\遗孀家客厅_<<$times_of_day>>.webm" type=''video/webm;''></video></div>'
@@ -175,9 +175,9 @@
 	        '</div>'
 	
 		'<div class="button_menu">'
-			'<div class="buttonGn"><a href="exec:gt ''Widow_Event'',''YS_Fuck_沙发''">我会支持你</a></div>'
-			if $警长招呼=2 and 报复对话=2:'<div class="buttonR2"><a href="exec:gt ''Widow_Event'',''YS_Fuck_同警长''">报警:谎称失窃</a></div>'
-			if $主厨招呼=3 and 报复对话=1:'<div class="buttonG4"><a href="exec:gt ''Widow_Event'',''YS_Fuck_股份''">代管她的20%股份</a></div>'
+			'<div class="buttonGn"><a href="exec:gt ''Widow_Event'',''ys_fuck_sofa''">我会支持你</a></div>'
+			if $警长招呼=2 and 报复对话=2:'<div class="buttonR2"><a href="exec:gt ''Widow_Event'',''ys_fuck_same_sheriff''">报警:谎称失窃</a></div>'
+			if $主厨招呼=3 and 报复对话=1:'<div class="buttonG4"><a href="exec:gt ''Widow_Event'',''ys_fuck_shares''">代管她的20%股份</a></div>'
 			if $ED报复=3 and 报复对话=3:'<div class="buttonR"><a href="exec:gt ''Final_Event'',''FK_GDX''">通风报信</a></div>'
 			if $ED报复=4 and 报复对话=3:'<div class="buttonR"><a href="exec:a=2 & gt ''Final_Event'',''FK_GDX''">去探监</a></div>'
 		'</div>'
