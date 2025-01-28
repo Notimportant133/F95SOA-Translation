@@ -1,0 +1,24 @@
+# Kurohara_Universal_Shards
+
+
+
+	changewannengsuipian=0
+	
+	changewannengsuipian = input('请输入您要兑换的选项，只有一次机会：1、小鞠碎片2、安娜碎片3、二十倍入场积分')
+	if changewannengsuipian =1:
+		xiaojusuipian+=1
+		play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/小菊钥匙.mp3')
+	elseif changewannengsuipian=2:
+		annasuipian+=1
+		play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/安娜碎片.mp3')
+	elseif changewannengsuipian=3:
+		hjkchouma+=20000
+		play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/两万筹码.mp3')
+	else
+		play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/res/请输入大于0的数量.mp3')
+	end
+	
+	
+
+--- Kurohara_Universal_Shards ---------------------------------
+

@@ -1,0 +1,48 @@
+# Generic_Overnight
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	a=0
+	q=0
+	my.精力 = mymax[精力]
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu">'
+		 
+		'</div>'
+	'</div>'
+	
+
+
+
+
+
+
+
+	'<div class="show_menu">'
+			'<img src="images\place\睡觉.jpg" width="854">'
+	'</div>'
+	
+	'<div class="button_menu">'
+		if hour>=8:
+		'<div class="button"><a href="exec:minutes+=1440 & hour=8 & gt ''Residential_Area''">醒来</a></div>'
+		else
+		'<div class="button"><a href="exec:hour=8  & gt ''Residential_Area''">醒来</a></div>'
+		end
+	'</div>'
+	
+	
+	'<div class="dialog_menu">'
+		'<p>进入了甜美的梦乡....</p>'
+	'</div>'
+	
+	 
+
+--- Generic_Overnight ---------------------------------
+

@@ -1,0 +1,238 @@
+# GS_First
+
+
+
+	
+	$clock['小时'] =8
+	$clock['地位']='on'
+	$gg['年龄'] = 19
+	$gg['激励'] = 40
+	$gg['身材'] = 85
+	$gg['能源'] = 1000
+	$gg['烹饪'] = 0
+	$gg['大学课程'] = 1
+	$gg['成绩'] = 0
+	$gg['会议'] = 0
+	$gg['酒精'] = 0
+	$gg['做快递员'] = 0
+	$gg['网球'] = 0
+	$gg['天文学'] = 0
+	$gg['智力'] = 0
+	$gg['统治力'] = 0
+	$gg['舔阴'] = 0
+	$gg['做爱'] = 0
+	
+	
+	$week_label[]='ava_grade'
+	$week_label[]='test'
+	$week_label[]='mysor'
+	
+	
+	
+	
+	
+	
+	$data['гг_逃学'] = 0
+	$data['课程照片'] = 0
+	$data['竞赛'] = 0
+	
+	
+	
+	$data['第一个对话'] = 0
+	$data['第一个对话_姐妹'] = 0
+	
+	$data['事件_妈妈_礼服'] =0
+	$data['事件_妈妈_红酒'] = 0
+	$data['争吵_妈妈_照片'] = 0
+	$data['争吵_妈妈_阿姨'] = 0
+	$data['争吵_妈妈_照片'] = 0
+	$data['补偿'] = 0
+	$data['妈妈阿姨按摩'] = 0
+	
+	
+	$data['事件_妹妹_野餐'] = 0
+	$data['事件_妹妹_电视'] = 0
+	$data['事件_妹妹_闷热4'] = 0
+	$data['事件_妹妹_闷热2'] = 0
+	
+	$data['事件_妹妹_porn']  = 0
+	$data['妹妹_sex']  = 0
+	$data['事件_妹妹_对话'] = 0
+	$data['姐妹梦'] =0
+	
+	
+	$data['事件_elena_性爱'] = 0
+	$data['事件_elena_晚餐'] = 0
+	$data['事件_elena_肛交'] = 0
+	$data['事件_elena_吸'] = 0
+	$data['事件_elena_照片'] = 0
+	$data['在大自然中休息'] = 0
+	$data['事件_elena_时髦'] = 0
+	$data['事件_elena_亲吻']=0
+	$data['事件_elena_gg_爱抚'] = 0
+	$data['事件_elena_n_性爱'] = 0
+	$data['事件_elena_奶油'] = 0
+	$data['事件_elena_舔阴_子弹'] = 0
+	$data['事件_elena_口交_池'] = 0
+	$data['事件_elena_舔阴_洗澡'] = 0
+	$data['事件_elena_口交_洗澡'] = 0
+	$data['事件_elena_口交_野餐'] = 0
+	$data['事件_elena_舔阴_野餐'] = 0
+	$data['事件_elena_舔阴_早上洗澡'] =0
+	$data['事件_elena_口交_餐厅'] = 0
+	$data['事件_elena_舔阴_大厅'] = 0
+	$data['事件_elena_舔阴_卧室'] = 0
+	$data['事件_elena_修脚'] = 0
+	$data['事件_elena_对话'] = 0
+	$data['事件_elena_对话_days'] = 0
+	$data['事件_elena_第一次做爱'] = 0
+	$data['变态'] = 0
+	$data['事件_elena_选项1'] = 0
+	$data['事件_elena_选项2'] = 0
+	
+	$data['开始_对话_安雅'] = 0
+	$data['事件_安雅_证书'] = 0
+	$data['安雅_笑话'] = 0
+	$data['安雅_水盐'] = 0
+	$data['初恋'] = 0
+	
+	$data['开始对话_阿纳斯塔西娅'] = 0
+	$data['事件_妈妈_安雅_拖钓'] = 0
+	$data['事件_妈妈_安雅'] = 0
+	$data['事件_妈妈_性爱'] = 0
+	
+	
+	$data['事件_Eva_照片'] = 0
+	$data['事件_Eva_淋浴'] = 0
+	$data['事件_Eva_闷热'] = 0
+	$data['事件_Eva_闷热2'] = 0
+	$data['事件_Eva_洗澡'] = 0
+	$data['事件_Eva_胸部'] = 0
+	$data['事件_Eva_按摩'] = 0
+	$data['事件_Eva_检查'] = 0
+	$data['Eva_成员'] = 0
+	$data['Eva_SEX'] = 0
+	$data['事件_Eva_不用假JJ'] = 0
+	$data['Eva_SEX_数量'] = 0
+	
+	$data['事件_维卡_寻求'] = 0
+	$data['事件_维卡_开放'] = 0
+	$data['事件_维卡_手机'] = 0
+	$data['事件_维卡_特芬德']  = 0
+	$data['事件_维卡_打屁股']  = 0
+	$data['事件_维卡_晚上']  = 0
+	$data['事件_维卡_大厅']  = 0
+	$data['事件_维卡_选择']  = 0
+	
+	 $data['开始对话_娜塔莉亚'] = 0
+	 
+	$data['开始对话_玛莎'] = 0 
+	$data['玛莎_网球'] = 0
+	$data['玛莎_亲吻'] = 0
+	$data['玛莎_手'] = 0 
+	$data['玛莎_照片'] = 0 
+	$data['玛莎_德尔'] = 0 
+	$data['玛莎_瓦'] = 0 
+	
+	$data['事件_双胞胎'] = 0
+	$data['标签_双胞胎'] = 0
+	$data['gg_sex_fuse'] = 0
+	
+	$data['讲话'] = 0
+	
+	$characters[] = '玛丽亚'
+	$character_Мария['姓'] = '狄金森-主角家'
+	$character_Мария['中间名字'] = ''
+	$character_Мария['年龄'] = 41
+	$character_Мария['关系'] = 400
+	$character_Мария['堕落'] = 200
+	
+	
+	
+	$characters[] = '朱莉娅'
+	$character_Юля['姓'] = '狄金森-主角家'
+	$character_Юля['中间名字'] = ''
+	$character_Юля['年龄'] = 18
+	$character_Юля['关系'] = 350
+	$character_Юля['堕落'] = 400
+	
+	
+	
+	$characters[] = '埃琳娜'
+	$character_Елена['姓'] = ''
+	$character_Елена['中间名字'] = ''
+	$character_Елена['年龄'] = 44
+	$character_Елена['关系'] = 550
+	$character_Елена['堕落'] = 400
+	
+	
+	
+	$characters[] = 'Еva'
+	$character_Ева['姓'] = '亚历山德罗夫娜'
+	$character_Ева['中间名字'] = '亚历山德罗夫娜'
+	$character_Ева['年龄'] = 39
+	$character_Ева['关系'] = 300
+	$character_Ева['堕落'] = 600
+	
+	
+	
+	
+	$characters[] = '安雅'
+	$character_Аня['姓'] = ''
+	$character_Аня['中间名字'] = ''
+	$character_Аня['年龄'] = 18
+	$character_Аня['关系'] = 300
+	$character_Аня['堕落'] = 600
+	
+	
+	
+	
+	$characters[] = '阿纳斯塔西娅'
+	$character_Анастасия['姓'] = ''
+	$character_Анастасия['中间名字'] = '巴甫洛夫娜'
+	$character_Анастасия['年龄'] = 49
+	$character_Анастасия['关系'] = 300
+	$character_Анастасия['堕落'] = 300
+	
+		
+	$characters[] = '维卡'
+	$character_Вика['年龄'] = 19
+	$character_Вика['关系'] = 1000
+	$character_Вика['堕落'] = 750
+	
+	$characters[] = '大沙'
+	$character_Даша['年龄'] = 19
+	$character_Даша['关系'] = 800
+	$character_Даша['堕落'] = 600
+	
+	$characters[] = '娜塔莎'
+	$character_Наташа['年龄'] = 19
+	$character_Наташа['关系'] = 800
+	$character_Наташа['堕落'] = 700
+	
+	$characters[] = '玛莎'
+	$character_Маша['年龄'] = 18
+	$character_Маша['关系'] = 500
+	$character_Маша['堕落'] = 200
+	
+	$characters[] = '路易丝'
+	$character_Луиза['年龄'] = 39
+	$character_Луиза['关系'] = 700
+	$character_Луиза['堕落'] = 500
+	
+	bjarrive=0
+	
+	$godvoice=0
+	
+	
+
+
+
+
+
+
+	
+
+
+--- GS_First ---------------------------------
+

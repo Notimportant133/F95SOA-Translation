@@ -1,0 +1,32 @@
+# Guide_Sponsors
+
+
+
+	cls
+	gs'Menu_Time_Calc'
+	
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Hidden'
+		gs'Menu_Act_Hidden'
+	'</div>'
+	
+	
+	if $args[0] ='':
+		'<div class="show_menu">'
+			'<img src="images\place\解锁.jpg" width="854">'
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec: gt $loc,$metka">离开</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p><span class="bold"><font color="#2E8B57">你是谁？YUKU还是谁？你千辛万苦地来到这个界面是为了什么呢？</p>'
+		'</div>'
+	End
+	
+	
+
+
+--- Guide_Sponsors ---------------------------------
+

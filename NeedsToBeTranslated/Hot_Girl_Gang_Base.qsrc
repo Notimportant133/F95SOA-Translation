@@ -1,0 +1,42 @@
+# Hot_Girl_Gang_Base
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	
+	a=0
+	q=0
+	
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				if $HZ_Event_货=1:'<a class="photo" data-title="进入辣妹帮" href="exec:minutes+=5 & gt ''Hot_Girl_Gang''"><img class="img_stretch" src="images\place\辣妹帮一楼.jpg"></a>'
+				'<a class="photo" data-title="Outskirts" href="exec:minutes+=5 & gt ''Outskirts''"><img class="img_stretch" src="images\place\郊外_<<$times_of_day>>.jpg"></a>'
+			'</div>'
+		'</div>'
+	'</div>'
+	
+	
+	
+	
+	'<div class ="show_menu"><img src="images\place\辣妹帮基地.jpg" width="854"></div>'
+	
+	'<div class="button_menu">'
+		
+		if $HZ_Event_货=1 and 每日拿货=0:'<div class="buttonP"><a href="exec:minutes+=15 & 每日拿货=1 & 新鲜食材+=1 &gt ''Hot_Girl_Gang_Base''">拿走货物</a></div>'
+		'<div class="button"><a href="exec:minutes+=15 & gt ''Subway''">回城里</a></div>'
+	'</div>'
+	
+	'<div class="dialog_menu">'
+		'<p>·郊外的一栋别墅，建筑物上的粉色兔子好像似曾相识。</p>'
+		if $HZ_Event_货=1 and 每日拿货=0:'<p>·地上放着一大箱新鲜的食物，地址是妹妹上课的大学，收货人是<<$HZ.name>>。</p>'
+	'</div>'
+
+--- Hot_Girl_Gang_Base ---------------------------------
+

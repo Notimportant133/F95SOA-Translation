@@ -1,0 +1,35 @@
+# Generic_Item_Info
+
+
+
+	cls
+	gs'Menu_Time_Calc'
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Hidden'
+		gs'Menu_Act_Hidden'
+		'<div class="buttonGn3"><a href="exec:gs ''Generic_Mods'',''修改物品数量'',$当前物品名 & gs ''Generic_Item_Info'',$当前物品名,$当前物品数量,$当前物品描述">数量✙10</a></div>'
+	'</div>'
+	
+	
+	'<div id="left-column">'
+
+		'<div class="charac_gg_foto"><img src="images\V70版本\items\<<$args[0]>>.jpg" width="300" height="400"></div>'	
+		'<p><span class="bold">名称：<<$args[0]>></p>'
+		'<p><span class="bold">数量：<<$args[1]>></p>'
+		'<p><span class="bold"><<$args[2]>></p>'
+		$当前物品名 = $args[0]
+		$当前物品数量 = $args[1] + 10
+		$当前物品描述 = $args[2]
+	'</div>'
+	
+	
+	
+	
+	
+	'<div class="options_back"><a href="exec:gt''Menu_Items''"><div class="settings_back_menu"></div></a></div>'
+	
+
+--- Generic_Item_Info ---------------------------------
+

@@ -1,0 +1,90 @@
+# Home
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	a=0 & q=0
+	gs'Yya'
+	'<div id="right-column">'
+		gs"Energy_Check"
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		gs "Home_Map"
+	'</div>'
+	
+	$wqrtqtd='ык'
+	
+	
+	if $OX.room=0 and $JZ_Event_rape>=100:gt 'Idol_Event','OX_Event_love'
+	if hour=12 and week_day >=6:gt 'Stepmother_Event','吃饭'
+	
+	
+	if $ARGS[0]="":
+		'<div class ="show_menu">'
+			
+			'<div style="width:500px;color:red;position:absolute;">'
+			
+			'<video preload="metadata" autoplay height="480" >'
+			'<source src="images\the_dev_is_stupid\e\视频\家<<RAND(1,3)>>.webm" type=''video/webm;''></video>'
+			
+			'</div>
+			
+	
+		</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=5 & gt ''Home''">消磨时间</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=5 & gt ''Home'',''全家福''">❤全家福❤</a></div>'
+			if week_day=3 and hour =12 and rand(1,3)=2 and bjarrive=0:
+				'<div class="buttonS"><a href="exec:hour+=1 & gt ''Cousins_Arrival'',''表姐要来''">表姐要来</a></div>'
+			elseif week_day=3 and hour =12 and rand(1,3)=2 and bjarrive=1:
+				'<div class="buttonS"><a href="exec:hour+=1 & gt ''Cousins_Arrival'',''表姐来了''">表姐来了</a></div>'
+			end
+			if $松本事件链=9:'<div class="buttonP"><a href="exec:minutes+=5 & gt ''Matsumoto_Event'',''补习前''">微妙的气氛</a></div>'
+		'</div>'
+	
+	
+		'<div class="dialog_menu">'
+			'<p>大厅干净整洁，最终版本游戏中进行了大量防作弊设置，作弊后会直接存档作废</p>
+			<p class="dajianshi3">V70是最终版本：游戏中进行了大量防作弊设置，作弊后会直接<span style="font-size:30px">存档作废</span></p>'
+			
+		'</div>'
+	end
+	
+	$ыкnp="5"
+
+	$absolu='说'
+	
+	if $ARGS[0]="全家福":
+		'<div class ="show_menu"><img src="images\place\全家福.jpg" width="854"></div>'
+	
+	
+	
+		'<div class="button_menu">'
+			if  JM_JJ>=5 and JM_MM>=5 and MM_JJ>=5:
+			'<div class="buttonS"><a href="exec:minutes+=5 & gt ''Lobby_Event'',''Fuck_全家福''">❤家庭群交趴❤</a></div>'
+			end
+			'<div class="button"><a href="exec:minutes+=5 & gt ''Home''">消磨时间</a></div>'
+		'</div>'
+	
+	
+		'<div class="dialog_menu">'
+			'<p>看着母女三人的合照......真是温馨的一家人。。</p>'
+			'<p>我：没有血缘关系的话，也不是不可以...努努力，照片上的人都会成为我的..女人！</p>'
+			'<p>突然一个邪恶的种子在颅内萌芽了。</p>'
+			'<p>✦✧✩✦✧✩✦✧✩✦✧✩✦✧✩</p>'
+			'<p>✩   <<JM_JJ>>/5次    ✧    <<MM_JJ>>/5次     ✦    <<JM_MM>>/5次      ✩</p>'
+			'<p>✦✧✩✦✧✩✦✧✩✦✧✩✦✧✩</p>'
+		'</div>'
+	end
+	
+
+
+	
+	 
+
+--- Home ---------------------------------
+

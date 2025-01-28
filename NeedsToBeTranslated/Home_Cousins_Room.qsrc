@@ -1,0 +1,209 @@
+# Home_Cousins_Room
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	a=0
+	q=0
+	
+	if BJ.shenfenjiemi='':
+		BJ.shenfenjiemi=0
+	end
+	
+	if BJ.heiyuanshanghuikaiqi='':
+		BJ.heiyuanshanghuikaiqi=0
+	end
+	
+	my.夜袭忍耐度=5
+	my.操表姐忍耐度=3
+	
+	suiji=rand(0,2)
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		gs'Home_Map'
+	'</div>'
+	
+	if $args[0]="":
+		'<div class ="show_menu">'
+			if BJ.jindu>=3 and week_day>=6 and hour >=8 and hour <=19 and rand(1,3)=2:
+				'<a style="position:absolute;margin-top:370px;margin-left:50px;" href="exec:minutes+=1 & gt ''Ninja_Event'',''房间隐秘''">
+				<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\光盘.png" width="50px">
+				</a>'
+			end
+			'<img src="images\the_dev_is_stupid\e\房间\表姐房间.jpg" width="854">'
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=30 & gt ''Home_Cousins_Room''">消磨时间</a></div>'
+			'</div>'
+		'<div class="dialog_menu">'
+		'<p class="dajianshi">空无一人....</p>'
+		'</div>'
+	End
+	
+	if $args[0]="房间对话":
+			'<div class="show_menu">'
+				if hour<=23 and hour >=21:
+					'<img src="images\the_dev_is_stupid\e\房间\表姐在房间.jpg" width="854">'
+				elseif  hour>23  or hour <8 :
+					'<img src="images\the_dev_is_stupid\e\房间\表姐房间睡觉.jpg" width="854">'
+				else
+					'<img src="images\the_dev_is_stupid\e\房间\表姐房间.jpg" width="854">'
+				end
+			'</div>'
+	
+		'<div class="button_menu">'
+		 '<div class="buttonS1"><a href="exec:$聊天=''BJ''& $出去的位置 = ''Home'' & addlove=0 &addbad=0 & gt ''Generic_Chat''">互动</a></div>'
+		if 表姐野餐次数>98 and week_day=6 and hour =21 and rand(1,3)=2:
+			'<div class="button"><a href="exec:gt ''Home_Cousins_Room'',''讨论野餐''">讨论野餐</a></div>'
+		end
+		
+		if BJ.jindu>=2 and week_day>5 and hour =21 and rand(1,3)=2:
+			'<div class="buttonS4"><a href="exec:minutes+=30 &  gt ''Cousin_Event'',''强奸1''">强奸</a></div>'
+		end
+		
+		if BJ.jindu>=2 and week_day>5 and hour =21 and rand(1,5)=2:
+			'<div class="buttonS4"><a href="exec:minutes+=30 &  gt ''Cousin_Event'',''纯爱转变''">被人渣威胁</a></div>'
+		end
+		'</div>'
+	
+		'<div class="dialog_menu">'
+		'<p class="dajianshi">我表姐的房间，干净的一尘不染。对我来说太干净了，但我表姐喜欢这样。</p>'
+		'<p class="dajianshi">我决定和我表姐谈谈，我也立刻看了一眼她的短裙，在那下面是一条很性感的网洞丝袜...</p>'
+		'</div>'
+	End
+	
+	
+	if $args[0]="讨论野餐":
+			'<div class="show_menu">'
+				'<img src="images\the_dev_is_stupid\e\房间\表姐在房间.jpg" width="854">'
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:gt ''Home_Cousins_Room'',''继续讨论野餐''">继续讨论野餐</a></div>'
+			'<div class="button"><a href="exec:minutes+=10 & gt ''Home''">离开</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+		'<p class="dajianshi3"><span style="color:red">表姐，我……我要追你。以后……以后我就是，你的男人。</span></p>'
+		'<p class="dajianshi3"><span style="color:red"><<$主角姓名>>，你是不是又欠揍了？</span></p>'
+		'<p class="dajianshi3"><span style="color:red">我看着鼓囊囊的胸部将表姐的T恤给顶了起来，还能够看到她深深的乳沟。</span></p>'
+		'<p class="dajianshi3">不入虎穴焉得虎子！出乎意料的我的脑海里浮现出这句话。</p>'
+		'<p class="dajianshi3">最终我的欲望战胜了我的大脑，我迅速的紧紧抓住了姐姐的奶子，仿佛没有听到姐姐对我说的话...</p>'
+		'<p class="dajianshi3"><span style="color:red">弟弟，你变得越来越淘气了！</span>她说了一句，却没有做任何抵抗...</p>'
+		'<p class="dajianshi3">现在一切都将改变，我想着，既然她不反对我摸她的奶子，这就说明主动权已经掌握在我的手里了。</p>'
+		'<p class="dajianshi3"><span style="color:red"><<$主角姓名>>，够了！ </span>她提高语气并用力推开了我。</p>'
+		'<p class="dajianshi3"><span style="color:red">不要得寸进尺，不知好歹...</span>她接着说但语气已经缓和了很多。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="继续讨论野餐":
+			'<div class="show_menu">'
+				'<img src="images\the_dev_is_stupid\e\房间\表姐在房间.jpg" width="854">'
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:gt ''Home_Cousins_Room'',''野餐照片威胁''">野餐照片威胁</a></div>'
+			'<div class="button"><a href="exec:minutes+=10 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+		'<p class="dajianshi3"><span style="color:red">这是不对的...</span>她说着转身离开了我。</p>'
+		'<p class="dajianshi3"><span style="color:red">额...野餐时我们明明谈的很愉快！</span>我说道。</p>'
+		'<p class="dajianshi3"><span style="color:red">那是...我不记得了，总而言之，这件事就到此为止了！</span>她坚定地说。</p>'
+		'<p class="dajianshi3"><span style="color:red">慢着！调戏完了我又不让我碰？你觉得勾引完了我我能当做什么事都没发生吗？！</span>我抱怨道。</p>'
+		'<p class="dajianshi3"><span style="color:red">特别是你几乎都要扑到我身上了！</span>我补充说。</p>'
+		'<p class="dajianshi3"><span style="color:red">那是个错误，我喝太多了失去了理智，总之那不是我想的...</span>姐姐辩解道。</p>'
+		'<p class="dajianshi3"><span style="color:red">对不起，弟弟，你不是我的菜！</span><<$BJ.name>>总结道。</p>'
+		'<p class="dajianshi3">这真是个婊子，把我的欲火勾起来，又让我一个人在这忍受！！</p>'	
+		'<p class="dajianshi3"><span style="color:red"><<$主角姓名>>，你为什么不说话？不用担心，这不是世界末日！</span>我平静了下来。</p>'
+		'<p class="dajianshi3">没错！我手里还有野餐时的照片，我知道它会派上用场的，如果姐姐敬酒不吃，那就只能用照片试试了！</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="野餐照片威胁":
+			'<div class="show_menu">'
+				'<img src="images\the_dev_is_stupid\e\房间\野餐威胁照片.jpg" width="854">'
+			'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:gt ''Cousin_Event'',''强奸1''">强奸</a></div>'
+			'<div class="button"><a href="exec:minutes+=10 & gt ''Home''">离开</a></div>'
+		'</div>'
+		
+		'<div class="dialog_menu">'
+		'<p class="dajianshi3"><span style="color:red"><<$BJ.name>>，你还记得那张照片吗？</span>我笑着问道。</p>'
+		'<p class="dajianshi3"><span style="color:red">什么？我告诉你了，我喝醉了，几乎什么都不记得了！</span>她提醒道。</p>'
+		'<p class="dajianshi3">我拿出我的手机，给她看野餐时，我们激烈性爱后拍摄的照片...</p>'	
+		'<p class="dajianshi3"><span style="color:red">哦不！你怎么能这么做？！</span>她开始紧张起来。</p>'
+		'<p class="dajianshi3"><span style="color:red">玩弄我的感情，你以为我是你的玩具吗？</span>我说道。</p>'
+		'<p class="dajianshi3"><<$BJ.name>>皱起了眉头，抓住我的手企图夺过手机，但我没有松手。</p>'	
+		'<p class="dajianshi3"><span style="color:red">别费心了！我还有备份！电脑里，优盘里，甚至网盘里都被我存上了！</span>我说道。</p>'
+		'<p class="dajianshi3"><<$BJ.name>>然后表姐慢慢松开了手。</p>'	
+		'<p class="dajianshi3"><span style="color:red">你不能向别人展示这张照片！</span>她生气地说。</p>'	
+		'<p class="dajianshi3"><span style="color:red">嗯，这取决于你。你觉得如果这张照片流传到大学里会怎么样？你肯定会名誉扫地，甚至会被学校开除！</span></p>'
+		'<p class="dajianshi3"><span style="color:red">那些被你欺骗过感情的有钱人家的傻瓜也不会放过你的！</span></p>'
+		'<p class="dajianshi3"><span style="color:red">你不能这么做！我是你的表姐！</span>她企图唤醒我的良心。</p>'
+		'<p class="dajianshi3"><span style="color:red">可是我并没有把你当成我的表姐！说实话，学校改变了我，我意识到，如果有些事情你不自己去抓住它，那么你就永远不会有机会！</span>我说道。</p>'
+		'<p class="dajianshi3"><span style="color:red">你就是个混蛋！</span>她喊道。</p>'
+		'<p class="dajianshi3"><span style="color:red">这听起来像是赞美！</span>我笑着说。</p>'
+		'<p class="dajianshi3"><span style="color:red">好了，我希望你现在能知道我想从你身上得到什么...</span>我继续说。</p>'
+		'<p class="dajianshi3"><span style="color:red">你们男人想要的都是一样的！</span>她生气的回答。</p>'
+		'<p class="dajianshi3"><span style="color:red">那就来吧，不用我再提醒你了吧？野餐的时候我们做的那么疯狂，让我们继续吧！</span>我说道。</p>'
+		'<p class="dajianshi3"><<$BJ.name>>低下了头。</p>'	
+		'<p class="dajianshi3"><span style="color:red">你真的变了...</span>她低着头说道。</p>'
+		'<p class="dajianshi3"><span style="color:red">那是当然！</span>我自信的说。</p>'
+		'<p class="dajianshi3"><span style="color:red">你感到失落吗...</span>我试图让她平复心情。</p>'
+		'<p class="dajianshi3"><span style="color:red">你永远是我心爱的表姐，我不会让你伤心的！</span>我鼓励她。</p>'
+		'<p class="dajianshi3">她的眼神变得有些不一样了。</p>'	
+		'<p class="dajianshi3"><span style="color:red">好吧！这是另一回事，别担心，没有人会知道的，这将是我们俩的小秘密！</span>我继续说。</p>'
+		'<p class="dajianshi3"><span style="color:red">好吧好吧，你说怎样就怎样吧，但我仍然讨厌你...</span>她终于放弃了。</p>'
+		'<p class="dajianshi3"><span style="color:red">随便你。</span>我说道。</p>'
+		'</div>'
+		$BJ.love+=-9999
+		$BJ.bad+=1000
+		$godvoice="表姐_2"
+		BJ.jindu=2
+	end
+	
+	
+	
+	if $args[0]="Sleep":
+			'<div class="show_menu">'
+				if $bj.love<100 or $bj.bad<100:
+					 '<img class="img_stretch" src="images\the_dev_is_stupid\e\房间\表姐房间睡觉.jpg">'
+				else
+					'<video preload="metadata" autoplay loop height="480">
+					 <source src="images\the_dev_is_stupid\e\视频\表姐卧室\sleep_1.webm" type=''video/webm;''></video></div>'
+				end
+			'</div>'
+	
+		'<div class="button_menu">'
+		if BJ.jindu>=2:
+
+		end
+		if BJ.jindu>=3:
+		'<div class="button"><a href="exec:minutes+=30 & a=5 &gt ''Cousin_Event'',''BJ_Fuck_夜袭''">叫醒她</a></div>'
+		end
+		'<div class="button"><a href="exec:minutes+=5 & gt ''Home''">离开</a></div>'
+		'</div>'
+	
+	
+		'<div class="dialog_menu">'
+		'<p class="dajianshi3">我表姐的房间，干净的一尘不染。对我来说太干净了，但我表姐喜欢这样。</p>'
+		'<p class="dajianshi3">·我的表姐睡得很甜...</p>'
+		'</div>'
+	End
+	
+	
+	
+	
+	 
+
+--- Home_Cousins_Room ---------------------------------
+

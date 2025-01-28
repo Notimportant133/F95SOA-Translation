@@ -1,0 +1,45 @@
+# Generic_Reading
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	a=0 & q=0
+	my.精力-=25
+	
+	'<div id="right-column">'
+		gs'Energy_Check'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		gs'University_Map'
+	'</div>'
+	
+	'<div class ="show_menu"><img src="images\place\看书.jpg" width="854"></div>'
+	'<div class="button_menu">'	
+		'<div class="button"><a href="exec:minutes+=5  & gt ''University''">…</a></div>'
+	'</div>'
+	'<div class="dialog_menu">'
+		Exp_智力 += my.智力
+		'<p>拿起了书本，知识一股脑地涌了进来！</p>'
+		'<p>-受到基础智力【<<my.智力>>】▲的影响，智力增加了▲</p>'
+		'<p>-▲▲▲▲▲▲▲▲▲▲▲▲</p>'
+	
+	'</div>'
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+--- Generic_Reading ---------------------------------
+

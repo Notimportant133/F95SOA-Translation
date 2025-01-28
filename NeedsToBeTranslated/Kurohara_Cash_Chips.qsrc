@@ -1,0 +1,25 @@
+# Kurohara_Cash_Chips
+
+
+
+	changemoneyduihuanchouma=0
+	
+	changemoneyduihuanchouma = input('请输入您要兑换的筹码数，每周限量10000筹码')
+	if changemoneyduihuanchouma <=10000:
+		newchangemoneyduihuanchouma=changemoneyduihuanchouma*1000
+		if money-newchangemoneyduihuanchouma>0:
+			xianliangduihuanxianjin-=changemoneyduihuanchouma
+			money=money-newchangemoneyduihuanchouma
+			hjkchouma+=changemoneyduihuanchouma
+			play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\筹码兑换成功.mp3')
+		else
+			play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\兑换筹码失败.mp3')
+		end
+	else
+		play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\别太贪心.mp3')
+	end
+	
+	
+
+--- Kurohara_Cash_Chips ---------------------------------
+

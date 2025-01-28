@@ -1,0 +1,28 @@
+# Kurohara_Gold_Exchange
+
+
+
+	changejinbi=0
+	if saoleijifen>=10:
+		changejinbi = input('请输入您要兑换的金币数！')
+		if changejinbi > 0:
+			tenchangejinbi = changejinbi*100
+			if saoleijifen-tenchangejinbi>=0:
+				saoleijifen=saoleijifen-tenchangejinbi
+				jinbi+=changejinbi
+				play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/res/恭喜您，兑换成功了.mp3')
+			else
+				play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/res/您的物品数量不足.mp3')
+			end
+		else
+			'<center><font color=red size=4><b>请输入大于0的数量</b></font></center>'
+			play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/res/请输入大于0的数量.mp3')
+		end
+	else
+		'<center><font color=red size=4><b>您的积分数量不足！</b></font></center>'
+		play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/res/您的物品数量不足.mp3')
+	end
+	
+
+--- Kurohara_Gold_Exchange ---------------------------------
+

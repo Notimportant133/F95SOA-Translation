@@ -1,0 +1,822 @@
+# Generic_Mods
+
+
+
+	if $args[0]="精力和现金修改":
+		if 开启金手指=0:'<a class =''red'' href="exec:开启金手指=1 & gt ''Menu_Character_GG'',''<<my.魅力>>''">开启金手指</a>'
+	end if
+	
+	if 开启金手指=1:
+		if $args[0]="主角属性修改":
+			'<div class="buttonGn2"><a href="exec:my.魅力+=2 & gt ''Menu_Character_GG'',''<<my.魅力>>''">老少通杀</a></div>'
+			'<div class="buttonS2"><a href="exec:my.魅力-=2 & gt ''Menu_Character_GG'',''<<my.魅力>>''">杀不动了</a></div>'
+			'<div class="buttonGn2"><a href="exec:my.道德+=10 & gt ''Menu_Character_GG'',''<<my.魅力>>''">品德高尚</a></div>'
+			'<div class="buttonS2"><a href="exec:my.道德-=10 & gt ''Menu_Character_GG'',''<<my.魅力>>''">道德值几个钱啊</a></div>'
+			'<div class="buttonGn2"><a href="exec:Exp_智力+=my.智力*10 & gt ''Menu_Character_GG'',''<<my.魅力>>''">文曲星下凡</a></div>'
+			'<div class="buttonS2"><a href="exec:Exp_身材+=my.体力+1 & gt ''Menu_Character_GG'',''<<my.魅力>>''">我可是健美冠军</a></div>'
+			'<div class="buttonGn2"><a href="exec:XP+=帝国level*10 & gt ''Menu_Character_GG'',''<<my.魅力>>''">帝国无敌</a></div>'
+		end if
+	
+		if $args[0]="精力和现金修改":
+			'<a class =''blue'' href="exec:开启金手指=0 & gt ''Menu_Character_GG'',''<<my.魅力>>''">关闭金手指</a>'
+			'&emsp;'
+
+			'<a class =''red'' href="exec:gs ''Generic_Mods'',''修改精力上限''">年轻人，就是精力旺盛</a>'
+			'&emsp;'
+
+			'<a class =''red'' href="exec:gs ''Generic_Mods'',''修改现金''">富二代岂能为钱发愁</a>'
+			'&emsp;'
+
+
+		end if
+		
+		if $args[0]="Driving":
+			'<a href="exec:gt ''Driving''"><span class =''red''>✈</span></a>'
+		end if
+		
+		if $args[0]="魅魔能量":
+			$魅魔能量=3
+		end if
+		
+		if $args[0]="锁时间":
+			if $lock2 = 1:
+				'<a href="exec:$lock2 = 0 & $lock_minutes = minutes & $lock_hour = hour & gt $loc,$metka"><span class =''red'' style="font-size: 14px;"> 锁定</span></a>' 
+			else
+				'<a href="exec:$lock2 = 1 & $lock_minutes = minutes & $lock_hour = hour & gt $loc,$metka"><span class =''red'' style="font-size: 14px;"> 解锁</span></a>'
+			end if
+		end if
+	end if
+	
+	if $args[0]="天气":
+		if 开启金手指=1 :
+			'<a href="exec:gs ''Generic_Mods'',''修改天气''"><span class =''red''><<$天气>></span></a>' 
+		else : 
+			'<span><<$天气>></span>'
+		end
+	end if
+	
+	if $args[0]="星期":
+		if 开启金手指=1 :
+			'<a href="exec:gs ''Generic_Mods'',''修改星期''"><span class =''red''><<$week_day[week_day]>></span></a>' 
+		else : 
+			'<span><<$week_day[week_day]>></span>'
+		end
+	end if
+	
+	if $args[0]="日期":
+		if 开启金手指=1 :
+			' <<year>>年 <<$month_name[month]>> <a href="exec:gs ''Generic_Mods'',''修改日期''"><span class =''red''><<day>></span></a>日 ' 
+			if $lock1 = 1:
+				'<a href="exec:$lock1 = 0 & $lock_day = day & $lock_month = month & $lock_year = year & gt $loc,$metka"><span class =''red'' style="font-size: 14px;">锁定 </span></a>'
+			else
+				'<a href="exec:$lock1 = 1 & $lock_day = day & $lock_month = month & $lock_year = year & gt $loc,$metka"><span class =''red'' style="font-size: 14px;">解锁 </span></a>' 
+			end if
+		else : 
+			'<span> <<year>>年 <<$month_name[month]>> <<day>>日 </span>'
+		end
+	end if
+	
+	if $args[0]="精力":
+		if 开启金手指=1 :
+			'<p>♨精力: <a href="exec:gs ''Generic_Mods'',''修改精力''"><span class =''lightcoral''><<my.精力>></span></a>/<span class =''black''><<$显示精MAX>></span>' 
+		else :
+			if my.精力 < 100:
+				'<p>♨精力: <span class =''red''><<my.精力>>/<<$显示精MAX>></span>'
+			end if
+			if my.精力 >= 100 and my.精力 < 300:
+				'<p>♨精力:<span class =''blue''><<my.精力>>/<<$显示精MAX>></span>'	
+			end if
+			if my.精力 >= 300:
+				'<p>♨精力: <span class =''green''><<my.精力>>/<<$显示精MAX>></span>'
+			end if
+		end
+	end if
+	
+	if $args[0]="修改精力":
+		if my.精力 >= 300:
+			my.精力=299 & gt $loc,$metka
+		end if
+		if my.精力 >= 100 and my.精力 < 300:
+			my.精力=99 & gt $loc,$metka
+		end if
+		if my.精力 < 100:
+			my.精力=$显示精MAX & gt $loc,$metka
+		end if
+	end if
+	
+	if $args[0]="入境审核":
+		if 开启金手指=1 :
+			'<p>░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</p>'
+			'<p>░责任统计░░░权限等级:<<$审核level>>级</p>'
+			'<p>░'
+			'审核人数:<<$审核人数>>人░'
+			'正确回:<<$正确回>>回✔'
+				'<a href="exec:gs ''Generic_Mods'',''审核正确'',''加1''"><span class =''red''>+1</span></a>'
+				'/'
+				'<a href="exec:gs ''Generic_Mods'',''审核正确'',''加10''"><span class =''red''>+10</span></a>'
+			'░'
+			'出错回:<<$出错回>>回✘'
+				if $出错回 - 1 >= 0:
+					'<a href="exec:gs ''Generic_Mods'',''审核正确'',''减1''"><span class =''red''>-1</span></a>'
+				end if
+				if $出错回 - 10 >= 0:
+					'/'
+					'<a href="exec:gs ''Generic_Mods'',''审核正确'',''减10''"><span class =''red''>-10</span></a>'
+				end if
+			'░'
+			'</p>'
+			'<p>░晋升需求①审核人数>10░②净正确回数><<净正确回数>>░</p>'
+		end if
+	end if
+	
+	if $args[0]="审核正确":
+		if $args[1]="加1":
+			$正确回+=1 & $审核人数+=1 & gt $loc,$metka
+		end if
+		if $args[1]="加10":
+			$正确回+=10 & $审核人数+=10 & gt $loc,$metka
+		end if
+		if $args[1]="减1":
+			$出错回-=1 & $审核人数-=1 & gt $loc,$metka
+		end if
+		if $args[1]="减10":
+			$出错回-=10 & $审核人数-=10 & gt $loc,$metka
+		end if
+	end if
+	
+	if $args[0]="义警积分":
+		if 开启金手指=1 :
+			'<a href="exec:gs ''Generic_Mods'',''义警积分修改'',''加1''"><span class =''red''>+1</span></a>'
+			'/'
+			'<a href="exec:gs ''Generic_Mods'',''义警积分修改'',''加10''"><span class =''red''>+10</span></a>'
+			'/'
+			'<a href="exec:gs ''Generic_Mods'',''义警积分修改'',''加100''"><span class =''red''>+100</span></a>'
+			'/'
+			'<a href="exec:gs ''Generic_Mods'',''义警积分修改'',''加1000''"><span class =''red''>+1000</span></a>'
+		end if
+	end if
+	
+	if $args[0]="义警积分修改":
+		if $args[1]="加1":
+			$义警积分+=1 & gt $loc,$metka
+		end if
+		if $args[1]="加10":
+			$义警积分+=10 & gt $loc,$metka
+		end if
+		if $args[1]="加100":
+			$义警积分+=100 & gt $loc,$metka
+		end if
+		if $args[1]="加1000":
+			$义警积分+=1000 & gt $loc,$metka
+		end if
+	end if
+	
+	if $args[0]="参赛奖杯":
+		if 开启金手指=1 :
+			'<p>我拥有的参赛奖杯♟x<<$奖杯数>> '
+			if 第一次擂台=0:
+				'<span class =''red''>完成第一次擂台比赛后方可修改此数据</span>'
+			else
+				'<a href="exec:gs ''Generic_Mods'',''参赛奖杯修改'',''加1''"><span class =''red''>+1</span></a>'
+				'/'
+				'<a href="exec:gs ''Generic_Mods'',''参赛奖杯修改'',''加10''"><span class =''red''>+10</span></a>'
+				'/'
+				'<a href="exec:gs ''Generic_Mods'',''参赛奖杯修改'',''加100''"><span class =''red''>+100</span></a>'
+				'/'
+				'<a href="exec:gs ''Generic_Mods'',''参赛奖杯修改'',''加1000''"><span class =''red''>+1000</span></a>'
+				'/'
+				'<a href="exec:gs ''Generic_Mods'',''参赛奖杯修改'',''加10000''"><span class =''red''>+10000</span></a>'
+				'/'
+				'<a href="exec:gs ''Generic_Mods'',''参赛奖杯修改'',''加100000''"><span class =''red''>+100000</span></a>'
+			end if
+			'</p>'
+		else
+			'<p>我拥有的参赛奖杯♟x<<$奖杯数>></p>'
+		end if
+	end if
+	
+	if $args[0]="参赛奖杯修改":
+		if $args[1]="加1":
+			$奖杯数+=1 & gt $loc,$metka
+		end if
+		if $args[1]="加10":
+			$奖杯数+=10 & gt $loc,$metka
+		end if
+		if $args[1]="加100":
+			$奖杯数+=100 & gt $loc,$metka
+		end if
+		if $args[1]="加1000":
+			$奖杯数+=1000 & gt $loc,$metka
+		end if
+		if $args[1]="加10000":
+			$奖杯数+=10000 & gt $loc,$metka
+		end if
+		if $args[1]="加100000":
+			$奖杯数+=100000 & gt $loc,$metka
+		end if
+	end if
+	
+	if $args[0]="Convenience_Store":
+		if 开启金手指=1 :
+			'<a href="exec:gs ''Generic_Mods'',''便利店利润修改''"><span class =''red''>+10W</span></a>'
+		end if
+	end if
+	
+	if $args[0]="便利店利润修改":
+		显本月累积利润+=100000 & gt $loc,$metka
+	end if
+	
+	if $args[0]="现金_修改":
+		if 开启金手指=1 :
+			'$现金:<a href="exec:gs ''Generic_Mods'',''现金_修改增加''"><span class =''red''><<money>></span></a> '
+		else
+			'$现金:<span class =''green''><<money>></span> '
+		end if
+	end if
+	
+	if $args[0]="现金_修改增加":
+		money+=1000 & gt $loc,$metka
+	end if
+	
+	if $args[0]="修改物品数量":
+		if $args[1]="U盘":U盘+=10
+		if $args[1]="魔王之瞳":魔王之瞳+=10
+		if $args[1]="总裁助理证明":总裁助理证明+=10
+		if $args[1]="血亲勋章":血亲勋章+=10
+		if $args[1]="绿意麦芬酒":绿意麦芬酒+=10
+		if $args[1]="异色植物报告":异色植物报告+=10
+		if $args[1]="异色植物幼苗":异色植物幼苗+=10
+		if $args[1]="麦高芬提取液":MGF+=10
+		if $args[1]="成熟的果实":plant+=10
+		if $args[1]="检测报告":检测报告+=10
+		if $args[1]="画像草稿":画像草稿+=10
+		if $args[1]="律师电话":律师电话+=10
+		if $args[1]="牛排和红酒":牛排和红酒+=10
+		if $args[1]="校内纠察证":旁听证+=10
+		if $args[1]="灯泡":灯泡+=10
+		if $args[1]="金坷垃":金坷垃+=10
+		if $args[1]="茅台":茅台+=10
+		if $args[1]="精油":精油+=10
+		if $args[1]="燃气阀":燃气阀+=10
+		if $args[1]="摄像头":摄像头+=10
+		if $args[1]="佳能R6单反":相机+=10
+		if $args[1]="名牌包":bag+=10
+		if $args[1]="佳能R6单反":相机+=10
+		if $args[1]="新鲜食材":新鲜食材+=10
+		if $args[1]="肥皂钥匙":肥皂钥匙+=10
+		if $args[1]="集印卡":集印卡+=10
+		if $args[1]="鸭王勋章":鸭王勋章+=10
+		if $args[1]="电吉他":电吉他+=10
+		if $args[1]="大锤":大锤+=10
+		if $args[1]="Anal_plug":Anal_plug+=10
+	end if
+	
+	if $args[0]="修改天气":
+		if $天气="☀晴":$天气="☁云" & gt $loc,$metka
+		if $天气="☁云":$天气="☁阴" & gt $loc,$metka
+		if $天气="☁阴":$天气="☂雨" & gt $loc,$metka
+		if $天气="☂雨":$天气="☀晴" & gt $loc,$metka
+	end if
+	
+	if $args[0]="修改星期":
+		if $week_day[week_day]="周一":week_day=2 & gt $loc,$metka
+		if $week_day[week_day]="周二":week_day=3 & gt $loc,$metka
+		if $week_day[week_day]="周三":week_day=4 & gt $loc,$metka
+		if $week_day[week_day]="周四":week_day=5 & gt $loc,$metka
+		if $week_day[week_day]="周五":week_day=6 & gt $loc,$metka
+		if $week_day[week_day]="周六":week_day=7 & gt $loc,$metka
+		if $week_day[week_day]="周日":week_day=1 & gt $loc,$metka
+	end if
+	
+	if $args[0]="修改日期":
+		if month=2:
+			if day+1<=28:
+				day+=1 & gt $loc,$metka
+			else
+				day=1 & gt $loc,$metka
+			end if
+		elseif month=4 or month=6 or month=9 or month=11:
+			if day+1<=30:
+				day+=1 & gt $loc,$metka
+			else
+				day=1 & gt $loc,$metka
+			end if
+		else
+			if day+1<=31:
+				day+=1 & gt $loc,$metka
+			else
+				day=1 & gt $loc,$metka
+			end if
+		end
+	end if
+	
+	if $args[0]="修改精力上限":
+		$精力修改值 = input("输入要设定的精力上限") 
+		if $精力修改值>0:mymax[精力]=$精力修改值 & gt "Menu_Character_GG","<<my.魅力>>"
+	end if
+	
+	if $args[0]="修改现金":
+		$现金修改值 = input("老板这次准备赚多少钱？") 
+		if $现金修改值>0:money+=$现金修改值 & gt "Menu_Character_GG","<<my.魅力>>"
+	end if
+	
+
+
+
+
+	
+	if $args[0]="菜花黑化状态修改":
+		if $HB.name="河北彩花(完全黑化)":$HB.name="河北彩花(议员养女)" else $HB.name="河北彩花(完全黑化)"
+		gt 'Generic_NPC_Menu','<<$HB.name>>','<<$HB.love>>','<<$HB.bad>>','<<$HB.bio>>'
+	end if
+	
+	if $args[0]="NPC数值修改":
+		if $args[1]=$JM.name:
+			if $args[2]="好感度":$JM.love+=100
+			if $args[2]="堕落度":$JM.bad+=100
+		end
+		if $args[1]=$JJ.name:
+			if $args[2]="好感度":$JJ.love+=100
+			if $args[2]="堕落度":$JJ.bad+=100
+		end
+		if $args[1]=$MM.name:
+			if $args[2]="好感度":$MM.love+=100
+			if $args[2]="堕落度":$MM.bad+=100
+			if $args[2]="粉丝":mm_fans+=1
+		end
+		if $args[1]=$BJ.name:
+			if $args[2]="好感度":$BJ.love+=100
+			if $args[2]="堕落度":$BJ.bad+=100
+			if $args[2]="粉丝":bj_fans+=1
+		end
+		if $args[1]=$ZZY.name:
+			if $args[2]="好感度":$ZZY.love+=100
+			if $args[2]="堕落度":$ZZY.bad+=100
+			if $args[2]="粉丝":zzy_fans+=1
+		end
+		if $args[1]=$LLQ.name:
+			if $args[2]="好感度":$LLQ.love+=100
+			if $args[2]="堕落度":$LLQ.bad+=100
+			if $args[2]="粉丝":llq_fans+=1
+		end
+		if $args[1]=$DZ.name:
+			if $args[2]="好感度":$DZ.love+=100
+			if $args[2]="堕落度":$DZ.bad+=100
+		end
+		if $args[1]=$XZ.name:
+			if $args[2]="好感度":$XZ.love+=100
+			if $args[2]="堕落度":$XZ.bad+=100
+		end
+		if $args[1]=$FXZ.name:
+			if $args[2]="好感度":$FXZ.love+=100
+			if $args[2]="堕落度":$FXZ.bad+=100
+		end
+		if $args[1]=$XY.name:
+			if $args[2]="好感度":$XY.love+=100
+			if $args[2]="堕落度":$XY.bad+=100
+		end
+		if $args[1]=$SW.name:
+			if $args[2]="好感度":$SW.love+=100
+			if $args[2]="堕落度":$SW.bad+=100
+		end
+		if $args[1]=$RION.name:
+			if $args[2]="好感度":$RION.love+=100
+			if $args[2]="堕落度":$RION.bad+=100
+		end
+		if $args[1]=$TS.name:
+			if $args[2]="好感度":$TS.love+=100
+			if $args[2]="堕落度":$TS.bad+=100
+			if $args[2]="粉丝":TS_fans+=1
+			if $args[2]="能力":$TS.多面+=1
+		end
+		if $args[1]=$YZ.name:
+			if $args[2]="好感度":$YZ.love+=100
+			if $args[2]="堕落度":$YZ.bad+=100
+		end
+		if $args[1]=$HS.name:
+			if $args[2]="好感度":$HS.love+=100
+			if $args[2]="堕落度":$HS.bad+=100
+		end
+		if $args[1]=$NK.name:
+			if $args[2]="好感度":$NK.love+=100
+			if $args[2]="堕落度":$NK.bad+=100
+		end
+		if $args[1]=$ZX.name:
+			if $args[2]="好感度":$ZX.love+=100
+			if $args[2]="堕落度":$ZX.bad+=100
+		end
+		if $args[1]=$SF.name:
+			if $args[2]="好感度":$SF.love+=100
+			if $args[2]="堕落度":$SF.bad+=100
+			if $args[2]="粉丝":SF_fans+=1
+			if $args[2]="能力":$SF.多面+=1
+		end
+		if $args[1]=$YS.name:
+			if $args[2]="好感度":$YS.love+=100
+			if $args[2]="堕落度":$YS.bad+=100
+		end
+		if $args[1]=$ZL.name:
+			if $args[2]="好感度":$ZL.love+=100
+			if $args[2]="堕落度":$ZL.bad+=100
+		end
+		if $args[1]=$LJ.name:
+			if $args[2]="好感度":$LJ.love+=100
+			if $args[2]="堕落度":$LJ.bad+=100
+		end
+		if $args[1]=$SY.name:
+			if $args[2]="好感度":$SY.love+=100
+			if $args[2]="堕落度":$SY.bad+=100
+		end
+		if $args[1]=$ZJ.name:
+			if $args[2]="好感度":$ZJ.love+=100
+			if $args[2]="堕落度":$ZJ.bad+=100
+		end
+		if $args[1]=$WQ.name:
+			if $args[2]="好感度":$WQ.love+=100
+			if $args[2]="堕落度":$WQ.bad+=100
+		end
+		if $args[1]=$HZ.name:
+			if $args[2]="好感度":$HZ.love+=100
+			if $args[2]="堕落度":$HZ.bad+=100
+		end
+		if $args[1]=$DYZ.name:
+			if $args[2]="好感度":$DYZ.love+=100
+			if $args[2]="堕落度":$DYZ.bad+=100
+		end
+		if $args[1]=$YJ.name:
+			if $args[2]="好感度":$YJ.love+=100
+			if $args[2]="堕落度":$YJ.bad+=100
+		end
+		if $args[1]=$ZXG.name:
+			if $args[2]="好感度":$ZXG.love+=100
+			if $args[2]="堕落度":$ZXG.bad+=100
+		end
+		if $args[1]=$JZ.name:
+			if $args[2]="好感度":$JZ.love+=100
+			if $args[2]="堕落度":$JZ.bad+=100
+		end
+		if $args[1]=$JY.name:
+			if $args[2]="好感度":$JY.love+=100
+			if $args[2]="堕落度":$JY.bad+=100
+		end
+		if $args[1]=$SS.name:
+			if $args[2]="好感度":$SS.love+=100
+			if $args[2]="堕落度":$SS.bad+=100
+		end
+		if $args[1]=$OX.name:
+			if $args[2]="好感度":$OX.love+=100
+			if $args[2]="堕落度":$OX.bad+=100
+		end
+		if $args[1]=$JK.name:
+			if $args[2]="好感度":$JK.love+=100
+			if $args[2]="堕落度":$JK.bad+=100
+		end
+		if $args[1]=$DL.name:
+			if $args[2]="好感度":$DL.love+=100
+			if $args[2]="堕落度":$DL.bad+=100
+		end
+		if $args[1]=$LY.name:
+			if $args[2]="好感度":$LY.love+=100
+			if $args[2]="堕落度":$LY.bad+=100
+		end
+		if $args[1]=$WN.name:
+			if $args[2]="好感度":$WN.love+=100
+			if $args[2]="堕落度":$WN.bad+=100
+		end
+		if $args[1]=$EDM.name:
+			if $args[2]="好感度":$EDM.love+=100
+			if $args[2]="堕落度":$EDM.bad+=100
+		end
+		if $args[1]=$YDM.name:
+			if $args[2]="好感度":$YDM.love+=100
+			if $args[2]="堕落度":$YDM.bad+=100
+		end
+		if $args[1]=$NY.name:
+			if $args[2]="好感度":$NY.love+=100
+			if $args[2]="堕落度":$NY.bad+=100
+		end
+		if $args[1]=$MS.name:
+			if $args[2]="好感度":$MS.love+=100
+			if $args[2]="堕落度":$MS.bad+=100
+		end
+		if $args[1]=$WH.name:
+			if $args[2]="好感度":$WH.love+=100
+			if $args[2]="堕落度":$WH.bad+=100
+		end
+		if $args[1]=$TZ.name:
+			if $args[2]="好感度":$TZ.love+=100
+			if $args[2]="堕落度":$TZ.bad+=100
+		end
+		if $args[1]=$XS.name:
+			if $args[2]="好感度":$XS.love+=100
+			if $args[2]="堕落度":$XS.bad+=100
+		end
+		if $args[1]=$QT.name:
+			if $args[2]="好感度":$QT.love+=100
+			if $args[2]="堕落度":$QT.bad+=100
+		end
+		if $args[1]=$QB.name:
+			if $args[2]="好感度":$QB.love+=100
+			if $args[2]="堕落度":$QB.bad+=100
+			if $args[2]="粉丝":QB_fans+=1
+			if $args[2]="能力":$QB.多面+=1
+		end
+		if $args[1]=$BD.name:
+			if $args[2]="好感度":$BD.love+=100
+			if $args[2]="堕落度":$BD.bad+=100
+		end
+		if $args[1]=$GJ.name:
+			if $args[2]="好感度":$GJ.love+=100
+			if $args[2]="堕落度":$GJ.bad+=100
+		end
+		if $args[1]=$GS.name:
+			if $args[2]="好感度":$GS.love+=100
+			if $args[2]="堕落度":$GS.bad+=100
+		end
+		if $args[1]=$XM.name:
+			if $args[2]="好感度":$XM.love+=100
+			if $args[2]="堕落度":$XM.bad+=100
+		end
+		if $args[1]=$PW.name:
+			if $args[2]="好感度":$PW.love+=100
+			if $args[2]="堕落度":$PW.bad+=100
+		end
+		if $args[1]=$SSYY.name:
+			if $args[2]="好感度":$SSYY.love+=100
+			if $args[2]="堕落度":$SSYY.bad+=100
+			if $args[2]="粉丝":SSYY_fans+=1
+			if $args[2]="能力":$SSYY.多面+=1
+		end
+		if $args[1]=$SX.name:
+			if $args[2]="好感度":$SX.love+=100
+			if $args[2]="堕落度":$SX.bad+=100
+		end
+		if $args[1]=$DD.name:
+			if $args[2]="好感度":$DD.love+=100
+			if $args[2]="堕落度":$DD.bad+=100
+		end
+		if $args[1]=$TJ.name:
+			if $args[2]="好感度":$TJ.love+=100
+			if $args[2]="堕落度":$TJ.bad+=100
+		end
+		if $args[1]=$DC.name:
+			if $args[2]="好感度":$DC.love+=100
+			if $args[2]="堕落度":$DC.bad+=100
+		end
+		if $args[1]=$XZDZ.name:
+			if $args[2]="好感度":$XZDZ.love+=100
+			if $args[2]="堕落度":$XZDZ.bad+=100
+		end
+		if $args[1]=$JB.name:
+			if $args[2]="好感度":$JB.love+=100
+			if $args[2]="堕落度":$JB.bad+=100
+		end
+		if $args[1]=$RQ.name:
+			if $args[2]="好感度":$RQ.love+=100
+			if $args[2]="堕落度":$RQ.bad+=100
+		end
+		if $args[1]=$MMS.name:
+			if $args[2]="好感度":$MMS.love+=100
+			if $args[2]="堕落度":$MMS.bad+=100
+		end
+		if $args[1]=$CH.name:
+			if $args[2]="好感度":$CH.love+=100
+			if $args[2]="堕落度":$CH.bad+=100
+		end
+		if $args[1]=$BGH.name:
+			if $args[2]="好感度":$BGH.love+=100
+			if $args[2]="堕落度":$BGH.bad+=100
+		end
+		if $args[1]=$SZ.name:
+			if $args[2]="好感度":$SZ.love+=100
+			if $args[2]="堕落度":$SZ.bad+=100
+		end
+		if $args[1]=$JYB.name:
+			if $args[2]="好感度":$JYB.love+=100
+			if $args[2]="堕落度":$JYB.bad+=100
+		end
+		if $args[1]=$LB.name:
+			if $args[2]="好感度":$LB.love+=100
+			if $args[2]="堕落度":$LB.bad+=100
+		end
+		if $args[1]=$CT.name:
+			if $args[2]="好感度":$CT.love+=100
+			if $args[2]="堕落度":$CT.bad+=100
+		end
+		if $args[1]=$CJ.name:
+			if $args[2]="好感度":$CJ.love+=100
+			if $args[2]="堕落度":$CJ.bad+=100
+		end
+		if $args[1]=$SB.name:
+			if $args[2]="好感度":$SB.love+=100
+			if $args[2]="堕落度":$SB.bad+=100
+			if $args[2]="平均分":$SB.study+=10
+			if $args[2]="身体状态":$SB.baby=-$SB.baby
+		end
+		if $args[1]=$FZL.name:
+			if $args[2]="好感度":$FZL.love+=100
+			if $args[2]="堕落度":$FZL.bad+=100
+			if $args[2]="平均分":$FZL.study+=10
+			if $args[2]="身体状态":$FZL.baby=-$FZL.baby
+		end
+		if $args[1]=$BTH.name:
+			if $args[2]="好感度":$BTH.love+=100
+			if $args[2]="堕落度":$BTH.bad+=100
+			if $args[2]="平均分":$BTH.study+=10
+			if $args[2]="身体状态":$BTH.baby=-$BTH.baby
+		end
+		if $args[1]=$HSW.name:
+			if $args[2]="好感度":$HSW.love+=100
+			if $args[2]="堕落度":$HSW.bad+=100
+			if $args[2]="平均分":$HSW.study+=10
+			if $args[2]="身体状态":$HSW.baby=-$HSW.baby
+		end
+		if $args[1]=$CBJ.name:
+			if $args[2]="好感度":$CBJ.love+=100
+			if $args[2]="堕落度":$CBJ.bad+=100
+			if $args[2]="平均分":$CBJ.study+=10
+			if $args[2]="身体状态":$CBJ.baby=-$CBJ.baby
+		end
+		if $args[1]=$HME.name:
+			if $args[2]="好感度":$HME.love+=100
+			if $args[2]="堕落度":$HME.bad+=100
+			if $args[2]="平均分":$HME.study+=10
+			if $args[2]="身体状态":$HME.baby=-$HME.baby
+		end
+		if $args[1]=$TMW.name:
+			if $args[2]="好感度":$TMW.love+=100
+			if $args[2]="堕落度":$TMW.bad+=100
+			if $args[2]="平均分":$TMW.study+=10
+			if $args[2]="身体状态":$TMW.baby=-$TMW.baby
+		end
+		if $args[1]=$YLW.name:
+			if $args[2]="好感度":$YLW.love+=100
+			if $args[2]="堕落度":$YLW.bad+=100
+			if $args[2]="平均分":$YLW.study+=10
+			if $args[2]="身体状态":$YLW.baby=-$YLW.baby
+		end
+		if $args[1]=$XMK.name:
+			if $args[2]="好感度":$XMK.love+=100
+			if $args[2]="堕落度":$XMK.bad+=100
+			if $args[2]="平均分":$XMK.study+=10
+			if $args[2]="身体状态":$XMK.baby=-$XMK.baby
+		end
+		if $args[1]=$SYYY.name:
+			if $args[2]="好感度":$SYYY.love+=100
+			if $args[2]="堕落度":$SYYY.bad+=100
+			if $args[2]="平均分":$SYYY.study+=10
+			if $args[2]="身体状态":$SYYY.baby=-$SYYY.baby
+		end
+		if $args[1]=$SJ.name:
+			if $args[2]="好感度":$SJ.love+=100
+			if $args[2]="堕落度":$SJ.bad+=100
+			if $args[2]="平均分":$SJ.study+=10
+			if $args[2]="身体状态":$SJ.baby=-$SJ.baby
+		end
+		if $args[1]=$MPJ.name:
+			if $args[2]="好感度":$MPJ.love+=100
+			if $args[2]="堕落度":$MPJ.bad+=100
+			if $args[2]="平均分":$MPJ.study+=10
+			if $args[2]="身体状态":$MPJ.baby=-$MPJ.baby
+		end
+		if $args[1]=$LXS.name:
+			if $args[2]="好感度":$LXS.love+=100
+			if $args[2]="堕落度":$LXS.bad+=100
+		end
+		if $args[1]=$QJ.name:
+			if $args[2]="好感度":$QJ.love+=100
+			if $args[2]="堕落度":$QJ.bad+=100
+		end
+		if $args[1]=$YY.name:
+			if $args[2]="好感度":$YY.love+=100
+			if $args[2]="堕落度":$YY.bad+=100
+		end
+		if $args[1]=$XN.name:
+			if $args[2]="好感度":$XN.love+=100
+			if $args[2]="堕落度":$XN.bad+=100
+		end
+		if $args[1]=$LEI.name:
+			if $args[2]="好感度":$LEI.love+=100
+			if $args[2]="堕落度":$LEI.bad+=100
+		end
+		if $args[1]=$HB.name:
+			if $args[2]="好感度":$HB.love+=100
+			if $args[2]="堕落度":$HB.bad+=100
+		end
+		if $args[1]=$YA_dAPc.name:
+			if $args[2]="好感度":$YA_dAPc.love+=100
+			if $args[2]="堕落度":$YA_dAPc.bad+=100
+		end
+		if $args[1]=$SWD.name:
+			if $args[2]="好感度":$SWD.love+=100
+			if $args[2]="堕落度":$SWD.bad+=100
+		end
+		if $args[1]=$DY.name:
+			if $args[2]="好感度":$DY.love+=100
+			if $args[2]="堕落度":$DY.bad+=100
+		end
+		if $args[1]=$YH.name:
+			if $args[2]="好感度":$YH.love+=100
+			if $args[2]="堕落度":$YH.bad+=100
+		end
+		if $args[1]=$XH.name:
+			if $args[2]="好感度":$XH.love+=100
+			if $args[2]="堕落度":$XH.bad+=100
+			if $args[2]="平均分":$XH.study+=10
+			if $args[2]="身体状态":$XH.baby=-$XH.baby
+		end
+		if $args[1]=$DCM.name:
+			if $args[2]="好感度":$DCM.love+=100
+			if $args[2]="堕落度":$DCM.bad+=100
+			if $args[2]="平均分":$DCM.study+=10
+			if $args[2]="身体状态":$DCM.baby=-$DCM.baby
+		end
+		if $args[1]=$BZ.name:
+			if $args[2]="好感度":$BZ.love+=100
+			if $args[2]="堕落度":$BZ.bad+=100
+			if $args[2]="平均分":$BZ.study+=10
+			if $args[2]="身体状态":$BZ.baby=-$BZ.baby
+		end
+		if $args[1]=$MZ.name:
+			if $args[2]="好感度":$MZ.love+=100
+			if $args[2]="堕落度":$MZ.bad+=100
+		end
+		if $args[1]=$QH.name:
+			if $args[2]="好感度":$QH.love+=100
+			if $args[2]="堕落度":$QH.bad+=100
+		end
+		if $args[1]=$AW.name:
+			if $args[2]="好感度":$AW.love+=100
+			if $args[2]="堕落度":$AW.bad+=100
+		end
+		if $args[1]=$FK.name:
+			if $args[2]="好感度":$FK.love+=100
+			if $args[2]="堕落度":$FK.bad+=100
+		end
+		if $args[1]=$SML.name:
+			if $args[2]="好感度":$SML.love+=100
+			if $args[2]="堕落度":$SML.bad+=100
+		end
+		if $args[1]=$HB.name:
+			if $args[2]="好感度":$HB.love+=100
+			if $args[2]="堕落度":$HB.bad+=100
+		end
+		if $args[1]=$YXH.name:
+			if $args[2]="好感度":$YXH.love+=100
+			if $args[2]="堕落度":$YXH.bad+=100
+		end
+		if $args[1]=$ZM.name:
+			if $args[2]="好感度":$ZM.love+=100
+			if $args[2]="堕落度":$ZM.bad+=100
+		end
+		if $args[1]=$TCK.name:
+			if $args[2]="好感度":$TCK.love+=100
+			if $args[2]="堕落度":$TCK.bad+=100
+		end
+		if $args[1]=$XYXZ.name:
+			if $args[2]="好感度":$XYXZ.love+=100
+			if $args[2]="堕落度":$XYXZ.bad+=100
+		end
+		if $args[1]=$ZSA.name:
+			if $args[2]="好感度":$ZSA.love+=100
+			if $args[2]="堕落度":$ZSA.bad+=100
+		end
+		if $args[1]=$ZMK.name:
+			if $args[2]="好感度":$ZMK.love+=100
+			if $args[2]="堕落度":$ZMK.bad+=100
+		end
+		if $args[1]=$JXZL.name:
+			if $args[2]="好感度":$JXZL.love+=100
+			if $args[2]="堕落度":$JXZL.bad+=100
+		end
+		if $args[1]=$MFD.name:
+			if $args[2]="好感度":$MFD.love+=100
+			if $args[2]="堕落度":$MFD.bad+=100
+		end
+		if $args[1]=$BX.name:
+			if $args[2]="好感度":$BX.love+=100
+			if $args[2]="堕落度":$BX.bad+=100
+		end
+		if $args[1]=$SC.name:
+			if $args[2]="好感度":$SC.love+=100
+			if $args[2]="堕落度":$SC.bad+=100
+		end
+		if $args[1]=$UN.name:
+			if $args[2]="好感度":$UN.love+=100
+			if $args[2]="堕落度":$UN.bad+=100
+		end
+		if $args[1]=$GF.name:
+			if $args[2]="好感度":$GF.love+=100
+			if $args[2]="堕落度":$GF.bad+=100
+		end
+	end if
+	
+
+
+
+
+
+
+
+--- Generic_Mods ---------------------------------
+

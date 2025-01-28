@@ -1,0 +1,10 @@
+# Game_Autosave
+
+
+
+	
+	if week_day = 7:SAVEGAME '6.sav'
+	
+
+--- Game_Autosave ---------------------------------
+

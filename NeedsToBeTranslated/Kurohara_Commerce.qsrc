@@ -1,0 +1,1561 @@
+# Kurohara_Commerce
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	a=0
+	q=0
+	
+	if saoleijifen='':
+		saoleijifen=0
+	end
+	
+	if saoleidejifen='':
+		saoleidejifen=0
+	end
+	
+	if bombs='':
+		bombs=1
+	end
+	
+	if zuanshi='':
+		zuanshi=0
+	end
+	
+	if jinbi='':
+		jinbi=0
+	end
+	
+	if menka='':
+		menka=0
+	end
+	
+	if $jilu='':
+		$jilu=0
+	end
+	
+	if hjkchouma='':
+		hjkchouma = 200
+	end
+	
+	if linshijiesuoheguantype='':
+		linshijiesuoheguantype = 0
+	end
+	
+	if shenglicishu='':
+		shenglicishu=0
+	end
+	
+	if mvjishu='':
+		mvjishu=0
+	end
+	
+	if jujingyijishu='':
+		jujingyijishu=0
+	end
+	
+	if chouma='':
+		chouma=0
+	end
+	
+	
+	if heguanchouma='':
+		heguanchouma=10000
+	end
+	
+	
+	if jjj='':
+		jjj=1
+	end
+	
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu">'
+			if $args[0]="黑原基地进门":
+				
+			else
+				'<div class="action">'
+					'<a class="photo" data-title="地下交通" href="exec:minutes+=15 & gt ''Subway''"><img class="img_stretch" src="images\place\地铁.jpg"></a>'
+				'</div>'
+	
+				'<div class="action">'
+					'<a class="photo" data-title="村子里" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''村子里''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\村子里.jpg"></a>'
+				'</div>'
+				
+				'<div class="action">'
+					'<a class="photo" data-title="民工宿舍" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''民工宿舍''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\民工宿舍.jpg"></a>'
+				'</div>'
+				
+				'<div class="action">'
+					'<a class="photo" data-title="黑原基地的大门" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''黑原基地的大门''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑原秘密基地的大门.jpg"></a>'
+				'</div>'
+				
+				'<div class="action">'
+					'<a class="photo" data-title="Black_Jack" href="exec:minutes+=5 & wanjiayaopaicishu=0 & gt ''Black_Jack''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑杰克.jpg"></a>'
+				'</div>'
+				
+				'<div class="action">'
+					'<a class="photo" data-title="E_Card_Game" href="exec:minutes+=5 & wanjiayaopaicishu=0 & gt ''E_Card_Game''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\国王游戏\E卡游戏.jpg"></a>'
+				'</div>'
+				
+				if menka>=2 or shennanarenwu>=1:
+					'<div class="action">'
+						'<a class="photo" data-title="狂赌女王沈娜娜" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''女王沈娜娜''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\狂赌女王\女王图片.jpg"></a>'
+					'</div>'
+				end
+				
+				if xianyuanerrenwu>=1:
+					'<div class="action">'
+						'<a class="photo" data-title="荷官仙儿媛" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''荷官仙儿媛''"><img class="img_stretch" src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\仙儿媛头像.jpg"></a>'
+					'</div>'
+				end
+				
+				if wumengmengrenwu>=1:
+					'<div class="action">'
+						'<a class="photo" data-title="荷官吴梦梦" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''荷官吴梦梦''"><img class="img_stretch" src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\吴梦梦2.jpg"></a>'
+					'</div>'
+				end
+				
+				if suchangrenwu>=1:
+					'<div class="action">'
+						'<a class="photo" data-title="荷官苏畅" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''荷官苏畅''"><img class="img_stretch" src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\苏畅4.jpg"></a>'
+					'</div>'
+				end
+				
+				if annasuipian>=3 or annarenwu>=1:
+					'<div class="action">'
+						'<a class="photo" data-title="商务荷官安娜" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''荷官安娜''"><img class="img_stretch" src="images\NPC\金晨荷官3.jpg"></a>'
+					'</div>'
+				end
+				
+				if xiaojusuipian>=3 or xiaojurenwu>=1:
+					'<div class="action">'
+						'<a class="photo" data-title="顶级荷官小鞠" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''荷官鞠婧祎''"><img class="img_stretch" src="images\NPC\荷官展示.jpg"></a>'
+					'</div>'
+				end
+				
+				'<div class="action">'
+					'<a class="photo" data-title="积分兑换处" href="exec:minutes+=5 & gt ''Kurohara_Commerce'',''游戏商店''"><img class="img_stretch" src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\游戏商店.jpg"></a>'
+				'</div>'
+			end
+			
+		'</div>'
+	'</div>'
+	
+	
+	if $args[0]="":
+		
+		'<div class ="show_menu">'
+
+			
+			'<video preload="metadata" autoplay height="480" >'
+				'<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\place.webm" type=''video/webm;''>
+			</video>'
+			
+		'</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Subway''">回城里</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">增加了大量防作弊机制，请注意作弊后存档就废了</p>'
+			'<p class="dajianshi2">著名的黑原商会。黑原商会的历史，最早可以追溯到20世纪初。</p>
+			<p class="dajianshi2">国家基本完成工业化，跻身列强，经济得到迅速发展。</p>
+			<p class="dajianshi2">这一时期，农村人口大量涌入城市，在车站、码头、红灯区，从事着最基础的劳动，此时便形成了早期帮派。</p>
+			<p class="dajianshi2">1915年，一个叫做<<$主角姓>>黑原的码头工人，带着几十个工友创建了黑原商会。</p>
+			</p>'
+		'</div>'
+	
+	end
+	
+	
+	if $args[0]="荷官仙儿媛":
+	
+		'<div class ="show_menu">
+			<img class="img_stretch" src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\荷官仙儿媛展览.jpg">
+		</div>'
+	
+		'<div class="button_menu">'
+			if xianyuanerrenwu!1:
+				'<div class="buttonGr"><a href="exec:">特殊事件</a></div>'
+			else
+
+				'<div class="buttonGr"><a href="exec:">不开启特殊事件，请在游戏里查看</a></div>'
+			end
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">荷官仙儿媛。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一，一脸魅惑众生之相，浓妆艳抹，美艳之极，相貌让人觉得惊艳。</p>
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if abs='':
+		abs=1
+	end
+	
+	if $args[0]="荷官吴梦梦":
+	
+		'<div class ="show_menu">
+			<img class="img_stretch" src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\吴梦梦3.jpg">
+		</div>'
+	
+		'<div class="button_menu">'
+			if wumengmengrenwu!1:
+				'<div class="buttonGr"><a href="exec:">特殊事件</a></div>'
+			else
+
+				'<div class="buttonGr"><a href="exec:">不开启特殊事件，请在游戏里查看</a></div>'
+			end
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">荷官吴梦梦。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一，一双大大的眼睛，小巧的琼鼻，略施粉黛的面容是那么的惊艳，身体修长纤细。</p>
+			<p class="dajianshi2">白嫩似雪的肌肤在阳光下闪烁着耀眼的光芒，好一个美艳绝伦的美人。</p>
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官苏畅":
+	
+		'<div class ="show_menu">
+			<img class="img_stretch" src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\苏畅<<RAND(1,2)>>.jpg">
+		</div>'
+	
+		'<div class="button_menu">'
+			if suchangrenwu!1:
+				'<div class="buttonGr"><a href="exec:">特殊事件</a></div>'
+			else
+
+				'<div class="buttonGr"><a href="exec:">不开启特殊事件，请在游戏里查看</a></div>'
+			end
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">荷官苏畅。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一，清纯可人，面容精致。</p>
+			<p class="dajianshi2">脸若银盘，眼似水杏，唇不点而红，眉不画而翠，端的上是美人如画了</p>
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	
+	
+	if $args[0]="女王沈娜娜":
+	
+		'<div class ="show_menu">
+			<img class="img_stretch" src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\荷官沈娜娜展示.jpg">
+		</div>'
+	
+		'<div class="button_menu">'
+			if shennanarenwu!1:
+				'<div class="buttonGr"><a href="exec:">特殊事件</a></div>'
+			else
+				'<div class="buttonS"><a href="exec:minutes+=15 & jujingyijishu=0 & gt ''Kurohara_Commerce'',''沈娜娜事件''">特殊事件</a></div>'
+				'<div class="buttonGr"><a href="exec:">不开启特殊事件，请在游戏里查看</a></div>'
+			end
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">狂赌女王沈娜娜。</p>
+			<p class="dajianshi2">黑原商会赌场的美女老板，黑色的露肩雕花裙，气质高贵而冷艳。</p>
+			<p class="dajianshi2">她胸前一对傲人豪乳足足有Ｇ罩杯，深深的乳沟无比的诱人，又白又大的木瓜状丰满豪乳，让人不禁想把玩一番。</p>
+			<p class="dajianshi2">精致白皙的鹅蛋脸，细长的丹凤眼，天蓝色的瞳孔就如同世界最珍贵的宝石一样美丽。
+			<p class="dajianshi2">性感火辣的身体，纯洁美丽的外貌，实在是太吸引人了。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="沈娜娜事件":
+		jujingyijishu+=1
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\狂赌女王\沈娜娜<<jujingyijishu>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''沈娜娜事件''">下一个姿势</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回大厅</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+
+			'<div id="沈娜娜事件展示文字<<jujingyijishu>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="沈娜娜事件展示文字<<jujingyijishu>>()">展示文字</a></div>'
+	        '<div id="沈娜娜事件展示文字<<jujingyijishu>>" class="dajianshi3"></div>'
+			'.</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="荷官安娜":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\金晨荷官视频3.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官安娜查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官安娜查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官安娜口型''">口型</a></div>'
+			if annarenwu!1:
+				'<div class="buttonGr"><a href="exec:">特殊事件</a></div>'
+			else
+				'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官安娜口型''">特殊事件</a></div>'
+			end
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">梁安娜，小有名气的模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一身黑裙，露出完美的腰形与马甲线，将活力与性感给发挥的淋漓尽致。</p>
+			<p class="dajianshi2">精致的瓜子脸，水灵灵的大眼睛，小巧翘挺的琼鼻，性感的红唇，细腻的皮肤。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官安娜口型":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\金晨口型.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官安娜查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官安娜查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官安娜口型''">口型</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">梁安娜，小有名气的模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一身黑裙，露出完美的腰形与马甲线，将活力与性感给发挥的淋漓尽致。</p>
+			<p class="dajianshi2">精致的瓜子脸，水灵灵的大眼睛，小巧翘挺的琼鼻，性感的红唇，细腻的皮肤。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官安娜查看以往专辑":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\金晨专辑1.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官安娜查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官安娜口型''">口型</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">梁安娜，小有名气的模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一身黑裙，露出完美的腰形与马甲线，将活力与性感给发挥的淋漓尽致。</p>
+			<p class="dajianshi2">精致的瓜子脸，水灵灵的大眼睛，小巧翘挺的琼鼻，性感的红唇，细腻的皮肤。</p>
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官安娜查看以往专辑2":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\金晨专辑2.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官安娜查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官安娜口型''">口型</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">梁安娜，小有名气的模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一身黑裙，露出完美的腰形与马甲线，将活力与性感给发挥的淋漓尽致。</p>
+			<p class="dajianshi2">精致的瓜子脸，水灵灵的大眼睛，小巧翘挺的琼鼻，性感的红唇，细腻的皮肤。</p>
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	
+	
+	if $args[0]="荷官鞠婧祎":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\鞠婧祎荷官2.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			if xiaojurenwu!1:
+				'<div class="buttonGr"><a href="exec:">特殊事件</a></div>'
+			else
+				'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎特殊事件''">特殊事件</a></div>'
+			end
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。</p>
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官鞠婧祎口型":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\口型.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。</p>
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官鞠婧祎唱歌":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\唱歌1.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官鞠婧祎唱歌2":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\唱歌2.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	
+	
+	if $args[0]="荷官鞠婧祎查看以往专辑":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\鞠婧祎1.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官鞠婧祎查看以往专辑2":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\鞠婧祎2.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官鞠婧祎查看以往专辑3":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\以往专辑3.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="荷官鞠婧祎查看以往专辑4":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\以往专辑4.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官鞠婧祎查看以往专辑5":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\以往专辑5.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官鞠婧祎查看以往专辑6":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\以往专辑6.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官鞠婧祎查看以往专辑7":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\以往专辑7.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官鞠婧祎日常1":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\日常1.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官鞠婧祎日常2":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\日常2.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官鞠婧祎日常3":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\日常3.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常4''">日常4</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="荷官鞠婧祎日常4":
+	
+		'<div class ="show_menu">
+			<video preload="metadata" autoplay loop height="480"><source src="images\NPC\日常4.webm" type=''video/webm;''>
+			</video>
+			
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑''">查看以往专辑</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑2''">查看以往专辑2</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑3''">查看以往专辑3</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑4''">查看以往专辑4</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑5''">查看以往专辑5</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑6''">查看以往专辑6</a></div>'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎查看以往专辑7''">查看以往专辑7</a></div>'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎口型''">口型</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌''">唱歌1</a></div>'
+			'<div class="buttonS2"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎唱歌2''">唱歌2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常1''">日常1</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常2''">日常2</a></div>'
+			'<div class="buttonPu1"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''荷官鞠婧祎日常3''">日常3</a></div>'
+			
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">回黑原商会</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+			'<div class="buttonGr"><a href="exec:">占位符</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">小鞠，安娜的闺蜜，同是潮流杂志的顶流模特。</p>
+			<p class="dajianshi2">黑原商会的美女荷官之一。</p>
+			<p class="dajianshi2">一副标致的瓜子脸，白皙的皮肤，精致的五官，特别是那张樱桃小嘴，娇艳欲滴。</p>
+			<p class="dajianshi2">被称为黑原商会第一美女。
+			</p>
+			</p>'
+		'</div>'
+	end
+	
+	if ab='':
+		ab=1
+	end
+	
+	
+	if $args[0]="游戏商店":
+	
+		'<div class ="show_menu"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\游戏商店.jpg" width="854">
+	
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\游戏配乐.webm" type=''video/webm;''></video>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Subway''">回城里</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			if hjkchouma<-1000:
+				'<p><div class="buttonS"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce'',''兑换筹码''">兑换筹码</a></div></p>'
+			end
+			'<p><div class="buttonS1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce'',''兑换金币''">兑换金币</a></div></p>'
+			'<p><div class="buttonS2"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce'',''兑换钻石''">兑换钻石</a></div></p>'
+			'<p><div class="buttonGn3"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce'',''兑换门卡''">兑换门卡</a></div></p>'
+			'<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:minutes+=1 & gt ''Kurohara_Commerce'',''兑换荷官''">兑换荷官</a></div></p>'
+			'<p class="dajianshi">黑原商会大商店，请选择要兑换的类别！</p>
+			<p class="dajianshi">您当前可兑换筹码额度<<xianliangduihuanxianjin>>点。</p>
+			<p class="dajianshi">您当前筹码<<hjkchouma>>点。</p>
+			 <p class="dajianshi">您当前积分<<saoleijifen>>点。</p>
+			<p class="dajianshi">您当前金币<<jinbi>>点。</p>
+			<p class="dajianshi">您当前钻石<<zuanshi>>点。</p>
+			<p class="dajianshi">您当前门卡<<menka>>张。</p>
+			<p>.</p>'
+		'</div>'
+	end
+	
+	gs 'Yaoio'
+	
+	if $args[0]="兑换筹码":
+	
+		'<div class ="show_menu"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\游戏商店.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\游戏配乐.webm" type=''video/webm;''></video>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''游戏商店''">返回游戏商店</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">菜鸡，为你开启现金兑换筹码功能，1000现金兑换1筹码，每周限量兑换10000筹码，你当前可兑换筹码额度<<xianliangduihuanxianjin>></p>'
+			'<p class="dajianshi3">您当前筹码<<hjkchouma>>点。</p>'
+			if hjkchouma<-1000:
+			'<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:gs ''Kurohara_Cash_Chips''">立刻兑换</a></div></p>'
+			end
+			'<p>.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="兑换金币":
+	
+		'<div class ="show_menu"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\游戏商店.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\游戏配乐.webm" type=''video/webm;''></video>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''游戏商店''">返回游戏商店</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p><div class="buttonPu1"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:gs ''Kurohara_Gold_Exchange''">立刻兑换</a></div></p>'
+			'
+			<p class="dajianshi3">黑原商会金币兑换处，100积分兑换1金币</p>
+			<p class="dajianshi3">您当前可兑换筹码额度<<xianliangduihuanxianjin>>点。</p>
+			<p class="dajianshi3">您当前筹码<<hjkchouma>>点。</p>
+			<p class="dajianshi3">您当前积分<<saoleijifen>>点。</p>
+			<p class="dajianshi3">您当前金币<<jinbi>>点。</p>
+			<p class="dajianshi3">您当前钻石<<zuanshi>>点。</p>
+			<p class="dajianshi3">您当前门卡<<menka>>张。</p>
+			<p class="dajianshi3">.</p>'
+		'</div>'
+	end
+	
+	
+	
+	if $args[0]="兑换钻石":
+	
+		'<div class ="show_menu"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\游戏商店.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\游戏配乐.webm" type=''video/webm;''></video>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''游戏商店''">返回游戏商店</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p><div class="buttonS2"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:gs ''Kurohara_Diamond_Exchange''">立刻兑换</a></div></p>'
+			'
+			<p class="dajianshi3">黑原商会钻石兑换处，100金币兑换1钻石</p>
+			<p class="dajianshi3">您当前可兑换筹码额度<<xianliangduihuanxianjin>>点。</p>
+			<p class="dajianshi3">您当前筹码<<hjkchouma>>点。</p>
+			<p class="dajianshi3">您当前积分<<saoleijifen>>点。</p>
+			<p class="dajianshi3">您当前金币<<jinbi>>点。</p>
+			<p class="dajianshi3">您当前钻石<<zuanshi>>点。</p>
+			<p class="dajianshi3">您当前门卡<<menka>>张。</p>
+			<p>.</p>
+			'
+		'</div>'
+	end
+	
+	if $args[0]="兑换门卡":
+	
+		'<div class ="show_menu"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\游戏商店.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\游戏配乐.webm" type=''video/webm;''></video>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''游戏商店''">返回游戏商店</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p><div class="buttonS2"><a style="font-weight:bold;color:DeepPink;font-size:20px;margin-botton:150px;" href="exec:gs ''Kurohara_Keycard_Exchange''">立刻兑换</a></div></p>'
+			'
+			<p class="dajianshi3">黑原商会门卡兑换处，1钻石兑换1门卡，两张门卡，解锁黑原商会基地进入资格</p>
+			<p class="dajianshi3">您当前可兑换筹码额度<<xianliangduihuanxianjin>>点。</p>
+			<p class="dajianshi3">您当前筹码<<hjkchouma>>点。</p>
+			<p class="dajianshi3">您当前积分<<saoleijifen>>点。</p>
+			<p class="dajianshi3">您当前金币<<jinbi>>点。</p>
+			<p class="dajianshi3">您当前钻石<<zuanshi>>点。</p>
+			<p class="dajianshi3">您当前门卡<<menka>>张。</p>
+			<p>.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="兑换荷官":
+	
+		'<div class ="show_menu"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\游戏商店.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\QQ飞车1.webm" type=''video/webm;''></video>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''游戏商店''">返回游戏商店</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'		
+			'黑原商会荷官兑换处，顶级荷官解锁需要三张人物碎片，高级荷官需要一张人物碎片</p>
+			<p style="color:#ff0000">您当前荷官小鞠人物碎片<<xiaojusuipian>>张。<a style="width:50px" href="exec:minutes+=1 & linshijiesuoheguantype=''1'' & gt ''Kurohara_Commerce'',''解锁新荷官''">解锁</a></p>
+			<p style="color:#00ff00">您当前荷官安娜人物碎片<<annasuipian>>张。<a style="width:50px" href="exec:minutes+=1 & linshijiesuoheguantype=''2'' & gt ''Kurohara_Commerce'',''解锁新荷官''">解锁</a></p>
+			<p style="color:#0000ff">您当前荷官仙儿媛人物碎片<<xianyuanersuipian>>张。<a style="width:50px" href="exec:minutes+=1 & linshijiesuoheguantype=''3'' & gt ''Kurohara_Commerce'',''解锁新荷官''">解锁</a></p>
+			<p style="color:#ffff00">您当前荷官吴梦梦人物碎片<<wumengmengsuipian>>张。<a style="width:50px" href="exec:minutes+=1 & linshijiesuoheguantype=''4'' & gt ''Kurohara_Commerce'',''解锁新荷官''">解锁</a></p>
+			<p style="color:#ffa500">您当前荷官沈娜娜人物碎片<<shennanasuipian>>张。<a style="width:50px" href="exec:minutes+=1 & linshijiesuoheguantype=''5'' & gt ''Kurohara_Commerce'',''解锁新荷官''">解锁</a></p>
+			<p style="color:#ff00ff">您当前荷官苏畅人物碎片<<suchangsuipian>>张。<a style="width:50px" href="exec:minutes+=1 & linshijiesuoheguantype=''6'' & gt ''Kurohara_Commerce'',''解锁新荷官''">解锁</a></p>
+			<p style="color:#ffc0cb">您当前荷官秦可欣人物碎片<<qingkexinsuipian>>张。<a style="width:50px" href="exec:minutes+=1 & linshijiesuoheguantype=''7'' & gt ''Kurohara_Commerce'',''解锁新荷官''">解锁</a></p>
+			<p style="color:#b0c4de">您当前荷官季妍希人物碎片<<jiyanxisuipian>>张。<a style="width:50px" href="exec:minutes+=1 & linshijiesuoheguantype=''8'' & gt ''Kurohara_Commerce'',''解锁新荷官''">解锁</a></p>
+			<p style="color:#5c3317">您当前不知名荷官人物碎片<<buzhimingxinheguansuipian>>张。<a style="width:50px" href="exec:minutes+=1 & linshijiesuoheguantype=''9'' & gt ''Kurohara_Commerce'',''解锁新荷官''">解锁</a></p>
+			<p>.</p>
+			<p>.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="解锁新荷官":
+	
+		'<div class ="show_menu"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\游戏商店.jpg" width="854">
+			<video preload="metadata" autoplay height="480" loop>'
+				 '<source src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\QQ飞车2.webm" type=''video/webm;''></video>
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''兑换荷官''">返回兑换荷官处</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''游戏商店''">返回游戏商店</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'兑换中，请稍后...</p>'
+			wait 2000
+			if linshijiesuoheguantype=1:
+				if HYX.jindu<=8 and xiaojusuipian>=3:
+					'<p class="dajianshi3">恭喜您，作弊被游戏设计者发现了！！！所有人物碎片减一，筹码减五千</p>'
+					xiaojusuipian+=-1
+					annasuipian+=-1
+					hjkchouma+=-5000
+					play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/抽奖作弊.mp3')
+				elseif xiaojusuipian>=3:
+					xiaojurenwu=1
+					xiaojusuipian+=-3
+					'<p class="dajianshi3">解锁荷官小鞠成功！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\解锁荷官小鞠成功.mp3')
+				else
+					'<p class="dajianshi3">穷逼就不要解锁人物了！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\穷逼.mp3')
+				end
+			elseif linshijiesuoheguantype=2:
+				if anna.jindu<=8 and xiaojusuipian>=3:
+					'<p class="dajianshi3">恭喜您，作弊被游戏设计者发现了！！！所有人物碎片减一，筹码减五千</p>'
+					xiaojusuipian+=-1
+					annasuipian+=-1
+					hjkchouma+=-5000
+					play('images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c/视频/抽奖作弊.mp3')
+				elseif annasuipian>=3:
+					annarenwu=1
+					annasuipian+=-3
+					'<p class="dajianshi3">解锁荷官安娜成功！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\解锁荷官安娜成功.mp3')
+				else
+					'<p class="dajianshi3">穷逼就不要解锁人物了！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\穷逼.mp3')
+				end
+			elseif linshijiesuoheguantype=3:
+				if xianyuanersuipian>=1:
+					xianyuanerrenwu=1
+					xianyuanersuipian+=-1
+					'<p class="dajianshi3">解锁荷官仙儿媛成功！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\解锁荷官仙儿媛成功.mp3')
+				else
+					'<p class="dajianshi3">穷逼就不要解锁人物了！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\穷逼.mp3')
+				end
+			elseif linshijiesuoheguantype=4:
+				if wumengmengsuipian>=1:
+					wumengmengrenwu=1
+					wumengmengsuipian+=-1
+					'<p class="dajianshi3">解锁荷官吴梦梦成功！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\解锁荷官吴梦梦成功.mp3')
+				else
+					'<p class="dajianshi3">穷逼就不要解锁人物了！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\穷逼.mp3')
+				end
+			elseif linshijiesuoheguantype=5:
+				if shennanasuipian>=1:
+					shennanarenwu=1
+					shennanasuipian+=-1
+					'<p class="dajianshi3">解锁荷官沈娜娜成功！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\解锁荷官沈娜娜成功.mp3')
+				else
+					'<p class="dajianshi3">穷逼就不要解锁人物了！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\穷逼.mp3')
+				end
+			elseif linshijiesuoheguantype=6:
+				if suchangsuipian>=1:
+					suchangrenwu=1
+					suchangsuipian+=-1
+					'<p class="dajianshi3">解锁荷官苏畅成功！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\解锁荷官苏畅成功.mp3')
+				else
+					'<p class="dajianshi3">穷逼就不要解锁人物了！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\穷逼.mp3')
+				end
+			elseif linshijiesuoheguantype=7:
+				if qingkexinsuipian>=1:
+					qingkexinrenwu=1
+					qingkexinsuipian+=-1
+					'<p class="dajianshi3">解锁荷官秦可欣成功！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\解锁荷官秦可欣成功.mp3')
+				else
+					'<p class="dajianshi3">穷逼就不要解锁人物了！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\穷逼.mp3')
+				end
+			elseif linshijiesuoheguantype=8:
+				if jiyanxisuipian>=1:
+					jiyanxirenwu=1
+					jiyanxisuipian+=-1
+					'<p class="dajianshi3">解锁荷官季妍希成功！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\解锁荷官季妍希成功.mp3')
+				else
+					'<p class="dajianshi3">穷逼就不要解锁人物了！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\穷逼.mp3')
+				end
+			elseif linshijiesuoheguantype=9:
+				if buzhimingxinheguansuipian>=1:
+					buzhimingxinheguanrenwu=1
+					buzhimingxinheguansuipian+=-1
+					'<p class="dajianshi3">解锁不知名荷官成功！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\解锁荷官季妍希成功.mp3')
+				else
+					'<p class="dajianshi3">穷逼就不要解锁人物了！</p>'
+					play('images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\穷逼.mp3')
+				end
+			end
+			'<p style="color:red"><a style="width:100px" href="exec:minutes+=1 & gt ''Kurohara_Commerce'',''兑换荷官''"><img src="images\NPC\YS\vids\c\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\c\a\a\a\a\返回兑换荷官处.png" width="200"></a></p>'
+			''
+		'</div>'
+	end
+	
+	
+	if $args[0]="村子里":
+	
+		'<div class ="show_menu"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\村子里.jpg" width="854"></div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''Ninja_Event'',''黑原商会_进入村子''">前面的是姐姐？</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">返回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">黑原商会附近的黑原村，地处偏僻，村子里多是穷苦人，眼前所见三间土坯房，已经破败不堪了。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="民工宿舍":
+	
+		'<div class ="show_menu"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\民工宿舍.jpg" width="854"></div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonG5"><a href="exec:minutes+=15 & gt ''Ninja_Event'',''黑原商会_套取情报1(NTR)_采访小喽啰''">进入</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">返回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi2">黑原商会的民工宿舍，推开其中一扇房门。</p>
+			<p class="dajianshi2">就见不足20平米的小房间里，摆放着一个简易的桌子。</p>
+			<p class="dajianshi2">房间里仅有的一盏灯光，也是老旧昏黄。</p>'
+		'</div>'
+	end
+	
+	if $args[0]="黑原基地的大门":
+	
+		'<div class ="show_menu">'
+		
+
+			'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\黑原秘密基地的大门<<RAND(1,2)>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			if menka<2:
+				'<div class="buttonGn3"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''未进入黑原基地''">进入黑原基地</a></div>'
+			else
+				'<div class="buttonGn3"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''进入黑原基地''">进入黑原基地</a></div>'
+			end
+			
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">返回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">黑原基地的大门，这里是黑原商会一切罪恶的根源，防守及其严密。</p>
+			<p class="dajianshi3">据说犯罪分子进入这里，能够得到庇护，警官也不会进行搜查。</p>'
+			
+		'</div>'
+	end
+	
+	if $args[0]="未进入黑原基地":
+	
+		'<div class ="show_menu"><img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\疑惑.jpg" width="854"></div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''黑原基地的大门''">返回大门处</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">不行，门被锁住了，打不开！</p>
+			 <p class="dajianshi3">这里有两张卡槽，看来要想进入黑原基地,有着两种门卡。'
+		'</div>'
+	end
+	
+	if $args[0]="进入黑原基地":
+	
+		'<div class ="show_menu">
+			<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\place1.jpg" width="854">
+		</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonS"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''黑原基地进门''">进门</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''黑原基地的大门''">返回大门处</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">小子，你竟然集齐了两张门卡，不错不错，进去吧！</p>
+			<span style="font-weight:bold;color:DeepPink;margin-botton:150px;">提醒：在黑原商会里居住每时每刻都会耗费积分！积分不足会被踢出！</span></p>
+			 。'
+		'</div>'
+	end
+	
+	if $args[0]="黑原基地进门":
+		
+		'<div class ="show_menu">'
+			'<a style="position:absolute;margin-top:175px;margin-left:470px;" href="exec:minutes+=1 & saoleijifen+=-1000 & gt ''Kurohara_Commerce'',''老板''">
+				<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\老板.png" width="180px">
+			</a>'
+			
+			'<a style="position:absolute;margin-top:175px;margin-left:245px;" href="exec:minutes+=1 & saoleijifen+=-1000 & saoleijifen+=-1000 & mvjishu=0 & gt ''Kurohara_Commerce'',''MV''">
+				<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\MV.png" width="150px">
+			</a>'
+			
+			'<a style="position:absolute;margin-top:290px;margin-left:185px;" href="exec:minutes+=1 & saoleijifen+=-1000 & gt ''Kurohara_Commerce'',''宿舍''">
+				<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\宿舍.png" width="290px">
+			</a>'
+			
+			'<a style="position:absolute;margin-top:315px;margin-left:475px;" href="exec:minutes+=1 & saoleijifen+=-1000 & gt ''Kurohara_Commerce'',''Dungeon''">
+				<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\地牢.png" width="180px">
+			</a>'
+				
+			'<img src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\商会.jpg" width="854">'
+			'<div class="show_menu" style="width:0px;height:0px">'
+			 '<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\NPC\ZJ\vids\old\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\历史文件\a\b\c\a\b\c\商会.webm" type=''video/webm;''></video></div>'
+			'</div>'
+			
+		'</div>'
+	
+		'<div class="button_menu">'
+			
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce''">返回黑原商会</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">昨日江湖已逝水, 今朝我主沉浮间!</p>
+			 。'
+		'</div>'
+	end
+	
+	if $args[0]="MV":
+		mvjishu+=1
+		saoleijifen+=-10
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay height="480" loop>'
+			 '<source src="images\new\FP<<mvjishu>>.webm" type=''video/webm;''></video>'
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''MV''">下一个</a></div>'
+		
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''黑原基地进门''">返回</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">音符轻舞, 视频里绽放梦幻色彩, 每一帧都是心动的瞬间!</p>'
+			'.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="宿舍":
+		saoleijifen+=-100
+		
+		'<div class ="show_menu">'
+			'<img src="images\the_dev_is_stupid\g\宿舍.jpg" width="854">'
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''黑原基地进门''">返回</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">透过窗户流入的阳光恰到好处地洒在柔软的床上。</p>'
+			'.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="老板":
+		saoleijifen+=-100
+		
+		'<div class ="show_menu">'
+			'<img src="images\the_dev_is_stupid\g\黑社会老大.jpg" width="854">'
+		'</div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''黑原基地进门''">返回</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">你若是想要在这黑道中立足，就得学会心狠手辣，不留情面‌‌！</p>'
+			'.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="Dungeon":
+		
+		'<div class ="show_menu">'
+			saoleijifen+=-100
+			'<a id="dilaorion" style="display:none;position:absolute;margin-top:100px;margin-left:95px;" href="exec:minutes+=1 & jujingyijishu=0 & saoleijifen+=-1000 & gt ''Kurohara_Commerce'',''宇都宫紫苑''" onclick="showContent()">
+				<img src="images\the_dev_is_stupid\g\紫苑剧情.png" width="180px">
+			</a>'
+			
+			'<a id="dilaodaqiao" style="display:none;position:absolute;margin-top:100px;margin-left:585px;" href="exec:minutes+=1 & jujingyijishu=0 & saoleijifen+=-1000 & gt ''Kurohara_Commerce'',''大桥未久''">
+				<img src="images\the_dev_is_stupid\g\大桥剧情.png" width="180px">
+			</a>'
+			
+			'<video preload="metadata" autoplay height="480">'
+			 '<source src="images\the_dev_is_stupid\g\地牢开局.webm" type=''video/webm;''></video>'
+			 
+		'</div>'
+	
+		'<div class="button_menu">'
+				'<div class="buttonGn4"><a href="exec:minutes+=10 "onclick="showContent()">展示按钮</a></div>'
+				'<div class="buttonGn5"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''黑原基地进门''">返回</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi3">在我的世界，我就是规矩</p>'
+			'.</p>'
+		'</div>'
+	end
+	
+
+
+
+
+
+
+	
+	if $args[0]="宇都宫紫苑":
+		saoleijifen+=-10
+		jujingyijishu+=1
+		$zengjiayuedunandu1='宇'
+		$zengjiayuedunandu2='都'
+		$zengjiayuedunandu3='宫'
+		$zengjiayuedunandu4='紫'
+		$zengjiayuedunandu5='苑'
+		$zengjiayuedunandu6='地'
+		$zengjiayuedunandu7='牢'
+		$zengjiayuedunandu8='展'
+		$zengjiayuedunandu9='示'
+		$zengjiayuedunandu10='文'
+		$zengjiayuedunandu11='字'
+		'<div class ="show_menu">'
+			
+			'<video preload="metadata" autoplay height="480">'
+			 '<source src="images\the_dev_is_stupid\g\视频2\<<$zengjiayuedunandu1>><<$zengjiayuedunandu2>><<$zengjiayuedunandu3>><<$zengjiayuedunandu4>><<$zengjiayuedunandu5>><<jujingyijishu>>.webm" type=''video/webm;''></video>'
+			 
+		'</div>'
+	
+		'<div class="button_menu">'
+			if saoleijifen>0:
+				'<div class="buttonGn3"><a href="exec:gt ''Kurohara_Commerce'',''宇都宫紫苑''">下个姿势<<jujingyijishu>></a></div>'
+			else
+				'<div class="buttonGr"><a href="exec:">积分为0不可观看</a></div>'
+			end
+			'<div class="buttonGn5"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''黑原基地进门''">返回</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<div id="<<$zengjiayuedunandu1>><<$zengjiayuedunandu2>><<$zengjiayuedunandu3>><<$zengjiayuedunandu4>><<$zengjiayuedunandu5>><<$zengjiayuedunandu6>><<$zengjiayuedunandu7>><<$zengjiayuedunandu8>><<$zengjiayuedunandu9>><<$zengjiayuedunandu10>><<$zengjiayuedunandu11>><<jujingyijishu>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="<<$zengjiayuedunandu1>><<$zengjiayuedunandu2>><<$zengjiayuedunandu3>><<$zengjiayuedunandu4>><<$zengjiayuedunandu5>><<$zengjiayuedunandu6>><<$zengjiayuedunandu7>><<$zengjiayuedunandu8>><<$zengjiayuedunandu9>><<$zengjiayuedunandu10>><<$zengjiayuedunandu11>><<jujingyijishu>>()"><<$zengjiayuedunandu8>><<$zengjiayuedunandu9>><<$zengjiayuedunandu10>><<$zengjiayuedunandu11>></a></div>'
+	        '<div id="<<$zengjiayuedunandu1>><<$zengjiayuedunandu2>><<$zengjiayuedunandu3>><<$zengjiayuedunandu4>><<$zengjiayuedunandu5>><<$zengjiayuedunandu6>><<$zengjiayuedunandu7>><<$zengjiayuedunandu8>><<$zengjiayuedunandu9>><<$zengjiayuedunandu10>><<$zengjiayuedunandu11>><<jujingyijishu>>" class="dajianshi3"></div>'
+			'.</p>'
+		'</div>'
+	end
+	
+	if $args[0]="大桥未久":
+		saoleijifen+=-10
+		jujingyijishu+=1
+		$zengjiayuedunandu1='大'
+		$zengjiayuedunandu2='桥'
+		$zengjiayuedunandu3='未'
+		$zengjiayuedunandu4='久'
+		$zengjiayuedunandu5='展'
+		$zengjiayuedunandu6='示'
+		$zengjiayuedunandu7='文'
+		$zengjiayuedunandu8='字'
+		$zengjiayuedunandu9='地'
+		$zengjiayuedunandu10='牢'
+		$zengjiayuedunandu11='视'
+		$zengjiayuedunandu12='频'
+		'<div class ="show_menu">'
+			
+			'<video preload="metadata" autoplay height="480">'
+			 '<source src="images\the_dev_is_stupid\g\视频\<<$zengjiayuedunandu1>><<$zengjiayuedunandu2>><<$zengjiayuedunandu9>><<$zengjiayuedunandu10>><<$zengjiayuedunandu11>><<$zengjiayuedunandu12>><<jujingyijishu>>.webm" type=''video/webm;''></video>'
+			 
+		'</div>'
+	
+		'<div class="button_menu">'
+			if saoleijifen>0:
+				'<div class="buttonGn3"><a href="exec:gt ''Kurohara_Commerce'',''大桥未久''">下个姿势<<jujingyijishu>></a></div>'
+			else
+				'<div class="buttonGr"><a href="exec:">积分为0不可观看</a></div>'
+			end
+			'<div class="buttonGn5"><a href="exec:minutes+=15 & gt ''Kurohara_Commerce'',''黑原基地进门''">返回</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<div id="<<$zengjiayuedunandu1>><<$zengjiayuedunandu2>><<$zengjiayuedunandu3>><<$zengjiayuedunandu4>><<$zengjiayuedunandu5>><<$zengjiayuedunandu6>><<$zengjiayuedunandu7>><<$zengjiayuedunandu8>><<jujingyijishu>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="<<$zengjiayuedunandu1>><<$zengjiayuedunandu2>><<$zengjiayuedunandu3>><<$zengjiayuedunandu4>><<$zengjiayuedunandu5>><<$zengjiayuedunandu6>><<$zengjiayuedunandu7>><<$zengjiayuedunandu8>><<jujingyijishu>>()"><<$zengjiayuedunandu5>><<$zengjiayuedunandu6>><<$zengjiayuedunandu7>><<$zengjiayuedunandu8>></a></div>'
+	        '<div id="<<$zengjiayuedunandu1>><<$zengjiayuedunandu2>><<$zengjiayuedunandu3>><<$zengjiayuedunandu4>><<$zengjiayuedunandu5>><<$zengjiayuedunandu6>><<$zengjiayuedunandu7>><<$zengjiayuedunandu8>><<jujingyijishu>>" class="dajianshi3"></div>'
+			'.</p>'
+		'</div>'
+	end
+
+--- Kurohara_Commerce ---------------------------------
+
