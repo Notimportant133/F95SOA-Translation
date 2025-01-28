@@ -1,0 +1,58 @@
+# A302_Map
+
+
+
+	
+		'<div class="actions_menu">'
+	
+		 if (hour >=23 or hour <6) :
+			'<div class="action">
+				<a class="photo" data-title="姨妈房间" href="exec:minutes+=5 & gt ''aunt_event'',''MQMM_夜袭''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\MQMM\pics\A302_小姨睡觉.jpg"></a>
+			</div>'
+			elseif  (19<= hour  and  hour <22) or (8<=hour and hour<20 and week_day >=5 ):
+			'<div class="action">
+				<a class="photo" data-title="姨妈房间" href="exec:minutes+=5 & gt ''A302_Auntsroom'',''关门''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\A302_Auntsroom.jpg"></a>
+			</div>'
+			else
+			'<div class="action">
+				<a class="photo" data-title="姨妈房间" href="exec:minutes+=5 & gt ''A302_Auntsroom''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\A302_Auntsroom.jpg"></a>
+			</div>'
+		 end if
+		 
+	         if  (22<=hour and hour <23) or  (6<=hour and hour <7)  :
+				'<div class="action">
+					<a class="photo" data-title="浴室" href="exec:minutes+=5 & gt ''aunt_event'',''A302_Bathroom''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\母亲浴室.jpg"></a>
+				</div>'
+		 else
+			'<div class="action">
+				<a class="photo" data-title="浴室" href="exec:minutes+=5 & gt ''A302_Bathroom''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\A302_Bathroom.jpg"></a>
+			</div>'
+		 end if
+		 
+		 if (hour >=23 and week_day =5) or (hour <8 and week_day =6):
+			'<div class="action">
+				<a class="photo" data-title="客房" href="exec:minutes+=5 & gt ''A302_guestroom'',''敲门''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\MQ\pics\母亲房间_睡觉.jpg"></a>
+			</div>'
+			else
+			'<div class="action">
+				<a class="photo" data-title="客房" href="exec:minutes+=5 & gt ''A302_guestroom''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\A302_guestroom.jpg"></a>
+			</div>'
+		 end if
+		
+	
+			'<div class="action">
+				<a class="photo" data-title="卧室" href="exec:minutes+=5 & gt ''A302Bedroom''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\A302Bedroom.jpg"></a>
+			</div>' 
+			'<div class="action">
+				<a class="photo" data-title="客厅" href="exec:minutes+=5 & gt ''A302_livingroom''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\A302_livingroom.jpg"></a>
+			</div>'
+		   '<div class="action">
+				<a class="photo" data-title="出门" href="exec:minutes+=5 & gt ''WandaMansion''"><img class="img_stretch" src="images\V70版本_只发于老王论坛_完全免费_其他转载的全是倒卖\增量包_20241111\place\母亲姨妈\图片\A302出门.jpg"></a>
+			</div>'
+		'</div>'
+	
+	
+	
+
+--- A302_Map ---------------------------------
+

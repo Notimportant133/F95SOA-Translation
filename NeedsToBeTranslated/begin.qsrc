@@ -1,0 +1,21 @@
+# begin
+
+
+
+	cls
+	'<img src="images\intro\bg2.jpg">'
+		'<div class="start_menu">
+			<a href="exec:gt ''Grand_Opening''"><div class="start_act1">我已经超过100岁了</div></a>
+			<a href="exec:gt ''exid''"><div class="start_act1">我未满十八岁</div></a>
+		</div>
+	</div>'
+	gs 'gs_first'
+	gs 'game_time'
+	gs '数值设定'
+	gs "NPCattributes"
+	gs "NPCPropertyNewCharacter"
+	gs "NPCeventchain"
+	gs "通用词库"
+
+--- begin ---------------------------------
+

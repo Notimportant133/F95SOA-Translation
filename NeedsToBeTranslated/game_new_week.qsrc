@@ -1,0 +1,55 @@
+# game_new_week
+
+
+
+	
+	if arrpos('$week_label','dvor_uborka') = -1:$character_Мария['关系']-=10
+	if arrpos('$week_label','uborka_pool') = -1:$character_Мария['关系']-=10
+	if arrpos('$week_label','mysor') = -1:$character_Мария['关系']-=10
+	if arrpos('$week_label','mysor1') = -1:$character_Мария['关系']-=10
+	
+	if arrpos('$week_label','test') = -1 and month >=9 and month <=12 and $data['гг_逃学'] <= -10:$character_Ева['关系']+=45 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=9 and month <=12 and $data['гг_逃学'] = -9:$character_Ева['关系']-=5 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=9 and month <=12 and $data['гг_逃学'] = -8:$character_Ева['关系']-=10 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=9 and month <=12 and $data['гг_逃学'] = -7:$character_Ева['关系']-=20 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=9 and month <=12 and $data['гг_逃学'] = -6:$character_Ева['关系']-=30 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=9 and month <=12 and $data['гг_逃学'] = -5:$character_Ева['关系']-=40 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=9 and month <=12 and $data['гг_逃学'] = -4:$character_Ева['关系']-=50 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=9 and month <=12 and $data['гг_逃学'] = -3:$character_Ева['关系']-=70 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=9 and month <=12 and $data['гг_逃学'] = -2:$character_Ева['关系']-=80 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=9 and month <=12 and $data['гг_逃学'] = -1:$character_Ева['关系']-=90 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=9 and month <=12 and $data['гг_逃学'] =0 :$character_Ева['关系']-=100 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	
+	if arrpos('$week_label','test') = -1 and month >=2 and month <=5 and $data['гг_逃学'] <= -10:$character_Ева['关系']+=45 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=2 and month <=5 and $data['гг_逃学'] = -9:$character_Ева['关系']-=5 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=2 and month <=5 and $data['гг_逃学'] = -8:$character_Ева['关系']-=10 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=2 and month <=5 and $data['гг_逃学'] = -7:$character_Ева['关系']-=20 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=2 and month <=5 and $data['гг_逃学'] = -6:$character_Ева['关系']-=30 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=2 and month <=5 and $data['гг_逃学'] = -5:$character_Ева['关系']-=40 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=2 and month <=5 and $data['гг_逃学'] = -4:$character_Ева['关系']-=50 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=2 and month <=5 and $data['гг_逃学'] = -3:$character_Ева['关系']-=70 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=2 and month <=5 and $data['гг_逃学'] = -2:$character_Ева['关系']-=80 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=2 and month <=5 and $data['гг_逃学'] = -1:$character_Ева['关系']-=90 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	if arrpos('$week_label','test') = -1 and month >=2 and month <=5 and $data['гг_逃学'] =0 :$character_Ева['关系']-=100 & $data['гг_逃学'] = 0 & $week_label[]='test'
+	
+	
+	
+	KILLVAR 'week_label'
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+	
+	
+	
+
+--- game_new_week ---------------------------------
+

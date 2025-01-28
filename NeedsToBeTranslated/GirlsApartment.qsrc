@@ -1,0 +1,364 @@
+# GirlsApartment
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'ыя'
+	a=0
+	q=0
+	
+	if saoleijifen='':
+		saoleijifen=0
+	end
+	
+	if safasfasjis='':
+		safasfasjis=0
+	end
+	
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				'<a class="photo" data-title="厨房" href="exec:minutes+=15 & gt ''GirlsApartment'',''厨房''"><img class="img_stretch" src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\small_kitchen.jpg"></a>'
+			'</div>'
+	
+			'<div class="action">'
+				'<a class="photo" data-title="女孩们的房间" href="exec:minutes+=5 & gt ''GirlsApartment'',''女孩们的房间''"><img class="img_stretch" src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\small_bedroom.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="浴室" href="exec:minutes+=5 & gt ''GirlsApartment'',''浴室''"><img class="img_stretch" src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\small_bathroom.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="我的卧室" href="exec:minutes+=5 & gt ''GirlsApartment'',''我的卧室''"><img class="img_stretch" src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\small_bedroom_gg.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				if hour>=8 and hour<=18:
+					'<a class="photo" data-title="屋顶" href="exec:minutes+=5 & gt ''GirlsApartment'',''屋顶''"><img class="img_stretch" src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\small_roof_pool_.jpg"></a>'
+				else
+					'<a class="photo" data-title="屋顶" href="exec:minutes+=5 & gt ''GirlsApartment'',''屋顶''"><img class="img_stretch" src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\small_roof_pool_night.jpg"></a>'
+					
+				end
+			'</div>'
+			
+			
+		'</div>'
+	'</div>'
+	
+
+
+
+
+
+
+	
+	
+	if $args[0]="":
+		'<div class ="show_menu">'
+
+			'<video preload="metadata" autoplay height="480" >
+				<source src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\big_hall.webm" type=''video/webm;''>
+			</video>'
+			
+		'</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''连锁酒店''">离开公寓</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>
+			</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="厨房":
+		'<div class ="show_menu">
+			<img src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\kitchen.jpg" width="854">
+		</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''连锁酒店''">离开公寓</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>
+			</p>'
+		'</div>'
+	end
+	
+	$actualmoney1='苏'
+	$actualmoney2='畅'
+	$actualmoney3='房'
+	$actualmoney4='间'
+	$moneynew1='吴'
+	$moneynew2='梦'
+	
+	if $args[0]="女孩们的房间":
+		'<div class ="show_menu">'
+
+			'<video preload="metadata" autoplay height="480" >'
+			'<source src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\bedroom.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+		
+		'<div class="button_menu">'
+			if xianyuanerrenwu=1 or xianyuanersuipian>2:
+			'<div class="buttonS"><a href="exec:minutes+=15 & safasfasjis=0 & gt ''GirlsApartment'',''xianeryuan''">仙儿媛</a></div>'
+			end
+			if suchangrenwu=1 or suchangsuipian>2:
+			'<div class="buttonS"><a href="exec:minutes+=15 & safasfasjis=0 & gt ''GirlsApartment'',''<<$actualmoney1>><<$actualmoney2>>''"><<$actualmoney1>><<$actualmoney2>></a></div>'
+			end
+			if wumengmengrenwu=1 or wumengmengsuipian>2:
+			'<div class="buttonS"><a href="exec:minutes+=15 & safasfasjis=0 & gt ''GirlsApartment'',''<<$moneynew1>><<$moneynew2>><<$moneynew2>>''"><<$moneynew1>><<$moneynew2>><<$moneynew2>></a></div>'
+			end
+			'<div class="button"><a href="exec:minutes+=15 & gt ''连锁酒店''">离开公寓</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>
+			</p>'
+		'</div>'
+	end
+	
+	
+	$actual5='V'
+	$actual6='70'
+	if $args[0]="<<$actualmoney1>><<$actualmoney2>>":
+		safasfasjis+=1
+		$asgasgasga15='展'
+		$asgasgasga16='示'
+		$asgasgasga17='文'
+		$asgasgasga18='字'
+		$asgasgasga155='下'
+		$asgasgasga156='一'
+		$asgasgasga157='个'
+		$asgasgasga158='姿'
+		$asgasgasga159='势'
+		'<div class ="show_menu">'
+			
+			'<video preload="metadata" autoplay height="480" >'
+			'<source src="images\<<$actual5>><<$actual6>>版本_只发于老王论坛_完全免费_其他转载的全是倒卖\<<$actualmoney1>><<$actualmoney2>>\<<$actualmoney1>><<$actualmoney2>><<safasfasjis>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+		
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''GirlsApartment'',''<<$actualmoney1>><<$actualmoney2>>''"><<$asgasgasga155>><<$asgasgasga156>><<$asgasgasga157>><<$asgasgasga158>><<$asgasgasga159>></a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''连锁酒店''">离开公寓</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<div id="女孩的<<$actualmoney3>><<$actualmoney4>><<$actualmoney1>><<$actualmoney2>><<$asgasgasga15>><<$asgasgasga16>><<$asgasgasga17>><<$asgasgasga18>><<safasfasjis>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="女孩的<<$actualmoney3>><<$actualmoney4>><<$actualmoney1>><<$actualmoney2>><<$asgasgasga15>><<$asgasgasga16>><<$asgasgasga17>><<$asgasgasga18>><<safasfasjis>>()"><<$asgasgasga15>><<$asgasgasga16>><<$asgasgasga17>><<$asgasgasga18>></a></div>'
+	        '<div id="女孩的<<$actualmoney3>><<$actualmoney4>><<$actualmoney1>><<$actualmoney2>><<$asgasgasga15>><<$asgasgasga16>><<$asgasgasga17>><<$asgasgasga18>><<safasfasjis>>" class="dajianshi3"></div>'
+		'</div>'
+	end
+	
+	if $args[0]="<<$moneynew1>><<$moneynew2>><<$moneynew2>>":
+		safasfasjis+=1
+		$asgasgasga15='展'
+		$asgasgasga16='示'
+		$asgasgasga17='文'
+		$asgasgasga18='字'
+		$asgasgasga155='下'
+		$asgasgasga156='一'
+		$asgasgasga157='个'
+		$asgasgasga158='姿'
+		$asgasgasga159='势'
+		'<div class ="show_menu">'
+			
+			'<video preload="metadata" autoplay height="480" >'
+			'<source src="images\<<$actual5>><<$actual6>>版本_只发于老王论坛_完全免费_其他转载的全是倒卖\<<$moneynew1>><<$moneynew2>><<$moneynew2>>\<<$moneynew1>><<$moneynew2>><<$moneynew2>><<safasfasjis>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+		
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''GirlsApartment'',''<<$moneynew1>><<$moneynew2>><<$moneynew2>>''"><<$asgasgasga155>><<$asgasgasga156>><<$asgasgasga157>><<$asgasgasga158>><<$asgasgasga159>></a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''连锁酒店''">离开公寓</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<div id="女孩的<<$actualmoney3>><<$actualmoney4>><<$moneynew1>><<$moneynew2>><<$moneynew2>><<$asgasgasga15>><<$asgasgasga16>><<$asgasgasga17>><<$asgasgasga18>><<safasfasjis>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="女孩的<<$actualmoney3>><<$actualmoney4>><<$moneynew1>><<$moneynew2>><<$moneynew2>><<$asgasgasga15>><<$asgasgasga16>><<$asgasgasga17>><<$asgasgasga18>><<safasfasjis>>()"><<$asgasgasga15>><<$asgasgasga16>><<$asgasgasga17>><<$asgasgasga18>></a></div>'
+	        '<div id="女孩的<<$actualmoney3>><<$actualmoney4>><<$moneynew1>><<$moneynew2>><<$moneynew2>><<$asgasgasga15>><<$asgasgasga16>><<$asgasgasga17>><<$asgasgasga18>><<safasfasjis>>" class="dajianshi3"></div>'
+		'</div>'
+	end
+	
+	if $args[0]="xianeryuan":
+		safasfasjis+=1
+		$asgasgasga5='仙'
+		$asgasgasga6='儿'
+		$asgasgasga7='媛'
+		$asgasgasga15='展'
+		$asgasgasga16='示'
+		$asgasgasga17='文'
+		$asgasgasga18='字'
+		$asgasgasga155='下'
+		$asgasgasga156='一'
+		$asgasgasga157='个'
+		$asgasgasga158='姿'
+		$asgasgasga159='势'
+		
+		'<div class ="show_menu">'
+			
+			'<video preload="metadata" autoplay height="480" >'
+			'<source src="images\NPC\ZXX\<<$asgasgasga5>><<$asgasgasga6>><<$asgasgasga7>><<safasfasjis>>.webm" type=''video/webm;''></video>'
+			
+		'</div>'
+		
+		'<div class="button_menu">'
+			'<div class="buttonS1"><a href="exec:minutes+=15 & gt ''GirlsApartment'',''xianeryuan''"><<$asgasgasga155>><<$asgasgasga156>><<$asgasgasga157>><<$asgasgasga158>><<$asgasgasga159>></a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''连锁酒店''">离开公寓</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<div id="女孩的房间<<$asgasgasga5>><<$asgasgasga6>><<$asgasgasga7>><<$asgasgasga15>><<$asgasgasga16>><<$asgasgasga17>><<$asgasgasga18>><<safasfasjis>>button" class="buttonPutext"><a href="exec:minutes+=10 "onclick="女孩的房间<<$asgasgasga5>><<$asgasgasga6>><<$asgasgasga7>><<$asgasgasga15>><<$asgasgasga16>><<$asgasgasga17>><<$asgasgasga18>><<safasfasjis>>()"><<$asgasgasga15>><<$asgasgasga16>><<$asgasgasga17>><<$asgasgasga18>></a></div>'
+	        '<div id="女孩的房间<<$asgasgasga5>><<$asgasgasga6>><<$asgasgasga7>><<$asgasgasga15>><<$asgasgasga16>><<$asgasgasga17>><<$asgasgasga18>><<safasfasjis>>" class="dajianshi3"></div>'
+		'</div>'
+	end
+	
+	if $args[0]="浴室":
+		'<div class ="show_menu">
+			<img src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\bathroom.jpg" width="854">
+		</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''连锁酒店''">离开公寓</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="我的卧室":
+		'<div class ="show_menu">
+			<img src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\bedroom_gg.jpg" width="854">
+		</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''连锁酒店''">离开公寓</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p></p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="屋顶":
+		'<div class ="show_menu">'
+			if hour>=8 and hour<=18:
+			
+				'<a style="position:absolute;margin-top:20px;margin-left:20px;" href="exec:minutes+=1 & gt ''GirlsApartment''">
+				<img src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\hall.jpg" width="200px">
+				</a>'
+				'<a style="position:absolute;margin-top:20px;margin-left:220px;" href="exec:minutes+=1 & gt ''my_apartment''">
+				<img src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\hata_gg\hall.jpg" width="200px">
+				</a>'
+				
+
+				'<video preload="metadata" autoplay height="480" >'
+				'<source src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\roof_pool_2.webm" type=''video/webm;''>
+				</video>'
+			else
+				'<a style="position:absolute;margin-top:20px;margin-left:650px;" href="exec:minutes+=1 & gt ''GirlsApartment''">
+				<img src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\hall.jpg" width="200px">
+				</a>'
+				'<a style="position:absolute;margin-top:354px;margin-left:650px;" href="exec:minutes+=1 & gt ''my_apartment''">
+				<img src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\hata_gg\hall.jpg" width="200px">
+				</a>'
+				
+				'<video preload="metadata" autoplay height="480" >'
+					'<source src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\roof_pool_night.webm" type=''video/webm;''>
+				</video>'
+			end
+			
+		'</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''GirlsApartment''">回客厅</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			if hour>=8 and hour<=18:
+			'<p class="dajianshi3">站在屋顶，眺望远方，城市的繁华与自然的宁静交织成一幅美丽的画卷‌‌‌‌</p>'
+			else
+			'<p class="dajianshi3">夜幕下, 灯火绘就城市浪漫, 星光闪烁, 梦入星河。</p>'
+			end
+			'</p>'
+		'</div>'
+	end
+	
+	if hjkchouma<=2000:
+		hjkchouma+=-20
+	end
+	if heguanchouma<=2000:
+		heguanchouma+=80
+	end
+	if saoleijifen<=2000:
+		saoleijifen+=-20
+	end
+	
+	if hjkchouma>=10000:
+		hjkchouma+=-100
+	end
+	if heguanchouma>=10000:
+		heguanchouma+=500
+	end
+	if saoleijifen>=10000:
+		saoleijifen+=-100
+	end
+	
+	if hjkchouma>30000:
+		hjkchouma+=-1000
+	end
+	if heguanchouma>30000:
+		heguanchouma+=3000
+	end
+	if saoleijifen>30000:
+		saoleijifen+=-1000
+	end
+	
+	if hjkchouma>60000:
+		hjkchouma+=-3000
+	end
+	if heguanchouma>60000:
+		heguanchouma+=5000
+	end
+	if saoleijifen>60000:
+		saoleijifen+=-3000
+	end
+	
+	if hjkchouma>100000:
+		hjkchouma+=-8000
+	end
+	
+	if hjkchouma>100000 and abs>9:
+		abs+=-1
+	end
+	
+	if heguanchouma>100000:
+		heguanchouma+=9000
+	end
+	if saoleijifen>100000:
+		saoleijifen+=-8000
+	end
+	
+
+--- GirlsApartment ---------------------------------
+
