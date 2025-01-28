@@ -1,0 +1,70 @@
+# 表姐到来
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	'<div id="right-column">'
+		'<div class="actions_menu">'
+			'<div class="action">
+	
+			</div>
+		</div>'
+	'</div>'
+	
+
+	
+	
+	if $ARGS[0]="表姐要来":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\视频\迎接表姐\通知表姐准备来_带水印.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:bjarrive=1 & $godvoice=''表姐_0'' & gt ''表姐到来'',''开始游戏''">知道了</a></div>'
+		'</div>'
+		
+		
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">“<span style="color:red">你表姐下周三中午12点要过来!</span>”</p>'
+			'<p class="dajianshi">“<span style="color:red">表姐，我哪来的表姐？</span>”</p>'
+			'<p class="dajianshi">“<span style="color:red">是你继母的远方亲戚，准备考研，为了上下学方便，她搬过来住段时间，到时候早点回家，跟我一起迎接她</span>”</p>'
+			'<p class="dajianshi">原来自己还有个表姐,头一次听说。</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="表姐来了":
+		'<div class="show_menu">'
+			 '<video preload="metadata" autoplay loop height="480">
+			 <source src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\视频\迎接表姐\迎接表姐进门_带水印.webm" type=''video/webm;''></video></div>'
+		'</div>'
+	
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:$BJ.available=1 & bjarrive=2 & BJ.jindu=''1'' & $godvoice=''表姐_1'' & gt ''表姐到来'',''开始游戏''">欢迎欢迎</a></div>'
+		'</div>'
+	
+	
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">“<span style="color:red">伯父您好，我是未久，冒眛叨扰</span>”</p>'
+			'<p class="dajianshi">“<span style="color:red">未久你来了，欢迎欢迎，当作自己家一样</span>”</p>'
+			'<p class="dajianshi">表姐转头看向我，妩媚笑道：“<span style="color:red">你好，是<<$主角姓名>>吧？我是你的表姐哦，今后请多多关照。</span>”</p>'
+			'<p class="dajianshi"><<$主角姓名>>站着旁边看着表姐，她上身衣着保守，脸上妆容端庄，我愈发觉得这位表姐是那么的美丽动人，加上身份上带来的禁忌快感，我的欲望一发不可收拾，但<<$主角姓名>>以节操发誓，就是一闪而逝的念头，绝对不存在什么“心里的欲求”这种事</p>'
+		'</div>'
+	end
+	
+	
+
+
+
+	
+	if $ARGS[0]="开始游戏":
+		gt "Home"
+	end
+
+--- 表姐到来 ---------------------------------
+

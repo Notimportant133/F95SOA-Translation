@@ -1,0 +1,417 @@
+# 荣ы耀ы之ы星ы
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'ыя'
+	
+	$ga1='梅'
+	$ga2='丽'
+	$ga3='莎'
+	
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		'<div class="actions_menu">'
+		if hour>=8 and hour<=18:
+		'<div class="action">'
+			'<a class="photo" data-title="神秘人：没有权限""><img class="img_stretch" src="images\NPC\boss.jpg"></a>'
+		'</div>'	
+		'<div class="action">'
+			'<a class="photo" data-title="老板的办公室" href="exec:minutes+=10 & gt ''glory_star'',''老板的办公室''"><img class="img_stretch" src="images\NPC\boss_kabinet.jpg"></a>'
+		'</div>'
+		'<div class="action">'
+			'<a class="photo" data-title="我的办公室" href="exec:minutes+=10 & gt ''glory_star'',''我的办公室''"><img class="img_stretch" src="images\NPC\my_cabinet.jpg"></a>'
+		'</div>'
+		end
+			
+		'</div>'
+	'</div>'
+	
+	
+	if $ARGS[0]="":
+		if $meilisha.zhiwei!3:	
+			if hour=8:
+			my.dangtianjine=5
+			elseif hour < 12:
+			my.dangtianjine=4
+			end
+		else
+			if hour=8:
+			my.dangtianjine=50
+			elseif hour < 12:
+			my.dangtianjine=40
+			end
+		end
+		'<div class ="show_menu">'
+			'<img src="images\NPC\hall.jpg" width="854">'
+				
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''subway''">subway</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">在这里，只要你能挣到钱就会得到提拔。</p>'
+			'<p class="dajianshi">上班时间：8点~17点，工作中请不要离开公司，否则工资清零，晚上17点请准时到老板办公室结算工资</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="老板的办公室":
+		
+		'可结算工资：' 
+		*pl my.dangtianjine
+		
+		if rand(1,6)=1 :
+			gt 'glory_star','after_sex_riser_1'
+		else
+			'<div class ="show_menu">'
+				'<img src="images\NPC\boss_kabinet.jpg" width="854">'
+			'</div>'
+			'<div class="button_menu">'
+				if week_day<=4 and hour>=17 and hour<=19:
+				'<div class="button" id="Button"><a href="exec:minutes+=20 & gt ''glory_star'',''结算工资''">结算工资</a></div>'
+				end
+				if week_day=5 and hour>=17 and hour<=19:
+				'<div class="button" id="Button"><a href="exec:minutes+=20 & gt ''glory_star'',''结算周报''">结算周报</a></div>'
+				end
+				'<div class="button" id="Button"><a href="exec:minutes+=20 & gt ''glory_star'',''我的办公室''">回到自己的办公室</a></div>'
+				
+			'</div>'
+			'<div class="dialog_menu">'
+				'<p class="dajianshi">嗯，办公室没人...</p>'
+			'</div>'
+		end
+	end
+	
+	if $ARGS[0]="结算工资":
+		'可结算工资：' 
+		*pl my.dangtianjine
+		
+		meilisha.jine+=my.dangtianjine*10	
+		meilisha.zhoubao+=my.dangtianjine
+		'<div class ="show_menu">'
+			'<img src="images\NPC\boss_kabinet.jpg" width="854">'
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''subway''">subway</a></div>'
+		'</div>'
+		if my.dangtianjine<10 and $meilisha.zhiwei!3:
+			'<div class="dialog_menu">'
+				'- 嘿，<<$主角姓名>>！- 雅罗斯拉夫抽着香烟，- 你有什么事？</p>
+				- 这是今天的工作报告！- 我递过一张纸。</p>'
+				'- 恩，这还不够！- 他摇摇头，向我吐了一口烟雾，- 你再这样不卖力气的工作，过不了过久你就会失业的！'
+				'<span style="color:red">我的总工资：<<meilisha.jine>>比特币</span></p>'
+			'</div>'
+		elseif my.dangtianjine<20 and $meilisha.zhiwei!3:
+			'<div class="dialog_menu">'
+				'我来到老板的办公室，没有发现他。但是漂亮的<<$ga1>><<$ga2>><<$ga3>>在里面，从外表上看，她有点像某个日本明星明日花·绮罗：</p>
+				- 嗨，<<$ga1>><<$ga2>><<$ga3>>！我带来了报告！- 我笑着说。</p>
+				- 好的！那来吧！- 她看了一眼我的报告然后给了我钱。几乎没有抬头看我。妈的。臭婊子！'
+				'<span style="color:red">我的总工资：<<meilisha.jine>>比特币</span></p>'
+			'</div>'
+		elseif my.dangtianjine>20 and $meilisha.zhiwei!3:
+			'<div class="dialog_menu">'
+				'- 嘿，<<$主角姓名>>！- 雅罗斯拉夫抽着香烟，- 你有什么事？</p>
+				- 这是今天的工作报告！- 我递过一张纸。</p>'
+				'- 很好，不错不错！- 他说着从保险箱里拿出钱，- 这是你的提成！但你不要骄傲，你必须更加努力！'
+				'<span style="color:red">我的总工资：<<meilisha.jine>>比特币</span></p>'
+			'</div>'
+		else
+			'- 嘿，<<$主角姓名>>！- 雅罗斯拉夫抽着香烟，- 你有什么事？</p>
+				- 这是今天的工作报告！- 我递过一张纸。</p>'
+				'- 很好，不错不错！- 他说着从保险箱里拿出钱，- 这是你的提成！但你不要骄傲，你必须更加努力！'
+				'<span style="color:red">我的总工资：<<meilisha.jine>>比特币</span></p>'
+		end
+		
+		my.dangtianjine=0
+	end
+	
+	gs 'яооо'
+	
+	if $ARGS[0]="结算周报":
+		'可结算工资：' 
+		*pl my.dangtianjine
+		'可结算周工资：' 
+		*pl meilisha.zhoubao
+		
+		meilisha.jine+=my.dangtianjine*10
+		meilisha.zhoubao+=my.dangtianjine
+		'<div class ="show_menu">'
+			if $meilisha.zhiwei!3:
+				'<video preload="metadata" autoplay height="480"  loop>'
+				 '<source src="images\NPC\视频\first_meet.webm" type=''video/webm;''></video></div>'
+				
+			else
+				'<video preload="metadata" autoplay height="480"  loop>'
+				 '<source src="images\NPC\视频\report_home.webm" type=''video/webm;''></video></div>'
+				
+			end
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''subway''">subway</a></div>'
+		'</div>'
+		
+		if meilisha.zhoubao<150:
+			$meilisha.love=0
+		'<div class="dialog_menu">'
+				'老板的办公室里只有他的老婆在里面：</p>
+					- 你好，<<$ga1>><<$ga2>><<$ga3>>女士，我有一份报告，- 我边说边递给她文件。</p>
+					- 我来看一下...- 女人盯着报告看了一会，- 我不是很明白这些。我老公又..咳咳...去开会了，嗯，你的报酬先给你吧！不一会，我领到了我的报酬然后离开了。妈的，她似乎看不起我。'
+				'<span style="color:red">我的总工资：<<meilisha.jine>>比特币</span></p>'
+		'</div>'
+		elseif meilisha.zhoubao>=150 and $meilisha.zhiwei=0:
+			$meilisha.zhiwei=1
+			$meilisha.love=100
+			'<div class="dialog_menu">'
+				'- 啊哈，<<$主角姓名>>！- <<$ga1>><<$ga2>><<$ga3>>微笑着看着我，- 正如你所见，雅罗斯拉夫不在，把报告给我吧，让我来审阅一下！</p>
+						- 给！- 我递过我的报告。</p>
+						- 嗯不错！- 她扬起眉毛，- 我没看错！你是一个销售人才！我会帮你带给雅罗斯拉夫！你可以走了！'
+				'<span style="color:red">我的总工资：<<meilisha.jine>>比特币</span></p>'
+			'</div>'
+		elseif meilisha.zhoubao>=150 and $meilisha.zhiwei=1:
+			$meilisha.zhiwei=2
+			$meilisha.love=300
+			'<div class="dialog_menu">'
+				'- 啊哈，<<$主角姓名>>！- <<$ga1>><<$ga2>><<$ga3>>微笑着看着我，- 正如你所见，老板不在，把报告给我吧，让我来审阅一下！</p> 
+						- 给！- 我递过我的报告。</p>
+						- 哇！- 她看着报告，- 你做的很棒！比起其他经验丰富的老员工你也毫不逊色！他们只是在混时间！如果你能保持这样的业绩，我会让你成为销售部门的负责人！'
+				'<span style="color:red">我的总工资：<<meilisha.jine>>比特币</span></p>'
+			'</div>'
+		elseif meilisha.zhoubao>=150 and $meilisha.zhiwei=2:
+			$meilisha.zhiwei=3
+			$meilisha.love=501
+			'<div class="dialog_menu">'
+				'- <<$主角姓名>>！- 老板向我招招手，让我留下，- 我看到你做的非常成功！</p>
+					- 这没什么，雅罗斯拉夫先生！- 我假装有些不好意思。</p>
+					- 别害羞！- 男人拍了拍手，对她的老婆点点头，- <<$ga1>><<$ga2>><<$ga3>>坚持向我推荐任命你为销售部经理！</p>
+					- 恭喜你，<<$主角姓名>>！- 女人握了握我的手，- 你现在已经被批准升职了，工资也会随之上涨！每天几十比特币，加上销售额的5%。</p>
+					- 谢谢！我不会让你们失望的！- 我笑着说。'
+			'</div>'
+		else
+			
+			'<div class="dialog_menu">'
+				'- 你好，<<$主角姓名>>！- 老板的老婆跟我打招呼，她看上去总是那么迷人，而且上身只穿了一件胸罩，遮住了她的两坨胸脯肉，- 你带着报告来的吗？过来吧！</p>
+				- 你今天看上去状态不错！- 我边和她打招呼边跟着她进了屋。</p> 
+				- 你老板在那，有平常一样又喝多了！- 她不高兴的指了指雅罗斯拉夫的方向。</p>
+				- 啊...额...<<$主角姓名>>来了啊！来吧，有什么事！- 他打了几个嗝，醉醺醺的说道...'
+			'</div>'
+		end
+		
+		my.dangtianjine=0
+		meilisha.zhoubao=0
+	end
+	
+	if $ARGS[0]="after_sex_riser_1":
+		if $meilisha.zhiwei=3 and $meilisha.love>500 and meilisha.jine>8000:
+			'<div class ="show_menu">'
+				'<video preload="metadata" autoplay loop height="500"><source src="images\NPC\视频\cabinet_riser_1.webm" type=''video/webm;''></video>'
+			'</div>'
+			'<div class="button_menu">'
+				'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''glory_star'',''after_sex_riser_kiss''">亲吻</a></div>'
+				'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''glory_star'',''我的办公室''">离开</a></div>'
+				'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''glory_star''">回前台</a></div>'
+			'</div>'
+			'<div class="dialog_menu">'
+				'<p class="dajianshi">- 某人想要玩一下吗？- <<$ga1>><<$ga2>><<$ga3>>用手摸着我的裤裆。</p>
+				<p class="dajianshi">- 你不想吗？- 我笑着问。</p>'
+			'</div>'
+		else
+			'<div class ="show_menu">'
+			'<video preload="metadata" autoplay loop height="500"><source src="images\NPC\视频\cabinet_ask.webm" type=''video/webm;''></video>'
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''glory_star'',''我的办公室''">离开</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">我走进老板的办公室,她从桌子前站起来走到我身边:</p>
+				<p class="dajianshi">- 坐下<<$主角姓名>>, - 她愤怒的指着椅子示意我坐下。</p>
+				<p class="dajianshi">- 发生什么事了吗? – 我问道.</p>
+				<p class="dajianshi">- 你就是这样管理我手下的员工的？他们的工作一团糟！</p>
+				<p class="dajianshi">- 十分抱歉!</p>'
+		end
+	end
+	
+	if $ARGS[0]="after_sex_riser_kiss":
+		
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay loop height="500"><source src="images\NPC\视频\after_sex_riser_kiss.webm" type=''video/webm;''></video>'
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''glory_star'',''after_sex_riser_suck''">插进嘴里</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''glory_star'',''我的办公室''">离开</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''glory_star''">回前台</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">我脱掉我的T恤，<<$ga1>><<$ga2>><<$ga3>>脱掉她的衬衫，然后用手指抬起我的下巴，开始与我热情的亲吻起来。我开始动手抚摸这个已婚女人的身体，而且非常享受。</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="after_sex_riser_suck":
+		
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay loop height="500"><source src="images\NPC\视频\after_sex_riser_suck.webm" type=''video/webm;''></video>'
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1 & gt ''glory_star'',''after_sex_riser_fuck_doggy''">后入式</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1 & gt ''glory_star'',''after_sex_riser_fuck_up''">骑乘式</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1 & gt ''glory_star'',''after_sex_riser_fuck_miss''">躺到桌子上</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1 & gt ''glory_star'',''我的办公室''">离开</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1 & gt ''glory_star''">回前台</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><<$ga1>><<$ga2>><<$ga3>>蹲下来脱掉了我的裤子。我的鸡巴立即被释放了出来。接着女人用嘴含住了我的鸡巴，开始吸吮起来。</p> 
+				<p class="dajianshi">她一边舔一边用手解开了她的胸罩，露出了她的大奶子。巨大的胸部看上去非常柔软，顺滑的肌肤让我忍不住想要扑上去含住它。</p> '
+		'</div>'
+	end
+	
+	if $ARGS[0]="after_sex_riser_fuck_doggy":
+		
+		
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay loop height="500"><source src="images\NPC\视频\after_sex_riser_fuck_doggy.webm" type=''video/webm;''></video>'
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star'',''after_sex_riser_fuck_up''">骑乘式</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star'',''after_sex_riser_fuck_miss''">躺到桌子上</a></div>'
+			if my.办公室$ga1$ga2$ga3忍耐度<=0:
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star'',''after_sex_riser_fuck_end''">射精</a></div>'
+			end
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star'',''我的办公室''">离开</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star''">回前台</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">我让老板的妻子趴在桌子上.她的小穴早已湿透了。我挺起鸡巴插了进去, 她狭窄的阴道紧紧包裹着我的肉棒，非常的舒服。</p>
+				<p class="dajianshi"><<$ga1>><<$ga2>><<$ga3>>将一条腿放到桌子上并尖叫着,我强壮的肉棒不断插入她的身体, 她像个妓女一样用手撑着她那富满弹性的屁股。</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="after_sex_riser_fuck_up":
+		
+		
+		
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay loop height="500"><source src="images\NPC\视频\after_sex_riser_fuck_up.webm" type=''video/webm;''></video>'
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star'',''after_sex_riser_fuck_doggy''">后入式</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star'',''after_sex_riser_fuck_miss''">躺到桌子上</a></div>'
+			if my.办公室$ga1$ga2$ga3忍耐度<=0:
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star'',''after_sex_riser_fuck_end''">射精</a></div>'
+			end
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star'',''我的办公室''">离开</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star''">回前台</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">我坐在椅子上,<<$ga1>><<$ga2>><<$ga3>>跪在我的双腿上并将小穴对准我的肉棒坐了下来。然后她开始在我的身上骑乘起来，就像一位经验丰富的骑手。从她性感的嘴唇里不断发出呻吟声。</p>
+				<p class="dajianshi">我的脸面贴着她的胸部,那双峰充满弹性,我忍不住去亲吻它们,她的乳头慢慢的变硬了起来.</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="after_sex_riser_fuck_miss":
+		
+		
+		
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay loop height="500"><source src="images\NPC\视频\after_sex_riser_fuck_miss.webm" type=''video/webm;''></video>'
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star'',''after_sex_riser_fuck_doggy''">后入式</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star'',''after_sex_riser_fuck_up''">骑乘式</a></div>'
+			if my.办公室$ga1$ga2$ga3忍耐度<=0:
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star'',''after_sex_riser_fuck_end''">射精</a></div>'
+			end
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star'',''我的办公室''">离开</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & my.办公室<<$ga1>><<$ga2>><<$ga3>>忍耐度+=-1  & gt ''glory_star''">回前台</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">我让<<$ga1>><<$ga2>><<$ga3>>躺在桌子边, 她张开了双腿,我马上站到了它们中间.肉棒插进了她那湿润的阴道中.</p>
+				<p class="dajianshi"><<$ga1>><<$ga2>><<$ga3>>随着我的动作晃动了起来,我摸着她那充满弹性乳房.</p> 
+				<p class="dajianshi">这个皮肤微微有些黑的女人随着我的动作大叫着,我的动作越来越快,我知道过一会她的老公将坐在这里,可他并不知道,他的老婆曾在这张桌子上与别人做爱.</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="after_sex_riser_fuck_end":
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay loop height="500"><source src="images\NPC\视频\after_sex_riser_fuck_end.webm" type=''video/webm;''></video>'
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''glory_star'',''我的办公室''">离开</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''glory_star''">回前台</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p class="dajianshi"><<$ga1>><<$ga2>><<$ga3>>躺在桌子上, 我在她两腿之间操着她. 这激情的一刻让我忘记了一切,我直接射进了<<$ga1>><<$ga2>><<$ga3>>的体内.</p>
+				<p class="dajianshi">她的阴道内灌满了我的精液,我拔出了肉棒, 但为时已晚:</p>
+				<p class="dajianshi">- <<$主角姓名>>, 你这蠢货! 你怎么能射在里面! – 疯狂过后,女人慢慢平静下来,疲惫的躺在桌子上休息。这时她的小穴里不断有精液流出。</p>'
+		'</div>'
+	end
+	
+	
+	
+	if $ARGS[0]="我的办公室":
+		'<div class ="show_menu">'
+			'<video preload="metadata" autoplay loop height="480">
+			 <source src="images\NPC\work_glory_star_my_cabinet.webm" type=''video/webm;''></video></div>'
+				
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=10 & gt ''glory_star'',''监督员工''">监督员工</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=20 & gt ''glory_star'',''老板的办公室''">去老板办公室</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=15 & gt ''glory_star'',''去仓库''">去仓库</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=20 & gt ''glory_star'',''看色情片''">看色情片</a></div>'
+			'<div class="button" id="Button"><a href="exec:minutes+=5 & gt ''subway''">离开公司</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">我坐在了办公室里！我该做什么？</p>'
+		'</div>'
+	end
+	
+	
+	
+	if $ARGS[0]="监督员工":
+		'可结算工资：' 
+		*pl my.dangtianjine
+		
+		my.dangtianjine += 1
+		'<div class ="show_menu">'
+			'<img src="images\NPC\员工工作\work_glory_star_check_<<rand(1,11)>>.jpg" width="854">'
+				
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=10 & gt ''glory_star'',''我的办公室''">回到自己的办公室</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">当天工资增加了！我监视着员工们的一举一动，有的人工作的很认真，有的人在偷懒...他们可能因此会讨厌我，但我现在升职了，虽然是个小职位。我觉得我还能做更多！</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="去仓库":
+		'<div class ="show_menu">'
+			'<img src="images\NPC\stock.jpg" width="854">'
+				
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=10 & gt ''glory_star'',''我的办公室''">离开</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">很多货物！！！！！！</p>'
+		'</div>'
+	end
+	
+	if $ARGS[0]="看色情片":
+		'<div class ="show_menu">'
+			'<img src="images\NPC\色情片\pc_porn_<<rand(0,40)>>.png" width="854">'
+				
+		'</div>'
+		'<div class="button_menu">'
+			'<div class="button" id="Button"><a href="exec:minutes+=20 & gt ''glory_star'',''我的办公室''">退出</a></div>'
+		'</div>'
+		'<div class="dialog_menu">'
+			'<p class="dajianshi">我很快打开网页，发现了一个色情片..</p>'
+		'</div>'
+	end
+
+--- 荣ы耀ы之ы星ы ---------------------------------
+

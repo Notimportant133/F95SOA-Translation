@@ -1,0 +1,95 @@
+# 连锁酒店
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'ыя'
+	a=0
+	q=0
+	
+	if saoleijifen='':
+		saoleijifen=0
+	end
+	
+
+
+
+	
+	'<div id="right-column">'
+		gs'menu_time'
+		gs'menu_status_show'
+		gs'menu_option_show'
+		'<div class="actions_menu">'
+			'<div class="action">'
+				'<a class="photo" data-title="管理处" href="exec:minutes+=15 & gt ''连锁酒店'',''管理处''"><img class="img_stretch" src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\admin_ico.jpg"></a>'
+			'</div>'
+	
+			'<div class="action">'
+				'<a class="photo" data-title="my_apartment" href="exec:minutes+=5 & gt ''my_apartment''"><img class="img_stretch" src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\hata_gg\hall.jpg"></a>'
+			'</div>'
+			
+			'<div class="action">'
+				'<a class="photo" data-title="GirlsApartment" href="exec:minutes+=5 & gt ''GirlsApartment''"><img class="img_stretch" src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\home_lena\hall.jpg"></a>'
+			'</div>'
+			
+			
+		'</div>'
+	'</div>'
+	
+	
+	if $args[0]="":
+		'<div class ="show_menu">'
+			if hour>=8 and hour<=18:
+
+				'<video preload="metadata" autoplay height="480" >'
+				'<source src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\house_.webm" type=''video/webm;''>
+				</video>'
+			else
+
+				'<video preload="metadata" autoplay height="480" >'
+				'<source src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\house_night.webm" type=''video/webm;''>
+				</video>'
+			end
+			
+		'</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''subway''">回城里</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p class="dajianshi3">如果你想住在高层，那么这里很适合你，只不过价格很昂贵。</p>
+			</p>'
+		'</div>'
+	end
+	
+	if $args[0]="管理处":
+	
+		'<div class ="show_menu">
+			<img src="images\NPC\ZXG\vids\old\old\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\admin<<RAND(1,9)>>.png" width="854">
+		</div>'
+		
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''连锁酒店''">离开</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			
+			'<p class="dajianshi3">- 您好，有什么可以帮您？ – 管理员问道。</p>
+			</p>'
+		'</div>'
+	end
+	
+	
+	
+
+
+
+	
+	
+
+--- 连锁酒店 ---------------------------------
+
