@@ -1,0 +1,32 @@
+# A302_Bathroom
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	gs'Yya'
+	
+	
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		gs'A302_Map'
+	'</div>'
+	
+	'<div class ="show_menu"><img src="images\V70版本\增量包_20241111\place\母亲姨妈\图片\A302_浴室.jpg" width="854"></div>'
+	
+	
+	'<div class="button_menu">'
+		'<div class="button"><a href="exec:minutes+=30 & gt ''A302''">Leave</a></div>'
+	'</div>'
+	
+	
+	'<div class="dialog_menu">'
+		'<p>....</p>'
+	'</div>'
+	
+
+--- A302_Bathroom ---------------------------------
+
