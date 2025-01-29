@@ -1,0 +1,297 @@
+# Widows_Home
+
+
+
+	cls
+	$metka = $ARGS[0]   
+	$loc = $CURLOC
+	a=0 & q=0
+	gs'Yya'
+	
+	
+	
+	'<div id="right-column">'
+		gs'Menu_Time'
+		gs'Menu_Status_Show'
+		gs'Menu_Option_Show'
+		'<div class="actions_menu">'
+			'<div class="action">'
+			 '<a class="photo" data-title="Return to the gate" href="exec:gt ''Widows_Home''"><img class="img_stretch" src="images\place\YS家.jpg"></a>'
+			'</div>'
+		'</div>'
+	'</div>'
+	
+	
+	
+	
+	
+	
+	if $args[0]="":
+		if $看过平面图=2: a=1 & gt'Widow_Event','争执'
+		if $ED报复=2:gt'Widows_Home','ED2'
+	'<div class ="show_menu"><img src="images\place\遗孀家.jpg" width="854"></div>'
+	
+		'<div class="button_menu">'
+			if $看过平面图<3:
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home'',''不能进入''">Knock on the door</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home'',''背面''">Go around the back</a></div>'
+			end
+			if $看过平面图=3:
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home'',''看门者''">enter</a></div>'
+
+			end
+			if $看过平面图>3:
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home'',''客厅2''">enter</a></div>'
+
+			end
+			
+			
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Residential_Area''">Leave</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>·Unlike the surrounding architectural style, it is completely Japanese style.</p>'
+		'</div>'
+	
+	end
+	
+	if $args[0]="ED2":
+		if $ED报复=2:$ED报复=3
+		'<div class ="show_menu"><img src="images\NPC\YS\pics\DX0.jpg" width="854"></div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home''">Go away</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+		'<p>*Just happened to meet Ma Dongmao coming out</p>'
+		'<p>Ma Dongmu: Bitch, what you better say is true!</p>'
+		'<p>I：…………</p>'
+		'<p>Ma Dongmu: Hey, call Kasuga Erfan and Kiryu Sanma, let`s go to the big ticket tonight!*On the phone</p>'
+		'</div>'
+	end
+	
+	if $args[0]="不能进入":
+	 msg'She doesn`t welcome you'  & gt 'Widows_Home'
+	end
+	
+	if $args[0]="看门者":
+	 '<div class ="show_menu"><img src="images\NPC\YS\pics\DX99.jpg" width="854"></div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home''">Leave</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+		'<p>New team member: The boss has an order. As new entrants in the New Longkou Group, we must take care of the door here!No fly can let it fly in!Do you understand?！</p>'
+		'<p>New team member A: Roger that!</p>'
+		'<p>New team member B: Understand!</p>'
+		'<p>New team member C: How can the full field in the daily knot group pretend to be the underworld*yawn<a href="exec:money-=200 & gt ''Widows_Home'',''客厅''">-Bribe him ￥200</a></p>'
+		'</div>'
+	end
+	
+	if $args[0]="卧室":
+	        '<div class="show_menu">'
+	             '<video preload="metadata" autoplay loop height="480">
+	             <source src="images\NPC\YS\vids\主卧_<<$times_of_day>>.webm" type=''video/webm;''></video></div>'
+	        '</div>'
+	
+		'<div class="button_menu">'
+			if $times_of_day!'':'<div class="buttonS"><a href="exec:a=2 & gt ''Widow_Event'',''ys_fuck_comfort''">Go in and fuck her</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home''">Leave</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			if $times_of_day='':
+			'<p>· <<$YS.name>>Not in the bedroom during the day.</p>'
+			else
+			'<p><<$YS.name>>:Want to...seem to be fucked...no matter who it is... come and fuck me...have I been imprisoned by them for too long...or do I like to be humiliated?It doesn`t matter... come on... hurry up.……</p>'
+			end
+		'</div>'
+	end
+	
+	if $args[0]="客厅":
+	 '<div class ="show_menu"><img src="images\place\遗孀家客厅.jpg" width="854"></div>'
+	
+		'<div class="button_menu">'
+
+			if $看过平面图=3:'<div class="buttonGr"><a href="exec:">Horse winter mold is in it</a></div>'
+			if $看过平面图>3:'<div class="button"><a href="exec:gt ''Widows_Home'',''卧室''">bedroom</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home'',''书房''">Study room</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home''">Leave</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>·The living room is empty</p>'
+		'</div>'
+	end
+	
+	if $args[0]="客厅2":
+			if $主厨招呼=2:gt'Widow_Event','ys_fuck_divorce'
+	        '<div class="show_menu">'
+	             '<video preload="metadata" autoplay loop height="480">
+	             <source src="images\NPC\YS\vids\遗孀家客厅_<<$times_of_day>>.webm" type=''video/webm;''></video></div>'
+	        '</div>'
+	
+		'<div class="button_menu">'
+			if $times_of_day='':'<div class="buttonS1"><a href="exec:报复对话=0 & gt ''Widows_Home'',''客厅2对话''">Close to the conversation</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home'',''卧室''">bedroom</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home'',''书房''">Study room</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home''">Leave</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			if $times_of_day='':
+			'<p>·In the living room<<$YS.name>>He was in a daze.</p>'
+			else
+			'<p>·There is no one in the living room at night, she should be asleep already…</p>'
+			end
+		'</div>'
+	end
+	
+	if $args[0]="客厅2对话":
+	        '<div class="show_menu">'
+	             '<video preload="metadata" autoplay loop height="480">
+	             <source src="images\NPC\YS\vids\遗孀家客厅0.webm" type=''video/webm;''></video></div>'
+	        '</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonR2"><a href="exec:报复对话=1 & gt ''Widows_Home'',''客厅2对话2''">Chef: Coward</a></div>'
+			'<div class="buttonR3"><a href="exec:报复对话=2 & gt ''Widows_Home'',''客厅2对话2''"><<$JZ.name>></a></div>'
+			'<div class="buttonR4"><a href="exec:报复对话=3 & gt ''Widows_Home'',''客厅2对话2''">Horse winter mold: the culprit</a></div>'
+			'<div class="buttonGn"><a href="exec:minutes+=15 & gt ''Widows_Home''">Leave</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p><<$YS.name>>:Damn bastard, I must retaliate against them, I really can`t stand this humiliation.</p>'
+			'<p>Me: Who are you going to retaliate against?</p>'
+		'</div>'
+	end
+	
+	if $args[0]="客厅2对话2":
+	        '<div class="show_menu">'
+	             '<video preload="metadata" autoplay loop height="480">
+	             <source src="images\NPC\YS\vids\遗孀家客厅1.webm" type=''video/webm;''></video></div>'
+	        '</div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonGn"><a href="exec:gt ''Widow_Event'',''ys_fuck_sofa''">我会支持你</a></div>'
+			if $警长招呼=2 and 报复对话=2:'<div class="buttonR2"><a href="exec:gt ''Widow_Event'',''ys_fuck_same_sheriff''">Call the police: lied about the theft</a></div>'
+			if $主厨招呼=3 and 报复对话=1:'<div class="buttonG4"><a href="exec:gt ''Widow_Event'',''ys_fuck_shares''">Escrow 20% of her shares</a></div>'
+			if $ED报复=3 and 报复对话=3:'<div class="buttonR"><a href="exec:gt ''Final_Event'',''FK_GDX''">Tip off</a></div>'
+			if $ED报复=4 and 报复对话=3:'<div class="buttonR"><a href="exec:a=2 & gt ''Final_Event'',''FK_GDX''">Go to visit</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>Me: What is the reason?</p>'
+			if 报复对话=1:
+			'<p><<$YS.name>>:That bastard cook, who is fierce on the surface, is actually a weak coward!I must make him pay the price for turning a blind eye to my death or not!</p>'
+		'<p>Me: What do you want to do?</p>'
+		'<p><<$YS.name>>:I`m going to ruin his restaurant!That was his life`s work!I want him to watch his red restaurant fall into the hands of others!</p>'
+		'<p><B><span class =''red''>Me: He owns 80% of the shares... as long as you divorce, you will lose half of it, right?…</p>'
+				if $主厨招呼!3:
+					'<p><<$YS.name>>:That`s right!！！You reminded me, I have a good idea, you go and help me call him over❤</p>'
+					 if $主厨招呼=0:$主厨招呼=1
+				 else
+					'<p><<$YS.name>>: After 2 divorces, he is now only half and half of 80%, only 20% hahahahaha❤</p>'
+				 end
+			end
+			if 报复对话=2:
+			'<p><<$YS.name>>:I am a taxpayer!It is her duty to protect every citizen!I must make her pay the price for turning a blind eye to my death or not!</p>'
+		'<p>Me: What do you want to do?</p>'
+		'<p><<$YS.name>>:I don`t know... it`s not a wise move to challenge her without a careful plan.…</p>'
+		'<p><B><span class =''red''>Me: If I`m with<<$JZ.name>>Say hello in advance, hoping there will be a peaceful way to calm her anger…</p>'
+			 if $警长招呼=0:$警长招呼=1
+			end
+			if 报复对话=3:
+			'<p><<$YS.name>>:The abominable culprit!Why let his newly recruited horse invade me!He must be impotent...no...he must be a eunuch!</p>'
+		'<p>Me: What do you want to do?</p>'
+		'<p><<$YS.name>>: I can`t cure him, but it doesn`t mean he won`t get into trouble himself!</p>'
+		'<p>Me: What do you mean…</p>'
+		'<p><<$YS.name>>: Ma Dongmu and my husband are both diehard fans of the Baseball City Giants. It happens that my husband has a baseball cap signed by the whole team... According to his style of behavior, he will definitely want it.<B><span class =''red''>According to my observation, there is a member of parliament living in No. 1600 next door to me. If there is a theft at the member`s house, he will definitely be traced to the end!</s></p>'
+		'<p>Me: How can I help you?</p>'
+		'<p><<$YS.name>>: Let`s go to No. 1600 to deliver some baked pastries. At that time, you will support the people in the boudoir, and I will secretly put the baseball cap in it.</p>'
+			if $ED报复=4:'<p>Me: The result is as you wish.</p>'
+			 if $ED报复=0:$ED报复=1
+			end
+			'<p><<$YS.name>>:Do you think I am a vicious woman?But it`s my character to be vindicated.…</p>'
+		'</div>'
+	end
+	
+	
+	if $args[0]="书房":
+		$指南针[0]="东方"
+		$指南针[1]="西方"
+		$指南针[2]="南方"
+		$指南针[3]="北方"
+		$指南针="<<$指南针[rand(0,3)]>>"
+		$指南针A=$指南针
+	
+		'<div class ="show_menu"><img src="images\place\遗孀家书房<<煤油灯熄灭>>.jpg" width="854"></div>'
+	
+		'<div class="button_menu">'
+			'<div class="buttonGn4"><a href="exec:gt ''Widows_Home'',''什么都没发生''">Press the abrupt button</a></div>'
+			'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home'',''客厅''">Return</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+		'<p>·Study room, this room gives people a crowded feeling.</p>'
+		'<p>·————————————</p>'
+			'<p>·Broken watch pointing<<坏手表时间>>Point ✮ <a href="exec:坏手表时间+=1 & gt ''Widows_Home'',''书房''">Dial one hour faster</a> ✮ <a href="exec:坏手表时间-=1 & gt ''Widows_Home'',''书房''">Dial slowly for one hour</a>            </p>'
+			'<p>·The orientation of the compass<<$指南针>> ✮ <a href="exec:gt ''Widows_Home'',''书房''">Shake</a>            </p>'
+			if 煤油灯熄灭=0:
+				'<p>·The ancient kerosene lamp is lit. <a href="exec:煤油灯熄灭=1 & gt ''Widows_Home'',''书房''">Extinguish</a>            </p>'
+				'<p>·Cross reflection length<<影子的长度>>Beige ✮ <a href="exec:影子的长度+=1 & gt ''Widows_Home'',''书房''">Move forward</a> ✮ <a href="exec:影子的长度-=1 & gt ''Widows_Home'',''书房''">Move back</a>            </p>'
+			end
+			if 煤油灯熄灭=1:
+				'<p>·The ancient kerosene lamp is out✮ <a href="exec:煤油灯熄灭=0 & gt ''Widows_Home'',''书房''">Light up</a>            </p>'
+			end
+		'</div>'
+	end
+	
+	if $args[0]="什么都没发生":
+	 if  坏手表时间=3 and $指南针A="北方" and 影子的长度=3:gt'Widows_Home','隐藏房间'
+	 msg'Nothing happened'  & gt 'Widows_Home','书房'
+	end
+	
+	if $args[0]="隐藏房间":
+	 '<div class ="show_menu"><img src="images\place\暗间0.jpg" width="854"></div>'
+	
+		'<div class="button_menu">'
+			if $看过平面图=3:'<div class="button"><a href="exec:minutes+=15 & gt ''Widows_Home'',''隐藏房间2''">Surveillance weapon</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>·Om----a hidden trapdoor opened</p>'
+			'<p>Me: This should be the secret compartment that has been dusty for many years.…</p>'
+		'</div>'
+	end 
+	
+	if $args[0]="隐藏房间2":
+	 '<div class ="show_menu"><img src="images\place\暗间1.jpg" width="854"></div>'
+	
+		'<div class="button_menu">'
+			'<div class="button"><a href="exec:$黄金AK=1 & gt ''Residential_Area''">Take it away</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p>Me: There is really a golden AK…</p>'
+		'</div>'
+	end 
+	
+	
+	if $args[0]="背面":
+	 '<div class ="show_menu"><img src="images\place\遗孀家背面.jpg" width="854"></div>'
+	
+		'<div class="button_menu">'
+			if $看过平面图<3:'<div class="button"><a href="exec:minutes+=15 & gt ''Widow_Event'',''YS_Fuck_厨睡''">Look through the window</a></div>'
+		'</div>'
+	
+		'<div class="dialog_menu">'
+			'<p></p>'
+		'</div>'
+	end 
+	
+
+--- Widows_Home ---------------------------------
+
