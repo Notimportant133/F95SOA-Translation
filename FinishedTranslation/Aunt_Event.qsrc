@@ -178,8 +178,8 @@
 			 $MQMM.bad+= q+2
 			 $MQMM.love+= q+my.魅力
 			 '<div class="dialog_menu">'
-				 '<p><<$MQMM.name>>: Okay, okay, that's enough!!! Don't get carried away!</p>'
-			 	 '<p>Me: It's really a killjoy~</p>'
+				 '<p><<$MQMM.name>>: Okay, okay, that&#39;s enough!!! Don&#39;t get carried away!</p>'
+			 	 '<p>Me: It&#39;s really a killjoy~</p>'
 			 '</div>'
 		end
 		if 3>=a and a>=1 :
@@ -198,7 +198,7 @@
 			 $MQMM.bad+= q+5
 			 $MQMM.love+= q+my.魅力
 			 '<div class="dialog_menu">'
-				 '<p><<$MQMM.name>>：I don't know what's wrong with me (my inner desire is strongly triggered again)...</p>'
+				 '<p><<$MQMM.name>>：I don&#39;t know what&#39;s wrong with me (my inner desire is strongly triggered again)...</p>'
 			 '</div>'
 		end
 			
@@ -216,12 +216,12 @@
 			'<div class="button"><a href="exec:$MQMM_Event_store=3 & gt ''A302''">Good</a></div>'
 		'</div>'
 		'<div class="dialog_menu">'	
-			'<p><<$MQMM.name>>:"You don't need to pick me up on Friday anymore."</p>'
-			'<p>Me: What's wrong? Has something happened?</p>'
+			'<p><<$MQMM.name>>:"You don&#39;t need to pick me up on Friday anymore."</p>'
+			'<p>Me: What&#39;s wrong? Has something happened?</p>'
 			'<p><<$MQMM.name>>:On Friday, our teaching team is having a dinner at the Red Restaurant; it will likely be very late.</p>'
-			'<p>Me: Group meal for teachers (Isn't that old gang of perverts up to no good?)? Should I wait for you?"</p>'
-			'<p><<$MQMM.name>>: Go back by yourself, rest early, don't wait for me!！</p>'
-			'<p>OS：I'm still not sure. Let's meet at the Red Restaurant at 7 PM on Friday.</p>'
+			'<p>Me: Group meal for teachers (Isn&#39;t that old gang of perverts up to no good?)? Should I wait for you?"</p>'
+			'<p><<$MQMM.name>>: Go back by yourself, rest early, don&#39;t wait for me!！</p>'
+			'<p>OS：I&#39;m still not sure. Let&#39;s meet at the Red Restaurant at 7 PM on Friday.</p>'
 			$姨妈电话=1
 		'</div>'
 	End
@@ -260,26 +260,26 @@
 	'</div>'
 	
 		'<div class="dialog_menu">'
-			if a=0:'<p>Me: ...They've already started drinking.</p>'
+			if a=0:'<p>Me: ...They&#39;ve already started drinking.</p>'
 			if a=1:
-			'<p>Me: We're having a lot of fun...</p>'
+			'<p>Me: We&#39;re having a lot of fun...</p>'
 			end
 			if a=2:
-			'<p>Me: This drinking method wouldn't get you drunk in a short time......</p>'
+			'<p>Me: This drinking method wouldn&#39;t get you drunk in a short time......</p>'
 			end		
 			if a=3:
 			'<p>Me: Hello teachers!!</p>'
 			'<p>Young man, who are you…?</p>'
 			'<p>Me: I am the nephew of<<$MQMM.name>></p>'
-			'<p><<$MQMM.name>>: How did you come here? Didn't we tell you to... go home first?</p>'
+			'<p><<$MQMM.name>>: How did you come here? Didn&#39;t we tell you to... go home first?</p>'
 			'<p>Me: I happened to pass by and saw you drunk, so I came in. Look at how drunk you are...</p>'
-			'<p><<$MQMM.name>>: I don't remember getting drunk... hmm...</p>'
+			'<p><<$MQMM.name>>: I don&#39;t remember getting drunk... hmm...</p>'
 			end
 			
 			if a=4:
-			'<p>Me: You can't even walk anymore, you're not drunk yet.</p>'
+			'<p>Me: You can&#39;t even walk anymore, you&#39;re not drunk yet.</p>'
 			'<p><<$MQMM.name>>: How... could... this...</p>'
-			'<p>Me: Be careful, oh my god, it's so heavy, why did you drink so much, I have to take care of you (good opportunity, go to your aunt's room to 'take care' of her)......</p>'
+			'<p>Me: Be careful, oh my god, it&#39;s so heavy, why did you drink so much, I have to take care of you (good opportunity, go to your aunt&#39;s room to take care of her)......</p>'
 			end
 		'</div>'
 	end
@@ -303,22 +303,22 @@
 	
 		'<div class="dialog_menu">'	
 			if a=0:
-			'<p>Against the living room balcony, the setting sun stretched my shadow long and thin, almost covering my aunt's frail body as she sat slumped on the floor.</p>'
-			'<p>Auntie didn't notice anything, or if she did realize something, she wouldn't think much about it; people tend to let their guard down when facing children, even Auntie, who is a teacher, was no different.</p>'
+			'<p>Against the living room balcony, the setting sun stretched my shadow long and thin, almost covering my aunt&#39;s frail body as she sat slumped on the floor.</p>'
+			'<p>Auntie didn&#39;t notice anything, or if she did realize something, she wouldn&#39;t think much about it; people tend to let their guard down when facing children, even Auntie, who is a teacher, was no different.</p>'
 			end
 			if a=1:
-			'<p><<$MQMM.name>>:“What are you doing!? Let go of me immediately! Mm~ Auntie tried to scold me and stop me, but she didn't get the chance as I lowered my head and covered her lips with mine."</p>'
+			'<p><<$MQMM.name>>:“What are you doing!? Let go of me immediately! Mm~ Auntie tried to scold me and stop me, but she didn&#39;t get the chance as I lowered my head and covered her lips with mine."</p>'
 			'<p><<$MQMM.name>>:“<<$主角姓名>>“Do you know what you are doing?!”..</p>'
-			'<p>Me："Auntie, I love you. Since moving in here, every day without fail, I've been paying attention to your beautiful appearance and figure, my..."</p>'
-			'<p><<$MQMM.name>>: Get away! Get away!<<$主角姓名>>，I'm your auntie! Get up! Get up quickly!'</p>'
+			'<p>Me："Auntie, I love you. Since moving in here, every day without fail, I&#39;ve been paying attention to your beautiful appearance and figure, my..."</p>'
+			'<p><<$MQMM.name>>: Get away! Get away!<<$主角姓名>>，I&#39;m your auntie! Get up! Get up quickly!&#39;</p>'
 			end
 			if a=2:
-			 '<p>The sound of a dog licking water between Auntie's legs reached my ears, so I buried my head deep in Auntie's thighs and savored the sweet mushroom sauce while it swayed up and down and from side to side.</p>'
-			 '<p><<$MQMM.name>>:"No...I don't want it! Don't lick, don't lick!"</p>'
+			 '<p>The sound of a dog licking water between Auntie&#39;s legs reached my ears, so I buried my head deep in Auntie&#39;s thighs and savored the sweet mushroom sauce while it swayed up and down and from side to side.</p>'
+			 '<p><<$MQMM.name>>:"No...I don&#39;t want it! Don&#39;t lick, don&#39;t lick!"</p>'
 			end
 			if a=3:
 			'<p><<$MQMM.name>>:“Stop!”</p>'
-			'<p>Aunt's delicate body was almost twisted into a braid, she kept shaking her waist to try to free herself from the giant dick in her mouth sucking. But that giant dick was under my control, and it couldn't escape by being</p>'
+			'<p>Aunt&#39;s delicate body was almost twisted into a braid, she kept shaking her waist to try to free herself from the giant dick in her mouth sucking. But that giant dick was under my control, and it couldn&#39;t escape by being</p>'
 	
 			end
 			if a=4:
@@ -328,11 +328,11 @@
 			if a=5:
 			'<p>Me:Come on, auntie, let it out, all of it, I want to hear your voice, come here</p>'
 			'<p><<$MQMM.name>>: "Ah ~ Stop it! Umm... no... Um... No... Uh... Ahh... Get away... You get away from me... Go... Away... Ah~!</p>'
-			'<p>The sound of the impact of the crotch and the aunt's tits echoed over the room. The two tits of my aunt were like a water bottle filled with honey, heavy, and shaken by me. </p>'
+			'<p>The sound of the impact of the crotch and the aunt&#39;s tits echoed over the room. The two tits of my aunt were like a water bottle filled with honey, heavy, and shaken by me. </p>'
 			END
 			if a=6:
 			'<p>Me:No, I have to shoot now, I have to shoot now</p>'
-			'<p><<$MQMM.name>>:I am your aunt, you can't come inside, umm...This is incest.</p>'
+			'<p><<$MQMM.name>>:I am your aunt, you can&#39;t come inside, umm...This is incest.</p>'
 			'<p>My aunt raised trembling fingers pointing at me while screaming like a furious lioness. She has come to her senses now and the events that have just taken place are still fresh in her mind, making her close to collapsing.</p>'
 			'<p>I quietly crawled out of bed and picked up my clothes to go back to my room, afraid that Auntie would do something silly. I left the door ajar and listened outside, only hearing Auntie break a few things in her room before running barefoot into the bathroom. Semen slid down her crack and dripped on the floor.</p>'
 			END
@@ -377,15 +377,15 @@
 			'<p>....。</p>'
 			end
 			if a=1:
-			'<p>Me：Auntie, it's been a long time since we last met, would you like to have some water...?</p>'
+			'<p>Me：Auntie, it&#39;s been a long time since we last met, would you like to have some water...?</p>'
 			'<p><<$MQMM.name>>:You are injured??</p>'
 			'<p>Me：Well, I was discharged from the hospital yesterday.</p>'
-			'<p><<$MQMM.name>>:Well... then just remember to come to class every day, the exam is coming up soon and if you can score above an 80, I'll promise your mother that I will fulfill one of your wishes.</p>'
+			'<p><<$MQMM.name>>:Well... then just remember to come to class every day, the exam is coming up soon and if you can score above an 80, I&#39;ll promise your mother that I will fulfill one of your wishes.</p>'
 			'<p>Mw：Really?.（watch you refuse at that time）</p>'
 			end
 			if a=2:
 			 '<p>Aunt took the water and drank it all in one gulp.</p>'
-			 '<p>Me:I watched my aunt drink water with a MacGuffin and it was really like two good things happening at once, I'll see how long you can hold out then...</p>'
+			 '<p>Me:I watched my aunt drink water with a MacGuffin and it was really like two good things happening at once, I&#39;ll see how long you can hold out then...</p>'
 			end
 			if a=3:
 			'<p>How is there no reaction? Is it resistant to medication? It seems that more applications are needed.</p>'
@@ -429,26 +429,26 @@
 			'<p>Aunt is full of joy, seeming to wait for this day for a long time...</p>'
 			end
 			if a=2:
-			 '<p>Uncle:：Wife, there's been a bit more work recently, so I'll be coming back a bit later.”</p>'
-			 '<p><<$MQMM.name>>:It's okay, dear. You've worked hard taking care of our son outside. Come home and take a good rest.</p>'
+			 '<p>Uncle:：Wife, there&#39;s been a bit more work recently, so I&#39;ll be coming back a bit later.”</p>'
+			 '<p><<$MQMM.name>>:It&#39;s okay, dear. You&#39;ve worked hard taking care of our son outside. Come home and take a good rest.</p>'
 			 '<p><<$MQMM.name>>:You two should eat more too. Eat early and then rest. You must be exhausted from sitting in the car!</p>'
-			 '<p>Me: Go to bed earlier? Is it that obvious? Could it be... (Looks like I'll be climbing the wall tonight)</p>'
+			 '<p>Me: Go to bed earlier? Is it that obvious? Could it be... (Looks like I&#39;ll be climbing the wall tonight)</p>'
 			end
 			if a=3:
-			'<p><<$MQMM.name>>:You're not going to be able to come back today, and we're...</p>'
+			'<p><<$MQMM.name>>:You&#39;re not going to be able to come back today, and we&#39;re...</p>'
 			'<p>Then there was a noise of clothes rubbing, and I could feel the atmosphere getting a little hot outside the door.</p>'
-			'<p>The coward's heart was filled with doubt, as he found that no matter how hard he tried to do it, he was always unresponsive. In fact, he had been thinking about a fish-water party with his wife since he started turning off the lights to sleep, but he hadn't reacted to it lying down on the bed.</p>'
-			'<p><<$MQMM.name>>:What's going on?</p>'
+			'<p>The coward&#39;s heart was filled with doubt, as he found that no matter how hard he tried to do it, he was always unresponsive. In fact, he had been thinking about a fish-water party with his wife since he started turning off the lights to sleep, but he hadn&#39;t reacted to it lying down on the bed.</p>'
+			'<p><<$MQMM.name>>:What&#39;s going on?</p>'
 			'<p>Uncle: Hehe, uh, this might be me being a bit tired recently, and my hands are not very obedient down here.</p>'
-			'<p><<$MQMM.name>>:Alright dear, you must have been working hard outside today so we'll just let it slide and go to bed now.</p>'
+			'<p><<$MQMM.name>>:Alright dear, you must have been working hard outside today so we&#39;ll just let it slide and go to bed now.</p>'
 			end
 			if a=4:
 			'<p>Looking at her red-faced husband with no sign of movement below him, Auntie comforted Uncle on her own initiative, realizing that her husband needed rest and she should understand him. However, the fire in her heart had been ignited, so it seemed only natural for her to take matters into her own hands.</p>'
-			'<p>In dim lighting, Auntie's hand gradually reached down... um... ah~~~ I really like this feeling</p>'
+			'<p>In dim lighting, Auntie&#39;s hand gradually reached down... um... ah~~~ I really like this feeling</p>'
 	        end
 	        if a=5:
-			'<p>Me: It seems that the McGuffin works, heehee, uncle, you can't do it, I'll take care of Aunt instead. Ding...</p>'
-			'<p>Me: I'm sorry, I kicked the door and got caught. I quickly ran away and will take down my aunt after the exam is over. For now, I should focus on preparing for the exam.”</p>'
+			'<p>Me: It seems that the McGuffin works, heehee, uncle, you can&#39;t do it, I&#39;ll take care of Aunt instead. Ding...</p>'
+			'<p>Me: I&#39;m sorry, I kicked the door and got caught. I quickly ran away and will take down my aunt after the exam is over. For now, I should focus on preparing for the exam.”</p>'
 	        end
 	    '</div>'  
 	End
@@ -465,7 +465,7 @@
 		$竞赛选项[2]='A.5pieces		   B.4pieces		C.pieces块     D.7pieces '
 		$竞赛题目[3]='2. There are red, yellow, blue and white beads of 10 each in a bag, to ensure that two same-colored beads are picked, at least (  ) should be picked out.'
 		$竞赛选项[3]='A.5	    B.4	     C.3	   D.6'
-		$竞赛题目[4]='3. To win the game of poker with a deck where you can't remove any cards from the table and cannot use jokers, you need to draw at least __ cards in order to be sure that there will be at least six cards of the same suit.__'
+		$竞赛题目[4]='3. To win the game of poker with a deck where you can&#39;t remove any cards from the table and cannot use jokers, you need to draw at least __ cards in order to be sure that there will be at least six cards of the same suit.__'
 		$竞赛选项[4]='A.21   	B.22	  C.23	   D.24'
 		$竞赛题目[5]='4. A tourist group consisting of 49 people used 8 tables for lunch. The number of tables with at least 7 people on them is always (  ).。'
 		$竞赛选项[5]='A.1	   B.2	    	C.3        D.7'
