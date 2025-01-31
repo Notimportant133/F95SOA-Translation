@@ -1,0 +1,14 @@
+# Menu_Option_MainNPC
+
+
+
+	'<div class="option_menu">
+		<a href="exec:gt ''Menu_Character_GG'',''<<my.魅力>>''"><div class="option_gg"></div></a>
+		<a href="exec:gt ''Menu_Character_Main'',''0''"><div class="option_mainnpcs"data-title="V40+角色"></div></a>
+		<a href="exec:gt ''Menu_ReportBugs''"><div class="option_rebugs" data-title="BUG修复"></div></a>
+		<a href="exec:gt ''Menu_Update_Log''"><div class="option_update" data-title="更新日志"></div></a>
+		<a href="exec:gt ''Menu_Character_Students'',''0''"><div class="option_32" data-title="班级名册"></div></a>
+	</div>'
+
+--- Menu_Option_MainNPC ---------------------------------
+

@@ -170,16 +170,16 @@
 		if a=0:
 			 '<div class="dialog_menu">'
 				 '<p>Me: Auntie, you’ve been working all day. Let me give you a massage to relax you.</p>'
-				 '<p><<$MQMM.name>>她白了你一眼....就懂了你的心思...</p>'
-				 '<p><<$MQMM.name>>：好热...好痒.....OS：被这坏小子摸的我心跳好快，好想被抚摸....</p>'
+				 '<p><<$MQMM.name>>She gave you a white look... and understood your thoughts...</p>'
+				 '<p><<$MQMM.name>>：The heat... The itch... OS: This naughty boy touches me, making my heart beat so fast, I want to be caressed...</p>'
 			 '</div>'
 		end
 		if $args[1]="停止":
 			 $MQMM.bad+= q+2
 			 $MQMM.love+= q+my.魅力
 			 '<div class="dialog_menu">'
-				 '<p><<$MQMM.name>>：好了，好了，到此为止！！！别得寸进尺！</p>'
-			 	 '<p>我：真是扫兴~</p>'
+				 '<p><<$MQMM.name>>: Okay, okay, that's enough!!! Don't get carried away!</p>'
+			 	 '<p>Me: It's really a killjoy~</p>'
 			 '</div>'
 		end
 		if 3>=a and a>=1 :
@@ -190,7 +190,7 @@
 	
 		if a>=4 :
 			 '<div class="dialog_menu">'
-				 '<p><<$MQMM.name>>：…混蛋！…<<$娇喘声>>..…再这么下去的话…</p>'
+				 '<p><<$MQMM.name>>: ...asshole!... <<$娇喘声>>... if you keep going like this...</p>'
 			 '</div>'
 		end
 		
@@ -198,7 +198,7 @@
 			 $MQMM.bad+= q+5
 			 $MQMM.love+= q+my.魅力
 			 '<div class="dialog_menu">'
-				 '<p><<$MQMM.name>>：我是怎么了（内心强烈的欲望再次被激发）....</p>'
+				 '<p><<$MQMM.name>>：I don't know what's wrong with me (my inner desire is strongly triggered again)...</p>'
 			 '</div>'
 		end
 			
@@ -213,15 +213,15 @@
 				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\电话.webm" type=''video/webm;''></video></div>'
 			'</div>'
 		'<div class="button_menu">'
-			'<div class="button"><a href="exec:$MQMM_Event_store=3 & gt ''A302''">好的</a></div>'
+			'<div class="button"><a href="exec:$MQMM_Event_store=3 & gt ''A302''">Good</a></div>'
 		'</div>'
 		'<div class="dialog_menu">'	
-			'<p><<$MQMM.name>>:周五你不用接我回家了.</p>'
-			'<p>我:咋了？出啥事了？</p>'
-			'<p><<$MQMM.name>>:周五我们教师组在赤色餐厅聚餐，估计会很晚了。</p>'
-			'<p>我:教师组聚餐（那帮老色皮没安好心吧）？要我等你吗？</p>'
-			'<p><<$MQMM.name>>:你自己回去，早点休息吧，别等我了！</p>'
-			'<p>OS：我还是不放心，周五晚上七点去赤色餐厅看看吧</p>'
+			'<p><<$MQMM.name>>:"You don't need to pick me up on Friday anymore."</p>'
+			'<p>Me: What's wrong? Has something happened?</p>'
+			'<p><<$MQMM.name>>:On Friday, our teaching team is having a dinner at the Red Restaurant; it will likely be very late.</p>'
+			'<p>Me: Group meal for teachers (Isn't that old gang of perverts up to no good?)? Should I wait for you?"</p>'
+			'<p><<$MQMM.name>>: Go back by yourself, rest early, don't wait for me!！</p>'
+			'<p>OS：I'm still not sure. Let's meet at the Red Restaurant at 7 PM on Friday.</p>'
 			$姨妈电话=1
 		'</div>'
 	End
@@ -232,14 +232,14 @@
 				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\电话.webm" type=''video/webm;''></video></div>'
 			'</div>'
 		'<div class="button_menu">'
-			'<div class="button"><a href="exec: & gt ''A302''">好的</a></div>'
+			'<div class="button"><a href="exec: & gt ''A302''">Ok</a></div>'
 		'</div>'
 		'<div class="dialog_menu">'	
-			'<p><<$MQMM.name>>:你姨父周六晚上要回家，你老实点.</p>'
-			'<p>我:我咋不老实了？嘿嘿</p>'
-			'<p><<$MQMM.name>>:你还好意思说，每天晚上都来折腾我。</p>'
-			'<p>我:.......</p>'
-			'<p>OS：给姨父灌点安眠药不就好了。</p>'
+			'<p><<$MQMM.name>>: Your uncle is coming home Saturday night, be honest.</p>'
+			'<p>Me: Why am I not being honest? Haha.</p>'
+			'<p><<$MQMM.name>>: How dare you say that you bother me every night.</p>'
+			'<p>Me:.......</p>'
+			'<p>OS：Just give your uncle some sleeping pills.</p>'
 			$姨妈电话1=1
 		'</div>'
 	End
@@ -250,36 +250,36 @@
 				 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\聚餐1-<<a>>.webm" type=''video/webm;''></video></div>'
 			'</div>'
 			'<div class="button_menu">'
-			if a=0:'<div class="button"><a href="exec:a=1 & $MQMM.love+=5  & gt ''Aunt_Event'',''教师组吃饭''">偷听聊天</a></div>'
-			if a=1:'<div class="button"><a href="exec:a=2 & $MQMM.love+=5 & gt ''Aunt_Event'',''教师组吃饭''">开始灌酒</a></div>'
+			if a=0:'<div class="button"><a href="exec:a=1 & $MQMM.love+=5  & gt ''Aunt_Event'',''教师组吃饭''"> Eavesdrop on conversations.</a></div>'
+			if a=1:'<div class="button"><a href="exec:a=2 & $MQMM.love+=5 & gt ''Aunt_Event'',''教师组吃饭''">Start pouring the alcohol.</a></div>'
 			if 4>=a and a>=2:
-				if a=2:'<div class="buttonP"><a href="exec:a=3 & $MQMM.love+=10 & gt ''Aunt_Event'',''教师组吃饭''">现身“救驾”</a></div>'
-				if a=3 :'<div class="buttonP"><a href="exec:a=4 & $MQMM.love+=10  & gt ''Aunt_Event'',''教师组吃饭''">带回家</a></div>'
-				if a=4 :'<div class="button"><a href="exec:minutes+=5 & $MQMM_Event_store=4 & gt ''A302''">回家</a></div>'
+				if a=2:'<div class="buttonP"><a href="exec:a=3 & $MQMM.love+=10 & gt ''Aunt_Event'',''教师组吃饭''">Appear for rescue.</a></div>'
+				if a=3 :'<div class="buttonP"><a href="exec:a=4 & $MQMM.love+=10  & gt ''Aunt_Event'',''教师组吃饭''">Take home</a></div>'
+				if a=4 :'<div class="button"><a href="exec:minutes+=5 & $MQMM_Event_store=4 & gt ''A302''">Go home</a></div>'
 			end
 	'</div>'
 	
 		'<div class="dialog_menu">'
-			if a=0:'<p>我: 居然都开始喝酒了...</p>'
+			if a=0:'<p>Me: ...They've already started drinking.</p>'
 			if a=1:
-			'<p>我:聊的真起劲......</p>'
+			'<p>Me: We're having a lot of fun...</p>'
 			end
 			if a=2:
-			'<p>我:这个喝法不是一会就喝醉了.......</p>'
+			'<p>Me: This drinking method wouldn't get you drunk in a short time......</p>'
 			end		
 			if a=3:
-			'<p>我: 各位老师好！！</p>'
-			'<p>小伙子，你是？…</p>'
-			'<p>我: 我是<<$MQMM.name>>的外甥.</p>'
-			'<p><<$MQMM.name>>: 你咋来了，不是让你..先回家吗？</p>'
-			'<p>我: 我恰巧路过，看见你喝醉了，就进来了.瞧你醉的那样子.....</p>'
-			'<p><<$MQMM.name>>: 我哪里喝醉了....额...</p>'
+			'<p>Me: Hello teachers!!</p>'
+			'<p>Young man, who are you…?</p>'
+			'<p>Me: I am the nephew of<<$MQMM.name>></p>'
+			'<p><<$MQMM.name>>: How did you come here? Didn't we tell you to... go home first?</p>'
+			'<p>Me: I happened to pass by and saw you drunk, so I came in. Look at how drunk you are...</p>'
+			'<p><<$MQMM.name>>: I don't remember getting drunk... hmm...</p>'
 			end
 			
 			if a=4:
-			'<p>我: 你都不会走路了，还没醉</p>'
-			'<p><<$MQMM.name>>: 怎....么.....会......</p>'
-			'<p>我: 走稳点，哎呦妈呀，真重，喝那么多就干啥，我还得照顾你（好机会，去姨妈房间“照顾”她）.....</p>'
+			'<p>Me: You can't even walk anymore, you're not drunk yet.</p>'
+			'<p><<$MQMM.name>>: How... could... this...</p>'
+			'<p>Me: Be careful, oh my god, it's so heavy, why did you drink so much, I have to take care of you (good opportunity, go to your aunt's room to 'take care' of her)......</p>'
 			end
 		'</div>'
 	end
@@ -291,50 +291,50 @@
 			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\强奸<<a>>~1.webm" type=''video/webm;''></video></div>'
 		'</div>'
 		'<div class="button_menu">'
-			if a=0:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">亲胸</a></div>'
-			if a=1:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">舔穴</a></div>'
-			if a=2:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">口交</a></div>'
-			if a=3:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">后入</a></div>'
-			if a=4:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">冲刺</a></div>'
-			if a=5:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">颜射</a></div>'
-		    if a=6:'<div class="buttonR"><a href="exec: $MQMM_Event_store=5 &$MQMM.love-=500 & gt ''Generic_Overnight_2''">溜走</a></div>'
+			if a=0:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">Touch chest</a></div>'
+			if a=1:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">Lick hole</a></div>'
+			if a=2:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">Oral Sex</a></div>'
+			if a=3:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">Trust in her</a></div>'
+			if a=4:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">Faster</a></div>'
+			if a=5:'<div class="buttonP"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''强奸''">Faceshot</a></div>'
+		    if a=6:'<div class="buttonR"><a href="exec: $MQMM_Event_store=5 &$MQMM.love-=500 & gt ''Generic_Overnight_2''">Run Away</a></div>'
 		'</div>'
 	
 	
 		'<div class="dialog_menu">'	
 			if a=0:
-			'<p>背对着客厅的阳台，夕阳将我的影子拉的长长的，几乎覆盖住了姨妈瘫坐在地的娇躯。</p>'
-			'<p>姨妈并没有察觉到什么，或者说她就算意识到什么也不会多想，人呢在面对小孩的时候往往容易放松警惕，哪怕是身为老师的姨妈也一样。</p>'
+			'<p>Against the living room balcony, the setting sun stretched my shadow long and thin, almost covering my aunt's frail body as she sat slumped on the floor.</p>'
+			'<p>Auntie didn't notice anything, or if she did realize something, she wouldn't think much about it; people tend to let their guard down when facing children, even Auntie, who is a teacher, was no different.</p>'
 			end
 			if a=1:
-			'<p><<$MQMM.name>>:“你干什么！快放开，唔～”姨妈想呵斥我下来，结果话还没说完就被我俯下身子将其檀口堵了起来。</p>'
-			'<p><<$MQMM.name>>:“<<$主角姓名>>！你知道你自己在干嘛吗！”.</p>'
-			'<p>我：“姨妈，我喜欢你，自从住在这里我每天无不关注着你美丽的容貌，你的身材，我……”</p>'
-			'<p><<$MQMM.name>>:“嗯～滚开！滚开！<<$主角姓名>>，我可是你姨妈！你快起来！快起来啊～”。</p>'
+			'<p><<$MQMM.name>>:“What are you doing!? Let go of me immediately! Mm~ Auntie tried to scold me and stop me, but she didn't get the chance as I lowered my head and covered her lips with mine."</p>'
+			'<p><<$MQMM.name>>:“<<$主角姓名>>“Do you know what you are doing?!”..</p>'
+			'<p>Me："Auntie, I love you. Since moving in here, every day without fail, I've been paying attention to your beautiful appearance and figure, my..."</p>'
+			'<p><<$MQMM.name>>: Get away! Get away!<<$主角姓名>>，I'm your auntie! Get up! Get up quickly!'</p>'
 			end
 			if a=2:
-			 '<p>姨妈的双腿间传来狗舔水的声音，我的将头深埋在姨妈的大腿中，品尝着这甜蜜的鲍汁，时而上下晃动，时而左右摇摆，刺激的姨妈的娇躯也轻微颤动。</p>'
-			 '<p><<$MQMM.name>>:“不～我不要！～别舔，别舔啊～”</p>'
+			 '<p>The sound of a dog licking water between Auntie's legs reached my ears, so I buried my head deep in Auntie's thighs and savored the sweet mushroom sauce while it swayed up and down and from side to side.</p>'
+			 '<p><<$MQMM.name>>:"No...I don't want it! Don't lick, don't lick!"</p>'
 			end
 			if a=3:
-			'<p><<$MQMM.name>>:“住……手！”</p>'
-			'<p>姨妈的娇躯都快扭成麻花了，她不停晃动着腰肢想借此脱离嘴中的抽插的巨屌。可那巨屌在我的控制下插入着姨妈的小嘴却也无法摆脱。</p>'
+			'<p><<$MQMM.name>>:“Stop!”</p>'
+			'<p>Aunt's delicate body was almost twisted into a braid, she kept shaking her waist to try to free herself from the giant dick in her mouth sucking. But that giant dick was under my control, and it couldn't escape by being</p>'
 	
 			end
 			if a=4:
-			'<p><<$MQMM.name>>:“畜牲！你就是个畜牲！我姐怎么就生了你这么一个不是人的东西！”</p>'
-			'<p>姨妈喘着粗气骂道，不过她的反应却更加激起了我征服的欲望。</p>'
+			'<p><<$MQMM.name>>:You beast! You are a beast! How did my sister give birth to such an inhuman thing?</p>'
+			'<p>Aunt wheezed and cursed, but her reaction only fueled my desire for conquest.</p>'
 	        end
 			if a=5:
-			'<p>我:“没错，就这样，姨妈，叫出来，都叫出来，我想听你的声音，快来”</p>'
-			'<p><<$MQMM.name>>:“啊～快停下～嗯啊～不要～嗯～不要～嗯嗯～嗯哼～滚开～你给我滚开～滚……开……啊～～！”</p>'
-			'<p>胯部和姨妈奶子撞击的声音回荡在房间上空。姨妈的两个奶子就像是装满了蜜汁的水袋一样，沉甸甸的，被我撞的一阵晃动。</p>'
+			'<p>Me:Come on, auntie, let it out, all of it, I want to hear your voice, come here</p>'
+			'<p><<$MQMM.name>>: "Ah ~ Stop it! Umm... no... Um... No... Uh... Ahh... Get away... You get away from me... Go... Away... Ah~!</p>'
+			'<p>The sound of the impact of the crotch and the aunt's tits echoed over the room. The two tits of my aunt were like a water bottle filled with honey, heavy, and shaken by me. </p>'
 			END
 			if a=6:
-			'<p>我:“不行，我要射了，我要射了”</p>'
-			'<p><<$MQMM.name>>:“我，我是你姨妈，你不能射进来，嗯～我们这是乱伦啊～”</p>'
-			'<p>姨妈举起颤抖的手指着我嘶吼着，如同一个生气的母狮子。现在的她已经缓过神来，刚刚发生的一切还历历在目，让她几近崩溃。</p>'
-			'<p>我默默的爬下床捡起衣服回到自己的房间，害怕姨妈作出什么傻事我把门漏个缝，偷听着门外的动静。只听到姨妈在房间中摔了几件东西，然后顾不上穿鞋一路小跑跑进卫生间，精液顺着她的股缝间滑出，滴了一地。</p>'
+			'<p>Me:No, I have to shoot now, I have to shoot now</p>'
+			'<p><<$MQMM.name>>:I am your aunt, you can't come inside, umm...This is incest.</p>'
+			'<p>My aunt raised trembling fingers pointing at me while screaming like a furious lioness. She has come to her senses now and the events that have just taken place are still fresh in her mind, making her close to collapsing.</p>'
+			'<p>I quietly crawled out of bed and picked up my clothes to go back to my room, afraid that Auntie would do something silly. I left the door ajar and listened outside, only hearing Auntie break a few things in her room before running barefoot into the bathroom. Semen slid down her crack and dripped on the floor.</p>'
 			END
 	    '</div>'  
 	End
@@ -347,14 +347,14 @@
 			'</div>'
 	
 		'<div class="button_menu">'
-			if $浴室num=1 and $MQMM_Event_store>=12 and $MQMM.bad>=150:'<div class="buttonR"><a href="exec:gt ''Aunt_Event'',''MQMM_Fuck_按摩''">按摩-加入"麦高芬"</a></div>'
-			if $浴室num=2 and $MQMM_Event_store>=13:'<div class="buttonS"><a href="exec:gt ''Aunt_Event'',''MQMM_Fuck_浴室内''">进去干她</a></div>'
+			if $浴室num=1 and $MQMM_Event_store>=12 and $MQMM.bad>=150:'<div class="buttonR"><a href="exec:gt ''Aunt_Event'',''MQMM_Fuck_按摩''">Massage - Add McGuffin</a></div>'
+			if $浴室num=2 and $MQMM_Event_store>=13:'<div class="buttonS"><a href="exec:gt ''Aunt_Event'',''MQMM_Fuck_浴室内''">Go in and fuck her</a></div>'
 	
 			'<div class="button"><a href="exec:minutes+=15 & gt ''A302''">Leave</a></div>'
 		'</div>'
 	
 		'<div class="dialog_menu">'
-			'<p>- <<$MQMM.name>>姨妈在洗澡......</p>'
+			'<p>- <<$MQMM.name>>Aunt is taking a bath...</p>'
 		'</div>'
 	end
 	
@@ -365,9 +365,9 @@
 			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\下药1-<<a>>.webm" type=''video/webm;''></video></div>'
 		'</div>'
 		'<div class="button_menu">'
-			if a=0:'<div class="buttonR"><a href="exec:a+=1& $MQMM.love+=15 & gt ''Aunt_Event'',''MQMM_下药''">去教室</a></div>'
-			if a=1:'<div class="buttonR"><a href="exec:a+=1& $MQMM.love+=15 & gt ''Aunt_Event'',''MQMM_下药''">递水</a></div>'
-			if a=2:'<div class="buttonR"><a href="exec:a+=1& $MQMM.love+=15 & gt ''Aunt_Event'',''MQMM_下药''">听课</a></div>'
+			if a=0:'<div class="buttonR"><a href="exec:a+=1& $MQMM.love+=15 & gt ''Aunt_Event'',''MQMM_下药''">GO TO CLASSROOM</a></div>'
+			if a=1:'<div class="buttonR"><a href="exec:a+=1& $MQMM.love+=15 & gt ''Aunt_Event'',''MQMM_下药''">Bring Water</a></div>'
+			if a=2:'<div class="buttonR"><a href="exec:a+=1& $MQMM.love+=15 & gt ''Aunt_Event'',''MQMM_下药''">Listen to the lecture</a></div>'
 		    if a=3:'<div class="button"><a href="exec:minutes+=110 & gt ''Generic_Reading''">下课</a></div>'
 		'</div>'
 	
@@ -377,18 +377,18 @@
 			'<p>....。</p>'
 			end
 			if a=1:
-			'<p>我：“姨妈，好久不见，喝点水吧……”</p>'
-			'<p><<$MQMM.name>>:“你伤好了??</p>'
-			'<p>我：“嗯，昨天天就出院了”.</p>'
-			'<p><<$MQMM.name>>:“嗯～那就每天记得来上课，马上就考试了，你要是能考80分以上，我答应你妈的，满足你一个愿望～”。</p>'
-			'<p>我：“真的吗？”.（看你到时候怎么拒绝）</p>'
+			'<p>Me：Auntie, it's been a long time since we last met, would you like to have some water...?</p>'
+			'<p><<$MQMM.name>>:You are injured??</p>'
+			'<p>Me：Well, I was discharged from the hospital yesterday.</p>'
+			'<p><<$MQMM.name>>:Well... then just remember to come to class every day, the exam is coming up soon and if you can score above an 80, I'll promise your mother that I will fulfill one of your wishes.</p>'
+			'<p>Mw：Really?.（watch you refuse at that time）</p>'
 			end
 			if a=2:
-			 '<p>姨妈接过水，一口喝了下去。</p>'
-			 '<p>我:看着姨妈喝下加了麦高芬的水，真是双喜临门啊，到时候我看你还能不能坚持的住.....”</p>'
+			 '<p>Aunt took the water and drank it all in one gulp.</p>'
+			 '<p>Me:I watched my aunt drink water with a MacGuffin and it was really like two good things happening at once, I'll see how long you can hold out then...</p>'
 			end
 			if a=3:
-			'<p>怎么没反应，有抗药性吗？看来要多使几次才行啊。</p>'
+			'<p>How is there no reaction? Is it resistant to medication? It seems that more applications are needed.</p>'
 	
 			end
 	    '</div>'  
@@ -402,22 +402,22 @@
 		'</div>'
 		'<div class="button_menu">'
 			if a=0:
-	        '<div class="button"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''MQMM_姨父回家''">回家</a></div>'
+	        '<div class="button"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''MQMM_姨父回家''">Back home</a></div>'
 	        end
 			if a=1:
-	        '<div class="button"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''MQMM_姨父回家''">吃饭</a></div>'
+	        '<div class="button"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''MQMM_姨父回家''">Eat</a></div>'
 	        end
 			if a=2:
-	        '<div class="buttonR"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''MQMM_姨父回家''">偷看</a></div>'
+	        '<div class="buttonR"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''MQMM_姨父回家''">Peek</a></div>'
 	        end
 			if a=3:
-	        '<div class="buttonR"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''MQMM_姨父回家''">偷看</a></div>'
+	        '<div class="buttonR"><a href="exec:a+=1& $MQMM.bad+=2 & gt ''Aunt_Event'',''MQMM_姨父回家''">Peek</a></div>'
 	        end
 			if a=4:
-	        '<div class="buttonR"><a href="exec:a+=1& gt ''Aunt_Event'',''MQMM_姨父回家''">溜走</a></div>'
+	        '<div class="buttonR"><a href="exec:a+=1& gt ''Aunt_Event'',''MQMM_姨父回家''">Leave</a></div>'
 	        end
 	        if a=5:
-	        '<div class="buttonR"><a href="exec: $MQMM_Event_store=10 & gt ''Generic_Overnight_2''">休息</a></div>'
+	        '<div class="buttonR"><a href="exec: $MQMM_Event_store=10 & gt ''Generic_Overnight_2''">Rest</a></div>'
 	        end
 		'</div>'
 		'<div class="dialog_menu">'	
@@ -425,30 +425,30 @@
 			'<p>..</p>'
 			end
 			if a=1:
-			'<p>姨妈一个人在厨房忙碌着，为即将到来的姨父跟表弟准备着丰盛的早餐……”</p>'
-			'<p>姨妈满脸充满着喜悦，似乎期待这天很久了....”</p>'
+			'<p>Aunt is busy in the kitchen preparing a nutritious breakfast for her father-in-law and her younger brother...</p>'
+			'<p>Aunt is full of joy, seeming to wait for this day for a long time...</p>'
 			end
 			if a=2:
-			 '<p>姨父：“老婆，最近事有点多，回来的有点晚了。”</p>'
-			 '<p><<$MQMM.name>>:“没事老公，你在外面带着儿子辛苦了，来家里好好休息休息吧”</p>'
-			 '<p><<$MQMM.name>>:你俩也多吃一点，吃完早点去休息，坐车都累坏了吧！</p>'
-			 '<p>我:早点睡？这么明显的吗？难道是要......（看来今晚可以爬墙根了）</p>'
+			 '<p>Uncle:：Wife, there's been a bit more work recently, so I'll be coming back a bit later.”</p>'
+			 '<p><<$MQMM.name>>:It's okay, dear. You've worked hard taking care of our son outside. Come home and take a good rest.</p>'
+			 '<p><<$MQMM.name>>:You two should eat more too. Eat early and then rest. You must be exhausted from sitting in the car!</p>'
+			 '<p>Me: Go to bed earlier? Is it that obvious? Could it be... (Looks like I'll be climbing the wall tonight)</p>'
 			end
 			if a=3:
-			'<p><<$MQMM.name>>:“志明，今天难得你回来，我们……”</p>'
-			'<p>接着又是一阵衣服摩擦的声音，隔着房门我都能感觉屋里的气氛变得有些灼热起来。</p>'
-			'<p>姨夫此刻的内心充满了疑问，因为他发现自己不管怎么努力自己的下本身始终毫无反应。其实从刚开始关灯睡觉时他就想着和自己的妻子来一场鱼水之欢，可是躺在床上下面却一直没有反应。</p>'
-			'<p><<$MQMM.name>>:“怎么会事？”</p>'
-			'<p>姨父：“咳咳……，这个……呃……可能是我最近有点累了，下面有点不听使唤”</p>'
-			'<p><<$MQMM.name>>:算了，老公，你应该是在外面太辛苦了，今天咱们就算了，先睡觉吧”</p>'
+			'<p><<$MQMM.name>>:You're not going to be able to come back today, and we're...</p>'
+			'<p>Then there was a noise of clothes rubbing, and I could feel the atmosphere getting a little hot outside the door.</p>'
+			'<p>The coward's heart was filled with doubt, as he found that no matter how hard he tried to do it, he was always unresponsive. In fact, he had been thinking about a fish-water party with his wife since he started turning off the lights to sleep, but he hadn't reacted to it lying down on the bed.</p>'
+			'<p><<$MQMM.name>>:What's going on?</p>'
+			'<p>Uncle: Hehe, uh, this might be me being a bit tired recently, and my hands are not very obedient down here.</p>'
+			'<p><<$MQMM.name>>:Alright dear, you must have been working hard outside today so we'll just let it slide and go to bed now.</p>'
 			end
 			if a=4:
-			'<p>望着面前满脸通红下体却没一丝动静的丈夫，姨妈主动安慰起姨父来，自己的丈夫需要休息，她应该要懂得理解他。但是内心的那团火已经被点燃了，看来只能自己动手了..</p>'
-			'<p>在昏暗的灯光下，姨妈的手渐渐伸到了下面......嗯....…啊~~好喜欢这种感觉…</p>'
+			'<p>Looking at her red-faced husband with no sign of movement below him, Auntie comforted Uncle on her own initiative, realizing that her husband needed rest and she should understand him. However, the fire in her heart had been ignited, so it seemed only natural for her to take matters into her own hands.</p>'
+			'<p>In dim lighting, Auntie's hand gradually reached down... um... ah~~~ I really like this feeling</p>'
 	        end
 	        if a=5:
-			'<p>我：看来麦高芬起作用了，嘿嘿，姨父，你不行，我就替你照顾姨妈吧。铛...</p>'
-			'<p>我：不好，踢到门了，被发现了，先溜了，等考完试再拿下姨妈，我还是先准备考试吧.</p>'
+			'<p>Me: It seems that the McGuffin works, heehee, uncle, you can't do it, I'll take care of Aunt instead. Ding...</p>'
+			'<p>Me: I'm sorry, I kicked the door and got caught. I quickly ran away and will take down my aunt after the exam is over. For now, I should focus on preparing for the exam.”</p>'
 	        end
 	    '</div>'  
 	End
@@ -459,27 +459,27 @@
 			 <source src="images\V70版本\增量包_20241111\place\母亲姨妈\MQMM\vids\考试.webm" type=''video/webm;''></video></div>'
 		'</div>'
 	
-		$竞赛题目[1]='1、13个梨子放到5个盘子里，总有一个盘子里至少要放入（ ）个梨子。'
+		$竞赛题目[1]='1. Place 13 pears into 5 plates, and there must be at least one plate with ( ) pears in it'
 		$竞赛选项[1]='A.3	   B.4	     C.5      D.6 '
-		$竞赛题目[2]='1、郭阿姨把21块蛋糕分给5个小组，总有一个小组至少要分（   ）。'
-		$竞赛选项[2]='A.5块		   B.4块		C.6块     D.7块 '
-		$竞赛题目[3]='2、有红、黄、蓝、白珠子各10粒，装在一个袋子里，为了保证摸出的珠子有两粒颜色相同，应至少摸出（  ）粒。'
+		$竞赛题目[2]='1. Guo Aunt divides the cake into 5 groups with a total of 21 pieces; there must be at least one group that receives ( ).'
+		$竞赛选项[2]='A.5pieces		   B.4pieces		C.pieces块     D.7pieces '
+		$竞赛题目[3]='2. There are red, yellow, blue and white beads of 10 each in a bag, to ensure that two same-colored beads are picked, at least (  ) should be picked out.'
 		$竞赛选项[3]='A.5	    B.4	     C.3	   D.6'
-		$竞赛题目[4]='3、有一副去掉大、小王的扑克牌，至少抽出（  ）张牌才能保证至少6张牌的花色相同。'
+		$竞赛题目[4]='3. To win the game of poker with a deck where you can't remove any cards from the table and cannot use jokers, you need to draw at least __ cards in order to be sure that there will be at least six cards of the same suit.__'
 		$竞赛选项[4]='A.21   	B.22	  C.23	   D.24'
-		$竞赛题目[5]='4、某旅游团共49名游客，中午吃饭时用了8个餐桌，总有（ ）个餐桌的人数不少于7人。'
+		$竞赛题目[5]='4. A tourist group consisting of 49 people used 8 tables for lunch. The number of tables with at least 7 people on them is always (  ).。'
 		$竞赛选项[5]='A.1	   B.2	    	C.3        D.7'
-		$竞赛题目[6]='5、从一副扑克牌中（去掉大、小王）任意抽取了9张扑克牌，其中至少有（   ）张扑克牌是同色的。'
+		$竞赛题目[6]='5. In a deck of cards (excluding the big and small ones), you randomly pick out 9 cards, at least there must be ( ) cards that are the same color.'
 		$竞赛选项[6]='A.3	  B.4	    	C.2      D.5'
-		$竞赛题目[7]='6、把25本书最多放进（   ）个抽屉中才能保证至少有一个抽屉中放进7本书。'
+		$竞赛题目[7]='6. How many drawers can hold the maximum of 25 books so that at least one drawer has 7 books?'
 		$竞赛选项[7]='A.4	   B.3		   C.2	    	D.1'
-		$竞赛题目[8]='7、将一些书放入三个抽屉里，总有一个抽屉至少放5本书，这些书共有（   ）本。'
+		$竞赛题目[8]='7. Put some books in three drawers, and there is always one drawer that has at least five books, all of which are。'
 		$竞赛选项[8]='A.13～15     B.12～16     C.12～15     D.13～16'
-		$竞赛题目[9]='8、至少在（     ）个人中，才能保证找到两个同一月份出生的人。'
+		$竞赛题目[9]='8. At least in () individuals can ensure that two people born in the same month can be found.'
 		$竞赛选项[9]='A.13      B.14      C.12      D.31'
-		$竞赛题目[10]='9、要把13只蝈蝈放在3个蝈笼里，总有1个蝈笼至少要放（   ）只蝈蝈。'
+		$竞赛题目[10]='9. Place 13 grasshoppers into 3 hoppers and there will always be at least one hopper that contains (______) grasshopper.'
 		$竞赛选项[10]='A.5      B.4      C.6      D.7 '
-		$竞赛题目[11]='10、13个梨子放到5个盘子里，总有一个盘子里至少要放入（ ）个梨子。'
+		$竞赛题目[11]='10. 13 pears are placed in 5 plates, and one plate should always contain at least one pear.'
 		$竞赛选项[11]='A.3   	B.4	    C.5      D.6 '
 		if a!12:
 			'<div class="button_menu">'
